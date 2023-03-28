@@ -1,0 +1,14 @@
+name = "Black Dagger Armory";
+picture = "BDA_Core\BlackDaggerArmory_Logo.paa";
+author = "Schlopp";
+actionName = "";
+action = "";
+description = "Black Dagger Armory";
+logo = "BDA_Core\BlackDaggerArmory_Logo.paa";
+logoOver = "BDA_Core\BlackDaggerArmory_Logo.paa";
+tooltip = "Black Dagger Armory";
+tooltipOwned = "Black Dagger Armory";
+overview = "Black Dagger Armory";
+overviewPicture = "BDA_Core\BlackDaggerArmory_Logo.paa";
+overviewText = "Black Dagger Armory";
+overviewFootnote = "<br /><br /><t color='#999999'>This content is under GPLv2 License.<br />Press <t /><t color='#19d3ff'>Left Shift + P<t /><t color='#999999'> to open the store page for more information.<t />";
