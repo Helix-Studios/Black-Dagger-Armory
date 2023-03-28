@@ -1,2 +1,2 @@
 # Black-Dagger-Armory
-This mod offers a range of customizable options, including armor type, color, and insignia, all of which are specifically designed for Black Dagger Company.
+Black Dagger Armory is a mod for Arma 3 and is comprised of personalized armor for designated squads and personnel. This mod offers a range of customizable options, including armor type, color, and insignia, all of which are specifically designed for Black Dagger Company. Black Dagger Armory is intended to give a unique look to members of Black Dagger Company, but can be used by anyone who wishes to personalize their gameplay experience.
