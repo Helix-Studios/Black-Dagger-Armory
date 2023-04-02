@@ -51,7 +51,7 @@ class CfgMainMenuSpotlight // RscDisplayMain >> Spotlight works but is considere
 	class JoinServer
 	{
 		text = "Black Dagger Company";
-		picture = "BDA_Core\spotlight.paa";
+		picture = "BDA_Core\BDA_UI\images\BDA_Spotlight_CO.paa";
 		action = "connectToServer ['74.91.126.92', 2302, '']";
 		actionText = "Join the Black Dagger Company Server";
 		condition = "true";

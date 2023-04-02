@@ -23,6 +23,10 @@ class CfgMusicClasses
 	{
 		displayName = "Black Dagger (3)";
 	};
+	class BDA_OTH
+	{
+		displayName = "Black Dagger (Other)";
+	};
 };
 
 class CfgMusic
@@ -101,7 +105,12 @@ class CfgMusic
 		duration = "438";
 		musicClass = "BDA_RCH";
 	};
-	
-
-	
+	class BDA_FreeBird
+	{
+		name = "Free Bird";
+		sound[] = {"BDA_SFX\music\data\FreeBird.ogg",1,1};
+		theme = "Lynyrd Skynyrd";
+		duration = "550";
+		musicClass = "BDA_OTH";
+	};
 };
