@@ -30,6 +30,7 @@ class cfgWeapons
 	class HeadgearItem;
 	class Uniform_Base;
 	class HitpointsProtectionInfo;
+	class U_B_HeliPilotCoveralls;
 	class OPTRE_UNSC_Army_Uniform_WDL;
 	class OPTRE_UNSC_Navy_Uniform;
 
@@ -61,14 +62,25 @@ class cfgWeapons
 
 //------------------------------------------------------------------// Naval Uniform - Black.
 
-	class BDA_Navy_Uniform_B: OPTRE_UNSC_Navy_Uniform
+	class BDA_Navy_Uniform_B: U_B_HeliPilotCoveralls
 	{
 		scope=2;
 		author="Schlopp";
 		displayName="Naval BDU (Black)";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass="BDA_Navy_Uniform_B_UNSC";
+			uniformClass="BDA_Navy_Uniform_B_F";
+		};
+	};
+
+	class BDA_Navy_Uniform_ONI: U_B_HeliPilotCoveralls
+	{
+		scope=2;
+		author="Schlopp";
+		displayName="Naval BDU (ONI)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="BDA_Navy_Uniform_ONI_F";
 		};
 	};
 
@@ -80,6 +92,7 @@ class cfgWeapons
 class CfgVehicles
 {
 	class ContainerSupply;
+	class B_Helipilot_F;
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class OPTRE_UNSC_Navy_Soldier;
 
@@ -118,7 +131,7 @@ class CfgVehicles
 
 	//------------------------------------------------------------------// Naval Uniform - Black.
 
-	class BDA_Navy_Uniform_B_UNSC: OPTRE_UNSC_Navy_Soldier
+	class BDA_Navy_Uniform_B_F: B_Helipilot_F
 	{
 		scope=2;
 		scopeCurator=2;
@@ -131,6 +144,22 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
+		};
+	};
+
+	class BDA_Navy_Uniform_ONI_F: B_Helipilot_F
+	{
+		scope=2;
+		scopeCurator=2;
+		author="Schlopp";
+		uniformClass="BDA_Navy_Uniform_ONI";
+		hiddenSelections[]=
+		{
+			"Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_ONI_CO.paa"
 		};
 	};
 

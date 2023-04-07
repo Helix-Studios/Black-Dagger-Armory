@@ -145,7 +145,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa", // Update to medic texture.
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_Medic_CO.paa", // Update to medic texture.
 		};
 	};
 
@@ -265,7 +265,6 @@ class cfgWeapons
     class BDA_Armor_RF_S2: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc="FZ";
-		scope=0;
 		author="Schlopp";
 		displayName="M52D Body Armor (Rifleman, 1-2)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
@@ -275,7 +274,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_CO.paa",
 		};
 	};
 
@@ -284,7 +283,6 @@ class cfgWeapons
     class BDA_Armor_MD_S2: OPTRE_UNSC_M52D_Armor_Medic									
 	{
 		author="Schlopp";
-		scope=0;
 		displayName="M52D Body Armor (Medic, 1-2)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		hiddenSelectionsTextures[]=
@@ -293,7 +291,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa", // Update to medic texture.
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_Medic_CO.paa", // Update to medic texture.
 		};
 	};
 
@@ -303,7 +301,6 @@ class cfgWeapons
 	{
 		dlc="FZ";
 		author="Schlopp";
-		scope=0;
 		displayName="M52D Body Armor (Demolitions, 1-2)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		hiddenSelectionsTextures[]=
@@ -312,7 +309,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa", // Update to demolition texture.
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_CO.paa", // Update to demolition texture.
 		};
 	};
 
@@ -322,7 +319,6 @@ class cfgWeapons
 	{
 		dlc="FZ";
 		author="Schlopp";
-		scope=0;
 		displayName="M52D Body Armor (Sniper, 1-2)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		hiddenSelectionsTextures[]=
@@ -331,7 +327,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa", // Update to sniper texture.
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_CO.paa", // Update to sniper texture.
 		};
 	};
 

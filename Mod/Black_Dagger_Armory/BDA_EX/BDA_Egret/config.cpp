@@ -2,10 +2,16 @@ class CfgPatches
 {
 	class BDA_EX_Egret
 	{
+        author = "Schlopp";
+        version = "0.02";
 		addonRootClass = "A3_Armor_F_Beta";
-		requiredAddons[] = {"A3_Armor_F_Beta","A3_Data_F","A3_Weapons_F_Gamma"};
+		requiredAddons[] = {"A3_Armor_F_Beta","A3_Data_F","A3_Weapons_F_Gamma", "A3_Sounds_F", "A3_Sounds_F_Mark"};
 		requiredVersion = 0.1;
-		units[] = {"BDA_Egret_Spaceliner_Static_F"};
+		units[] = 
+        {
+            "BDA_Egret_Spaceliner_Static_F",
+            "BDA_Egret_Spaceliner_F"
+        };
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -34,7 +40,7 @@ class cfgVehicles
 	{
 		author = "Schlopp";
 		scope = 2;
-		armor = 500000;
+		armor = 200000;
 		side = 1;
 		faction = "B_UNSCODST";
 		editorSubcategory="BDA_EdSubCat_AerospaceShip";
@@ -85,6 +91,7 @@ class cfgVehicles
             1,
             600
         };
+        flySound[] = {"BDA_EX\BDA_Egret\sfx\engine_exterior.ogg", 0.000000, 1, 1};
 	};
 };
 

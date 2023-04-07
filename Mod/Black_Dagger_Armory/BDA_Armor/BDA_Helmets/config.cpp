@@ -123,23 +123,21 @@ class cfgWeapons
     class BDA_CH252D_Helmet_S2: OPTRE_UNSC_CH252D_Helmet
 	{
 		author="Schlopp";
-		scope=0;
 		displayName="CH252D Helmet (1-2)";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa"
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S2_CO.paa"
 		};
 	};
 
     class BDA_CH252D_Helmet_S2_dp: OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		author="Schlopp";
-		scope=0;
 		displayName="CH252D Helmet (1-2)";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
 			"optre_unsc_units\army\data\odst_helmet_visor_ca.paa"
 		};
 	};
@@ -173,6 +171,7 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_SNW: OPTRE_UNSC_CH252D_Helmet
 	{
 		author="Schlopp";
+		scope=0;
 		displayName="CH252D Helmet (Snow)";
 		hiddenSelectionsTextures[]=
 		{
@@ -184,6 +183,7 @@ class cfgWeapons
     class BDA_CH252D_Helmet_SNW_dp: OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		author="Schlopp";
+		scope=0;
 		displayName="CH252D Helmet (Snow)";
 		hiddenSelectionsTextures[]=
 		{
@@ -237,7 +237,7 @@ class cfgWeapons
 
 	class BDA_Marine_Helmet: BDA_VX19_Helmet // Prefeably don't retex this for now. Looking for feedback and create an improvement
     {
-        scope=2;
+        scope=0;
         author="Schlopp";
         displayName="Marine Helmet Test";
         descriptionShort="Poopie";
