@@ -37,6 +37,8 @@ class cfgWeapons
 	class OPTRE_Helmet_NavyDeckCrew;
 	class OPTRE_PatrolCap_Navy;
 	class OPTRE_UNSC_Cap_ODST;
+	class OPTRE_FC_VX19_Helmet;
+	class OPTRE_FC_VX19_Helmet_dp;
 	class H_Booniehat_oli;
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
@@ -107,6 +109,27 @@ class cfgWeapons
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Beefus_CO.paa",
 			"optre_unsc_units\army\data\odst_helmet_visor_ca.paa"
+		};
+	};
+
+	class BDA_VX19_Rib_Helmet: OPTRE_FC_VX19_Helmet
+	{
+		author="Rib";
+		displayName="VX19 Flight Helmet (R. Ribbington)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Rib_CO.paa",
+			"optre_fc_units\marines\data\h3_pilothelmet_visor_co.paa"
+		};
+	};
+	class BDA_VX19_Rib_Helmet_dp: OPTRE_FC_VX19_Helmet_dp
+	{
+		author="Rib";
+		displayName="VX19 Flight Helmet (R. Ribbington)";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Rib_CO.paa",
+			"optre_fc_units\marines\data\h3_pilothelmet_visor_CA.paa"
 		};
 	};
 };
