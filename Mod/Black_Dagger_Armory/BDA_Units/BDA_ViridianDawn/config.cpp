@@ -1,0 +1,166 @@
+class CfgPatches
+{
+	class B_UNSCODST
+	{
+		units[]=
+		{
+			"B_UNSCODST_Survivor_01"
+		};
+		weapons[]={};
+		requiredVersion=1.62;
+		requiredAddons[]=
+		{
+			"A3_Characters_F",
+			"OPTRE_UNSC_Units",
+			"A3_Sounds_F",
+			"A3_Sounds_F_Exp",
+			"A3_Data_F",
+			"A3_Data_F_Curator",
+			"A3_Air_F_Heli",
+			"cba_xeh"
+		};
+		author="Schlopp";
+		authors[]=
+		{
+			"Schlopp"
+		};
+	};
+};
+class CfgFactionClasses
+{
+	class B_UNSCODST
+	{
+		displayName="Black Dagger Company";
+		side=1;
+		flag="BDA_Core\BDA_UI\flags\BDA_BlackDagger_Ca.paa";
+		icon="BDA_Core\BDA_UI\flags\BDA_BlackDagger_Ca.paa";
+		priority=0;
+	};
+};
+class CfgGroups
+{
+	class WEST
+	{
+		class B_UNSCODST
+		{
+			name="Black Dagger Company";
+			class Infantry
+			{
+				name="Infantry";
+			};
+			class SpecOps
+			{
+				name="Special Forces";
+			};
+			class Motorized
+			{
+				name="Motorized Infantry";
+			};
+			class Motorized_MTP
+			{
+				name="Motorized Infantry (MTP)";
+			};
+			class Support
+			{
+				name="Support Infantry";
+			};
+			class Mechanized
+			{
+				name="Mechanized Infantry";
+			};
+			class Armored
+			{
+				name="Armor";
+			};
+			class Artillery
+			{
+				name="Artillery";
+			};
+			class Naval
+			{
+				name="Naval";
+			};
+			class Air
+			{
+				name="Air";
+			};
+		};
+	};
+};
+class CBA_Extended_EventHandlers_base;
+class CfgVehicles
+{
+	class B_Survivor_F;
+	class B_Survivor_F_OCimport_01: B_Survivor_F
+	{
+		scope=0;
+		class EventHandlers;
+	};
+	class B_Survivor_F_OCimport_02: B_Survivor_F_OCimport_01
+	{
+		class EventHandlers;
+	};
+	class B_UNSCODST_Survivor_01: B_Survivor_F_OCimport_02
+	{
+		author="Schlopp";
+		scope=2;
+		scopeCurator=2;
+		displayName="Marine";
+		side=1;
+		faction="B_UNSCODST";
+		identityTypes[]=
+		{
+			"Head_NATO",
+			"LanguageENG_F",
+			"G_NATO_default"
+		};
+		uniformClass="BDA_Uniform_B_SL";
+		linkedItems[]={};
+		respawnlinkedItems[]={};
+		weapons[]={};
+		respawnWeapons[]={};
+		magazines[]={};
+		respawnMagazines[]={};
+		ALiVE_orbatCreator_loadout[]=
+		{
+			{},
+			{},
+			{},
+			
+			{
+				"BDA_Uniform_B_SL",
+				{}
+			},
+			{},
+			{},
+			"",
+			"",
+			{},
+			
+			{
+				"",
+				"",
+				"",
+				"",
+				"",
+				""
+			}
+		};
+		class EventHandlers: EventHandlers
+		{
+			class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base
+			{
+			};
+			class ALiVE_orbatCreator
+			{
+				init="if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+			};
+		};
+		ALiVE_orbatCreator_owned=1;
+	};
+};
+class cfgMods
+{
+	author="Schlopp";
+	timepacked="1677259153";
+};
