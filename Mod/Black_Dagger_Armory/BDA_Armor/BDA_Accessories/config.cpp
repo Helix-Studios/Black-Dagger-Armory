@@ -10,7 +10,7 @@ class CfgPatches
 			"A3_Characters_F",
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
-			"OPTRE_UNSC_Units_Army",
+			"OPTRE_UNSC_Units_Army"
 		};
 		units[]={};
 		weapons[]={};
@@ -19,16 +19,12 @@ class CfgPatches
 		requiredVersion=0.1;
 	};
 };
-
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
 class CfgVehicles
 {
 	class ContainerSupply;
 	class B_TacticalPack_blk;
 	class B_Bergen_Base;
 	class OPTRE_UNSC_Army_Soldier_WDL;
-
 	class BDA_Rucksack_B: B_Bergen_Base
 	{
 		dlc="OPTRE";
@@ -69,7 +65,6 @@ class CfgVehicles
 		{
 		};
 	};
-
 	class BDA_Rucksack_B_Medical: BDA_Rucksack_B
 	{
 		dlc="OPTRE";
@@ -81,7 +76,6 @@ class CfgVehicles
 			"AP_Heavy"
 		};
 	};
-
 	class BDA_Rucksack_B_Heavy: BDA_Rucksack_B
 	{
 		dlc="OPTRE";
@@ -95,41 +89,38 @@ class CfgVehicles
 			"biofoam"
 		};
 	};
-
 	class BDA_Rucksack_B_SL: BDA_Rucksack_B
 	{
 		dlc="OPTRE";
 		author="Schlopp";
 		maximumLoad=400;
 		mass=50;
-		displayName="ILCS Rucksack (Squad Leader)";
+		displayName="ILCS Rucksack UL/CNM";
 		hiddenSelections[]=
 		{
 			"camo1",
+			"AP_Heavy",
 			"biofoam"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Accessories\data\BDA_Rucksack_B_CO.paa"
-
 		};
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
 		tf_encryptionCode="tf_west_radio_code";
 		tf_dialog="rt1523g_radio_dialog";
 		tf_subtype="digital_lr";
 		tf_range=25000;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
 	};
-
-	class BDA_ANPRC_515: BDA_Rucksack_B
+	class BDA_COMM_Uplink_Module: BDA_Rucksack_B
 	{
 		dlc="OPTRE";
 		author="Schlopp";
-		picture="\OPTRE_weapons\backpacks\icons\como_pack.paa";
-		displayName="AN/PRC-515 (Invisible)";
-		descriptionShort="AN/PRC-515<br>ODST Long Range Radio<br>25km Effective Range";
-		model="\OPTRE_weapons\backpacks\como_ruck.p3d";
-		maximumLoad=100;
+		picture="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
+		displayName="UNSC Communications Uplink Module";
+		model="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
+		maximumLoad=400;
 		mass=40;
 		hiddenSelections[]=
 		{
@@ -143,4 +134,9 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+};
+class cfgMods
+{
+	author="Schlopp";
+	timepacked="1683669322";
 };
