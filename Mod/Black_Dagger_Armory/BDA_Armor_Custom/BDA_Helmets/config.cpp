@@ -334,7 +334,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Rib_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_co.paa"
+			"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_Pilot_Rib_Visor_CO.paa"
 		};
 	};
 	class BDA_VX19_Rib_Helmet_dp: OPTRE_FC_VX19_Helmet_dp
@@ -344,7 +344,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Rib_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_CA.paa"
+			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa"
 		};
 	};
 };
