@@ -60,6 +60,17 @@ class cfgWeapons
 		};
 	};
 
+	class BDA_Uniform_ONI_SL: BDA_Uniform_B
+	{
+		scope=2;
+		author="Schlopp";
+		displayName="Cross-Branch BDU (ONI)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="BDA_Uniform_ONI_UNSC";
+		};
+	};
+
 //------------------------------------------------------------------// Naval Uniform - Black.
 
 	class BDA_Navy_Uniform_B: U_B_HeliPilotCoveralls
@@ -119,6 +130,27 @@ class CfgVehicles
 		scopeCurator=2;
 		author="Schlopp";
 		uniformClass="BDA_Uniform_B_SL";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"insignia",
+			"clan",
+			"A_BaseLeg"
+		};
+	};
+
+	class BDA_Uniform_ONI_UNSC: OPTRE_UNSC_Army_Soldier_WDL
+	{
+		scope=2;
+		scopeCurator=2;
+		author="Schlopp";
+		uniformClass="BDA_Uniform_ONI_SL";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa",
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa"
+		};
 		hiddenSelections[]=
 		{
 			"camo",
