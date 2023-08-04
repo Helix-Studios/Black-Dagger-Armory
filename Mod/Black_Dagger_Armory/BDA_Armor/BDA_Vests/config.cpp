@@ -370,7 +370,6 @@ class cfgWeapons
 	class BDA_Armor_RF_S3: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc="FZ";
-		scope=0;
 		author="Schlopp";
 		displayName="M52D Body Armor (Rifleman, 1-3)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
@@ -380,13 +379,12 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S3_CO.paa"
 		};
 	};
 	class BDA_Armor_MD_S3: OPTRE_UNSC_M52D_Armor_Medic
 	{
 		author="Schlopp";
-		scope=0;
 		displayName="M52D Body Armor (Medic, 1-3)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		hiddenSelectionsTextures[]=
@@ -395,13 +393,12 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S3_Medic_CO.paa"
 		};
 	};
 	class BDA_Armor_DM_S3: OPTRE_UNSC_M52D_Armor_Demolitions
 	{
 		dlc="FZ";
-		scope=0;
 		author="Schlopp";
 		displayName="M52D Body Armor (Demolitions, 1-3)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
@@ -411,13 +408,12 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S3_CO.paa"
 		};
 	};
 	class BDA_Armor_SN_S3: OPTRE_UNSC_M52D_Armor_Sniper
 	{
 		dlc="FZ";
-		scope=0;
 		author="Schlopp";
 		displayName="M52D Body Armor (Sniper, 1-3)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
@@ -427,7 +423,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S3_CO.paa"
 		};
 	};
 	class BDA_Armor_RF_ONI: OPTRE_UNSC_M52D_Armor

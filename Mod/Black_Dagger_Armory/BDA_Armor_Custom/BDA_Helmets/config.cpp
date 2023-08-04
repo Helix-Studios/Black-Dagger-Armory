@@ -38,6 +38,8 @@ class cfgWeapons
 	class OPTRE_PatrolCap_Navy;
 	class OPTRE_UNSC_Cap_ODST;
 	class H_Booniehat_oli;
+
+
 	class BDA_CH252D_Mustang_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		scope=2;
@@ -110,6 +112,8 @@ class cfgWeapons
 			};
 		};
 	};
+
+
 	class BDA_CH252D_Carthwright_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		scope=2;
@@ -182,6 +186,8 @@ class cfgWeapons
 			};
 		};
 	};
+
+
 	class BDA_CH252D_Flowers_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		scope=2;
@@ -254,6 +260,8 @@ class cfgWeapons
 			};
 		};
 	};
+
+
 	class BDA_CH252D_Beefus_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		scope=2;
@@ -323,6 +331,154 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Beefus_CO.paa"
+			};
+		};
+	};
+
+
+	class BDA_CH252D_Cards_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		scope=2;
+		author="Schlopp";
+		displayName="CH252D Helmet (H. Cards)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				""
+			};
+		};
+	};
+	class BDA_CH252D_Cards_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
+		author="Schlopp";
+		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
+			};
+		};
+	};
+
+
+	class BDA_CH252D_Chase_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		scope=2;
+		author="Schlopp";
+		displayName="CH252D Helmet (F. Chase)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Chase_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Chase_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				""
+			};
+		};
+	};
+	class BDA_CH252D_Chase_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
+		author="Schlopp";
+		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Chase_CO.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Chase_CO.paa",
 			};
 		};
 	};
