@@ -10,7 +10,8 @@ class CfgPatches
 			"A3_Characters_F",
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
-			"OPTRE_UNSC_Units_Army"
+			"OPTRE_UNSC_Units_Army",
+			"V_FZ_Armor"
 		};
 		units[]={};
 		weapons[]={};
@@ -38,6 +39,8 @@ class cfgWeapons
 	class OPTRE_PatrolCap_Navy;
 	class OPTRE_UNSC_Cap_ODST;
 	class H_Booniehat_oli;
+	class VES_S1ONIR;
+	class VES_S1ONIR_dp;
 
 
 	class BDA_CH252D_Mustang_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
@@ -449,6 +452,8 @@ class cfgWeapons
 			};
 		};
 	};
+
+
 	class BDA_CH252D_Chase_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		scope=1;
@@ -503,6 +508,30 @@ class cfgWeapons
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa"
 		};
 	};
+
+	class BDA_CH252E_ONI_Bouquet_1: VES_S1ONIR {
+		dlc="BDA";
+		author="Rib";
+		displayName="CH252E Helmet (A. Bouquet)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bouquet_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_ONI_Visor_1_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+	class BDA_CH252E_ONI_Bouquet_1_dp: VES_S1ONIR_dp {
+		dlc="BDA";
+		author="Rib";
+		displayName="CH252E Helmet 1 (A. Bouquet)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bouquet_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_ONI_Visor_1_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+	};
+	
 };
 class cfgMods
 {

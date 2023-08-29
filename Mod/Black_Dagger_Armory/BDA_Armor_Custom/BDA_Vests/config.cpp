@@ -10,13 +10,15 @@ class CfgPatches
 			"A3_Characters_F",
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
-			"OPTRE_UNSC_Units_Army"
+			"OPTRE_UNSC_Units_Army",
+			"BDA_Vests"
 		};
 		units[]={};
 		weapons[]={};
 		magazines[]={};
 		ammo[]={};
 		requiredVersion=0.1;
+		skipWhenMissingDependencies=1;
 	};
 };
 class cfgWeapons
@@ -35,6 +37,9 @@ class cfgWeapons
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
 	class OPTRE_UNSC_M52D_Armor_Scout;
 	class OPTRE_UNSC_M52D_Armor_Light;
+	class BDA_Armor_RF_ONI;
+
+
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor
 	{
 		author="Schlopp";
@@ -79,7 +84,8 @@ class cfgWeapons
 			"APO_AR",
 			"APO_Knife",
 			"APO_BR",
-			"APO_SMG"
+			"APO_SMG",
+			"APO_Sniper"
 		};
 		hiddenSelectionsTextures[]=
 		{
@@ -130,7 +136,8 @@ class cfgWeapons
 				"APO_AR",
 				"APO_Knife",
 				"APO_BR",
-				"APO_SMG"
+				"APO_SMG",
+				"APO_Sniper"
 			};
 			hiddenSelectionsTextures[]=
 			{
@@ -247,6 +254,269 @@ class cfgWeapons
 			};
 		};
 	};
+	class OPTRE_UNSC_M52A_Armor_Base;
+
+	//this shit is fucking stupid
+	class BDA_Armor_Ribbington_v2: OPTRE_UNSC_M52D_Armor
+	{
+		author = "Rib";
+		displayName="M52D Body Armor (R. Ribbington)";
+		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+//			"A_KneesLeft",
+//			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+//			"A_ODST",
+//			"A_TacPad",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+//			"AS_BaseLeft",
+//			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+//			"AS_ODSTRight",
+			"AS_ODSTSniperRight",
+			"AS_ODSTSniperLeft",
+			"AS_SmallRight",
+//			"AS_SmallLeft",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+//			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+//			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+//			"APO_Knife",
+//			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Vest_Rib_CO.paa",//vest camo
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_2_CO.paa",//Shoulder camo2
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Rib_CO.paa", //legs camo3
+			"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_odst_CO.paa"//camo5
+		};
+		class ItemInfo: ItemInfo
+		{
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+	//			"A_TacPad",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+	//			"AS_ODSTRight",
+				"AS_ODSTSniperRight",
+				"AS_ODSTSniperLeft",
+				"AS_SmallRight",
+	//			"AS_SmallLeft",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+	//			"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+	//			"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+	//			"APO_Knife",
+	//			"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_2_CO.paa",//Shoulder camo2
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Rib_CO.paa", //legs camo3
+				"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_odst_CO.paa"//camo5
+			};
+		};
+	};
+
+	
+	class BDA_Armor_ONI_Bouquet_1: BDA_Armor_RF_ONI {
+		displayName="M52D Body Armor (A. Bouquet)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_ONI_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_ONI_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_ONI_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Bouquet_CO.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+//			"A_KneesLeft",
+//			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+//			"A_ODST",
+//			"A_TacPad",
+//			"A_ShinArmorLeft",
+//			"A_ShinArmorRight",
+//			"AS_BaseLeft",
+//			"AS_BaseRight",
+//			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+//			"AS_ODSTRight",
+			"AS_ODSTSniperRight",
+			"AS_ODSTSniperLeft",
+			"AS_SmallRight",
+			"AS_SmallLeft",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+//			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+//			"AP_Thigh",
+//			"AP_Frag",
+//			"AP_Smoke",
+//			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]=
+		{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+	//			"A_TacPad",
+	//			"A_ShinArmorLeft",
+	//			"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+	//			"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+	//			"AS_ODSTRight",
+				"AS_ODSTSniperRight",
+				"AS_ODSTSniperLeft",
+				"AS_SmallRight",
+				"AS_SmallLeft",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+	//			"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+	//			"AP_Thigh",
+	//			"AP_Frag",
+	//			"AP_Smoke",
+	//			"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+		};
+			hiddenSelectionsTextures[]={
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_ONI_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_ONI_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_ONI_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Bouquet_CO.paa"
+			};
+		};
+	};
+
 };
 class cfgMods
 {

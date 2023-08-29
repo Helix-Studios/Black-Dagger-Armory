@@ -40,6 +40,14 @@ class CfgEditorSubcategories
 	{
 		displayName="Aerospace Ships";
 	};
+	class BDA_EdSubCat_Vehicles
+	{
+		displayName="Vehicles";
+	};
+	class BDA_EdSubCat_Air
+	{
+		displayName="Aviation";
+	};
 
 };
 
