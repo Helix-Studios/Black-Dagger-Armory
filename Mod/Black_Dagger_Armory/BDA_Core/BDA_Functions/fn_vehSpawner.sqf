@@ -16,4 +16,10 @@ _vehName = getText (configFile >> "CfgVehicles" >> _vehClass >> "displayName");
 _veh = createVehicle [_vehClass, _markerLoc, [], 0, "NONE" ];
 _veh setDir _dir;
 systemChat format ["Spawned a %1 at %2", _vehName, _marker];
+_veh = { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators;
 
+// Init code
+// [SGV_SPWNP, "OPTRE_UNSC_hornet"] call BDA_fnc_vehSpawner;
+// [SGV_SPWNP, "OPTRE_UNSC_falcon_armed_s"] call BDA_fnc_vehSpawner;
+// [MGV_SPWNP, "OPTRE_AV22C_Sparrowhawk"] call BDA_fnc_vehSpawner;
+// [MGV_SPWNP, "BDA_UNSC_D77_TC_Pelican"] call BDA_fnc_vehSpawner;
