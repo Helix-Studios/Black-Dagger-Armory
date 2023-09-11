@@ -505,7 +505,6 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Pilot_Rib_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa"
 		};
 	};
 
@@ -523,14 +522,89 @@ class cfgWeapons
 	class BDA_CH252E_ONI_Bouquet_1_dp: VES_S1ONIR_dp {
 		dlc="BDA";
 		author="Rib";
-		displayName="CH252E Helmet 1 (A. Bouquet)";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bouquet_CO.paa",
-			"BDA_Armor_Custom\BDA_Helmets\data\visors\BDA_ONI_Visor_1_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"optre_unsc_units\army\data\soft_packs_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelectionsTextures[]={
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Bouquet_CO.paa",
+			};
 		};
 	};
+
+	class BDA_CH252D_Sniper_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		scope=2;
+		author="Rib";
+		displayName="CH252D Helmet (D. Vito)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Sniper_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S2_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Sniper_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S2_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				""
+			};
+		};
+	};
+	class BDA_CH252D_Sniper_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_Base
+	{
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
+		author="Schlopp";
+		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Sniper_CO.paa",
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Sniper_CO.paa"
+			};
+		};
+	};
+
+
 	
 };
 class cfgMods
