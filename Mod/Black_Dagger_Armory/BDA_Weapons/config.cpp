@@ -1,16 +1,18 @@
-class CfgPatches {
-
-	class BDA_Weapons {
-		author = "Rib";
+class CfgPatches 
+{
+    class BDA_Weapons 
+    {
+        author = "Rib";
 		name = "Ribs/Splits Weapons";
-		requiredAddons[] = {"A3_Data_F_Jets"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle"};
 		requiredVersion = 0.100000;
 		units[] = {};
-		weapons[] = {};
-		magazines[] = {"BDA_PylonMissile_AA_Pelican_x3"};
-		ammo[] = {"MissileBase"};
-	};
+		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4"};
+		ammo[] = {"Ribs_M_Anvil3_LGIR"};
+    };
 };
+
 /*extern*/ class SensorTemplatePassiveRadar;
 /*extern*/ class SensorTemplateAntiRadiation;
 /*extern*/ class SensorTemplateActiveRadar;
@@ -33,11 +35,37 @@ class CfgAmmo {
 	/*extern*/ class BombCore;
 	/*extern*/ class ShellBase;
 	/*extern*/ class Missile_AA_04_F;
+	/*extern*/ class M_AT;
+	/*extern*/ class Splits_M_ATA_Anazonda_AA;
+	/*extern*/ class Missile_AGM_02_F;
+
+	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
+		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
+		hit = 850;
+		caliber=1;
+        explosionEffects="HelicopterExplosionEffects2";
+        missileLockMaxDistance=5000;
+        missileLockMinDistance=0;
+        missileLockCone=360;
+        airlock=1;
+        weaponLockSystem="1 + 2 + 4 + 8 + 16";
+        missileKeepLockedCone=180;
+        indirectHit=100;
+        mass=2;
+        indirectHitRange=10;
+		maxSpeed=400;
+        thrust=60;
+        timeToLive=80;
+        typicalSpeed=50;
+        thrustTime=60;
+		autoSeekTarget=1;
+	};
 };
 
 class CfgMagazines {
 	/*extern*/ class VehicleMagazine;
-
+	/*extern*/ class 6Rnd_LG_scalpel;
+ 
 	class BDA_PylonMissile_AA_Pelican_x4: VehicleMagazine {
 		dlc = "BDA";
 		scope = 2;
@@ -59,21 +87,58 @@ class CfgMagazines {
 		hardpoints[] = {"Splits_B_Missiles"};
 		pylonWeapon = "BDA_weapon_Guided_AA_Bottom_Launcher";
 	};
+	class BDA_missiles_LGIR_Anvil3_x60: 6Rnd_LG_scalpel {
+		dlc = "BDA";
+		scope = 2;
+		displayName = "60Rnd ANVIL III LGIR Missile Pods";
+		descriptionShort = "LGIR Missiles";
+		count = 60;
+		initSpeed = 350;
+		maxLeadSpeed = 320;
+		muzzlePos = "machinegun_beg";
+		muzzleEnd = "machinegun_end";
+		ammo = "Ribs_M_Anvil3_LGIR";
+	};
+};
 
-class CfgWeapons {
-	/*extern*/ class CannonCore;
-	/*extern*/ class MissileLauncher;
-	/*extern*/ class RocketPods;
-	/*extern*/ class SmokeLauncher;
-	/*extern*/ class Rifle_Base_F;
-	/*extern*/ class Cannon_105mm;
+class CfgWeapons 
+{
+    /*extern*/ class RocketPods;
+    /*extern*/ class missiles_ASRAAM;
+	/*extern*/ class missiles_titan;
+	/*extern*/ class missiles_SCALPEL;
+	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
 
-	class BDA_weapon_Guided_AA_Bottom_Launcher: RocketPods {
-		displayName="AAM-3000B";
+    class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F 
+    {
+        scope = 2;
+        displayName = "ANVIL III LGIR Missile Pods";
+		descriptionShort = "LGIR Missiles"
+        magazines[] = 
+        {
+            "BDA_missiles_LGIR_Anvil3_x60"
+        };
+        ballisticsComputer = 16;
+		showAimCursorInternal = 1;
+		reloadTime	= 0.1;
+		magazineReloadTime = 10;
+		weaponLockDelay= 4;
+		canLock = 2;
+		cursor = "EmptyCursor";
+		cursorAim = "OPTRE_ANVIL1";
+		lockAcquire=1;
+    };
+
+    class BDA_weapon_Guided_AA_Bottom_Launcher: RocketPods {
+		scope = 2;
+		displayName ="AAM-3000B";
+		descriptionShort = "AA Missiles";
 		ballisticsComputer = 8;
-		magazines = {"BDA_PylonMissile_AA_Pelican_x4"};
+		magazines[] = 
+        {
+            "BDA_PylonMissile_AA_Pelican_x4"
+        };
 		reloadTime = 0.200000;
 		magazineReloadTime = 0.200000;
 	};
-
 };

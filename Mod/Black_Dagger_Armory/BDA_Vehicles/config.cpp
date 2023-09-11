@@ -5,6 +5,7 @@ class CfgPatches
 		units[]=
 		{
 			"BDA_UNSC_D77_TC_Pelican",
+			"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -25,16 +26,6 @@ class CfgPatches
 
 class CfgFactionClasses {
 	class B_UNSCODST;
-};
-
-class CfgWeapons {
-	/*extern*/ class CannonCore;
-	/*extern*/ class MissileLauncher;
-	/*extern*/ class RocketPods;
-	/*extern*/ class SmokeLauncher;
-	/*extern*/ class Rifle_Base_F;
-	/*extern*/ class Cannon_105mm;
-	class BDA_weapon_Guided_AA_Bottom_Launcher;
 };
 
 class SensorTemplatePassiveRadar;
@@ -62,6 +53,7 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 	class components;
 };
 class WeaponCloudsMGun;
+
 class CfgVehicles
 {
 	class Helicopter;
@@ -120,6 +112,7 @@ class CfgVehicles
 		author = "Rib/Split";
 		faction = "B_UNSCODST";
 		displayName = "D77-TC Pelican";
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		textureList[] =
 		{
 			"BDA_Green",
@@ -138,12 +131,15 @@ class CfgVehicles
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
-			"Splits_60Rnd_Anvil3_missiles",
-			"Splits_60Rnd_Anvil3_missiles"
+			//"Splits_60Rnd_Anvil3_missiles",
+			//"Splits_60Rnd_Anvil3_missiles"
+			"BDA_missiles_LGIR_Anvil3_x60",
+			"BDA_missiles_LGIR_Anvil3_x60"
 		};
 		weapons[] = {
 			"CMFlareLauncher",
-			"Splits_missiles_Anvil3"
+			//"Splits_missiles_Anvil3"
+			"BDA_missiles_Guided_Anvil3"
 		};
 
 		//hud colour change
@@ -717,7 +713,7 @@ class CfgVehicles
 						borderRight=0;
 						borderTop=0;
 						borderBottom=0;
-						color[]={0.15,1.0,0.15,1.0}; //original RGB=0.169,0.85100001,0.83899999
+						color[]={0.00,1.00,0.15,1.0}; //original RGB=0.169,0.85100001,0.83899999
 						helmetMountedDisplay=1;
 						helmetPosition[]={-0.037500001,0.037500001,0.1};
 						helmetRight[]={0.075000003,0,0};
@@ -1036,7 +1032,7 @@ class CfgVehicles
 						class Draw
 						{
 							alpha=1;
-							color[]={0.15000001,0.15000001,1,1};
+							color[]={0.15,1.0,0.15,1.0}; //original 0.15000001,0.15000001,1,1
 							condition="on";
 							class VelocityLine
 							{
@@ -3902,9 +3898,175 @@ class CfgVehicles
 						mirroredMissilePos=1;
 					};
 				};
-				
-				class Presets
+			};
+			class SensorsManagerComponent
+			{
+				class Components
 				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=4500;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=5000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=180;
+						angleRangeVertical=90;
+						aimdown=-0.25;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=6000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=5500;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=180;
+						angleRangeVertical=90;
+						aimdown=-0.25;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=0;
+							maxRange=7500;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=0;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableSpeed=300;
+						angleRangeHorizontal=120;
+						angleRangeVertical=90;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						aimDown=30;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components: components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+						resource="RscCustomInfoCrew";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components: components
+				{
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+						resource="RscCustomInfoCrew";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+				
+			class Presets 
+			{
 					class Empty
 					{
 						displayName="$STR_empty";
@@ -3921,6 +4083,36 @@ class CfgVehicles
 							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
 							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
 							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
+						};
+					};
+					class AA
+					{
+						displayName="AA";
+						attachment[]=
+						{
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
+						};
+					};
+					class AT
+					{
+						displayName="AT";
+						attachment[]=
+						{
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
 							"Splits_PylonMissile_AA_Pelican_x2",
 							"Splits_PylonMissile_AA_Pelican_x2"
 						};
@@ -3957,7 +4149,7 @@ class CfgVehicles
 			factions[]={"B_UNSCODST"};
 		};
 		class UNSC_HW2_Winter {
-				displayName="UNSC HW2 Winter";
+				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
 				textures[]=
 				{
