@@ -58,7 +58,6 @@ class CfgAmmo {
         timeToLive=80;
         typicalSpeed=50;
         thrustTime=60;
-		autoSeekTarget=1;
 	};
 };
 
@@ -98,6 +97,7 @@ class CfgMagazines {
 		muzzlePos = "machinegun_beg";
 		muzzleEnd = "machinegun_end";
 		ammo = "Ribs_M_Anvil3_LGIR";
+		autoSeekTarget=1;
 	};
 };
 
@@ -122,7 +122,7 @@ class CfgWeapons
 		showAimCursorInternal = 1;
 		reloadTime	= 0.1;
 		magazineReloadTime = 10;
-		weaponLockDelay= 4;
+		weaponLockDelay= 3;
 		canLock = 2;
 		cursor = "EmptyCursor";
 		cursorAim = "OPTRE_ANVIL1";
