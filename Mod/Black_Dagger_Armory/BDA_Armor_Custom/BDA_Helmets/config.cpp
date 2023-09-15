@@ -355,7 +355,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			""
 		};
@@ -372,7 +372,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				""
 			};
@@ -429,7 +429,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Chase_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			""
 		};
@@ -446,7 +446,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Chase_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				""
 			};

@@ -200,7 +200,7 @@ class cfgWeapons
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Flowers_CO.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -250,7 +250,7 @@ class cfgWeapons
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Flowers_CO.paa"
 			};
 		};
 	};
