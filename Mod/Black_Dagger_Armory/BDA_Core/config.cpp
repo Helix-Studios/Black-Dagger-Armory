@@ -11,9 +11,9 @@ class CfgPatches
 			"A3_Map_Altis_Scenes",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
-			"DMNS_Modules",
+			"A3_UI_F",
 			"OPTRE_Core",
-			
+			"19th_Fleet_Armor"
 			
 		};
 		units[]={};
@@ -56,72 +56,243 @@ class CfgEditorSubcategories
 };
 
 //------main menu--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-
-/*class RscBackgroundLogo {
-	class BDA_MM {
-		picture = "\BDA_MM\bda_mm_1.paa";
-	};
-	class BDA_MM2 {
-		picture = "\BDA_MM\bda_mm_2.paa";
-	};
-	class BDA_MM3 {
-		picture = "\BDA_MM\bda_mm_3.paa";
-	};
-	class BDA_MM4 {
-		picture = "\BDA_MM\bda_mm_4.paa";
-	};
-};*/
 class CAWorld;
-class RscStandardDisplay;
-class RscVignette;
-class RscControlsGroupNoScrollbars;
-class RscFrame;
-class RscText;
 class RscPicture;
-class RscTitle;
-class RscButtonMenu;
-class RscHTML;
-class RscControlsGroupNoHScrollbars;
-class RscListBox;
-class RscPictureKeepAspect;
+class RscStandardDisplay;
+class RscText;
+class RscActiveText;
+class RscActivePicture: RscActiveText {};
 class RscButton;
-class RscButtonImages;
-class RscShortcutButton;
 
-
-class RscDisplayMain // RscDisplayMain >> Spotlight works but is considered obsolete since SPOTREP #00064
+class RscTitles //part of the background
 {
-	idd=0;
-	idc=1;
-	enableDisplay=1;
-	picture="BDA_Core\BDA_UI\BDA_LoadingScreen_A_CO";
-	class RscActiveText;
-	class RscActivePicture: RscActiveText {};
-
-	class BDATitle: RscTitle {
-			picture = "BDA_Core\BDA_UI\BDA_Arizona_Sword_TP.paa";
-		};
-	
-	class controls {
-		class Spotlight2;
-		
-		class ConnectServer: Spotlight2
+	class SplashNoise //part of the background
 		{
-			picture = "BDA_Core\BDA_UI\images\BDA_Spotlight_CO.paa";
-			onbuttonClick = "connectToServer ['74.91.126.92', 2302, '']";
-			text = "Join the Black Dagger Company Server";
+			class BackgroundNoise: RscPicture //part of the background
+			{
+				text = "";
+			};
 		};
-	};
-	class controlsBackground {
-		class LoadPicture_BDA1: RscPicture {
+	class brokenhud: SplashNoise	//part of the background
+		{
+			duration=10000
+			class BackgroundNoise: RscPicture //part of the background
+			{
+				text = "";
+			};
+		};
+};	
+
+class RscDisplayMain: RscStandardDisplay {
+	class Controls {
+		class Spotlight1 {};
+		class Spotlight2 {};
+		class Spotlight3 {};
+		class BackgroundSpotlightRight {};
+		class BackgroundSpotlightLeft {};
+		class BackgroundSpotlight {};
+
+		class ConnectServer: RscButton {
+			idc=-1;
+			text="Join BDC Server";
+			tooltip="Click to Join the Black Dagger Company Server";
+			style=2;
+			onbuttonclick="connectToServer ['74.91.126.92', 2302, '21STBD']";
+			colorBackground[]={0,0,0,0.40000001};
+			colorBackgroundActive[]={1,0,0,0,2};
+			borderSize=0.054000001;
+			colorBorder[]={0,0,0,0};
+			x="safeZoneX + safeZoneW - 0.5";
+			y="safeZoneY + 0.2 * safeZoneH";
+			w="0.25";
+			h="0.05";
+		};
+		class ConnectDiscord: RscButton {
+			idc=-1;
+			text="Join BDC Discord";
+			tooltip="Click to join the Black Dagger Discord";
+			url="https://discord.gg/nbqWj7Q6JP";
+			colorBackground[]={0,0,0,0.69999999};
+			colorBackgroundActive[]={1,0,0,0,2};
+			borderSize=0.054000001;
+			colorBorder[]={0,0,0,0};
+			x="safeZoneX + 0.2 * safeZoneW";
+			y="safeZoneY + safeZoneH - 0.5";
+			w="0.25";
+			h="0.05";
+		};
+		/*class ConnectTS: RscButton {
+			idc=-1;
+			text="Join BDC TS3";
+			tooltip="Click to join the Black Dagger TS";
+			url="";
+			colorBackground[]={0,0,0,0.69999999};
+			colorBackgroundActive[]={1,0,0,0,2};
+			borderSize=0.054000001;
+			colorBorder[]={0,0,0,0};
+			x="safeZoneX + 0.2 * safeZoneW";
+			y="safeZoneY + 0.2 * safeZoneH";
+			w="0.25";
+			h="0.05";
+		};*/
+
+		class Logo: RscActivePicture {
 			idc=1;
-			colorText[]={1,1,1,1};
-			x="SafeZoneX";
-            y="SafeZoneY";
-            h="SafeZoneH";
-            w="SafeZoneW";
-			text="BDA_Core\BDA_MM\bda_mm_2.paa";
+			text = "BDA_Core\BDA_UI\images\BDA_Arizona_Sword.paa";
 		};
 	};
+	class RscActiveText;
+	class RscActivePicture : RscActiveText {
+			style = 48;
+			color[] = {
+					1, 1, 1, 0.500000
+			};
+			colorActive[] = {
+					1, 1, 1, 1
+			};
+	};
+
+	class controlsBackground {
+		class LoadingPic1: RscPicture {
+			idc=1;
+			x = SafeZoneX;
+			y = SafeZoneY;
+			h = SafeZoneH;
+			w = SafeZoneW;
+			text = "BDA_Core\BDA_MM\bda_mm_2.paa";
+		};
+	};
+};
+
+class RscDisplayLoading {
+	class Variants {
+		class LoadingBackground_BDA_1 {
+			idd = 250;
+			class controls {
+				class LoadingPicture_bda_2: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_2.paa";
+				};
+			};
+		};
+		class Loading_West1: LoadingBackground_BDA_1 {
+			class controls {
+				class LoadingPicture_bda_3: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_3.paa";
+				};
+			};
+		};
+		class Loading_West2: LoadingBackground_BDA_1 {
+			class controls {
+				class LoadingPicture_bda_5: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_5.paa";
+				};
+			};
+		};
+		class Loading_West3: LoadingBackground_BDA_1 {
+			class controls {
+				class LoadingPicture_bda_6: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_6.paa";
+				};
+			};
+		};
+		class Loading_East1: LoadingBackground_BDA_1 {
+			class controls {
+				class LoadingPicture_bda_4: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_4.paa";
+				};
+			};
+		};
+		class Loading_East2: LoadingBackground_BDA_1 {
+			class controls {
+				class LoadingPicture_bda_1: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_1.paa";
+				};
+			};
+		};
+	};
+};
+
+
+
+class RscDisplayLoadMission: RscStandardDisplay {
+	class controlsBackground {
+		class LoadingPicture_bda_m: RscPicture {
+			idc=1000;
+			x = SafeZoneX;
+			y = SafeZoneY;
+			h = SafeZoneH;
+			w = SafeZoneW;
+			text="BDA_Core\BDA_MM\bda_mm_5.paa";
+		};
+	};
+};
+
+class RscDisplayStart: RscStandardDisplay {
+	class controls {
+		class LoadingPicture_bda_s: RscPicture {
+			idc=1000;
+			x = SafeZoneX;
+			y = SafeZoneY;
+			h = SafeZoneH;
+			w = SafeZoneW;
+			text = "BDA_Core\BDA_MM\bda_mm_1.paa";
+		};
+	};
+};
+
+class RscDisplayMPPlayers;
+class RscDisplayClientWait: RscDisplayMPPlayers {
+	class LoadingPicture_bda_mp: RscPicture {
+		idc=1000;
+		x = SafeZoneX;
+		y = SafeZoneY;
+		h = SafeZoneH;
+		w = SafeZoneW;
+		text = "BDA_Core\BDA_MM\bda_mm_6.paa";
+	};
+};
+
+class RscDisplayClient: RscStandardDisplay {
+	class controlsBackground {
+		idc=1000;
+		colorText[]={1,1,1,1};
+		x = SafeZoneX;
+		y = SafeZoneY;
+		h = SafeZoneH;
+		w = SafeZoneW;
+		text = "BDA_Core\BDA_MM\bda_mm_4.paa";
+	};
+};
+class RscDisplayConfigure {
+	enableDisplay = 1;
 };

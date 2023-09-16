@@ -391,14 +391,14 @@ class cfgWeapons
 	};
 
 	
-	class BDA_Armor_ONI_Bouquet_1: BDA_Armor_RF_ONI {
+	class BDA_Armor_ONI_Bouquet: OPTRE_UNSC_M52D_Armor {
 		displayName="M52D Body Armor (A. Bouquet)";
 		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_ONI_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_ONI_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_ONI_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Bouquet_CO.paa"
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -418,16 +418,16 @@ class cfgWeapons
 //			"A_ShinArmorRight",
 //			"AS_BaseLeft",
 //			"AS_BaseRight",
-//			"AS_LargeLeft",
+			"AS_LargeLeft",
 			"AS_LargeRight",
 			"AS_MediumLeft",
 			"AS_MediumRight",
 			"AS_ODSTCQBLeft",
 			"AS_ODSTCQBRight",
 			"AS_ODSTLeft",
-//			"AS_ODSTRight",
-			"AS_ODSTSniperRight",
-			"AS_ODSTSniperLeft",
+			"AS_ODSTRight",
+//			"AS_ODSTSniperRight",
+//			"AS_ODSTSniperLeft",
 			"AS_SmallRight",
 			"AS_SmallLeft",
 			"AP_AR",
@@ -472,16 +472,16 @@ class cfgWeapons
 	//			"A_ShinArmorRight",
 	//			"AS_BaseLeft",
 	//			"AS_BaseRight",
-	//			"AS_LargeLeft",
+				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
 				"AS_MediumRight",
 				"AS_ODSTCQBLeft",
 				"AS_ODSTCQBRight",
 				"AS_ODSTLeft",
-	//			"AS_ODSTRight",
-				"AS_ODSTSniperRight",
-				"AS_ODSTSniperLeft",
+				"AS_ODSTRight",
+	//			"AS_ODSTSniperRight",
+	//			"AS_ODSTSniperLeft",
 				"AS_SmallRight",
 				"AS_SmallLeft",
 				"AP_AR",
@@ -508,11 +508,11 @@ class cfgWeapons
 				"CustomKit_Scorch"
 		};
 			hiddenSelectionsTextures[]={
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_ONI_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Armor_ONI_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_ONI_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Bouquet_CO.paa"
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 			};
 		};
 	};

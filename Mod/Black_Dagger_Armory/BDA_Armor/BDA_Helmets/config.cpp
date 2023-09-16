@@ -57,7 +57,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			""
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -74,7 +74,7 @@ class cfgWeapons
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				""
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -89,13 +89,11 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"camo",
-			"camo4",
 			"H_Ghillie"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_CO.paa",
-			""
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -103,7 +101,6 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
-				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
@@ -130,7 +127,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Scythe_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			""
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -147,7 +144,7 @@ class cfgWeapons
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Scythe_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				""
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -161,7 +158,6 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"camo",
-			"camo4",
 			"H_Ghillie"
 		};
 		hiddenSelectionsTextures[]=
@@ -175,7 +171,6 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
-				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
@@ -202,7 +197,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			""
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -219,7 +214,7 @@ class cfgWeapons
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				""
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -233,13 +228,11 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"camo",
-			"camo4",
 			"H_Ghillie"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
-			""
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -247,7 +240,6 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
-				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
@@ -274,7 +266,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S2_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			""
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -291,7 +283,7 @@ class cfgWeapons
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S2_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				""
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -305,13 +297,11 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"camo",
-			"camo4",
 			"H_Ghillie"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
-			""
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -319,7 +309,6 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
-				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
@@ -346,7 +335,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			""
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -363,7 +352,7 @@ class cfgWeapons
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
 				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-				""
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -377,13 +366,11 @@ class cfgWeapons
 		hiddenSelections[]=
 		{
 			"camo",
-			"camo4",
 			"H_Ghillie"
 		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
-			""
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -391,7 +378,6 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
-				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
