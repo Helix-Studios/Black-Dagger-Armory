@@ -633,6 +633,6 @@ class cfgWeapons
 };
 class cfgMods
 {
-	author="Schlopp";
-	timepacked="1683664746";
+	author="Rib";
+	timepacked="1709231937";
 };

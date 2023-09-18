@@ -4178,3 +4178,8 @@ class CfgVehicles
 	};
 	//end of CfgVehicles
 };
+
+class cfgMods {
+	author="Rib";
+	timepacked="1709231937";
+};

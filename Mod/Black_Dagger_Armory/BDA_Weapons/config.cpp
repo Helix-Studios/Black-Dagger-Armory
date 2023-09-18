@@ -142,3 +142,8 @@ class CfgWeapons
 		magazineReloadTime = 0.200000;
 	};
 };
+
+class cfgMods {
+	author="Rib";
+	timepacked="1109231745";
+};

@@ -1,6 +1,6 @@
 name = "Black Dagger Armory";
 picture = "BDA_Core\BlackDaggerArmory_Logo.paa";
-author = "Schlopp";
+author = "Schlopp/Rib";
 actionName = "";
 action = "";
 description = "Black Dagger Armory";
