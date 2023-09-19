@@ -11,6 +11,7 @@ class CfgPatches
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
 			"OPTRE_UNSC_Units_Army",
+			"LM_OPCAN_CGC"
 		};
 		units[]={};
 		weapons[]={};
@@ -177,7 +178,7 @@ class cfgWeapons
 	{
 		author="Schlopp";
 		scope=2;
-		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_light_Olive_F_ca.paa"
+		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_light_Olive_F_ca.paa";
 		model="\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		displayName="MC32L Body Armor (Tropic)";
 		hiddenSelectionsTextures[]=
@@ -189,7 +190,7 @@ class cfgWeapons
 	{
 		author="Schlopp";
 		scope=2;
-		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_heavy_Olive_F_ca.paa"
+		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_heavy_Olive_F_ca.paa";
 		displayName="MC32H Body Armor (Tropic)";
 		hiddenSelectionsTextures[]=
 		{
@@ -200,7 +201,7 @@ class cfgWeapons
 	{
 		author="Schlopp";
 		scope=2;
-		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_light_Olive_F_ca.paa"
+		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_light_Olive_F_ca.paa";
 		model="\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		displayName="Viridian MC32L Body Armor";
 		hiddenSelectionsTextures[]=
@@ -212,7 +213,7 @@ class cfgWeapons
 	{
 		author="Schlopp";
 		scope=2;
-		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_heavy_Olive_F_ca.paa"
+		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_heavy_Olive_F_ca.paa";
 		displayName="Viridian MC32H Body Armor";
 		hiddenSelectionsTextures[]=
 		{

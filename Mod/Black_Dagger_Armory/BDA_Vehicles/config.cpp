@@ -4171,15 +4171,10 @@ class CfgVehicles
 		class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
 		class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=2;};
 		class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
+		//class _xx_ACE_
 		};
 
 
 		//end of pelican
-	};
+};
 	//end of CfgVehicles
-};
-
-class cfgMods {
-	author="Rib";
-	timepacked="1709231937";
-};
