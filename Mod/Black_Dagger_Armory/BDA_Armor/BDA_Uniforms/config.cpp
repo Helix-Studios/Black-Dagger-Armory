@@ -33,6 +33,7 @@ class cfgWeapons
 	class U_B_HeliPilotCoveralls;
 	class OPTRE_UNSC_Army_Uniform_WDL;
 	class OPTRE_UNSC_Navy_Uniform;
+	class U_C_Scientist;
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -73,16 +74,6 @@ class cfgWeapons
 
 //------------------------------------------------------------------// Naval Uniform - Black.
 
-	class BDA_Navy_Uniform_B: U_B_HeliPilotCoveralls
-	{
-		scope=2;
-		author="Schlopp";
-		displayName="Naval BDU (Black)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass="BDA_Navy_Uniform_B_F";
-		};
-	};
 
 	class BDA_Navy_Uniform_ONI: U_B_HeliPilotCoveralls
 	{
@@ -92,6 +83,28 @@ class cfgWeapons
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="BDA_Navy_Uniform_ONI_F";
+		};
+	};
+
+	class BDA_Navy_Uniform_B: U_C_Scientist
+	{
+		author="Schlopp";
+		scope=2;
+		displayName="Naval BDU";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_B_F";
+			containerClass="Supply20";
+			mass=10;
 		};
 	};
 
@@ -106,6 +119,8 @@ class CfgVehicles
 	class B_Helipilot_F;
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class OPTRE_UNSC_Navy_Soldier;
+	class U_C_Scientist;
+	class C_scientist_F;
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
@@ -163,19 +178,18 @@ class CfgVehicles
 
 	//------------------------------------------------------------------// Naval Uniform - Black.
 
-	class BDA_Navy_Uniform_B_F: B_Helipilot_F
+	class BDA_Navy_Uniform_B_F: C_scientist_F
 	{
-		scope=2;
-		scopeCurator=2;
 		author="Schlopp";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
 		uniformClass="BDA_Navy_Uniform_B";
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
+		};
+		class EventHandlers
+		{
 		};
 	};
 

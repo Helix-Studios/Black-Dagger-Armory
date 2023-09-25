@@ -21,4 +21,11 @@ class CfgUnitInsignia
 		texture = "\BDA_Core\BDA_Patches\data\BDA_ONI_ptch_CO.paa";
 		textureVehicle = "";
 	};
+	class BDA_AZ_Sword
+	{
+		displayName = "UNSC - Arizona Sword";
+		author = "Schlopp";
+		texture = "\BDA_Core\BDA_Patches\data\BDA_AZS_ptch_CO.paa";
+		textureVehicle = "";
+	};
 };

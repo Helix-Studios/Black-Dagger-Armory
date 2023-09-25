@@ -35,6 +35,7 @@ class cfgWeapons
 	class OPTRE_UNSC_M52D_Armor_Rifleman;
 	class OPTRE_UNSC_M52D_Armor_Scout;
 	class OPTRE_UNSC_M52D_Armor_Light;
+	class V_Rangemaster_belt;
 	class BDA_Armor_RF: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		author="Schlopp";
@@ -703,6 +704,30 @@ class cfgWeapons
 				"BDA_Armor\BDA_Vests\data\BDA_Legs_ONI_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_ONI_CO.paa"
+			};
+		};
+	};
+	class BDA_Naval_Belt: V_Rangemaster_Belt
+	{
+		author="Schlopp";
+		displayName="NAVCOM Carrier Belt";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
 			};
 		};
 	};

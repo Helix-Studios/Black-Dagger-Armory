@@ -24,7 +24,9 @@ class CfgVehicles
 	class ContainerSupply;
 	class B_TacticalPack_blk;
 	class B_Bergen_Base;
+	class V_Rangemaster_Belt;
 	class OPTRE_UNSC_Army_Soldier_WDL;
+	class ItemInfo;
 	class BDA_Rucksack_B: B_Bergen_Base
 	{
 		dlc="OPTRE";
@@ -80,7 +82,7 @@ class CfgVehicles
 	{
 		dlc="OPTRE";
 		author="Schlopp";
-		maximumLoad=400;
+		maximumLoad=550;
 		mass=50;
 		displayName="ILCS Rucksack (Heavy)";
 		hiddenSelections[]=
@@ -125,6 +127,31 @@ class CfgVehicles
 		hiddenSelections[]=
 		{
 			"camo1"
+		};
+		hiddenSelectionsTextures[]={};
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+	class BDA_Naval_Belt_R: BDA_Rucksack_B
+	{
+		dlc="OPTRE";
+		author="Schlopp";
+		picture="\A3\Characters_F\data\ui\icon_V_Belt_CA.paa";
+		displayName="NAVCOM Carrier Belt";
+		model="\A3\Characters_F\BLUFOR\equip_b_belt";
+		maximumLoad=400;
+		mass=40;
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
 		};
 		hiddenSelectionsTextures[]={};
 		tf_encryptionCode="tf_west_radio_code";

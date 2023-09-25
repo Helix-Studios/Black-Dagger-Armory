@@ -34,6 +34,7 @@ class cfgWeapons
 	class OPTRE_UNSC_Recon_Helmet_dp;
 	class OPTRE_Helmet_NavyDeckCrew;
 	class OPTRE_PatrolCap_Navy;
+	class H_MilCap_Blue;
 	class OPTRE_FC_VX19_Helmet;
 	class OPTRE_FC_VX19_Helmet_dp;
 	class OPTRE_UNSC_Cap_ODST;
@@ -425,6 +426,15 @@ class cfgWeapons
 			"_broken"
 		};
 		optreHUDStyle="ODST_1";
+	};
+	class BDA_PatrolCap_Navy: H_MilCap_Blue
+	{
+		author="Schlopp";
+		displayname="NAVCOM Patrol Cap";
+		hiddenselectionstextures[]=
+		{
+			"BDA_Armor\BDA_Helmets\data\BDA_patrolcap_Navy_co.paa",
+		};
 	};
 };
 class cfgMods
