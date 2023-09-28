@@ -29,7 +29,7 @@ class CfgVehicles
 	class ItemInfo;
 	class BDA_Rucksack_B: B_Bergen_Base
 	{
-		dlc="OPTRE";
+		dlc="BDA";
 		author="Schlopp";
 		scope=2;
 		scopeArsenal=2;
@@ -69,7 +69,7 @@ class CfgVehicles
 	};
 	class BDA_Rucksack_B_Medical: BDA_Rucksack_B
 	{
-		dlc="OPTRE";
+		dlc="BDA";
 		author="Schlopp";
 		displayName="ILCS Backpack (Medic)";
 		hiddenSelections[]=
@@ -80,7 +80,7 @@ class CfgVehicles
 	};
 	class BDA_Rucksack_B_Heavy: BDA_Rucksack_B
 	{
-		dlc="OPTRE";
+		dlc="BDA";
 		author="Schlopp";
 		maximumLoad=550;
 		mass=50;
@@ -93,7 +93,7 @@ class CfgVehicles
 	};
 	class BDA_Rucksack_B_SL: BDA_Rucksack_B
 	{
-		dlc="OPTRE";
+		dlc="BDA";
 		author="Schlopp";
 		maximumLoad=400;
 		mass=50;
@@ -117,7 +117,7 @@ class CfgVehicles
 	};
 	class BDA_COMM_Uplink_Module: BDA_Rucksack_B
 	{
-		dlc="OPTRE";
+		dlc="BDA";
 		author="Schlopp";
 		picture="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
 		displayName="UNSC Communications Uplink Module";
@@ -138,13 +138,13 @@ class CfgVehicles
 	};
 	class BDA_Naval_Belt_R: BDA_Rucksack_B
 	{
-		dlc="OPTRE";
+		dlc="BDA";
 		author="Schlopp";
 		picture="\A3\Characters_F\data\ui\icon_V_Belt_CA.paa";
 		displayName="NAVCOM Carrier Belt";
 		model="\A3\Characters_F\BLUFOR\equip_b_belt";
 		maximumLoad=400;
-		mass=40;
+		mass=10;
 		hiddenSelections[]=
 		{
 			"camo"
@@ -153,11 +153,10 @@ class CfgVehicles
 		{
 			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
 		};
-		hiddenSelectionsTextures[]={};
 		tf_encryptionCode="tf_west_radio_code";
 		tf_dialog="rt1523g_radio_dialog";
 		tf_subtype="digital_lr";
-		tf_range=25000;
+		tf_range=30000;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
