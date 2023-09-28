@@ -112,7 +112,6 @@ class CfgVehicles
 		author = "Rib/Split";
 		faction = "B_UNSCODST";
 		displayName = "D77-TC Pelican";
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		textureList[] =
 		{
 			"BDA_Green",
@@ -3825,9 +3824,8 @@ class CfgVehicles
 							};
 						};
 					};
-			};
-		class Components
-		{
+		};
+		class Components {
 			class TransportPylonsComponent
 			{
 				uiPicture="\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
@@ -3898,6 +3896,58 @@ class CfgVehicles
 						mirroredMissilePos=1;
 					};
 				};
+				class Presets {
+					class Empty
+					{
+						displayName="$STR_empty";
+						attachment[]={};
+					};
+					class Default
+					{
+						displayName="$STR_vehicle_default";
+						attachment[]=
+						{
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
+						};
+					};
+					class AA
+					{
+						displayName="AA";
+						attachment[]=
+						{
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
+						};
+					};
+					class AT
+					{
+						displayName="AT";
+						attachment[]=
+						{
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
+						};
+					};
+				};
 			};
 			class SensorsManagerComponent
 			{
@@ -3921,7 +3971,7 @@ class CfgVehicles
 						};
 						maxTrackableSpeed=300;
 						animDirection="mainGun";
-						angleRangeHorizontal=180;
+						angleRangeHorizontal=100;
 						angleRangeVertical=90;
 						aimdown=-0.25;
 					};
@@ -3943,7 +3993,7 @@ class CfgVehicles
 						};
 						maxTrackableSpeed=300;
 						animDirection="mainGun";
-						angleRangeHorizontal=180;
+						angleRangeHorizontal=360;
 						angleRangeVertical=90;
 						aimdown=-0.25;
 					};
@@ -3964,7 +4014,7 @@ class CfgVehicles
 							viewDistanceLimitCoef=-1;
 						};
 						maxTrackableSpeed=300;
-						angleRangeHorizontal=120;
+						angleRangeHorizontal=180;
 						angleRangeVertical=90;
 						groundNoiseDistanceCoef=-1;
 						maxGroundNoiseDistance=-1;
@@ -4064,91 +4114,35 @@ class CfgVehicles
 					};
 				};
 			};
-				
-			class Presets 
-			{
-					class Empty
-					{
-						displayName="$STR_empty";
-						attachment[]={};
-					};
-					class Default
-					{
-						displayName="$STR_vehicle_default";
-						attachment[]=
-						{
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"BDA_PylonMissile_AA_Pelican_x4",
-							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-							"BDA_PylonMissile_AA_Pelican_x4",
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AA_Pelican_x2"
-						};
-					};
-					class AA
-					{
-						displayName="AA";
-						attachment[]=
-						{
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"BDA_PylonMissile_AA_Pelican_x4",
-							"BDA_PylonMissile_AA_Pelican_x4",
-							"BDA_PylonMissile_AA_Pelican_x4",
-							"BDA_PylonMissile_AA_Pelican_x4",
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AA_Pelican_x2"
-						};
-					};
-					class AT
-					{
-						displayName="AT";
-						attachment[]=
-						{
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-							"Splits_PylonMissile_AA_Pelican_x2",
-							"Splits_PylonMissile_AA_Pelican_x2"
-						};
-					};
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\BDA_Vehicles\data\BDA_G_body_co.paa",
+			"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
+			"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+		};
+		class textureSources {
+			class BDA_Green {
+				displayName="UNSC Green";
+				author="Splitjaw/Rib";
+				textures[]={
+					"\BDA_Vehicles\data\BDA_G_body_co.paa",
+					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
 				};
+				factions[]={"B_UNSCODST"};
 			};
-		};
-
-	hiddenSelectionsTextures[]=
-	{
-		"\BDA_Vehicles\data\BDA_G_body_co.paa",
-		"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-		"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
-	};
-	class textureSources {
-		class BDA_Green {
-			displayName="UNSC Green";
-			author="Splitjaw/Rib";
-			textures[]={
-				"\BDA_Vehicles\data\BDA_G_body_co.paa",
-				"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-				"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+			class BDA_Black {
+				displayName="UNSC Black";
+				author="Splitjaw/Rib";
+				textures[]={
+					"\BDA_Vehicles\data\BDA_B_body_co.paa",
+					"\BDA_Vehicles\data\BDA_B_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
+				};
+				factions[]={"B_UNSCODST"};
 			};
-			factions[]={"B_UNSCODST"};
-		};
-		class BDA_Black {
-			displayName="UNSC Black";
-			author="Splitjaw/Rib";
-			textures[]={
-				"\BDA_Vehicles\data\BDA_B_body_co.paa",
-				"\BDA_Vehicles\data\BDA_B_wings_and_gear_co.paa",
-				"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
-			};
-			factions[]={"B_UNSCODST"};
-		};
-		class UNSC_HW2_Winter {
+			class UNSC_HW2_Winter {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
 				textures[]=
@@ -4160,21 +4154,21 @@ class CfgVehicles
 				factions[]={"B_UNSCODST"};
 			};
 		};
-	class TransportItems {
-		class _xx_FirstAidKit {name="FirstAidKit"; count=15;};
-		class _xx_Medikit {name="Medikit"; count=5;};
-		class _xx_ACE_CableTie {name="ACE_CableTie"; count=30;};
-		class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
-		class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
-		class _xx_Toolkit {name="ToolKit"; count=2;};
-		class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=10;};
-		class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-		class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=2;};
-		class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
-		//class _xx_ACE_
+		class TransportItems {
+			class _xx_FirstAidKit {name="FirstAidKit"; count=15;};
+			class _xx_Medikit {name="Medikit"; count=5;};
+			class _xx_ACE_CableTie {name="ACE_CableTie"; count=30;};
+			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
+			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
+			class _xx_Toolkit {name="ToolKit"; count=2;};
+			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=10;};
+			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
+			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=2;};
+			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
+			//class _xx_ACE_
 		};
 
 
 		//end of pelican
+	}; //end of CfgVehicles
 };
-	//end of CfgVehicles

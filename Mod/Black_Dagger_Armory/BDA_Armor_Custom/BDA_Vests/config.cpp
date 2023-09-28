@@ -11,6 +11,7 @@ class CfgPatches
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
 			"OPTRE_UNSC_Units_Army",
+			"BDA_Core",
 			"BDA_Vests"
 		};
 		units[]={};
@@ -23,26 +24,30 @@ class CfgPatches
 };
 class cfgWeapons
 {
-	class ItemInfo;
-	class UniformItem;
-	class VestItem;
-	class HeadgearItem;
-	class Uniform_Base;
-	class HitpointsProtectionInfo;
-	class OPTRE_UNSC_M52D_Armor;
-	class OPTRE_UNSC_M52D_Armor_Demolitions;
-	class OPTRE_UNSC_M52D_Armor_Sniper;
-	class OPTRE_UNSC_M52D_Armor_Medic;
-	class OPTRE_UNSC_M52D_Armor_Marksman;
-	class OPTRE_UNSC_M52D_Armor_Rifleman;
-	class OPTRE_UNSC_M52D_Armor_Scout;
-	class OPTRE_UNSC_M52D_Armor_Light;
-	class BDA_Armor_RF_ONI;
-
+	/*arma*/ class ItemInfo;
+	/*arma*/ class UniformItem;
+	/*arma*/ class VestItem;
+	/*arma*/ class HeadgearItem;
+	/*arma*/ class Uniform_Base;
+	/*arma*/ class HitpointsProtectionInfo;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Demolitions;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Sniper;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Medic;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Marksman;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Rifleman;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Scout;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Light;
+	/*intern*/ class BDA_Armor_RF_ONI;
+	/*intern*/ class BDA_Armor_SN;
+	/*intern*/ class BDA_Armor_DM;
+	/*intern*/ class BDA_Armor_MD;
+	/*intern*/ class BDA_Armor_RF;
+	/*intern*/ class BDA_Armor_AR_S1;
+	/*extern*/ class OPTRE_UNSC_M52A_Armor_Base;
 
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor
 	{
-		author="Schlopp";
 		displayName="M52D Body Armor (E. Mustang)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		hiddenSelections[]=
@@ -151,7 +156,6 @@ class cfgWeapons
 	};
 	class BDA_Armor_Flowers: OPTRE_UNSC_M52D_Armor
 	{
-		author="Schlopp";
 		displayName="M52D Body Armor (J. Flowers)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		hiddenSelections[]=
@@ -254,9 +258,8 @@ class cfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_M52A_Armor_Base;
 
-	//this shit is fucking stupid
+
 	class BDA_Armor_Ribbington_v2: OPTRE_UNSC_M52D_Armor
 	{
 		author = "Rib";
@@ -390,9 +393,8 @@ class cfgWeapons
 		};
 	};
 
-	
 	class BDA_Armor_ONI_Bouquet: OPTRE_UNSC_M52D_Armor {
-		displayName="M52D Body Armor (A. Bouquet)";
+		displayName="M52D Body Armor (A. Zarush)";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
@@ -521,5 +523,5 @@ class cfgWeapons
 class cfgMods
 {
 	author="Rib";
-	timepacked="1709231937";
+	timepacked="2409231239";
 };

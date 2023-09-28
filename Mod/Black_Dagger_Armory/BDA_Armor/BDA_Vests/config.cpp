@@ -10,7 +10,8 @@ class CfgPatches
 			"A3_Characters_F",
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
-			"OPTRE_UNSC_Units_Army"
+			"OPTRE_UNSC_Units_Army",
+			"BDA_Core"
 		};
 		units[]={};
 		weapons[]={};
@@ -21,21 +22,22 @@ class CfgPatches
 };
 class cfgWeapons
 {
-	class ItemInfo;
-	class UniformItem;
-	class VestItem;
-	class HeadgearItem;
-	class Uniform_Base;
-	class HitpointsProtectionInfo;
-	class OPTRE_UNSC_M52D_Armor;
-	class OPTRE_UNSC_M52D_Armor_Demolitions;
-	class OPTRE_UNSC_M52D_Armor_Sniper;
-	class OPTRE_UNSC_M52D_Armor_Medic;
-	class OPTRE_UNSC_M52D_Armor_Marksman;
-	class OPTRE_UNSC_M52D_Armor_Rifleman;
-	class OPTRE_UNSC_M52D_Armor_Scout;
-	class OPTRE_UNSC_M52D_Armor_Light;
+	/*arma*/ class ItemInfo;
+	/*arma*/ class UniformItem;
+	/*arma*/ class VestItem;
+	/*arma*/ class HeadgearItem;
+	/*arma*/ class Uniform_Base;
+	/*arma*/ class HitpointsProtectionInfo;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Demolitions;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Sniper;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Medic;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Marksman;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Rifleman;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Scout;
+	/*extern*/ class OPTRE_UNSC_M52D_Armor_Light;
 	class V_Rangemaster_belt;
+	
 	class BDA_Armor_RF: OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		author="Schlopp";
@@ -191,7 +193,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
 		};
 	};
-	class BDA_Armor_RF_P1: OPTRE_UNSC_M52D_Armor_Rifleman
+	class BDA_Armor_RF_P1: BDA_Armor_RF
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -220,7 +222,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_Medic_CO.paa"
 		};
 	};
-	class BDA_Armor_DM_P1: OPTRE_UNSC_M52D_Armor_Demolitions
+	class BDA_Armor_DM_P1: BDA_Armor_DM
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -235,7 +237,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 		};
 	};
-	class BDA_Armor_SN_P1: OPTRE_UNSC_M52D_Armor_Sniper
+	class BDA_Armor_SN_P1: BDA_Armor_SN
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -250,7 +252,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 		};
 	};
-	class BDA_Armor_RF_S1: OPTRE_UNSC_M52D_Armor_Rifleman
+	class BDA_Armor_RF_S1: BDA_Armor_RF
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -279,7 +281,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S1_Medic_CO.paa"
 		};
 	};
-	class BDA_Armor_DM_S1: OPTRE_UNSC_M52D_Armor_Demolitions
+	class BDA_Armor_DM_S1: BDA_Armor_DM
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -294,7 +296,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S1_CO.paa"
 		};
 	};
-	class BDA_Armor_SN_S1: OPTRE_UNSC_M52D_Armor_Sniper
+	class BDA_Armor_SN_S1: BDA_Armor_SN
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -309,7 +311,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S1_CO.paa"
 		};
 	};
-	class BDA_Armor_RF_S2: OPTRE_UNSC_M52D_Armor_Rifleman
+	class BDA_Armor_RF_S2: BDA_Armor_RF
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -338,7 +340,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_Medic_CO.paa"
 		};
 	};
-	class BDA_Armor_DM_S2: OPTRE_UNSC_M52D_Armor_Demolitions
+	class BDA_Armor_DM_S2: BDA_Armor_DM
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -353,7 +355,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_CO.paa"
 		};
 	};
-	class BDA_Armor_SN_S2: OPTRE_UNSC_M52D_Armor_Sniper
+	class BDA_Armor_SN_S2: BDA_Armor_SN
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -368,7 +370,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S2_CO.paa"
 		};
 	};
-	class BDA_Armor_RF_S3: OPTRE_UNSC_M52D_Armor_Rifleman
+	class BDA_Armor_RF_S3: BDA_Armor_RF
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -397,7 +399,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S3_Medic_CO.paa"
 		};
 	};
-	class BDA_Armor_DM_S3: OPTRE_UNSC_M52D_Armor_Demolitions
+	class BDA_Armor_DM_S3: BDA_Armor_DM
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -412,7 +414,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S3_CO.paa"
 		};
 	};
-	class BDA_Armor_SN_S3: OPTRE_UNSC_M52D_Armor_Sniper
+	class BDA_Armor_SN_S3: BDA_Armor_SN
 	{
 		dlc="BDA";
 		author="Schlopp";
@@ -734,6 +736,6 @@ class cfgWeapons
 };
 class cfgMods
 {
-	author="Schlopp";
-	timepacked="1683669322";
+	author="Rib";
+	timepacked="2409231239";
 };

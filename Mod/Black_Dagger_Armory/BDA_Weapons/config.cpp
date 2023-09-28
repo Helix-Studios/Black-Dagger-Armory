@@ -3,8 +3,8 @@ class CfgPatches
     class BDA_Weapons 
     {
         author = "Rib";
-		name = "Ribs/Splits Weapons";
-		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle"};
+		name = "Ribs Weapons";
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo"};
 		requiredVersion = 0.100000;
 		units[] = {};
 		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher"};
@@ -36,8 +36,8 @@ class CfgAmmo {
 	/*extern*/ class ShellBase;
 	/*extern*/ class Missile_AA_04_F;
 	/*extern*/ class M_AT;
-	/*extern*/ class Splits_M_ATA_Anazonda_AA;
 	/*extern*/ class Missile_AGM_02_F;
+	/*extern*/ class Splits_M_ATA_Anaconda_AA;
 
 	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
 		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
@@ -72,7 +72,7 @@ class CfgMagazines {
 		displayNameShort = "4Rnd Guided AAM";
 		model = "Splits\Splits_Weaponry\Aircraft\pylonpod_Pelican_Top_AA_01";
 		count = 4;
-		ammo = "Splits_M_ATA_Anazonda_AA";
+		ammo = "Splits_M_ATA_Anaconda_AA";
 		initSpeed = 350;
 		maxLeadSpeed = 320;
 		sound[] = {"A3\Sounds_F\weapons\Rockets\titan_2", 1.258930, 1, 1000};
@@ -113,7 +113,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "ANVIL III LGIR Missile Pods";
-		descriptionShort = "LGIR Missiles"
+		descriptionShort = "LGIR Missiles";
         magazines[] = 
         {
             "BDA_missiles_LGIR_Anvil3_x60"
@@ -141,9 +141,4 @@ class CfgWeapons
 		reloadTime = 0.200000;
 		magazineReloadTime = 0.200000;
 	};
-};
-
-class cfgMods {
-	author="Rib";
-	timepacked="1109231745";
 };
