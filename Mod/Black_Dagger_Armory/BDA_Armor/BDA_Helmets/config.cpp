@@ -492,6 +492,7 @@ class cfgWeapons
 			};	
 		};
 	};
+
 	class BDA_PatrolCap_Navy: H_MilCap_Blue
 	{
 		author="Schlopp";
@@ -501,6 +502,29 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_patrolcap_Navy_co.paa",
 		};
 	};
+
+	class BDA_FlightDeck_Navy_G: OPTRE_Helmet_NavyDeckCrew {
+		author="Rib";
+		displayName="Flight Deck Helmet [Maintenance]";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Deckcrew_G_co.paa"
+		};
+	};
+	class BDA_FlightDeck_Navy_P: OPTRE_Helmet_NavyDeckCrew {
+		author="Rib";
+		displayName="Flight Deck Helmet [Fuel]";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Deckcrew_P_co.paa"
+		};
+	};
+	class BDA_FlightDeck_Navy_R: OPTRE_Helmet_NavyDeckCrew {
+		author="Rib";
+		displayName="Flight Deck Helmet [Ordnance]";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Deckcrew_R_co.paa"
+		};
+	};
+
 };
 //end
 

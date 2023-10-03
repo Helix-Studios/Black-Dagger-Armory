@@ -11,6 +11,7 @@ class CfgPatches
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
 			"OPTRE_UNSC_Units_Army",
+			"BDA_Core"
 		};
 		units[]={};
 		weapons[]={};
@@ -108,6 +109,58 @@ class cfgWeapons
 		};
 	};
 
+	class BDA_Navy_Uniform_G: U_C_Scientist {
+		author="Rib";
+		scope=2;
+		displayName="Naval BDU (Maintenance)";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
+		};
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_G_F";
+			containerClass="Supply100";
+			mass=10;
+		};
+	};
+	class BDA_Navy_Uniform_R: U_C_Scientist {
+		author="Rib";
+		scope=2;
+		displayName="Naval BDU (Ordnance)";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
+		};
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_R_F";
+			containerClass="Supply100";
+			mass=10;
+		};
+	};
+	class BDA_Navy_Uniform_P: U_C_Scientist {
+		author="Rib";
+		scope=2;
+		displayName="Naval BDU (Fuel)";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
+		};
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_P_F";
+			containerClass="Supply100";
+			mass=10;
+		};
+	};
+
 
 };
 
@@ -191,6 +244,37 @@ class CfgVehicles
 		class EventHandlers
 		{
 		};
+	};
+
+	class BDA_Navy_Uniform_G_F: C_scientist_F {
+		author="Rib";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
+		uniformClass="BDA_Navy_Uniform_G";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
+		};
+		class EventHandlers {};
+	};
+	class BDA_Navy_Uniform_R_F: C_scientist_F {
+		author="Rib";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
+		uniformClass="BDA_Navy_Uniform_R";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
+		};
+		class EventHandlers {};
+	};
+	class BDA_Navy_Uniform_P_F: C_scientist_F {
+		author="Rib";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
+		uniformClass="BDA_Navy_Uniform_P";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
+		};
+		class EventHandlers {};
 	};
 
 	class BDA_Navy_Uniform_ONI_F: B_Helipilot_F
