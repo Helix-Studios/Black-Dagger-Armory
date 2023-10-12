@@ -4,7 +4,7 @@ class CfgPatches {
 		{
 			"BDA_UNSC_D77_TC_Pelican",
 			"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
-			"BDA_Test_Pelican"
+			"BDA_UNSC_Hornet"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -17,8 +17,10 @@ class CfgPatches {
 			"BDA_Core",
 			"Splits_Functions",
 			"Splits_Vehicles_Air_Pelican",
-			"BDA_Weapons",
-
+			"OPTRE_Vehicles",
+			"OPTRE_Vehicles_Hornet",
+			"OPTRE_Vehicles_Sparrowhawk",
+			"BDA_Weapons"
 		};
 	};
 };
@@ -27,6 +29,7 @@ class CfgFactionClasses {
 	class B_UNSCODST;
 };
 
+class components;
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
@@ -99,7 +102,9 @@ class CfgVehicles {
 			class Right;
 		};
 	};
-	class Splits_Pelican_base;
+	/*extern*/ class Splits_Pelican_base;
+	/*extern*/ class OPTRE_UNSC_hornet;
+	/*extern*/ class OPTRE_AV22_Sparrowhawk;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
 		scope = 2;
@@ -169,6 +174,11 @@ class CfgVehicles {
 			"CMFlareLauncher",
 			"BDA_missiles_Guided_Anvil3"
 		};
+
+		// radar stuff
+		radartype=4;
+		lockdetectionsystem="2 + 4 + 8";
+		incomingMissileDetectionSystem="8 + 16";
 
 		//hud colour change
 		class MFD {
@@ -3854,7 +3864,7 @@ class CfgVehicles {
 				};
 			};
 		};
-		class Components {
+		class Components: Components {
 			class SensorsManagerComponent
 			{
 				class Components
@@ -3864,14 +3874,14 @@ class CfgVehicles {
 						class AirTarget
 						{
 							minRange=100;
-							maxRange=4000;
+							maxRange=6000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=100;
-							maxRange=4000;
+							maxRange=6000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
@@ -3974,7 +3984,7 @@ class CfgVehicles {
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[]={5000,4000,16000,8000};
+						range[]={6000,4000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -4015,15 +4025,14 @@ class CfgVehicles {
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[]={5000,4000,16000,8000};
+						range[]={6000,4000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
 			};
 			class TransportPylonsComponent {
 					uiPicture="\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
-					class Pylons
-					{
+					class Pylons {
 						class PylonRight1
 						{
 							attachment="Splits_PylonMissile_AA_Pelican_x2";
@@ -4167,31 +4176,34 @@ class CfgVehicles {
 
 	};
 	
-	class BDA_TEST_Pelican: Splits_Pelican_base {
-		displayName = "D77 Pelican [TEST]";
-		scope=2;
-		side=1;
+	class BDA_UNSC_Hornet: OPTRE_UNSC_Hornet {
+		dlc = "BDA";
+		author = "Rib";
 		faction = "B_UNSCODST";
-		hiddenSelectionsTextures[]={
-			"\BDA_Vehicles\data\BDA_G_body_co.paa",
-			"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-			"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
-		};
-		//Structural
-		armor = 400;
-		maxSpeed = 800;
-		//Weapons
-		magazines[] = {
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"BDA_missiles_LGIR_Anvil3_x60",
-			"BDA_missiles_LGIR_Anvil3_x60"
-		};
 		weapons[] = {
+			"OPTRE_GUA23A",
 			"CMFlareLauncher",
-			"BDA_missiles_Guided_Anvil3"
+			"Laserdesignator_pilotCamera",
+			"OPTRE_missiles_C2GMLS",
+			"OPTRE_missiles_Anvil3"
 		};
-		//above tested & works fine.
-
+		magazines[] = {
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries",
+			"OPTRE_8Rnd_C2GMLS_missiles",
+			"OPTRE_8Rnd_C2GMLS_missiles",
+			"OPTRE_16Rnd_Anvil3_missiles",
+			"OPTRE_16Rnd_Anvil3_missiles"
+		};
+		armor = 200;
 	};
+
+	class BDA_UNSC_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk {
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
+	};
+
 }; //cfgend

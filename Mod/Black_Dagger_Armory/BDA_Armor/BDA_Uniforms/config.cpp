@@ -73,7 +73,7 @@ class cfgWeapons
 		};
 	};
 
-//------------------------------------------------------------------// Naval Uniform - Black.
+//------------------------------------------------------------------// Naval Uniforms
 
 
 	class BDA_Navy_Uniform_ONI: U_B_HeliPilotCoveralls
@@ -105,6 +105,24 @@ class cfgWeapons
 			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_B_F";
 			containerClass="Supply20";
+			mass=10;
+		};
+	};
+
+	class BDA_Navy_Uniform_Avi: U_C_Scientist {
+		author="Rib";
+		scope=2;
+		displayName="Naval BDU (Raider Squadron)";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi_CO.paa"
+		};
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_Avi_F";
+			containerClass="Supply100";
 			mass=10;
 		};
 	};
@@ -229,7 +247,7 @@ class CfgVehicles
 		};
 	};
 
-	//------------------------------------------------------------------// Naval Uniform - Black.
+	//------------------------------------------------------------------// Naval Uniform
 
 	class BDA_Navy_Uniform_B_F: C_scientist_F
 	{
@@ -241,9 +259,7 @@ class CfgVehicles
 		{
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
 		};
-		class EventHandlers
-		{
-		};
+		class EventHandlers {};
 	};
 
 	class BDA_Navy_Uniform_G_F: C_scientist_F {
@@ -273,6 +289,17 @@ class CfgVehicles
 		uniformClass="BDA_Navy_Uniform_P";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
+		};
+		class EventHandlers {};
+	};
+
+	class BDA_Navy_Uniform_Avi_F: C_scientist_F {
+		author="Rib";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
+		uniformClass="BDA_Navy_Uniform_Avi";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi_CO.paa"
 		};
 		class EventHandlers {};
 	};
