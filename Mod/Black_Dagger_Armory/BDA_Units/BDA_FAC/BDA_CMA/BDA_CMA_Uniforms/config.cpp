@@ -38,7 +38,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Uniform_Tropic.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Uniform_Tropic.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -60,7 +60,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Uniform_Tropic.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Uniform_Tropic.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -83,8 +83,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Tropic_Top.paa",
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Uniform_Tropic.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Tropic_Top.paa",
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_Uniform_Tropic.paa"
 		};
 		class ItemInfo: UniformItem
 		{
@@ -107,7 +107,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_Uniform_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_Uniform_Tropic_CO.paa"
 		};
 	};
 
@@ -183,7 +183,7 @@ class cfgWeapons
 		displayName="MC32L Body Armor (Tropic)";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_MC32_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_MC32_Tropic_CO.paa"
 		};
 	};
 	class BDA_CMA_MC32H_Tropic: V_CarrierRigKBT_01_heavy_base_F
@@ -194,7 +194,7 @@ class cfgWeapons
 		displayName="MC32H Body Armor (Tropic)";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_MC32_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_MC32_Tropic_CO.paa"
 		};
 	};
 	class BDA_VD_MC32L_Tropic: V_CarrierRigKBT_01_light_base_F
@@ -206,7 +206,7 @@ class cfgWeapons
 		displayName="Viridian MC32L Body Armor";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_MC32_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_MC32_Tropic_CO.paa"
 		};
 	};
 	class BDA_VD_MC32H_Tropic: V_CarrierRigKBT_01_heavy_base_F
@@ -217,7 +217,7 @@ class cfgWeapons
 		displayName="Viridian MC32H Body Armor";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_MC32_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_MC32_Tropic_CO.paa"
 		};
 	};
 	class BDA_CMA_CH230_Tropic: H_HelmetB
@@ -233,7 +233,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_CH230_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_CMA_CH230_Tropic_CO.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -267,7 +267,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_CH230_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_CH230_Tropic_CO.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -301,7 +301,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_Uniform_Tropic_CO.paa"
+			"\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\BDA_VD_Uniform_Tropic_CO.paa"
 		};
 		DLC="Enoch";
 		class ItemInfo: UniformItem
