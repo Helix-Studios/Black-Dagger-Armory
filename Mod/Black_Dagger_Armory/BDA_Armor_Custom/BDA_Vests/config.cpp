@@ -278,7 +278,7 @@ class cfgWeapons
 			"A_KneesMarLeft",
 			"A_KneesMarRight",
 //			"A_ODST",
-//			"A_TacPad",
+			"A_TacPad",
 			"A_ShinArmorLeft",
 			"A_ShinArmorRight",
 //			"AS_BaseLeft",
@@ -342,7 +342,7 @@ class cfgWeapons
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 	//			"A_ODST",
-	//			"A_TacPad",
+				"A_TacPad",
 				"A_ShinArmorLeft",
 				"A_ShinArmorRight",
 	//			"AS_BaseLeft",
@@ -516,6 +516,16 @@ class cfgWeapons
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 			};
+		};
+	};
+
+	class BDA_Armor_Soviet: BDA_Armor_AR_S1 {
+		scope=1;
+		scopeCurator=1;
+		displayName="M52D Body Armor (U. Soviet)";
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: ItemInfo {
+			hiddenSelectionsTextures[]={};
 		};
 	};
 
