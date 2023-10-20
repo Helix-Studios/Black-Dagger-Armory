@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class BDA_EX_Egret
+	class BDA_Ext_Egret
 	{
 		author="Schlopp";
 		version="0.02";
@@ -37,14 +37,14 @@ class cfgVehicles
 		editorSubcategory="BDA_EdSubCat_AerospaceShip";
 		armor=500000;
 		displayname="Egret Spaceliner";
-		model="BDA_EX\BDA_Egret\BDA_Egret_Spaceliner";
+		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";
 		hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_EX\BDA_Egret\data\BDA_Civilian_Transport_CO.paa"
+			"BDA_Ext\BDA_Egret\data\BDA_Civilian_Transport_CO.paa"
 		};
 	};
 	class BDA_Egret_Spaceliner_F: OPTRE_Pelican_unarmed
@@ -56,14 +56,14 @@ class cfgVehicles
 		faction="B_UNSCODST";
 		editorSubcategory="BDA_EdSubCat_AerospaceShip";
 		displayname="Egret Spaceliner";
-		model="BDA_EX\BDA_Egret\BDA_Egret_Spaceliner";
+		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";
 		hiddenSelections[]=
 		{
 			"camo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_EX\BDA_Egret\data\BDA_Civilian_Transport_CO.paa"
+			"BDA_Ext\BDA_Egret\data\BDA_Civilian_Transport_CO.paa"
 		};
 		soundSetSonicBoom[]=
 		{
@@ -71,7 +71,7 @@ class cfgVehicles
 		};
 		soundLocked[]=
 		{
-			"BDA_EX\BDA_Egret\sfx\targeted_alarm.ogg",
+			"BDA_Ext\BDA_Egret\sfx\targeted_alarm.ogg",
 			1,
 			1
 		};
@@ -83,34 +83,34 @@ class cfgVehicles
 		};
 		soundEngineOnExt[]=
 		{
-			"BDA_EX\BDA_Egret\sfx\engineStartup_exterior.ogg",
+			"BDA_Ext\BDA_Egret\sfx\engineStartup_exterior.ogg",
 			1.4125376,
 			1,
 			600
 		};
 		soundEngineOnInt[]=
 		{
-			"BDA_EX\BDA_Egret\sfx\engineStartup_interior.ogg",
+			"BDA_Ext\BDA_Egret\sfx\engineStartup_interior.ogg",
 			1.4125376,
 			1,
 			600
 		};
 		soundEngineOffExt[]=
 		{
-			"BDA_EX\BDA_Egret\sfx\engineShutdown_exterior.ogg",
+			"BDA_Ext\BDA_Egret\sfx\engineShutdown_exterior.ogg",
 			0.31622776,
 			1
 		};
 		soundEngineOffInt[]=
 		{
-			"BDA_EX\BDA_Egret\sfx\engineShutdown_interior.ogg",
+			"BDA_Ext\BDA_Egret\sfx\engineShutdown_interior.ogg",
 			0.79432821,
 			1,
 			600
 		};
 		flySound[]=
 		{
-			"BDA_EX\BDA_Egret\sfx\engine_exterior.ogg",
+			"BDA_Ext\BDA_Egret\sfx\engine_exterior.ogg",
 			0,
 			1,
 			1
