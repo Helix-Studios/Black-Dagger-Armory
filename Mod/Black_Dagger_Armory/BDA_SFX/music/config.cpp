@@ -31,7 +31,6 @@ class CfgMusicClasses
 		displayName="Black Dagger (Crimson Storm)";
 	};
 };
-};
 class CfgMusic
 {
 	tracks[]={};
