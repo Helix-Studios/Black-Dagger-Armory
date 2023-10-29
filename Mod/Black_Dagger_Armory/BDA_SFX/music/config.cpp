@@ -26,6 +26,11 @@ class CfgMusicClasses
 	{
 		displayName="Black Dagger (Other)";
 	};
+	class BDA_CMS
+	{
+		displayName="Black Dagger (Crimson Storm)";
+	};
+};
 };
 class CfgMusic
 {
@@ -328,6 +333,19 @@ class CfgMusic
 		theme="Lynyrd Skynyrd";
 		duration="550";
 		musicClass="BDA_OTH";
+	};
+	class BDA_KasamirsPride
+	{
+		name="Kasamir's Pride";
+		sound[]=
+		{
+			"BDA_SFX\music\data\KasamirsPride.ogg",
+			1,
+			1
+		};
+		theme="Kasamir's Pride";
+		duration="247";
+		musicClass="BDA_CMS";
 	};
 };
 class cfgMods
