@@ -97,12 +97,12 @@ class RscDisplayMain: RscStandardDisplay {
 			text="Join BDC Server";
 			tooltip="Click to Join the Black Dagger Company Server";
 			style=2;
-			onbuttonclick="connectToServer ['74.91.126.92', 2302, '21STBD']";
+			onbuttonclick="connectToServer ['74.91.126.92', 2302, '']";
 			colorBackground[]={0,0,0,0.40000001};
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
-			x="safeZoneX + safeZoneW - 0.5";
+			x="safeZoneX + safeZoneW - 0.8";
 			y="safeZoneY + 0.2 * safeZoneH";
 			w="0.25";
 			h="0.05";
@@ -117,7 +117,7 @@ class RscDisplayMain: RscStandardDisplay {
 			borderSize=0.054000001;
 			colorBorder[]={0,0,0,0};
 			x="safeZoneX + 0.2 * safeZoneW";
-			y="safeZoneY + safeZoneH - 0.5";
+			y="safeZoneY + 0.2 * safeZoneH";
 			w="0.25";
 			h="0.05";
 		};
@@ -137,7 +137,7 @@ class RscDisplayMain: RscStandardDisplay {
 		};*/
 
 		class Logo: RscActivePicture {
-			idc=1;
+			idc=0;
 			text = "BDA_Core\BDA_UI\images\BDA_Arizona_Sword.paa";
 		};
 	};
@@ -215,7 +215,7 @@ class RscDisplayLoading {
 				};
 			};
 		};
-		class Loading_East1: LoadingBackground_BDA_1 {
+		class Loading_West4: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_4: RscPicture {
 				idc=1;
@@ -227,7 +227,7 @@ class RscDisplayLoading {
 				};
 			};
 		};
-		class Loading_East2: LoadingBackground_BDA_1 {
+		class Loading_West5: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_1: RscPicture {
 				idc=1;
@@ -236,6 +236,18 @@ class RscDisplayLoading {
 				h="SafeZoneH";
 				w="SafeZoneW";
 				text="BDA_Core\BDA_MM\bda_mm_1.paa";
+				};
+			};
+		};
+		class Loading_West6: LoadingBackground_BDA_1 {
+			class controls {
+				class LoadingPicture_bda_1: RscPicture {
+				idc=1;
+				x="SafeZoneX";
+				y="SafeZoneY";
+				h="SafeZoneH";
+				w="SafeZoneW";
+				text="BDA_Core\BDA_MM\bda_mm_7.paa";
 				};
 			};
 		};

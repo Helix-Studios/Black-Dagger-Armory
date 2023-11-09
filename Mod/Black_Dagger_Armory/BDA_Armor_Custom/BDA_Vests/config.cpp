@@ -393,14 +393,14 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_ONI_Bouquet: OPTRE_UNSC_M52D_Armor {
+	class BDA_Armor_Zarush: OPTRE_UNSC_M52D_Armor {
 		displayName="M52D Body Armor (A. Zarush)";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -514,7 +514,7 @@ class cfgWeapons
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
 			};
 		};
 	};

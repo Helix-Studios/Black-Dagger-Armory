@@ -259,7 +259,6 @@ class CfgVehicles
 		{
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
 		};
-		class EventHandlers {};
 	};
 
 	class BDA_Navy_Uniform_G_F: C_scientist_F {
@@ -270,7 +269,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
 		};
-		class EventHandlers {};
 	};
 	class BDA_Navy_Uniform_R_F: C_scientist_F {
 		author="Rib";
@@ -280,7 +278,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
 		};
-		class EventHandlers {};
 	};
 	class BDA_Navy_Uniform_P_F: C_scientist_F {
 		author="Rib";
@@ -290,7 +287,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
 		};
-		class EventHandlers {};
 	};
 
 	class BDA_Navy_Uniform_Avi_F: C_scientist_F {
@@ -301,7 +297,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi_CO.paa"
 		};
-		class EventHandlers {};
 	};
 
 	class BDA_Navy_Uniform_ONI_F: B_Helipilot_F
