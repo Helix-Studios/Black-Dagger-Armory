@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BDA_Vests
 	{
-		author="Schlopp";
+		author="Black Dagger Armories";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",
@@ -803,7 +803,7 @@ class cfgWeapons
 		displayName = "M52D Body Armor (Recon)";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_Recon_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Recon_CO.paa"
@@ -815,13 +815,13 @@ class cfgWeapons
 			"camo4",
 			"camo5",
 			"A_Ghillie",
-//				"A_KneesLeft",
-//				"A_KneesRight",
-			"A_KneesMarLeft",
+//			"A_KneesLeft",
+//			"A_KneesRight",
+		"A_KneesMarLeft",
 			"A_KneesMarRight",
 //				"A_ODST",
-//				"A_ShinArmorLeft",
-//				"A_ShinArmorRight",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
 //				"A_TacPad",
 //				"A_ThighArmorLeft",
 //				"A_ThighArmorRight",
@@ -865,7 +865,7 @@ class cfgWeapons
 		class ItemInfo: ItemInfo {
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_Recon_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Recon_CO.paa"
@@ -879,13 +879,13 @@ class cfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-//				"A_KneesLeft",
-//				"A_KneesRight",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 //				"A_ODST",
-//				"A_ShinArmorLeft",
-//				"A_ShinArmorRight",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
 //				"A_TacPad",
 //				"A_ThighArmorLeft",
 //				"A_ThighArmorRight",

@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BDA_Vests_C
 	{
-		author="Schlopp";
+		author="Black Dagger Armories";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",

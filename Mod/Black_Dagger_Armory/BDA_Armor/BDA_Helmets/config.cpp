@@ -485,18 +485,10 @@ class cfgWeapons
 		scope = 2;
 		author = "Rib";
 		displayName="CH252D Helmet (Recon)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Recon_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -513,7 +505,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Recon_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};

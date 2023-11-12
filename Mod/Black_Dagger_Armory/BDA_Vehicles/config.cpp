@@ -1,5 +1,6 @@
 class CfgPatches {
 	class BDA_Vehicles {
+		author = "Black Dagger Armories";
 		units[]=
 		{
 			"BDA_UNSC_D77_TC_Pelican",
@@ -160,7 +161,7 @@ class CfgVehicles {
 			};
 		};
 		//Structural
-		armor = 400;
+		armor = 450;
 		maxSpeed = 800;
 
 		//Weapons
@@ -4180,24 +4181,288 @@ class CfgVehicles {
 		dlc = "BDA";
 		author = "Rib";
 		faction = "B_UNSCODST";
+		displayName = "AV-15 Super Hornet";
 		weapons[] = {
-			"OPTRE_GUA23A",
+			"OPTRE_GUA23AW",
 			"CMFlareLauncher",
 			"Laserdesignator_pilotCamera",
 			"OPTRE_missiles_C2GMLS",
 			"OPTRE_missiles_Anvil3"
 		};
 		magazines[] = {
-			"OPTRE_2000Rnd_20mm_HEIAP",
+			"OPTRE_2000Rnd_30mm_HE",
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"Laserbatteries",
 			"OPTRE_8Rnd_C2GMLS_missiles",
 			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_16Rnd_Anvil3_missiles",
-			"OPTRE_16Rnd_Anvil3_missiles"
+			"OPTRE_32Rnd_Anvil3_missiles",
+			"OPTRE_32Rnd_Anvil3_missiles"
 		};
-		armor = 200;
+		armor = 240;
+
+		hiddenSelectionsTextures[]={
+			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
+		};
+		class textureSources {
+			class standard {
+				displayName="Standard Marine";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class blackout {
+				displayName="Blackout";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class dark {
+				displayName="Urban";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class Desert {
+				displayName="Desert";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class Grey {
+				displayName="Grey";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class Jungle {
+				displayName="Jungle";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class Olive {
+				displayName="Olive";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class Woodland {
+				displayName="Woodland";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+			class Winter {
+				displayName="Winter";
+				author="Black Dagger Armory";
+				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
+				factions[]={"B_UNSCODST"};
+			};
+		};
+		textureList[]= {
+			"standard", 1,
+			"blackout", 1,
+			"dark", 1,
+			"Desert", 1,
+			"Grey", 1,
+			"Jungle", 1,
+			"Olive", 1,
+			"Woodland", 1,
+			"Winter", 1
+		};
+
+		
+		class Components {
+			class TransportPylonsComponent {
+				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
+				class pylons {
+					class pylons1 {
+						maxweight=600;
+						hardpoints[] = {"OPAEX_Hardpoint_AV14"};
+						attachment="OPTRE_8rnd_C2GMLS_missiles";
+						bay=-1;
+						priority=2;
+						UIposition[]={0.100000,0.2};
+						turret[]={};
+					};
+					class pylons2: pylons1 {
+						mirroredMissilePos=1;
+						UIposition[]={0.22,0.2};
+					};
+					class pylons3: pylons1 {
+						mirroredMissilePos=1;
+						UIposition[]={0.42,0.2};
+					};
+					class pylons4: pylons1 {
+						mirroredMissilePos=1;
+						UIposition[]={0.54,0.2};
+					};
+				};
+				class Presets {
+					class Empty {
+						displayName="Empty";
+						attachment[]={};
+					};
+					class Default {
+						displayName="Combat Air Patrol";
+						attachment[]={
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_8rnd_C2GMLS_missiles",
+							"OPTRE_8rnd_C2GMLS_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
+						};
+					};
+					class CAS_AT {
+						displayName="Vehicle Hunter";
+						attachment[]={
+							"OPTRE_2Rnd_Jackknife_missile",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_2Rnd_Jackknife_missile"
+						};
+					};
+					class CAS_Rockets {
+						displayName="CAS Strafe";
+						attachment[]={
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles"
+						};
+					};
+				};
+			};
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2500;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=100;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=5000;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=4000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableSpeed=100;
+						angleRangeHorizontal=180;
+						angleRangeVertical=90;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						aimDown=30;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={5000,3000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={5000,3000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
 	};
 
 	class BDA_UNSC_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk {

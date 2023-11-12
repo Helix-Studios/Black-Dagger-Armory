@@ -190,7 +190,7 @@ class cfgWeapons
 	{
 		author="Schlopp";
 		scope=2;
-		picture="BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_heavy_Olive_F_ca.paa";
+		picture="BDA_Units\BDA_FAC\BDA_CMA\BDA_CMA_Uniforms\data\UI\icon_V_CarrierRigKBT_01_heavy_Olive_F_ca.paa";
 		displayName="MC32H Body Armor (Tropic)";
 		hiddenSelectionsTextures[]=
 		{

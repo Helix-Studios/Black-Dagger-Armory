@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BDA_Accessories
 	{
-		author="Schlopp";
+		author="Black Dagger Armories";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",
@@ -10,7 +10,8 @@ class CfgPatches
 			"A3_Characters_F",
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
-			"OPTRE_UNSC_Units_Army"
+			"OPTRE_UNSC_Units_Army",
+			"DMNS_Supplies_F_Bags"
 		};
 		units[]={};
 		weapons[]={};
@@ -27,6 +28,12 @@ class CfgVehicles
 	class V_Rangemaster_Belt;
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class ItemInfo;
+	class Bag_Base;
+
+	class Weapon_Bag_Base: Bag_Base {
+		/*extern*/ class assembleInfo;
+	};
+
 	class BDA_Rucksack_B: B_Bergen_Base
 	{
 		dlc="BDA";
@@ -115,6 +122,7 @@ class CfgVehicles
 		tf_subtype="digital_lr";
 		tf_range=25000;
 	};
+
 	class BDA_COMM_Uplink_Module: BDA_Rucksack_B
 	{
 		dlc="BDA";
@@ -136,6 +144,7 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
+
 	class BDA_Naval_Belt_R: BDA_Rucksack_B
 	{
 		dlc="BDA";
@@ -159,6 +168,28 @@ class CfgVehicles
 		tf_range=30000;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
+	};
+
+	class BDA_UAV_Backpack: Weapon_Bag_Base {
+		dlc="BDA";
+		scope = 2;
+		scopeCurator = 2;
+		_generalMacro="BDA_UAV_Backpack";
+		author="Rib";
+		displayName="(WIP) UAV MQ94 Drone Bag";
+		maximumLoad=150;
+		mass = 300;
+		faction="B_UNSCODST";
+		picture = "\A3\Supplies_F_Orange\Bags\Data\UI\icon_C_IDAP_UAV_ca";
+		model = "\A3\Drones_F\Weapons_F_Gamma\Ammoboxes\Bags\UAV_backpack_F.p3d";
+		hiddenSelectionTextures[]={
+			"BDA_Armor\BDA_Accessories\data\BDA_UAV_Bacpack_CO.paa"
+		};
+		class assembleInfo: assembleInfo {
+			base = "";
+			displayName = "Assemble MQ-94 Drone";
+			assembleTo = "DMNS_UAV_01_F";
+		};
 	};
 };
 class cfgMods
