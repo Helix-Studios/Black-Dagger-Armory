@@ -69,7 +69,7 @@ class CfgMarkers
     color[]={0,0,0,1};
     size=40;
     shadow = 0;
-    scope = 2;
+    scope = 1;
     markerClass = "BDA_Markers_USNC";
     };
 	class BDA_UNSC_Marine_SA
@@ -79,7 +79,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
 	class BDA_UNSC_Navy_SA
@@ -89,7 +89,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
 	class BDA_ODST_SA
@@ -99,7 +99,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
 	class BDA_Spartan_SA
@@ -109,7 +109,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
 	class BDA_WhiteTeam_SA
@@ -119,47 +119,47 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
 	class BDA_Flood_SA
     {
 	name="Flood";
-	icon="BDA_Core\BDA_UI\flags\Flood_SA.paa";
+	icon="BDA_Core\BDA_UI\flags\BDA_Flood_SA.paa";
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Misc";
     };
     class BDA_Forerunner_SA
     {
 	name="Forerunner";
-	icon="BDA_Core\BDA_UI\flags\Forerunner_SA.paa";
+	icon="BDA_Core\BDA_UI\flags\BDA_Forerunner_SA.paa";
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Misc";
     };
     class BDA_Banished_SA
     {
 	name="Banished";
-	icon="BDA_Core\BDA_UI\flags\Banished_SA.paa";
+	icon="BDA_Core\BDA_UI\flags\BDA_Banished_SA.paa";
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Misc";
     };
 	class BDA_Insurrectionist_SA
     {
 	name="Insurrectionist";
-	icon="BDA_Core\BDA_UI\flags\Insurrectionist_SA.paa";
+	icon="BDA_Core\BDA_UI\flags\BDA_Insurrectionist_SA.paa";
 	color[]={0,0,0,0};
 	size=42;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Misc";
     };
 	class BDA_SoS_SA
@@ -169,7 +169,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Covenant";
     };
     class BDA_CAS_SA
@@ -179,7 +179,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=90;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Covenant";
     };
     class BDA_CCS_SA
@@ -189,7 +189,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=80;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Covenant";
     };
     class BDA_CPV_SA
@@ -199,7 +199,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=80;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Covenant";
     };
     class BDA_SDV_SA
@@ -209,7 +209,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=60;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_Covenant";
     };
     class BDA_D20_SA
@@ -219,7 +219,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=60;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Frigate_SA
@@ -229,7 +229,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=70;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Drake_SA
@@ -239,7 +239,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=55;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Halberd_SA
@@ -249,7 +249,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=80;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Phoenix_SA
@@ -259,7 +259,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=70;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Pillar_SA
@@ -269,7 +269,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=85;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Longsword_SA
@@ -279,7 +279,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=40;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
     class BDA_Pelican_SA
@@ -289,7 +289,7 @@ class CfgMarkers
 	color[]={0,0,0,1};
 	size=32;
 	shadow = 0;
-	scope = 2;
+	scope = 1;
 	markerClass = "BDA_Markers_USNC";
     };
 	class BDA_UNSC_Halberd
