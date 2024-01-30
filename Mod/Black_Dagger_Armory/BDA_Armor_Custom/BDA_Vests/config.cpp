@@ -510,16 +510,6 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Soviet: BDA_Armor_AR_S1 {
-		scope=1;
-		scopeCurator=1;
-		displayName="M52D Body Armor (U. Soviet)";
-		hiddenSelectionsTextures[]={};
-		class ItemInfo: ItemInfo {
-			hiddenSelectionsTextures[]={};
-		};
-	};
-
 	class BDA_Armor_Boston: BDA_Armor_RF {
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
@@ -770,6 +760,31 @@ class cfgWeapons
 			};
 		};
 	};
+
+	class BDA_Armor_Knight: BDA_Armor_RF {
+		author = "Rib";
+		displayName = "M52D Body Armor (N. Knight)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Knight_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Kevin: BDA_Armor_AR_S1 {
+		author = "Rib";
+		displayName = "M52D Body Armor (F. Kevin)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Kevin_CO.paa"
+		};
+	};
+
 };
 class cfgMods
 {

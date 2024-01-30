@@ -5,7 +5,8 @@ class CfgPatches {
 		{
 			"BDA_UNSC_D77_TC_Pelican",
 			"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
-			"BDA_UNSC_Hornet"
+			"BDA_UNSC_Hornet",
+			"BDA_UNSC_UH145A_Falcon"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -18,7 +19,7 @@ class CfgPatches {
 			"BDA_Core",
 			"Splits_Functions",
 			"Splits_Vehicles_Air_Pelican",
-			"OPTRE_Vehicles",
+			"OPTRE_Vehicles_Air",
 			"OPTRE_Vehicles_Hornet",
 			"OPTRE_Vehicles_Sparrowhawk",
 			"BDA_Weapons"
@@ -106,6 +107,7 @@ class CfgVehicles {
 	/*extern*/ class Splits_Pelican_base;
 	/*extern*/ class OPTRE_UNSC_hornet;
 	/*extern*/ class OPTRE_AV22_Sparrowhawk;
+	/*extern*/ class OPTRE_UNSC_falcon_armed_S;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
 		scope = 2;
@@ -163,6 +165,7 @@ class CfgVehicles {
 		//Structural
 		armor = 450;
 		maxSpeed = 800;
+		fuelConsumptionRate = 0.5;
 
 		//Weapons
 		magazines[] = {
@@ -4040,7 +4043,8 @@ class CfgVehicles {
 							priority=5;
 							hardpoints[]=
 							{
-								"Splits_T_Missiles"
+								"Splits_T_Missiles",
+								"OPAEX_Hardpoint_AV22"
 							};
 							turret[]={};
 							UIposition[]={0.25,0.1};
@@ -4051,7 +4055,8 @@ class CfgVehicles {
 							priority=4;
 							hardpoints[]=
 							{
-								"Splits_T_Missiles"
+								"Splits_T_Missiles",
+								"OPAEX_Hardpoint_AV22"
 							};
 							turret[]={};
 							UIposition[]={0.25,0.2};
@@ -4062,7 +4067,8 @@ class CfgVehicles {
 							priority=3;
 							hardpoints[]=
 							{
-								"Splits_B_Missiles"
+								"Splits_B_Missiles",
+								"OPAEX_Hardpoint_AV22"
 							};
 							turret[]={};
 							UIposition[]={0.60000002,0.1};
@@ -4073,7 +4079,8 @@ class CfgVehicles {
 							priority=2;
 							hardpoints[]=
 							{
-								"Splits_B_Missiles"
+								"Splits_B_Missiles",
+								"OPAEX_Hardpoint_AV22"
 							};
 							turret[]={};
 							UIposition[]={0.60000002,0.2};
@@ -4199,7 +4206,7 @@ class CfgVehicles {
 			"OPTRE_32Rnd_Anvil3_missiles",
 			"OPTRE_32Rnd_Anvil3_missiles"
 		};
-		armor = 240;
+		armor = 220;
 
 		hiddenSelectionsTextures[]={
 			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
@@ -4465,10 +4472,258 @@ class CfgVehicles {
 		};
 	};
 
-	class BDA_UNSC_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk {
-		scope = 1;
-		scopeCurator = 1;
-		scopeArsenal = 1;
+	class BDA_UNSC_UH145A_Falcon: OPTRE_UNSC_falcon_armed_S {
+		dlc = "BDA";
+		author = "Rib";
+		faction = "B_UNSCODST";
+		displayName = "UH-145 Falcon Heavy (Armed)";
+		//structural
+		armor = 200;
+		//tfar
+		tf_isolatedAmount = 0.4;
+		tf_range = 20000;
+		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
+		tf_hasRadio = 1;
+		enableRadio = 1;
+		//radar
+		radartype=4;
+		lockdetectionsystem="2 + 4 + 8";
+		incomingMissileDetectionSystem="8 + 16";
+		//aiTargetting
+		cost = 1500;
+		class TransportBackpacks {
+			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
+		};
+
+		class TransportItems {
+			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
+			class _xx_Medikit {name="Medikit"; count=5;};
+			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
+			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
+			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
+			class _xx_Toolkit {name="ToolKit"; count=1;};
+			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
+			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
+			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
+			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
+			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
+			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
+		};
+		weapons[]=
+		{
+			"OPTRE_M638",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera",
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"OPTRE_2000Rnd_20mm_HE",
+			"Laserbatteries"
+		};
+
+		class Components {
+			class TransportPylonsComponent {
+				UIPicture="\optre_vehicles_air\falcon\FalconPylonPic.paa";
+				class pylons {
+					class WingPylonRight1
+					{
+						maxweight=560;
+						hardpoints[]=
+						{
+							"OPAEX_Hardpoint_UH144"
+						};
+						attachment="OPTRE_16Rnd_Anvil3_missiles";
+						bay=-1;
+						priority=3;
+						UIposition[]={0.34999999,0.1};
+						turret[]={};
+					};
+					class WingPylonRight2: WingPylonRight1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.34999999,0.0200001};
+					};
+					class WingPylonLeft1: WingPylonRight1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.34999999,0.46700001};
+					};
+					class WingPylonLeft2: WingPylonRight1
+					{
+						mirroredMissilePos=1;
+						UIposition[]={0.34999999,0.8000001};
+					};
+				};
+				class Presets
+				{
+					class Default
+					{
+						displayName="Empty";
+						attachment[]={};
+					};
+					class CAS_Rockets
+					{
+						displayName="CAS: ANVIL I";
+						attachment[]=
+						{
+							"OPTRE_16Rnd_Anvil1_missiles",
+							"OPTRE_16Rnd_Anvil1_missiles",
+							"OPTRE_16Rnd_Anvil1_missiles",
+							"OPTRE_16Rnd_Anvil1_missiles"
+						};
+					};
+					class CAS_Rockets_Guided
+					{
+						displayName="CAS: ANVIL III";
+						attachment[]=
+						{
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_16Rnd_Anvil3_missiles"
+						};
+					};
+					class CAS_AT
+					{
+						displayName="AT";
+						attachment[]=
+						{
+							"OPTRE_1Rnd_Jackknife_missile",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_1Rnd_Jackknife_missile"
+						};
+					};
+				};
+			};
+			class SensorsManagerComponent {
+				class Components {
+					class IRSensorComponent: SensorTemplateIR {
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class VisualSensorComponent: SensorTemplateVisual {
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
+						class AirTarget
+						{
+							minRange=2000;
+							maxRange=3000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=2000;
+							maxRange=3000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableSpeed=300;
+						angleRangeHorizontal=120;
+						angleRangeVertical=90;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						aimDown=30;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={4000,2000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
+		//endofcomps
 	};
 
 }; //cfgend
