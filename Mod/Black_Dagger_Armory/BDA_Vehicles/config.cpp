@@ -165,7 +165,7 @@ class CfgVehicles {
 		//Structural
 		armor = 450;
 		maxSpeed = 800;
-		fuelConsumptionRate = 0.5;
+		fuelConsumptionRate = 0.25;
 
 		//Weapons
 		magazines[] = {
@@ -4472,29 +4472,16 @@ class CfgVehicles {
 		};
 	};
 
-	class BDA_UNSC_UH145A_Falcon: OPTRE_UNSC_falcon_armed_S {
+	class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_armed_S {
 		dlc = "BDA";
 		author = "Rib";
 		faction = "B_UNSCODST";
 		displayName = "UH-145 Falcon Heavy (Armed)";
-		//structural
 		armor = 200;
-		//tfar
-		tf_isolatedAmount = 0.4;
-		tf_range = 20000;
-		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
-		tf_hasRadio = 1;
-		enableRadio = 1;
-		//radar
-		radartype=4;
-		lockdetectionsystem="2 + 4 + 8";
-		incomingMissileDetectionSystem="8 + 16";
-		//aiTargetting
 		cost = 1500;
 		class TransportBackpacks {
 			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
 		};
-
 		class TransportItems {
 			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
 			class _xx_Medikit {name="Medikit"; count=5;};
@@ -4509,6 +4496,51 @@ class CfgVehicles {
 			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
 			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
 		};
+		weapons[]=
+		{
+			"OPTRE_M638",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera",
+		};
+		magazines[]=
+		{
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"OPTRE_2000Rnd_20mm_HE",
+			"Laserbatteries"
+		};
+	};
+
+	class BDA_UNSC_UH145A_Falcon: OPTRE_UNSC_falcon_armed_S { //hidden until fix
+	
+		scope=1;
+		scopeCurator=1;
+		dlc = "BDA";
+		author = "Rib";
+		faction = "B_UNSCODST";
+		displayName = "UH-145 Falcon Heavy (Hidden)";
+		//structural
+		armor = 200;
+		//aiTargetting
+		cost = 1500;
+		class TransportBackpacks {
+			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
+		};
+		class TransportItems {
+			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
+			class _xx_Medikit {name="Medikit"; count=5;};
+			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
+			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
+			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
+			class _xx_Toolkit {name="ToolKit"; count=1;};
+			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
+			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
+			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
+			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
+			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
+			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
+		};
+
 		weapons[]=
 		{
 			"OPTRE_M638",
