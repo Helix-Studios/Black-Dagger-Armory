@@ -63,6 +63,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = 1.62;
         requiredAddons[] = {
+            "I_ADS_DES",
             "I_ADS",
             "A3_Characters_F",
             "19thArmor",
@@ -72,7 +73,6 @@ class CfgPatches {
             "OPTRE_ACE_Compat_Medical",
             "kka3_gestures_ace",
             "A3_Sounds_F",
-            "msd_overshoulder",
             "A3_Sounds_F_Exp",
             "tfar_core",
             "ace_gforces",
@@ -81,9 +81,6 @@ class CfgPatches {
             "A3_Data_F",
             "A3_Data_F_Curator",
             "A3_Air_F_Heli",
-            "ibr_panthera_c",
-            "pulau",
-            "map_north_takistan",
             "ace_thermals",
             "zen_attributes",
             "ace_refuel",
@@ -110,9 +107,7 @@ class CfgPatches {
             "A3_Soft_F_Gamma_Hatchback_01",
             "A3_Soft_F_Exp_Offroad_02",
             "A3_Data_F_ParticleEffects",
-            "Napf",
             "babe_int_EHs",
-            "A3_Map_Winthera3",
             "emr_main",
             "ace_interaction",
             "ace_tagging",
@@ -168,6 +163,7 @@ class CfgPatches {
             "Scythe",
             "A3_Static_F_Jets_AAA_System_01",
             "Lance",
+            "I_CMAArmy_WDL",
             "optre_catfish",
             "A3_Boat_F",
             "V_FZ_Air_Vehicles",

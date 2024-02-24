@@ -26,7 +26,7 @@ class CfgGroups {
                 class i_ads_infantry_fireteam_des {
                     name = "Fireteam";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -59,7 +59,7 @@ class CfgGroups {
                 class i_ads_infantry_fireteam_defensive_des {
                     name = "Fireteam (Defensive)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -92,7 +92,7 @@ class CfgGroups {
                 class i_ads_infantry_fireteam_assault_des {
                     name = "Fireteam (Assault)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -125,7 +125,7 @@ class CfgGroups {
                 class i_ads_infantry_fireteam_heavy_des {
                     name = "Fireteam (Heavy)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -182,7 +182,7 @@ class CfgGroups {
                 class i_ads_infantry_scout_des {
                     name = "Scout";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -215,7 +215,7 @@ class CfgGroups {
                 class i_ads_infantry_squad_des {
                     name = "Squad";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -308,7 +308,7 @@ class CfgGroups {
                 class i_ads_infantry_squad_defensive_des {
                     name = "Squad (Defensive)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -401,7 +401,7 @@ class CfgGroups {
                 class i_ads_infantry_squad_assault_des {
                     name = "Squad (Assault)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -494,7 +494,7 @@ class CfgGroups {
                 class i_ads_infantry_squad_heavy_des {
                     name = "Squad (Heavy)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -587,7 +587,7 @@ class CfgGroups {
                 class i_ads_infantry_command_des {
                     name = "Command";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -620,12 +620,12 @@ class CfgGroups {
             };
 
             class SpecOps {
-                name = "Special Forces";
+                name = "SpecOps";
 
                 class i_ads_specops_recon_fireteam_des {
                     name = "Recon Fireteam";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -658,7 +658,7 @@ class CfgGroups {
                 class i_ads_specops_recon_fireteam_heavy_des {
                     name = "Recon Fireteam (Heavy)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -691,7 +691,7 @@ class CfgGroups {
                 class i_ads_specops_recon_squad_des {
                     name = "Recon Squad";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -784,7 +784,7 @@ class CfgGroups {
                 class i_ads_specops_recon_squad_heavy_des {
                     name = "Recon Squad (Heavy)";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -877,7 +877,7 @@ class CfgGroups {
                 class i_ads_specops_sniper_team_des {
                     name = "Sniper Team";
                     side = 2;
-                    faction = "I_ADS_DES";
+                    faction = "i_ads_des";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -898,7 +898,7 @@ class CfgGroups {
             };
 
             class Motorized {
-                name = "Motorized Infantry";
+                name = "Motorized";
 
             };
 
@@ -908,17 +908,17 @@ class CfgGroups {
             };
 
             class Support {
-                name = "Support Infantry";
+                name = "Support";
 
             };
 
             class Mechanized {
-                name = "Mechanized Infantry";
+                name = "Mechanized";
 
             };
 
             class Armored {
-                name = "Armor";
+                name = "Armored";
 
             };
 
@@ -1279,7 +1279,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleman (MA40)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1317,7 +1317,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleman (Commando)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1355,7 +1355,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleman (M7)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1393,7 +1393,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Rifleman (M45)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1431,7 +1431,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AutoRifleman";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1471,7 +1471,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marksman (BR55)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1509,7 +1509,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Marksman (DMR)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1547,7 +1547,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Grenadier (MA40)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1587,7 +1587,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Grenadier (HMG-38)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1627,7 +1627,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Demolitionist";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1667,7 +1667,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Heavy";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1707,7 +1707,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Sniper";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1745,7 +1745,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Medic";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1785,7 +1785,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Team Leader";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1825,7 +1825,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Squad Leader";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1865,7 +1865,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Officer";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_casual"};
 
@@ -1905,7 +1905,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Pilot";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -1943,7 +1943,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Air Crewman";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_pilot"};
 
@@ -1981,7 +1981,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Crewman";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default"};
 
@@ -2019,7 +2019,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Rifleman";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2057,7 +2057,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Marksman";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2095,7 +2095,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon AutoRifleman";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2135,7 +2135,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Grenadier";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2175,7 +2175,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Heavy";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2215,7 +2215,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Medic";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2255,7 +2255,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Sniper";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2293,7 +2293,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Team Leader";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2333,7 +2333,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Recon Squad Leader";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
 
         identityTypes[] = {"Head_Russian","LanguageGRE_F","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","G_UNSC_visor"};
 
@@ -2373,7 +2373,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M412 Bison IFV DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Crewman_DES";
 
         class Turrets : Turrets {
@@ -2403,7 +2403,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M413 Bison MGS DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Crewman_DES";
 
         class Turrets : Turrets {
@@ -2433,7 +2433,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M494 Oryx IFV DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Crewman_DES";
 
         class Turrets : Turrets {
@@ -2463,7 +2463,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M808S Scorpion MBT DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Crewman_DES";
 
         class Turrets : Turrets {
@@ -2493,7 +2493,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12-FAV DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_Commando_DES";
 
         class Turrets : Turrets {
@@ -2525,7 +2525,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12 LRV DES (MG)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_M7_DES";
 
         class Turrets : Turrets {
@@ -2556,7 +2556,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12A1 LRV DES (ATGM)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_MA40_DES";
 
         class Turrets : Turrets {
@@ -2587,7 +2587,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12R LRV DES (AA)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_Commando_DES";
 
         class Turrets : Turrets {
@@ -2618,7 +2618,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M831 Troop Transport DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_M7_DES";
 
         class Turrets : Turrets {
@@ -2654,7 +2654,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_MA40_DES";
 
         class Turrets : Turrets {
@@ -2685,7 +2685,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo DES (Ammo)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_Commando_DES";
 
 
@@ -2710,7 +2710,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo DES (Device)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_M45_DES";
 
 
@@ -2735,7 +2735,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo DES (Fuel)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_M7_DES";
 
 
@@ -2760,7 +2760,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo DES (Covered)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_MA40_DES";
 
         class Turrets : Turrets {
@@ -2791,7 +2791,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Mk6 Mortar";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "B_Soldier_F";
 
         class Turrets : Turrets {
@@ -2820,7 +2820,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M41 LAAG Turret";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 
         class Turrets : Turrets {
@@ -2850,7 +2850,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M79 AA Turret";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 
         class Turrets : Turrets {
@@ -2880,7 +2880,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "FG75 Anti-Tank Gun";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Rifleman_MA40_DES";
 
         class Turrets : Turrets {
@@ -2909,7 +2909,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M71 Scythe (AA)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "B_UAV_AI";
 
         class Turrets : Turrets {
@@ -2939,7 +2939,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M95 Lance";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "B_UAV_AI";
 
         class Turrets : Turrets {
@@ -2969,7 +2969,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "MQ-221 Dragonfly DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "B_UAV_AI";
 
         class Turrets : Turrets {
@@ -2999,7 +2999,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-99 Wombat DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "VES_Rifleman_MA5B_ODST";
 
         class Turrets : Turrets {
@@ -3029,7 +3029,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Demining Drone";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "C_IDAP_UAV_AI_antimine_F";
 
 
@@ -3053,7 +3053,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "D77H-TCI/AV SOCOM Pelican";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Pilot_DES";
 
         class Turrets : Turrets {
@@ -3085,7 +3085,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "UH-144S Falcon DES (Armed)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Pilot_DES";
 
         class Turrets : Turrets {
@@ -3123,7 +3123,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "UH-144S Falcon DES (Unarmed)";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Pilot_DES";
 
         class Turrets : Turrets {
@@ -3161,7 +3161,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-22 Sparrowhawk DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Pilot_DES";
 
         class Turrets : Turrets {
@@ -3191,7 +3191,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-22L Sparrowhawk DES";
         side = 2;
-        faction = "I_ADS_DES";
+        faction = "i_ads_des";
         crew = "I_ADS_Pilot_DES";
 
         class Turrets : Turrets {

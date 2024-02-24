@@ -2219,7 +2219,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M808S Scorpion MBT";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Crewman";
 
         class Turrets : Turrets {
@@ -2249,7 +2249,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "UH-144S Falcon (Unarmed)";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Pilot";
 
         class Turrets : Turrets {
@@ -2287,7 +2287,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-99 Wombat";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "VES_Rifleman_MA5B_ODST";
 
         class Turrets : Turrets {
@@ -2659,7 +2659,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "UH-144S Falcon (Armed)";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Pilot";
 
         class Turrets : Turrets {
@@ -2858,7 +2858,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-22 Sparrowhawk";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Pilot";
 
         class Turrets : Turrets {
@@ -2888,7 +2888,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-22L Sparrowhawk";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Pilot";
 
         class Turrets : Turrets {
@@ -3154,7 +3154,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo (Ammo)";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Rifleman_MA40";
 
 
@@ -3179,7 +3179,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo (Device)";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Rifleman_M7";
 
 
@@ -3204,7 +3204,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo (Fuel)";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Rifleman_Commando";
 
 
@@ -3229,7 +3229,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Rifleman_M45";
 
         class Turrets : Turrets {
@@ -3260,7 +3260,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo (Covered)";
         side = 2;
-        faction = "I_ADS";
+        faction = "i_ads";
         crew = "I_ADS_Rifleman_MA40";
 
         class Turrets : Turrets {

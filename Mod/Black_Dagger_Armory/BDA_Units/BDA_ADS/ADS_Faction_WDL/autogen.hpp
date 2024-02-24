@@ -26,7 +26,7 @@ class CfgGroups {
                 class i_adswdl_infantry_fireteam {
                     name = "Fireteam";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -59,7 +59,7 @@ class CfgGroups {
                 class i_adswdl_infantry_fireteam_defensive {
                     name = "Fireteam (Defensive)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -92,7 +92,7 @@ class CfgGroups {
                 class i_adswdl_infantry_fireteam_assault {
                     name = "Fireteam (Assault)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -125,7 +125,7 @@ class CfgGroups {
                 class i_adswdl_infantry_fireteam_heavy {
                     name = "Fireteam (Heavy)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -158,7 +158,7 @@ class CfgGroups {
                 class i_adswdl_infantry_scout {
                     name = "Scout";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -191,7 +191,7 @@ class CfgGroups {
                 class i_adswdl_infantry_squad {
                     name = "Squad";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -284,7 +284,7 @@ class CfgGroups {
                 class i_adswdl_infantry_squad_defensive {
                     name = "Squad (Defensive)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -377,7 +377,7 @@ class CfgGroups {
                 class i_adswdl_infantry_squad_assault {
                     name = "Squad (Assault)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -470,7 +470,7 @@ class CfgGroups {
                 class i_adswdl_infantry_squad_heavy {
                     name = "Squad (Heavy)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -563,7 +563,7 @@ class CfgGroups {
                 class i_adswdl_infantry_command {
                     name = "Command";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_inf.paa";
                     rarityGroup = 0.5;
 
@@ -601,7 +601,7 @@ class CfgGroups {
                 class i_adswdl_specops_recon_fireteam {
                     name = "Recon Fireteam";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -634,7 +634,7 @@ class CfgGroups {
                 class i_adswdl_specops_recon_fireteam_heavy {
                     name = "Recon Fireteam (Heavy)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -667,7 +667,7 @@ class CfgGroups {
                 class i_adswdl_specops_recon_squad {
                     name = "Recon Squad";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -760,7 +760,7 @@ class CfgGroups {
                 class i_adswdl_specops_recon_squad_heavy {
                     name = "Recon Squad (Heavy)";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -853,7 +853,7 @@ class CfgGroups {
                 class i_adswdl_specops_sniper_team {
                     name = "Sniper Team";
                     side = 2;
-                    faction = "I_ADS_WDL";
+                    faction = "i_ads_wdl";
                     icon = "\A3\ui_f\data\map\markers\nato\n_recon.paa";
                     rarityGroup = 0.5;
 
@@ -2373,7 +2373,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M412 Bison IFV WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Crewman_WDL";
 
         class Turrets : Turrets {
@@ -2403,7 +2403,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M413 Bison MGS WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Crewman_WDL";
 
         class Turrets : Turrets {
@@ -2433,7 +2433,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M494 Oryx IFV WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Crewman_WDL";
 
         class Turrets : Turrets {
@@ -2463,7 +2463,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M808S Scorpion MBT WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Crewman_WDL";
 
         class Turrets : Turrets {
@@ -2493,7 +2493,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12-FAV WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_MA40_WDL";
 
         class Turrets : Turrets {
@@ -2525,7 +2525,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12 LRV WDL (MG)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_MA40_WDL";
 
         class Turrets : Turrets {
@@ -2556,7 +2556,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12A1 LRV WDL (ATGM)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_Commando_WDL";
 
         class Turrets : Turrets {
@@ -2587,7 +2587,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12R LRV WDL (AA)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_M45_WDL";
 
         class Turrets : Turrets {
@@ -2618,7 +2618,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M831 Troop Transport WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_MA40_WDL";
 
         class Turrets : Turrets {
@@ -2654,7 +2654,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_MA40_WDL";
 
         class Turrets : Turrets {
@@ -2685,7 +2685,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo WDL (Ammo)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_Commando_WDL";
 
 
@@ -2710,7 +2710,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo WDL (Device)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_M7_WDL";
 
 
@@ -2735,7 +2735,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo WDL (Fuel)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_Commando_WDL";
 
 
@@ -2760,7 +2760,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "HDV-134 Buffalo WDL (Covered)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_M45_WDL";
 
         class Turrets : Turrets {
@@ -2791,7 +2791,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Mk6 Mortar";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "B_Soldier_F";
 
         class Turrets : Turrets {
@@ -2820,7 +2820,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M41 LAAG Turret";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 
         class Turrets : Turrets {
@@ -2850,7 +2850,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M79 AA Turret";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "OPTRE_UNSC_Army_Soldier_Rifleman_AR_WDL";
 
         class Turrets : Turrets {
@@ -2880,7 +2880,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "FG75 Anti-Tank Gun";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "OPTRE_Ins_URF_Engineer";
 
         class Turrets : Turrets {
@@ -2909,7 +2909,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M71 Scythe (AA)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "B_UAV_AI";
 
         class Turrets : Turrets {
@@ -2939,7 +2939,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M95 Lance";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "B_UAV_AI";
 
         class Turrets : Turrets {
@@ -2969,7 +2969,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M112 Wet Patrol Craft (MG)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_MA40_WDL";
 
         class Turrets : Turrets {
@@ -3004,7 +3004,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M112 Wet Patrol Craft (AA)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Rifleman_Commando_WDL";
 
         class Turrets : Turrets {
@@ -3039,7 +3039,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "MQ-221 Dragonfly WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "B_UAV_AI";
 
         class Turrets : Turrets {
@@ -3069,7 +3069,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "F-99 Wombat WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "VES_Rifleman_MA5B_ODST";
 
         class Turrets : Turrets {
@@ -3099,7 +3099,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "Demining Drone";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "C_IDAP_UAV_AI_antimine_F";
 
 
@@ -3123,7 +3123,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "D77H-TCI/AV SOCOM Pelican";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Pilot_WDL";
 
         class Turrets : Turrets {
@@ -3155,7 +3155,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "UH-144S Falcon WDL (Armed)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Pilot_WDL";
 
         class Turrets : Turrets {
@@ -3193,7 +3193,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "UH-144S Falcon WDL (Unarmed)";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Pilot_WDL";
 
         class Turrets : Turrets {
@@ -3231,7 +3231,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-22 Sparrowhawk WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Pilot_WDL";
 
         class Turrets : Turrets {
@@ -3261,7 +3261,7 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "AV-22L Sparrowhawk WDL";
         side = 2;
-        faction = "I_ADS_WDL";
+        faction = "i_ads_wdl";
         crew = "I_ADS_Pilot_WDL";
 
         class Turrets : Turrets {
