@@ -798,6 +798,30 @@ class cfgWeapons
 		};
 	};
 
+	class BDA_Armor_Pey: BDA_Armor_MD {
+		author = "Rib";
+		displayName = "M52D Body Armor (P. Pey)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Pey_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Pey_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Chase: BDA_Armor_RF {
+		author = "Rib";
+		displayName = "M52D Body Armor (F. Chase)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Chase_CO.paa"
+		};
+	};
+
 };
 class cfgMods
 {
