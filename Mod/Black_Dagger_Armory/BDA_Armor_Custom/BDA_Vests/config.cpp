@@ -800,7 +800,7 @@ class cfgWeapons
 
 	class BDA_Armor_Pey: BDA_Armor_MD {
 		author = "Rib";
-		displayName = "M52D Body Armor (P. Pey)";
+		displayName = "M52D Body Armor (P. Pal)";
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Pey_Medic_CO.paa",
