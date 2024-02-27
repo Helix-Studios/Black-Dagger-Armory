@@ -5,8 +5,6 @@ diag_log "Wallace Loadout Scripts! Debug EF01951";
 
 if(_getSel isEqualTo "BDA_Rifleman") then 
 {
-	systemChat "Loading Rifleman";
-
 	comment "Remove existing items";
 	removeAllWeapons player;
 	removeAllItems player;
