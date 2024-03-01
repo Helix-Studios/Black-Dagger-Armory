@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[]=
 		{
-			"BDA_Frigate_UNSC"
+			"BDA_Frigate"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
