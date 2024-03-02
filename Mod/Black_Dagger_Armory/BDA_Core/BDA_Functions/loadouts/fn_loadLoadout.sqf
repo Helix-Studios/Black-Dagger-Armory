@@ -18,7 +18,6 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 removeGoggles player;
-player removeSecondaryWeaponItem (secondaryWeaponItems select 0);
 
 player forceAddUniform "BDA_Uniform_B_SL";
 
