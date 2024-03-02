@@ -37,6 +37,7 @@ class CfgFunctions {
 			class openLoadouts {};
 			class loadLoadout {};
 			class updateLoadLB {};
+			class getScopes {};
 		};
     };
 };
