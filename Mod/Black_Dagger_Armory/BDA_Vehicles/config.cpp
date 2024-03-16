@@ -6,7 +6,7 @@ class CfgPatches {
 			"BDA_UNSC_D77_TC_Pelican",
 			"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
 			"BDA_UNSC_Hornet",
-			"BDA_UNSC_UH145A_Falcon"
+			"BDA_UNSC_UH145A_Falcon2"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -163,9 +163,9 @@ class CfgVehicles {
 			};
 		};
 		//Structural
-		armor = 450;
-		maxSpeed = 800;
-		fuelConsumptionRate = 0.25;
+		armor = 420;
+		maxSpeed = 900;
+		fuelConsumptionRate = 0.27;
 
 		//Weapons
 		magazines[] = {
@@ -4176,8 +4176,8 @@ class CfgVehicles {
 		};
 
 		//TFAR Config
-		tf_range = 30000;
-		tf_isolatedAmount = 0.4;
+		tf_range = 50000;
+		tf_isolatedAmount = 0.45;
 		tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel";
 		tf_hasRadio = 1;
 		enableRadio = 1;
@@ -4204,7 +4204,6 @@ class CfgVehicles {
 			"OPTRE_8Rnd_C2GMLS_missiles",
 			"OPTRE_8Rnd_C2GMLS_missiles",
 			"OPTRE_32Rnd_Anvil3_missiles",
-			"OPTRE_32Rnd_Anvil3_missiles"
 		};
 		armor = 220;
 
@@ -4477,7 +4476,7 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_UNSCODST";
 		displayName = "UH-145 Falcon Heavy (Armed)";
-		armor = 200;
+		armor = 220;
 		cost = 1500;
 		class TransportBackpacks {
 			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger

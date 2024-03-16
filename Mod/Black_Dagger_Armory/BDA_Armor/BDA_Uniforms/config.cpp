@@ -13,7 +13,7 @@ class CfgPatches
 			"OPTRE_UNSC_Units_Army",
 			"BDA_Core"
 		};
-		units[]={};
+		units[]={"BDA_Uniform_B_UNSC", "BDA_Uniform_B_SL_UNSC", "BDA_Navy_Uniform_B_F", "BDA_Navy_Uniform_Avi1_F", "BDA_Navy_Uniform_Avi2_F"};
 		weapons[]={};
 		magazines[]={};
 		ammo[]={};
@@ -109,23 +109,42 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Navy_Uniform_Avi: U_C_Scientist {
+	class BDA_Navy_Uniform_Avi1: U_C_Scientist {
 		author="Rib";
 		scope=2;
-		displayName="Naval BDU (Raider Squadron)";
+		displayName="Naval BDU (81st Naval Air Squadron - Gray)";
 		hiddenSelections[]={
 			"camo"
 		};
 		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi_CO.paa"
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi1_CO.paa"
 		};
 		class ItemInfo: UniformItem {
 			uniformModel="-";
-			uniformClass="BDA_Navy_Uniform_Avi_F";
-			containerClass="Supply100";
+			uniformClass="BDA_Navy_Uniform_Avi1_F";
+			containerClass="Supply120";
 			mass=10;
 		};
 	};
+
+	class BDA_Navy_Uniform_Avi2: U_C_Scientist {
+		author="Rib";
+		scope=2;
+		displayName="Naval BDU (81st Naval Air Squadron - Green)";
+		hiddenSelections[]={
+			"camo"
+		};
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi2_CO.paa"
+		};
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_Avi2_F";
+			containerClass="Supply120";
+			mass=10;
+		};
+	};
+
 
 	class BDA_Navy_Uniform_G: U_C_Scientist {
 		author="Rib";
@@ -228,8 +247,8 @@ class CfgVehicles
 
 	class BDA_Uniform_ONI_UNSC: OPTRE_UNSC_Army_Soldier_WDL
 	{
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		author="Schlopp";
 		uniformClass="BDA_Uniform_ONI_SL";
 		hiddenSelectionsTextures[]=
@@ -289,20 +308,30 @@ class CfgVehicles
 		};
 	};
 
-	class BDA_Navy_Uniform_Avi_F: C_scientist_F {
+	class BDA_Navy_Uniform_Avi1_F: C_scientist_F {
 		author="Rib";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
 		modelSides[]={3};
-		uniformClass="BDA_Navy_Uniform_Avi";
+		uniformClass="BDA_Navy_Uniform_Avi1";
 		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi_CO.paa"
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi1_CO.paa"
+		};
+	};
+
+	class BDA_Navy_Uniform_Avi2_F: C_scientist_F {
+		author="Rib";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
+		uniformClass="BDA_Navy_Uniform_Avi2";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi2_CO.paa"
 		};
 	};
 
 	class BDA_Navy_Uniform_ONI_F: B_Helipilot_F
 	{
-		scope=2;
-		scopeCurator=2;
+		scope=1;
+		scopeCurator=1;
 		author="Schlopp";
 		uniformClass="BDA_Navy_Uniform_ONI";
 		hiddenSelections[]=
