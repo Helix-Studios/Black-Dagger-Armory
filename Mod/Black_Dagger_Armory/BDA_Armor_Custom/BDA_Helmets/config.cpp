@@ -53,6 +53,7 @@ class cfgWeapons
 	class BDA_CH252D_Mustang_Helmet: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (E. Mustang)";
+		wal_id = "1234";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -126,6 +127,7 @@ class cfgWeapons
 	class BDA_CH252D_Carthwright_Helmet: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (M. Carthwright)";
+		wal_id = "1234";
 		hiddenSelections[]=
 		{
 			"camo",
