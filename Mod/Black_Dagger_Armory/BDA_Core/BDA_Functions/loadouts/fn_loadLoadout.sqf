@@ -304,12 +304,12 @@ if(_getSel isEqualTo "BDA_RktJky") then
 
 switch (_getSelWeapon) do {
 	// base template case "OPTRE_MA5BGL": { };
-	case "OPTRE_MA5B": { player addWeapon "OPTRE_MA5B"; player addPrimaryWeaponItem "OPTRE_60Rnd_762x51_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_60Rnd_762x51_Mag";}; };
+	case "OPTRE_MA5B": { player addWeapon "OPTRE_MA5B"; player addPrimaryWeaponItem "OPTRE_60Rnd_762x51_Mag"; for "_i" from 1 to 8 do {player addItemToBackpack "OPTRE_60Rnd_762x51_Mag";}; };
 	case "OPTRE_BR55HB_Grey": { player addWeapon "OPTRE_BR55HB_Grey"; player addPrimaryWeaponItem "OPTRE_36Rnd_95x40_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_36Rnd_95x40_Mag";}; };
 	case "OPTRE_MA5BGL": {player addWeapon "OPTRE_MA5BGL"; player addPrimaryWeaponItem "OPTRE_60Rnd_762x51_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_60Rnd_762x51_Mag";};};
-	case "OPTRE_M392_DMR": {player addWeapon "OPTRE_M392_DMR"; player addPrimaryWeaponItem "OPTRE_15Rnd_762x51_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_15Rnd_762x51_Mag";};};
-	case "OPTRE_M45": {player addWeapon "OPTRE_M45"; player addPrimaryWeaponItem "OPTRE_6Rnd_8Gauge_Slugs"; for "_i" from 1 to 16 do {player addItemToBackpack "OPTRE_6Rnd_8Gauge_Slugs";};};
-	case "OPTRE_M7": {player addWeapon "OPTRE_M7"; player addPrimaryWeaponItem "OPTRE_60Rnd_5x23mm_Mag"; for "_i" from 1 to 8 do {player addItemToBackpack "OPTRE_60Rnd_5x23mm_Mag";};};
+	case "OPTRE_M392_DMR": {player addWeapon "OPTRE_M392_DMR"; player addPrimaryWeaponItem "OPTRE_15Rnd_762x51_Mag"; for "_i" from 1 to 15 do {player addItemToBackpack "OPTRE_15Rnd_762x51_Mag";};};
+	case "OPTRE_M45": {player addWeapon "OPTRE_M45"; player addPrimaryWeaponItem "OPTRE_6Rnd_8Gauge_Slugs"; for "_i" from 1 to 8 do {player addItemToBackpack "OPTRE_6Rnd_8Gauge_Slugs";};};
+	case "OPTRE_M7": {player addWeapon "OPTRE_M7"; player addPrimaryWeaponItem "OPTRE_60Rnd_5x23mm_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_60Rnd_5x23mm_Mag";};};
 	case "OPTRE_M247": {player addWeapon "OPTRE_M247"; player addPrimaryWeaponItem "OPTRE_400Rnd_762x51_Box_Tracer"; for "_i" from 1 to 4 do {player addItemToBackpack "OPTRE_400Rnd_762x51_Box_Tracer";};};
 	case "OPTRE_SRS99D": {player addWeapon "OPTRE_SRS99D"; player addPrimaryWeaponItem "OPTRE_SRS99_Scope"; player addPrimaryWeaponItem "OPTRE_4Rnd_145x114_APFSDS_Mag"; for "_i" from 1 to 12 do {player addItemToBackpack "OPTRE_4Rnd_145x114_APFSDS_Mag";};};
 	case "OPTRE_M73": {player addWeapon "OPTRE_M73"; player addPrimaryWeaponItem "OPTRE_200Rnd_95x40_Box"; for "_i" from 1 to 6 do {player addItemToBackpack "OPTRE_200Rnd_95x40_Box";};};
