@@ -1774,7 +1774,7 @@ class cfgWeapons
 			};
 		};
 	};
-	
+
 	class BDA_CH252D_Griffin_Helmet: BDA_CH252D_Helmet {
 		author="Grif";
 		displayName="CH252D Helmet (T. Griffin)";
@@ -1842,6 +1842,79 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Griffin_CO.paa",
+				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+
+	class BDA_CH252D_Engel_Helmet: BDA_CH252D_Helmet {
+		author="Grif";
+		displayName="CH252D Helmet (L. Engel)";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Engel_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Recon_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Engel_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Recon_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_CH252D_Engel_Helmet_dp: BDA_CH252D_Helmet_dp
+	{
+		author="Rib";
+		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+		hiddenSelections[]=
+		{
+			"camo",
+			"camo2",
+			"camo4",
+			"H_Ghillie"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Engel_CO.paa",
+			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Engel_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
