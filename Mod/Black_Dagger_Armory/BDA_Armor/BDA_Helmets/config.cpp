@@ -15,7 +15,7 @@ class CfgPatches
 			"BDA_Core"
 		};
 		units[]={};
-		weapons[]={"BDA_VX19_Helmet"};
+		weapons[]={"BDA_VX19_Helmet","BDA_CH252D_Helmet",};
 		magazines[]={};
 		ammo[]={};
 		requiredVersion=0.1;
@@ -91,19 +91,6 @@ class cfgWeapons
 		displayName="CH252D Helmet";
 		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -126,21 +113,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_P1: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (1stPLT)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Scythe_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -163,19 +135,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_P1_dp: BDA_CH252D_Helmet_dp
 	{
 		displayName="CH252D Helmet (1stPLT)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Scythe_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -198,21 +157,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S1: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (1-1)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -235,19 +179,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S1_dp: BDA_CH252D_Helmet_dp
 	{
 		displayName="CH252D Helmet (1-1)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S1_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -270,21 +201,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S2: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (1-2)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S2_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -308,18 +224,6 @@ class cfgWeapons
 	{
 		displayName="CH252D Helmet (1-2)";
 		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S2_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -342,21 +246,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S3: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (1-3)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S3_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -379,19 +268,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S3_dp: BDA_CH252D_Helmet_dp
 	{
 		displayName="CH252D Helmet (1-3)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S3_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -414,21 +290,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_P2: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (2ndPLT)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Druid_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Scythe_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -451,19 +312,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_P2_dp: BDA_CH252D_Helmet_dp
 	{
 		displayName="CH252D Helmet (2ndPLT)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Druid_CO.paa",
-			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -486,21 +334,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S4: BDA_CH252D_Helmet
 	{
 		displayName="CH252D Helmet (2-1)";
-		hiddenSelections[]=
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S4_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S4_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -523,15 +356,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S4_dp: BDA_CH252D_Helmet_dp
 	{
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-		hiddenSelections[]=
-		{
-			"camo",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S4_CO.paa",
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -550,13 +374,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S5: BDA_CH252D_Helmet {
 		author = "Rib";
 		displayName="CH252D Helmet (2-2)";
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S5_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S5_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -579,15 +396,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S5_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-		hiddenSelections[]=
-		{
-			"camo",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S5_CO.paa",
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -608,13 +416,6 @@ class cfgWeapons
 		scope = 2;
 		author = "Rib";
 		displayName="CH252D Helmet (Recon)";
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Recon_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -640,15 +441,6 @@ class cfgWeapons
 		scopeCurator=1;
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
-		hiddenSelections[]=
-		{
-			"camo",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa",
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -663,29 +455,57 @@ class cfgWeapons
 			};
 		};
 	};
+
+	class BDA_CH252D_Helmet_Mortar: BDA_CH252D_Helmet
+	{
+		displayName="CH252D Helmet (Hangman)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mortar_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Mortar_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
+	class BDA_CH252D_Helmet_Mortar_dp: BDA_CH252D_Helmet_dp
+	{
+		displayName="CH252D Helmet (Hangman)";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
+			hiddenSelections[]=
+			{
+				"camo",
+				"camo2",
+				"camo4",
+				"H_Ghillie"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Mortar_CO.paa",
+				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
+			};
+		};
+	};
 	
 	class BDA_VX19_Helmet: OPTRE_FC_VX19_Helmet {
 		dlc="BDA";
 		scope=2;
 		author="Rib";
 		displayName="VX19 Flight Helmet";
-		hiddenSelections[]={
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			//"H_Collar",
-			//"H_Neck",
-			"H_VacCollar",
-			"H_Ghillie"
-		};
 		subItems[] = {"Integrated_NVG_TI_1_F"};
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Pilot_Visor_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		class ItemInfo: ItemInfo {
 			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
 			hiddenSelections[]={
@@ -710,22 +530,6 @@ class cfgWeapons
 		dlc="BDA";
 		scope=1;
 		author="Rib";
-		hiddenSelections[]={
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			//"H_Collar",
-			//"H_Neck",
-			"H_VacCollar",
-			"H_Ghillie"
-		};
-		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Helmets\data\BDA_Pilot_Helmet_CO.paa",
-			"",
-			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
-			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
-		};
 		subItems[] = {"Integrated_NVG_TI_1_F"};
 		class ItemInfo: ItemInfo {
 			uniformModel="\OPTRE_FC_Units\Marines\h3_pilothelmet.p3d";
