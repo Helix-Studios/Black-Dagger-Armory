@@ -42,8 +42,7 @@ class cfgWeapons
 	/*arma*/ class H_Booniehat_oli;
 	/*arma*/ class H_MilCap_Blue;
 
-	class BDA_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
-	{
+	class BDA_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base {
 		scope=2;
 		author="Schlopp";
 		displayName="CH252D Helmet";
@@ -82,8 +81,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_dp {
 		scope=1;
 		scopeArsenal=1;
 		scopeCurator=1;
@@ -110,8 +108,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_CH252D_Helmet_P1: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_P1: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (1stPLT)";
 		class ItemInfo: ItemInfo
 		{
@@ -132,8 +129,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_P1_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_P1_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (1stPLT)";
 		class ItemInfo: ItemInfo
 		{
@@ -154,8 +150,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_CH252D_Helmet_S1: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_S1: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (1-1)";
 		class ItemInfo: ItemInfo
 		{
@@ -176,8 +171,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_S1_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_S1_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (1-1)";
 		class ItemInfo: ItemInfo
 		{
@@ -198,8 +192,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_CH252D_Helmet_S2: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_S2: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (1-2)";
 		class ItemInfo: ItemInfo
 		{
@@ -220,8 +213,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_S2_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_S2_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (1-2)";
 		class ItemInfo: ItemInfo
 		{
@@ -242,8 +234,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_CH252D_Helmet_S3: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_S3: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (1-3)";
 		class ItemInfo: ItemInfo
 		{
@@ -264,8 +255,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_S3_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_S3_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (1-3)";
 		class ItemInfo: ItemInfo
 		{
@@ -286,8 +276,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_CH252D_Helmet_P2: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_P2: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (2ndPLT)";
 		class ItemInfo: ItemInfo
 		{
@@ -308,8 +297,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_P2_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_P2_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (2ndPLT)";
 		class ItemInfo: ItemInfo
 		{
@@ -330,8 +318,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_CH252D_Helmet_S4: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_S4: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (2-1)";
 		class ItemInfo: ItemInfo
 		{
@@ -352,8 +339,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_S4_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_S4_dp: BDA_CH252D_Helmet_dp {
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		class ItemInfo: ItemInfo
 		{
@@ -361,11 +347,15 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
+				"camo2",
+				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S4_CO.paa"
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S4_CO.paa",
+				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -401,11 +391,15 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
+				"camo2",
+				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S5_CO.paa"
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_S5_CO.paa",
+				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
@@ -446,17 +440,20 @@ class cfgWeapons
 			hiddenSelections[]=
 			{
 				"camo",
+				"camo2",
+				"camo4",
 				"H_Ghillie"
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa"
+				"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Recon_CO.paa",
+				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
+				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
 		};
 	};
 
-	class BDA_CH252D_Helmet_Mortar: BDA_CH252D_Helmet
-	{
+	class BDA_CH252D_Helmet_Mortar: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (Hangman)";
 		class ItemInfo: ItemInfo
 		{
@@ -477,8 +474,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Helmet_Mortar_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Helmet_Mortar_dp: BDA_CH252D_Helmet_dp {
 		displayName="CH252D Helmet (Hangman)";
 		class ItemInfo: ItemInfo
 		{
@@ -582,9 +578,11 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Deckcrew_R_co.paa"
 		};
 	};
+	
+	//end
 
 };
-//end
+
 
 class cfgMods
 {

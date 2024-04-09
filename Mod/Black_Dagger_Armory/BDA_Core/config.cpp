@@ -75,7 +75,7 @@ class RscTitles //part of the background
 		};
 	class brokenhud: SplashNoise	//part of the background
 		{
-			duration=10000;
+			duration=1000; //originally 10000
 			class BackgroundNoise: RscPicture //part of the background
 			{
 				text = "";

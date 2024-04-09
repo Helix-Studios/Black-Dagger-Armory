@@ -172,8 +172,8 @@ class CfgVehicles
 
 	class BDA_UAV_Backpack: Weapon_Bag_Base {
 		dlc="BDA";
-		scope = 2;
-		scopeCurator = 2;
+		scope = 1;
+		scopeCurator = 1;
 		_generalMacro="BDA_UAV_Backpack";
 		author="Rib";
 		displayName="(WIP) UAV MQ94 Drone Bag";
