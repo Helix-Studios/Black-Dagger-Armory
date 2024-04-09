@@ -223,7 +223,6 @@ class cfgWeapons
 	class BDA_CH252D_Helmet_S2_dp: BDA_CH252D_Helmet_dp
 	{
 		displayName="CH252D Helmet (1-2)";
-		hiddenSelections[]=
 		class ItemInfo: ItemInfo
 		{
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
