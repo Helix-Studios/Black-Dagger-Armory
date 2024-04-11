@@ -442,6 +442,7 @@ class cfgWeapons
 	};
 
 	class BDA_Armor_Kevin: BDA_Armor_AR {
+		scope = 1;
 		author = "Rib";
 		displayName = "M52D Body Armor (F. Kevin)";
 
