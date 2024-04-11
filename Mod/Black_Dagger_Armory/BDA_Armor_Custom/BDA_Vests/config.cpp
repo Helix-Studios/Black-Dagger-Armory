@@ -231,8 +231,7 @@ class cfgWeapons
 		displayName="M52D Body Armor (A. Zarush)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
 		class ItemInfo: ItemInfo {
-			hiddenSelections[]=
-		{
+			hiddenSelections[]= {
 				"camo",
 				"camo2",
 				"camo3",
@@ -283,7 +282,7 @@ class cfgWeapons
 				"APO_SMG",
 				"APO_Sniper",
 				"CustomKit_Scorch"
-		};
+			};
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
@@ -445,7 +444,6 @@ class cfgWeapons
 		scope = 1;
 		author = "Rib";
 		displayName = "M52D Body Armor (F. Kevin)";
-
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
@@ -526,9 +524,6 @@ class cfgWeapons
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Sniper_CO.paa"
 		};
 	};
-	};
-
-
 
 	//end
 };
