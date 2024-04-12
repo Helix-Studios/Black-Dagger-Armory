@@ -73,6 +73,14 @@ class cfgWeapons
 		author="Schlopp";
 		displayName="M52D Body Armor (Medic)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -164,6 +172,13 @@ class cfgWeapons
 		author="Rib";
 		displayName="M52D Body Armor (Autorifleman)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]={
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			};
 		class ItemInfo: ItemInfo {
 			hiddenSelections[]={
 				"camo",
