@@ -42,14 +42,6 @@ class cfgWeapons
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor {
 		displayName="M52D Body Armor (E. Mustang)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		hiddenSelectionsTextures[]=
-		{
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
-		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -109,14 +101,6 @@ class cfgWeapons
 	{
 		displayName="M52D Body Armor (J. Flowers)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		hiddenSelectionsTextures[]=
-			{
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Flowers_CO.paa"
-			};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -175,14 +159,6 @@ class cfgWeapons
 		author = "Rib";
 		displayName="M52D Body Armor (R. Ribbington)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		hiddenSelectionsTextures[]=
-			{
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_2_CO.paa",//Shoulder camo2
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Rib_CO.paa", //legs camo3
-				"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_odst_CO.paa"//camo5
-			};
 		class ItemInfo: ItemInfo
 		{
 			containerClass="Supply200";
@@ -254,13 +230,6 @@ class cfgWeapons
 		author = "Rib";
 		displayName="M52D Body Armor (A. Zarush)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		hiddenSelectionsTextures[]={
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
-			};
 		class ItemInfo: ItemInfo {
 			hiddenSelections[]= {
 				"camo",
@@ -328,13 +297,6 @@ class cfgWeapons
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Boston3_CO.paa"
-			};
 		class ItemInfo: ItemInfo {
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -401,14 +363,6 @@ class cfgWeapons
 		author="Rib";
 		displayName="M52D Body Armor (H. Cards)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		hiddenSelectionsTextures[]=
-			{
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Cards_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
-			};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
