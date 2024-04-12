@@ -56,6 +56,13 @@ class cfgWeapons
 	class BDA_Armor_RF_Big: BDA_Armor_RF {
 		author = "Rib";
 		displayName = "M52D Body Armor (Big)";
+		hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			};
 		class ItemInfo: ItemInfo {
 			containerClass="Supply300";
 			hiddenSelectionsTextures[]= {
@@ -73,6 +80,14 @@ class cfgWeapons
 		author="Schlopp";
 		displayName="M52D Body Armor (Medic)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -164,6 +179,13 @@ class cfgWeapons
 		author="Rib";
 		displayName="M52D Body Armor (Autorifleman)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]={
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_CO.paa"
+			};
 		class ItemInfo: ItemInfo {
 			hiddenSelections[]={
 				"camo",
@@ -661,6 +683,14 @@ class cfgWeapons
 		author="Schlopp";
 		displayName="M52D Body Armor (ONI)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_ONI_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_ONI_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_ONI_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_ONI_CO.paa"
+			};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[]=
@@ -720,6 +750,13 @@ class cfgWeapons
 	class BDA_M52D_Recon_Armor: OPTRE_UNSC_M52D_Armor {
 		author = "Rib";
 		displayName = "M52D Body Armor (Recon)";
+		hiddenSelectionsTextures[]={
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_Recon_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Recon_CO.paa"
+			};
 		class ItemInfo: ItemInfo {
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -790,6 +827,13 @@ class cfgWeapons
 	class BDA_Armor_Mortar: BDA_Armor_RF_Big {
 		author = "Rib";
 		displayName = "M52D Body Armor (Mortar)";
+		hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Mortar_CO.paa"
+			};
 		class ItemInfo: ItemInfo {
 			containerClass="Supply300";
 			hiddenSelectionsTextures[]= {
@@ -807,11 +851,16 @@ class cfgWeapons
 		author = "Rib";
 		displayName="M52D Body Armor (81st Naval Air Squadron)";
 		picture="\optre_unsc_units\army\icons\odst_vest";
-		class ItemInfo: ItemInfo
-		{
+		hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			};
+		class ItemInfo: ItemInfo {
 			containerClass="Supply200";
-			hiddenSelections[]=
-			{
+			hiddenSelections[]= {
 				"camo",
 				"camo2",
 				"camo3",
@@ -863,8 +912,7 @@ class cfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			hiddenSelectionsTextures[]=
-			{
+			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
