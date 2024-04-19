@@ -4035,129 +4035,180 @@ class CfgVehicles {
 				};
 			};
 			class TransportPylonsComponent {
-					uiPicture="\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
-					class Pylons {
-						class PylonRight1
+				uiPicture="\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
+				class Pylons {
+					class PylonRight1
+					{
+						attachment="Splits_PylonMissile_AA_Pelican_x2";
+						priority=5;
+						hardpoints[]=
 						{
-							attachment="Splits_PylonMissile_AA_Pelican_x2";
-							priority=5;
-							hardpoints[]=
-							{
-								"Splits_T_Missiles",
-								"OPAEX_Hardpoint_AV22"
-							};
-							turret[]={};
-							UIposition[]={0.25,0.1};
+							"Splits_T_Missiles",
+							"OPAEX_Hardpoint_AV22"
 						};
-						class PylonRight2
+						turret[]={};
+						UIposition[]={0.25,0.1};
+					};
+					class PylonRight2
+					{
+						attachment="Splits_PylonMissile_AA_Pelican_x2";
+						priority=4;
+						hardpoints[]=
 						{
-							attachment="Splits_PylonMissile_AA_Pelican_x2";
-							priority=4;
-							hardpoints[]=
-							{
-								"Splits_T_Missiles",
-								"OPAEX_Hardpoint_AV22"
-							};
-							turret[]={};
-							UIposition[]={0.25,0.2};
+							"Splits_T_Missiles",
+							"OPAEX_Hardpoint_AV22"
 						};
-						class PylonRight3
+						turret[]={};
+						UIposition[]={0.25,0.2};
+					};
+					class PylonRight3
+					{
+						attachment="Splits_PylonMissile_AGM_Bottom_Pelican_x3";
+						priority=3;
+						hardpoints[]=
 						{
-							attachment="Splits_PylonMissile_AGM_Bottom_Pelican_x3";
-							priority=3;
-							hardpoints[]=
-							{
-								"Splits_B_Missiles",
-								"OPAEX_Hardpoint_AV22"
-							};
-							turret[]={};
-							UIposition[]={0.60000002,0.1};
+							"Splits_B_Missiles",
+							"OPAEX_Hardpoint_AV22"
 						};
-						class PylonRight4
+						turret[]={};
+						UIposition[]={0.60000002,0.1};
+					};
+					class PylonRight4
+					{
+						attachment="BDA_PylonMissile_AA_Pelican_x4";
+						priority=2;
+						hardpoints[]=
 						{
-							attachment="BDA_PylonMissile_AA_Pelican_x4";
-							priority=2;
-							hardpoints[]=
-							{
-								"Splits_B_Missiles",
-								"OPAEX_Hardpoint_AV22"
-							};
-							turret[]={};
-							UIposition[]={0.60000002,0.2};
+							"Splits_B_Missiles",
+							"OPAEX_Hardpoint_AV22"
 						};
-						class PylonsLeft1: PylonRight1
+						turret[]={};
+						UIposition[]={0.60000002,0.2};
+					};
+					class PylonsLeft1: PylonRight1
+					{
+						UIposition[]={0.25,0.5};
+						mirroredMissilePos=1;
+					};
+					class PylonsLeft2: PylonRight2
+					{
+						UIposition[]={0.25,0.40000001};
+						mirroredMissilePos=1;
+					};
+					class PylonsLeft3: PylonRight3
+					{
+						UIposition[]={0.60000002,0.5};
+						mirroredMissilePos=1;
+					};
+					class PylonsLeft4: PylonRight4
+					{
+						UIposition[]={0.60000002,0.40000001};
+						mirroredMissilePos=1;
+					};
+				};
+				class Presets {
+					class Empty
+					{
+						displayName="$STR_empty";
+						attachment[]={};
+					};
+					class Default
+					{
+						displayName="$STR_vehicle_default";
+						attachment[]=
 						{
-							UIposition[]={0.25,0.5};
-							mirroredMissilePos=1;
-						};
-						class PylonsLeft2: PylonRight2
-						{
-							UIposition[]={0.25,0.40000001};
-							mirroredMissilePos=1;
-						};
-						class PylonsLeft3: PylonRight3
-						{
-							UIposition[]={0.60000002,0.5};
-							mirroredMissilePos=1;
-						};
-						class PylonsLeft4: PylonRight4
-						{
-							UIposition[]={0.60000002,0.40000001};
-							mirroredMissilePos=1;
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
 						};
 					};
-					class Presets {
-						class Empty
+					class AA
+					{
+						displayName="AA";
+						attachment[]=
 						{
-							displayName="$STR_empty";
-							attachment[]={};
-						};
-						class Default
-						{
-							displayName="$STR_vehicle_default";
-							attachment[]=
-							{
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"BDA_PylonMissile_AA_Pelican_x4",
-								"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-								"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-								"BDA_PylonMissile_AA_Pelican_x4",
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AA_Pelican_x2"
-							};
-						};
-						class AA
-						{
-							displayName="AA";
-							attachment[]=
-							{
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"BDA_PylonMissile_AA_Pelican_x4",
-								"BDA_PylonMissile_AA_Pelican_x4",
-								"BDA_PylonMissile_AA_Pelican_x4",
-								"BDA_PylonMissile_AA_Pelican_x4",
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AA_Pelican_x2"
-							};
-						};
-						class AT
-						{
-							displayName="AT";
-							attachment[]=
-							{
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-								"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-								"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-								"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
-								"Splits_PylonMissile_AA_Pelican_x2",
-								"Splits_PylonMissile_AA_Pelican_x2"
-							};
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"BDA_PylonMissile_AA_Pelican_x4",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
 						};
 					};
+					class AT
+					{
+						displayName="AT";
+						attachment[]=
+						{
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AGM_Bottom_Pelican_x3",
+							"Splits_PylonMissile_AA_Pelican_x2",
+							"Splits_PylonMissile_AA_Pelican_x2"
+						};
+					};
+					class OPTRE_Default
+					{
+						displayName="OPTRE AA";
+						attachment[]=
+						{
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_4Rnd_Scorpion_missiles",
+							"OPTRE_2Rnd_Jackknife_missile",
+
+							"OPTRE_2Rnd_Jackknife_missile",
+							"OPTRE_4Rnd_Scorpion_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles"
+						};
+					};
+					class OPTRE_AA
+					{
+						displayName="OPTRE AA";
+						attachment[]=
+						{
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_4Rnd_Scorpion_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles",
+
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_4Rnd_Scorpion_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_6Rnd_C2GMLS_missiles"
+						};
+					};
+					class OPTRE_AT
+					{
+						displayName="OPTRE AT";
+						attachment[]=
+						{
+							"OPTRE_6Rnd_C2GMLS_missiles",
+							"OPTRE_4Rnd_Scorpion_missiles",
+							"OPTRE_4Rnd_Scorpion_missiles",
+							"OPTRE_4Rnd_Scorpion_missiles",
+
+							"OPTRE_2Rnd_Jackknife_missile",
+							"OPTRE_2Rnd_Jackknife_missile",
+							"OPTRE_2Rnd_Jackknife_missile",
+							"OPTRE_6Rnd_C2GMLS_missiles"
+						};
+					};
+				};
 			};
 		};
 
@@ -4508,253 +4559,6 @@ class CfgVehicles {
 			"OPTRE_2000Rnd_20mm_HE",
 			"Laserbatteries"
 		};
-	};
-
-	class BDA_UNSC_UH145A_Falcon: OPTRE_UNSC_falcon_armed_S { //hidden until fix
-	
-		scope=1;
-		scopeCurator=1;
-		dlc = "BDA";
-		author = "Rib";
-		faction = "B_UNSCODST";
-		displayName = "UH-145 Falcon Heavy (Hidden)";
-		//structural
-		armor = 200;
-		//aiTargetting
-		cost = 1500;
-		class TransportBackpacks {
-			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
-		};
-		class TransportItems {
-			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
-			class _xx_Medikit {name="Medikit"; count=5;};
-			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
-			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
-			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
-			class _xx_Toolkit {name="ToolKit"; count=1;};
-			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
-			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
-			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
-			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
-			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
-		};
-
-		weapons[]=
-		{
-			"OPTRE_M638",
-			"CMFlareLauncher",
-			"Laserdesignator_pilotCamera",
-		};
-		magazines[]=
-		{
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"OPTRE_2000Rnd_20mm_HE",
-			"Laserbatteries"
-		};
-
-		class Components {
-			class TransportPylonsComponent {
-				UIPicture="\optre_vehicles_air\falcon\FalconPylonPic.paa";
-				class pylons {
-					class WingPylonRight1
-					{
-						maxweight=560;
-						hardpoints[]=
-						{
-							"OPAEX_Hardpoint_UH144"
-						};
-						attachment="OPTRE_16Rnd_Anvil3_missiles";
-						bay=-1;
-						priority=3;
-						UIposition[]={0.34999999,0.1};
-						turret[]={};
-					};
-					class WingPylonRight2: WingPylonRight1
-					{
-						mirroredMissilePos=1;
-						UIposition[]={0.34999999,0.0200001};
-					};
-					class WingPylonLeft1: WingPylonRight1
-					{
-						mirroredMissilePos=1;
-						UIposition[]={0.34999999,0.46700001};
-					};
-					class WingPylonLeft2: WingPylonRight1
-					{
-						mirroredMissilePos=1;
-						UIposition[]={0.34999999,0.8000001};
-					};
-				};
-				class Presets
-				{
-					class Default
-					{
-						displayName="Empty";
-						attachment[]={};
-					};
-					class CAS_Rockets
-					{
-						displayName="CAS: ANVIL I";
-						attachment[]=
-						{
-							"OPTRE_16Rnd_Anvil1_missiles",
-							"OPTRE_16Rnd_Anvil1_missiles",
-							"OPTRE_16Rnd_Anvil1_missiles",
-							"OPTRE_16Rnd_Anvil1_missiles"
-						};
-					};
-					class CAS_Rockets_Guided
-					{
-						displayName="CAS: ANVIL III";
-						attachment[]=
-						{
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_16Rnd_Anvil3_missiles"
-						};
-					};
-					class CAS_AT
-					{
-						displayName="AT";
-						attachment[]=
-						{
-							"OPTRE_1Rnd_Jackknife_missile",
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_1Rnd_Jackknife_missile"
-						};
-					};
-				};
-			};
-			class SensorsManagerComponent {
-				class Components {
-					class IRSensorComponent: SensorTemplateIR {
-						class AirTarget
-						{
-							minRange=500;
-							maxRange=3000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=500;
-							maxRange=3000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						maxTrackableSpeed=300;
-						animDirection="mainGun";
-						angleRangeHorizontal=46;
-						angleRangeVertical=34;
-						aimdown=-0.25;
-					};
-					class VisualSensorComponent: SensorTemplateVisual {
-						class AirTarget
-						{
-							minRange=500;
-							maxRange=2000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=500;
-							maxRange=2000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						maxTrackableSpeed=300;
-						animDirection="mainGun";
-						angleRangeHorizontal=46;
-						angleRangeVertical=34;
-						aimdown=-0.25;
-					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
-						class AirTarget
-						{
-							minRange=2000;
-							maxRange=3000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						class GroundTarget
-						{
-							minRange=2000;
-							maxRange=3000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						maxTrackableSpeed=300;
-						angleRangeHorizontal=120;
-						angleRangeVertical=90;
-						groundNoiseDistanceCoef=-1;
-						maxGroundNoiseDistance=-1;
-						minSpeedThreshold=0;
-						maxSpeedThreshold=0;
-						aimDown=30;
-					};
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-					{
-					};
-					class LaserSensorComponent: SensorTemplateLaser
-					{
-					};
-					class NVSensorComponent: SensorTemplateNV
-					{
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
-			{
-				class Components: components
-				{
-					class VehiclePrimaryGunnerDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="PrimaryGunner";
-					};
-					class VehicleMissileDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Missile";
-					};
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={4000,2000,16000,8000};
-						resource="RscCustomInfoSensors";
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
-			{
-				defaultDisplay="SensorDisplay";
-				class Components: components
-				{
-					class VehiclePrimaryGunnerDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="PrimaryGunner";
-					};
-					class VehicleMissileDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="Missile";
-					};
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={4000,2000,16000,8000};
-						resource="RscCustomInfoSensors";
-					};
-				};
-			};
-		};
-		//endofcomps
 	};
 
 }; //cfgend

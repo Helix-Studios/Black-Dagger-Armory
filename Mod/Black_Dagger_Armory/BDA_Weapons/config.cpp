@@ -136,7 +136,8 @@ class CfgWeapons
 		ballisticsComputer = 8;
 		magazines[] = 
         {
-            "BDA_PylonMissile_AA_Pelican_x4"
+            "BDA_PylonMissile_AA_Pelican_x4",
+			"Splits_PylonMissile_AA_Pelican_x2"
         };
 		reloadTime = 0.200000;
 		magazineReloadTime = 0.200000;
