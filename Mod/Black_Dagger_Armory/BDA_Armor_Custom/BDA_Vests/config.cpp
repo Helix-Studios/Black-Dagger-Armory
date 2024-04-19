@@ -461,15 +461,150 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Knight: BDA_Armor_RF {
-		author = "Rib";
-		displayName = "M52D Body Armor (N. Knight)";
-		hiddenSelectionsTextures[] = {
+	class BDA_Armor_Knight: OPTRE_UNSC_M52D_Armor {
+		author="Rib + Grif";
+		displayName="M52D Body Armor (N. Knight)";
+		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S1_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S1_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+				"A_TacPad",
+	//			"A_ShinArmorLeft",
+	//			"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+	//			"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTLeft",
+	//			"AS_ODSTRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperRight",
+				"AS_ODSTSniperLeft",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+	//			"AP_BR",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+	//			"APO_Knife",
+	//			"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_S1_Medic_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S1_CO.paa"
+			};
+		};
+	};
+
+	class BDA_Armor_Carthwright: OPTRE_UNSC_M52D_Armor {
+		author="Grif + Rib";
+		displayName="M52D Body Armor (M. Carthwright)";
+		picture="\optre_unsc_units\army\icons\odst_vest";
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Knight_CO.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Carthwright_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+				"A_TacPad",
+	//			"A_ShinArmorLeft",
+	//			"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+	//			"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperRight",
+				"AS_ODSTSniperLeft",
+				"AS_SmallLeft",
+	//			"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_GL",
+	//			"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+	//			"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+	//			"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+	//			"APO_Knife",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Carthwright_CO.paa"
+			};
 		};
 	};
 
@@ -558,18 +693,6 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Carthwright: BDA_Armor_RF {
-		author = "Grif";
-		displayName = "M52D Body Armor (M. Carthwright)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Carthwright_CO.paa"
-		};
-	};
-
 	class BDA_Armor_Beefe: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (G. Beefe)";
@@ -581,6 +704,8 @@ class cfgWeapons
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beefe_CO.paa"
 		};
 	};
+
+	
 	//end
 };
 class cfgMods
