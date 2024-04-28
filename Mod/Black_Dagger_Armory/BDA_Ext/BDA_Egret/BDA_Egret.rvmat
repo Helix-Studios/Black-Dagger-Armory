@@ -15,7 +15,7 @@ PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
 {
-	texture="BDA_EX\BDA_Egret\data\BDA_Civilian_Transport_nohq.paa";
+	texture="BDA_Ext\BDA_Egret\data\BDA_Civilian_Transport_nohq.paa";
 	uvSource = "tex";
 };
 class Stage2
@@ -30,12 +30,12 @@ class Stage3
 };
 class Stage4
 {
-	texture="BDA_EX\BDA_Egret\data\BDA_Civilian_Transport_as.paa";
+	texture="BDA_Ext\BDA_Egret\data\BDA_Civilian_Transport_as.paa";
 	uvSource = "tex";
 };
 class Stage5
 {
-	texture="BDA_EX\BDA_Egret\data\BDA_Civilian_Transport_smdi.paa";
+	texture="BDA_Ext\BDA_Egret\data\BDA_Civilian_Transport_smdi.paa";
 	uvSource = "tex";
 };
 class Stage6
