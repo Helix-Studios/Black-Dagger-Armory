@@ -1,4 +1,3 @@
-#include "..\script_component.hpp"
 /*
  * Author: Zakant
  * Handles starting the CPR treatment.

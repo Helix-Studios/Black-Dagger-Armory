@@ -35,11 +35,11 @@ class CfgFunctions {
 		{
 			class cprLocal
 			{
-				file="\x\bda\addons\circulation\functions\fnc_cprLocal.sqf";
+				file="\BDA_Ext\BDA_AED\functions\fnc_cprLocal.sqf";
 			};
 			class cprSuccess
 			{
-				file="\x\bda\addons\circulation\functions\fnc_cprSuccess.sqf";
+				file="\BDA_Ext\BDA_AED\functions\fnc_cprSuccess.sqf";
 			};
 		};
     };
