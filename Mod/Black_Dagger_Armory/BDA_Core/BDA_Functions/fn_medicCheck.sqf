@@ -5,9 +5,14 @@
 //		
 //		[]call BDA_fnc_medicCheck
 
+this addAction ["----------Checks----------", ""];
 this addAction ["Check Doctor Status", "call BDA_CheckMedStats"];
+this addAction ["Check Engineer Status", "call BDA_CheckEngStats"];
+this addAction ["----------Perms----------", ""];
 this addAction ["<img size='1' image='\a3\ui_f\data\IGUI\Cfg\Actions\heal_ca'/> Become a Doctor", "call BDA_GiveDoctor"];
+this addAction ["Become a Engineer", "call BDA_GiveEngineer"];
 this addAction ["<t color='#de1f1f'>[Debug]</t> Remove Doctor",  "call BDA_RemoveDoctor"];
+this addAction ["<t color='#de1f1f'>[Debug]</t> Remove Engineer",  "call BDA_RemoveEngineer"];
 
 
 // Mostly Using the default arma medic as a debug option and decent fucking variable (thanks ace yer shite)
@@ -23,6 +28,18 @@ BDA_CheckMedStats = {
 	
 };
 
+BDA_CheckEngStats = {
+	_getAEng = player getUnitTrait "explosiveSpecialist";
+	//systemChat str _getAMed;
+	if (_getAEng isEqualTo false) then 
+	{
+		["You are not a Engineer", "amber", 3] call BDA_fnc_notify;
+	} else {
+		["You are a Engineer", "success", 3] call BDA_fnc_notify;
+	};
+	
+};
+
 BDA_GiveDoctor = {
 	player setUnitTrait ["Medic",true];
 	player setVariable ["ace_medical_medicclass", 2, true];
@@ -33,4 +50,20 @@ BDA_RemoveDoctor = {
 	player setUnitTrait ["Medic",false];
 	player setVariable ["ace_medical_medicclass", 0, true];
 	["You are no longer a Doctor", "error", 2] call BDA_fnc_notify;
+};
+
+BDA_GiveEngineer = {
+	player setUnitTrait ["explosiveSpecialist",true]; 
+	player setVariable ["ace_isEngineer", 2, true];
+	player setVariable ["ace_isEOD", true];
+	player setVariable ["ace_engineer_engineerclass", 2, true];
+	["You have now been assigned a Engineer!", "success", 2] call BDA_fnc_notify;
+};
+
+BDA_RemoveEngineer = {
+	player setUnitTrait ["explosiveSpecialist",false]; 
+	player setVariable ["ace_isEngineer", 0, true];
+	player setVariable ["ace_isEOD", false];
+	player setVariable ["ace_engineer_engineerclass", 0, true];
+	["You are no longer a Engineer!", "error", 2] call BDA_fnc_notify;
 };
