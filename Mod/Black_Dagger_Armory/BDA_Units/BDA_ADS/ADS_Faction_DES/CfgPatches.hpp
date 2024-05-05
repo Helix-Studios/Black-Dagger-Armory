@@ -134,8 +134,6 @@ class CfgPatches {
             "OPTRE_Vehicles_Hornet",
             "OPTRE_Vehicles_Sparrowhawk",
             "BDA_Vehicles",
-            "OPAEX_Pelican",
-            "OPAEX_Sparrowhawk",
             "OPTRE_Vehicles_M808S",
             "A3_Armor_F_EPC_MBT_01",
             "OPTRE_FC_Vehicles_Locust",

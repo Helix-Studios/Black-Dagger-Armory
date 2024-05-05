@@ -4002,7 +4002,8 @@ class CfgVehicles {
 						{
 							"Splits_T_Missiles",
 							"OPAEX_Hardpoint_AV22",
-							"B_HARM_RAIL"
+							"B_HARM_RAIL",
+							"B_BOMB_PYLON"
 						};
 						turret[]={};
 						UIposition[]={0.25,0.1};
@@ -4015,7 +4016,8 @@ class CfgVehicles {
 						{
 							"Splits_T_Missiles",
 							"OPAEX_Hardpoint_AV22",
-							"B_HARM_RAIL"
+							"B_HARM_RAIL",
+							"B_BOMB_PYLON"
 						};
 						turret[]={};
 						UIposition[]={0.25,0.2};
@@ -4028,7 +4030,8 @@ class CfgVehicles {
 						{
 							"Splits_B_Missiles",
 							"OPAEX_Hardpoint_AV22",
-							"B_HARM_RAIL"
+							"B_HARM_RAIL",
+							"B_BOMB_PYLON"
 						};
 						turret[]={};
 						UIposition[]={0.60000002,0.1};
@@ -4041,7 +4044,8 @@ class CfgVehicles {
 						{
 							"Splits_B_Missiles",
 							"OPAEX_Hardpoint_AV22",
-							"B_HARM_RAIL"
+							"B_HARM_RAIL",
+							"B_BOMB_PYLON"
 						};
 						turret[]={};
 						UIposition[]={0.60000002,0.2};
