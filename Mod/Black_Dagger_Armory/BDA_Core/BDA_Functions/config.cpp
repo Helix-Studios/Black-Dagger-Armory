@@ -29,6 +29,8 @@ class CfgFunctions {
             file = "\BDA_Core\BDA_Functions";
             class vehSpawner {};
 			class vehSupply {};
+			class medicCheck {};
+			class notify {};
         };
 		class BDA_Loadouts 
 		{
