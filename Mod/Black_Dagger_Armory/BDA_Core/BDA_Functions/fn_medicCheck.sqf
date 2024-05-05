@@ -13,7 +13,7 @@ this addAction ["<t color='#de1f1f'>[Debug]</t> Remove Doctor",  "call BDA_Remov
 // Mostly Using the default arma medic as a debug option and decent fucking variable (thanks ace yer shite)
 BDA_CheckMedStats = {
 	_getAMed = player getUnitTrait "Medic";
-	systemChat str _getAMed;
+	//systemChat str _getAMed;
 	if (_getAMed isEqualTo false) then 
 	{
 		["You are not a Doctor", "amber", 3] call BDA_fnc_notify;
