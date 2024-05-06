@@ -4,10 +4,10 @@ class CfgPatches
     {
         author = "Rib";
 		name = "Ribs Weapons";
-		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG"};
 		requiredVersion = 0.100000;
 		units[] = {};
-		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher"};
+		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_M73"};
 		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4"};
 		ammo[] = {"Ribs_M_Anvil3_LGIR"};
     };
@@ -108,7 +108,7 @@ class CfgMagazines {
 	count = 400;
 	mass = 95;
 	};
-	class BDA_95x40_Box_400rnd_Box: BDA_95x40_Box_400rnd_Box {
+	class BDA_95x40_Box_400rnd_Box_Tracer: BDA_95x40_Box_400rnd_Box {
 	displayName = "400Rnd 9.5x40mm Box Mag (Tracers)";
 	ammo="OPTRE_B_95x40_Tracer";
 	descriptionshort="400 Round Box Magazine<br/>9.5x40mm<br/>Tracers";
@@ -118,6 +118,17 @@ class CfgMagazines {
 
 };
 
+class cfgMagazineWells {
+	class OPTRE_Magwell_M73;
+
+	class BDA_Magwell_M73: OPTRE_Magwell_M73 {
+		BDA_95x40_400Rnd[]={
+			"BDA_95x40_Box_400rnd_Box",
+			"BDA_95x40_Box_400rnd_Box_Tracer"
+		};
+	};
+};
+
 class CfgWeapons 
 {
     /*extern*/ class RocketPods;
@@ -125,6 +136,7 @@ class CfgWeapons
 	/*extern*/ class missiles_titan;
 	/*extern*/ class missiles_SCALPEL;
 	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
+	/*extern*/ class OPTRE_M73;
 
     class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F 
     {
@@ -158,5 +170,10 @@ class CfgWeapons
         };
 		reloadTime = 0.200000;
 		magazineReloadTime = 0.200000;
+	};
+
+	class BDA_M73: OPTRE_M73 {
+		scope = 1;
+		displayName = "[BDA] M73 Light Machine Gun";
 	};
 };

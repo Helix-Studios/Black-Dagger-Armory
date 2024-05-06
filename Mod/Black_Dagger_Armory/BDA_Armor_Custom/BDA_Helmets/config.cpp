@@ -1586,6 +1586,13 @@ class cfgWeapons
 		};
 	};
 
+	class BDA_Heli_Pilot_Parhau_Helmet: BDA_Heli_Pilot_Helmet {
+		displayName = "VX15 Pilot Helmet (R. Parhau)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Parhau_Helmet_CO.paa"
+		};
+	};
+
 	//end
 };	
 class cfgMods

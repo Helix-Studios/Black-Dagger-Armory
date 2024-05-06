@@ -13,7 +13,8 @@ class CfgPatches
 			"A3_Characters_F",
 			"A3_UI_F",
 			"OPTRE_Core",
-			"19th_Fleet_Armor"
+			"19th_Fleet_Armor",
+			"OPTRE_Installation04"
 			
 		};
 		units[]={};
@@ -63,6 +64,23 @@ class RscText;
 class RscActiveText;
 class RscActivePicture: RscActiveText {};
 class RscButton;
+
+class CfgWorlds {
+	class CAWorld;
+	class OPTRE_Installation04: CAWorld {
+		cutscenes[] = {"BDAWorld"};
+		initWorld="OPTRE_Installation04";
+		demoWorld="OPTRE_Installation04";
+	};
+};
+
+class CfgMissions {
+	class Cutscenes {
+		class BDAWorld {
+			directory = "BDA_Core\BDA_MM\BDAWorld\BDCMainMenu.OPTRE_Installation04";
+		};
+	};
+};
 
 class RscTitles //part of the background
 {

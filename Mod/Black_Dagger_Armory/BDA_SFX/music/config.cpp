@@ -346,9 +346,21 @@ class CfgMusic
 		duration="247";
 		musicClass="BDA_CMS";
 	};
+	class BDA_117 {
+		name="117";
+		sound[]=
+		{
+			"BDA_SFX\music\data\117.ogg",
+			1,
+			1
+		};
+		theme="Halo 4 OST - 117";
+		duration="728";
+		musicClass="BDA_OTH";
+	};
 };
 class cfgMods
 {
-	author="Schlopp";
+	author="Schlopp/Rib";
 	timepacked="1683667119";
 };

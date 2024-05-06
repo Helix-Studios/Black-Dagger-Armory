@@ -20,6 +20,7 @@ class CfgPatches {
 			"BDA_Core",
 			"Splits_Functions",
 			"Splits_Vehicles_Air_Pelican",
+			"OPTRE_Vehicles_Pelican",
 			"OPTRE_Vehicles_Air",
 			"OPTRE_Vehicles_Hornet",
 			"OPTRE_Vehicles_Sparrowhawk",
@@ -3992,7 +3993,7 @@ class CfgVehicles {
 				};
 			};
 			class TransportPylonsComponent {
-				uiPicture="\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_3DEN_CA.paa";
+				uiPicture="\OPTRE_Vehicles\Pelican\pelicanPylonPic.paa";
 				class Pylons {
 					class PylonRight1
 					{
