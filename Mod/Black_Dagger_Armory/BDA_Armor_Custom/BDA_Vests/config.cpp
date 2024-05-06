@@ -724,7 +724,7 @@ class cfgWeapons
 		author = "Rib/Grif";
 		displayName="M52B Body Armor (R. Jager)";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_CO.paa" 
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Jager_CO.paa" 
 		};
 	};
 	
