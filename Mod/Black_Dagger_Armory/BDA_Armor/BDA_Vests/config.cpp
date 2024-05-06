@@ -846,8 +846,8 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor
-	{
+	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor {
+		dlc = "BDA";
 		author = "Rib";
 		displayName="M52D Body Armor (81st Naval Air Squadron)";
 		picture="\optre_unsc_units\army\icons\odst_vest";

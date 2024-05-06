@@ -38,6 +38,7 @@ class cfgWeapons
 	/*intern*/ class BDA_Armor_RF;
 	/*intern*/ class BDA_Armor_AR;
 	/*intern*/ class BDA_Armor_RF_P2;
+	/*intern*/ class BDA_Armor_Pilot;
 
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor {
 		displayName="M52D Body Armor (E. Mustang)";
@@ -715,6 +716,18 @@ class cfgWeapons
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Smith_CO.paa"
 		};
+	};
+
+	class BDA_Armor_Jager: BDA_Armor_Pilot {
+		author = "Rib/Grif";
+		displayName="M52D Body Armor (R. Jager)";
+		hiddenSelectionsTextures[]= {
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa", //here
+				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa" //here
+			};
 	};
 	
 	//end
