@@ -41,6 +41,7 @@ class cfgWeapons
 	/*extern*/ class OPTRE_UNSC_Cap_ODST;
 	/*arma*/ class H_Booniehat_oli;
 	/*arma*/ class H_MilCap_Blue;
+	/*arma*/ class H_PilotHelmetHeli_B;
 
 	class BDA_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base {
 		scope=2;
@@ -635,8 +636,18 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_PatrolCap_Navy: H_MilCap_Blue
-	{
+	class BDA_Heli_Pilot_Helmet: H_PilotHelmetHeli_B {
+		dlc="BDA";
+		scope=2;
+		author = "Rib";
+		displayName = "VX15 Pilot Helmet";
+		subItems[] = {"Integrated_NVG_TI_1_F"};
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Helmets\data\BDA_Helipilot_Helmet_CO.paa"
+		};
+	};
+
+	class BDA_PatrolCap_Navy: H_MilCap_Blue {
 		author="Schlopp";
 		displayname="NAVCOM Patrol Cap";
 		hiddenselectionstextures[]=

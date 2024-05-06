@@ -64,6 +64,7 @@ class CfgAmmo {
 class CfgMagazines {
 	/*extern*/ class VehicleMagazine;
 	/*extern*/ class 6Rnd_LG_scalpel;
+	/*extern*/ class OPTRE_100Rnd_95x40_Box;
  
 	class BDA_PylonMissile_AA_Pelican_x4: VehicleMagazine {
 		dlc = "BDA";
@@ -99,6 +100,22 @@ class CfgMagazines {
 		ammo = "Ribs_M_Anvil3_LGIR";
 		autoSeekTarget=1;
 	};
+	class BDA_95x40_Box_400rnd_Box: OPTRE_100Rnd_95x40_Box {
+	dlc = "BDA";
+	scope = 2;
+	displayName = "400Rnd 9.5x40mm Box Mag";
+	descriptionshort="400 Round Box Magazine<br/>9.5x40mm<br/>";
+	count = 400;
+	mass = 95;
+	};
+	class BDA_95x40_Box_400rnd_Box: BDA_95x40_Box_400rnd_Box {
+	displayName = "400Rnd 9.5x40mm Box Mag (Tracers)";
+	ammo="OPTRE_B_95x40_Tracer";
+	descriptionshort="400 Round Box Magazine<br/>9.5x40mm<br/>Tracers";
+	tracersEvery=1;
+	lastRoundsTracer=400;
+	};
+
 };
 
 class CfgWeapons 

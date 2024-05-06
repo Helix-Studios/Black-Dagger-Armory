@@ -48,6 +48,7 @@ class cfgWeapons
 	/*intern*/ class BDA_CH252D_Helmet_dp;
 	/*intern*/ class BDA_VX19_Helmet;
 	/*intern*/ class BDA_VX19_Helmet_dp;
+	/*intern*/ class BDA_Heli_Pilot_Helmet;
 
 
 	class BDA_CH252D_Mustang_Helmet: BDA_CH252D_Helmet {
@@ -345,8 +346,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Cards_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Cards_Helmet_dp: BDA_CH252D_Helmet_dp {
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Cards_CO.paa",
@@ -541,8 +541,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Rib_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Rib_Helmet_dp: BDA_CH252D_Helmet_dp {
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		subItems[] = {"Integrated_NVG_TI_1_F"};
 		hiddenSelectionsTextures[]= {
@@ -650,8 +649,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Zodiac_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Zodiac_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
@@ -706,8 +704,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Ryder_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Ryder_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
@@ -763,8 +760,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Arturo_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Arturo_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]= {
@@ -820,8 +816,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Boston_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Boston_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -878,8 +873,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Sullivan_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Sullivan_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -936,8 +930,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Smith_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Smith_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -994,8 +987,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Knight_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Knight_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1052,8 +1044,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Kevin_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Kevin_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1110,8 +1101,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Puma_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Puma_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1168,8 +1158,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Cross_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Cross_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Wallace";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1226,8 +1215,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Covell_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Covell_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1284,8 +1272,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Five_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Five_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1342,8 +1329,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Reynolds_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Reynolds_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1400,8 +1386,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Griffin_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Griffin_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1458,8 +1443,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Engel_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Engel_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1516,8 +1500,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Sai_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Sai_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1574,8 +1557,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Conrad_Helmet_dp: BDA_CH252D_Helmet_dp
-	{
+	class BDA_CH252D_Conrad_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Rib";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
@@ -1594,7 +1576,13 @@ class cfgWeapons
 				"camo4",
 				"H_Ghillie"
 			};
-			//testing
+		};
+	};
+
+	class BDA_Heli_Pilot_Jager_Helmet: BDA_Heli_Pilot_Helmet {
+		displayName = "VX15 Pilot Helmet (R. Jager)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Jager_Helmet_CO.paa"
 		};
 	};
 
