@@ -11,6 +11,7 @@ class CfgPatches
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
 			"OPTRE_UNSC_Units_Army",
+			"OPTRE_FC_Units_Marines",
 			"BDA_Core",
 			"BDA_Vests"
 		};
@@ -39,10 +40,11 @@ class cfgWeapons
 	/*intern*/ class BDA_Armor_AR;
 	/*intern*/ class BDA_Armor_RF_P2;
 	/*intern*/ class BDA_Armor_Pilot;
+	/*intern*/ class BDA_Armor_Pilot_2;
 
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor {
 		displayName="M52D Body Armor (E. Mustang)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
@@ -106,7 +108,7 @@ class cfgWeapons
 	class BDA_Armor_Flowers: OPTRE_UNSC_M52D_Armor
 	{
 		displayName="M52D Body Armor (J. Flowers)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
@@ -169,7 +171,7 @@ class cfgWeapons
 	{
 		author = "Rib";
 		displayName="M52D Body Armor (R. Ribbington)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_2_CO.paa",//Shoulder camo2
@@ -244,7 +246,7 @@ class cfgWeapons
 	class BDA_Armor_Zarush: OPTRE_UNSC_M52D_Armor {
 		author = "Rib";
 		displayName="M52D Body Armor (A. Zarush)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
@@ -318,7 +320,7 @@ class cfgWeapons
 	class BDA_Armor_Boston: BDA_Armor_RF {
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
@@ -391,7 +393,7 @@ class cfgWeapons
 	class BDA_Armor_Cards: OPTRE_UNSC_M52D_Armor {
 		author="Rib";
 		displayName="M52D Body Armor (H. Cards)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Cards_CO.paa",
@@ -465,7 +467,7 @@ class cfgWeapons
 	class BDA_Armor_Knight: OPTRE_UNSC_M52D_Armor {
 		author="Rib + Grif";
 		displayName="M52D Body Armor (N. Knight)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Knight_CO.paa",
@@ -539,7 +541,7 @@ class cfgWeapons
 	class BDA_Armor_Carthwright: OPTRE_UNSC_M52D_Armor {
 		author="Grif + Rib";
 		displayName="M52D Body Armor (M. Carthwright)";
-		picture="\optre_unsc_units\army\icons\odst_vest";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
@@ -671,7 +673,7 @@ class cfgWeapons
 	};
 
 	class BDA_Armor_Griffin: BDA_Armor_RF {
-		author = "Griffin";
+		author = "Grif";
 		displayName = "M52D Body Armor (T. Griffin)";
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
@@ -709,7 +711,7 @@ class cfgWeapons
 	class BDA_Armor_Smith: BDA_Armor_MD {
 		author = "Grif";
 		displayName = "M52D Body Armor (F. Smith)";
-		hiddenSelectionsTextures[] = {
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Smith_Medic_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
@@ -718,16 +720,12 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Jager: BDA_Armor_Pilot {
+	class BDA_Armor_Jager: BDA_Armor_Pilot_2 {
 		author = "Rib/Grif";
-		displayName="M52D Body Armor (R. Jager)";
+		displayName="M52B Body Armor (R. Jager)";
 		hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa", //here
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
-				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa" //here
-			};
+			"BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_CO.paa" 
+		};
 	};
 	
 	//end
