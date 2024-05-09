@@ -34,8 +34,7 @@ class CfgVehicles
 		/*extern*/ class assembleInfo;
 	};
 
-	class BDA_Rucksack_B: B_Bergen_Base
-	{
+	class BDA_Rucksack_B: B_Bergen_Base {
 		dlc="BDA";
 		author="Schlopp";
 		scope=2;
@@ -76,7 +75,6 @@ class CfgVehicles
 	};
 	class BDA_Rucksack_B_Medical: BDA_Rucksack_B
 	{
-		dlc="BDA";
 		author="Schlopp";
 		displayName="ILCS Backpack (Medic)";
 		hiddenSelections[]=
@@ -87,7 +85,6 @@ class CfgVehicles
 	};
 	class BDA_Rucksack_B_Heavy: BDA_Rucksack_B
 	{
-		dlc="BDA";
 		author="Schlopp";
 		maximumLoad=550;
 		mass=50;
@@ -98,10 +95,20 @@ class CfgVehicles
 			"biofoam"
 		};
 	};
+	class BDA_Rucksack_B_Super_Heavy: BDA_Rucksack_B
+	{
+		author="Rib";
+		maximumLoad=800;
+		mass=60;
+		displayName="ILCS Rucksack (Super Heavy)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"biofoam"
+		};
+	};
 	class BDA_Rucksack_B_SL: BDA_Rucksack_B
 	{
-		dlc="BDA";
-		author="Schlopp";
 		maximumLoad=400;
 		mass=50;
 		displayName="ILCS Rucksack UL/CNM";
@@ -125,8 +132,6 @@ class CfgVehicles
 
 	class BDA_COMM_Uplink_Module: BDA_Rucksack_B
 	{
-		dlc="BDA";
-		author="Schlopp";
 		picture="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
 		displayName="UNSC Communications Uplink Module";
 		model="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
@@ -147,8 +152,6 @@ class CfgVehicles
 
 	class BDA_Naval_Belt_R: BDA_Rucksack_B
 	{
-		dlc="BDA";
-		author="Schlopp";
 		picture="\A3\Characters_F\data\ui\icon_V_Belt_CA.paa";
 		displayName="NAVCOM Carrier Belt";
 		model="\A3\Characters_F\BLUFOR\equip_b_belt";
