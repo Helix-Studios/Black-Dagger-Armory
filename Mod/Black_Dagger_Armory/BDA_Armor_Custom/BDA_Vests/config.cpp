@@ -41,6 +41,7 @@ class cfgWeapons
 	/*intern*/ class BDA_Armor_RF_P2;
 	/*intern*/ class BDA_Armor_Pilot;
 	/*intern*/ class BDA_Armor_Pilot_2;
+	class OPTRE_UNSC_M52D_Armor_Stripes;
 
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor {
 		displayName="M52D Body Armor (E. Mustang)";
@@ -726,6 +727,11 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Jager_CO.paa" 
 		};
+	};
+
+	class BDA_Armor_Reynolds: OPTRE_UNSC_M52D_Armor_Stripes {
+		author = "Rib";
+		displayName="M52B Body Armor (F. Reynolds)";
 	};
 	
 	//end
