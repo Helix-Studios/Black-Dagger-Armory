@@ -711,6 +711,7 @@ class cfgWeapons
 	
 	class BDA_M52D_Recon_Armor: OPTRE_UNSC_M52D_Armor {
 		author = "Rib";
+		scope = 1;
 		displayName = "M52D Body Armor (Recon)";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]={
