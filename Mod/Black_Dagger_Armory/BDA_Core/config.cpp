@@ -115,7 +115,7 @@ class RscDisplayMain: RscStandardDisplay {
 			text="Join BDC Server";
 			tooltip="Click to Join the Black Dagger Company Server";
 			style=2;
-			onbuttonclick="connectToServer ['games.blackdagger.org', 2302, '']";
+			onbuttonclick="connectToServer ['66.196.55.158', 2302, '']"; //games.blackdagger.org OR 66.196.55.158
 			colorBackground[]={0,0,0,0.40000001};
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
