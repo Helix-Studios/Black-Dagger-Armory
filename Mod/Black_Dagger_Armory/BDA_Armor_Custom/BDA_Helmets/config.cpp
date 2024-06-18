@@ -271,7 +271,7 @@ class cfgWeapons
 		displayName="CH252D Helmet (D. Vito)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Sniper_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S4_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -288,7 +288,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Sniper_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S4_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -1415,7 +1415,7 @@ class cfgWeapons
 	};
 
 	class BDA_CH252D_Engel_Helmet: BDA_CH252D_Helmet {
-		author="Grif";
+		scope = 0;
 		displayName="CH252D Helmet (L. Engel)";
 		hiddenSelectionsTextures[]=
 		{
@@ -1444,7 +1444,7 @@ class cfgWeapons
 		};
 	};
 	class BDA_CH252D_Engel_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Rib";
+		scope = 0;
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 		hiddenSelectionsTextures[]=
 		{

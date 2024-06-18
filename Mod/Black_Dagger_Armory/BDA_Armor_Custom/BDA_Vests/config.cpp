@@ -731,7 +731,15 @@ class cfgWeapons
 
 	class BDA_Armor_Reynolds: OPTRE_UNSC_M52D_Armor_Stripes {
 		author = "Rib";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		displayName="M52D Body Armor (F. Reynolds)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Reynolds_CO.paa"
+		};
 	};
 
 	class BDA_Armor_Zodiac: BDA_Armor_MD {
