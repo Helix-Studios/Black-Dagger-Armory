@@ -789,7 +789,7 @@ class cfgWeapons
 
 	class BDA_Armor_Mortar: BDA_Armor_RF_Big {
 		author = "Rib";
-		displayName = "M52D Body Armor (Mortar)";
+		displayName = "M52D Body Armor (Hangman)";
 		hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
