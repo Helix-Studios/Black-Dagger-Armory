@@ -38,6 +38,7 @@ class cfgWeapons
 	/*intern*/ class BDA_Armor_MD;
 	/*intern*/ class BDA_Armor_RF;
 	/*intern*/ class BDA_Armor_AR;
+	/*intern*/ class BDA_Armor_RF_Big;
 	/*intern*/ class BDA_Armor_RF_P2;
 	/*intern*/ class BDA_Armor_Pilot;
 	/*intern*/ class BDA_Armor_Pilot_2;
@@ -716,6 +717,14 @@ class cfgWeapons
 		};
 	};
 
+	class BDA_Armor_Parhau: BDA_Armor_Pilot_2 {
+		author = "Grif";
+		displayName="M52B Body Armor (R. Parhau)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52B_Armor_Parhau_CO.paa" 
+		};
+	};
+
 	class BDA_Armor_Reynolds: OPTRE_UNSC_M52D_Armor_Stripes {
 		author = "Rib";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
@@ -752,6 +761,19 @@ class cfgWeapons
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Conrad_CO.paa"
 		};
 	};
+
+	class BDA_Armor_Puma: BDA_Armor_RF_Big {
+		author = "Grif";
+		displayName = "M52D Body Armor (R. Puma)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Puma_CO.paa"
+		};
+	};
+
 	//end
 };
 class cfgMods
