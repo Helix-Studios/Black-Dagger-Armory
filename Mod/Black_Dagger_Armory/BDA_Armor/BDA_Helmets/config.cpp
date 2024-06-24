@@ -709,19 +709,27 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AC.paa"};
 	};
 	class BDA_ShipHat_BI: BDA_ShipHat_Base { //Frigate (Charon)
+		scope = 2;
+		scopeAuthor = 2;
 		displayName = "Cap [Big Iron]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_BI.paa"};
 	};
 
 	class BDA_ShipHat_PAC: BDA_ShipHat_Base { //Destroyer (Halberd)
+		scope = 2;
+		scopeAuthor = 2;
 		displayName = "Cap [Pomp and Circumstance]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_PAC.paa"};
 	};
 	class BDA_ShipHat_AITH: BDA_ShipHat_Base { //Frigate (Charon)
+		scope = 2;
+		scopeAuthor = 2;
 		displayName = "Cap [Ace In The Hole]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AITH.paa"};
 	};
 	class BDA_ShipHat_LDU: BDA_ShipHat_Base { //Frigate (Charon)
+		scope = 2;
+		scopeAuthor = 2;
 		displayName = "Cap [Land Down Under]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_LDU.paa"};
 	};
