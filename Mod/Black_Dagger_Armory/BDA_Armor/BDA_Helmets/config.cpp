@@ -42,6 +42,7 @@ class cfgWeapons
 	/*arma*/ class H_Booniehat_oli;
 	/*arma*/ class H_MilCap_Blue;
 	/*arma*/ class H_PilotHelmetHeli_B;
+	/*arma*/ class H_Cap_oli;
 
 	class BDA_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base {
 		scope=2;
@@ -677,6 +678,55 @@ class cfgWeapons
 			"BDA_Armor\BDA_Helmets\data\BDA_Helmet_Deckcrew_R_co.paa"
 		};
 	};
+
+	class BDA_ShipHat_Base: H_Cap_oli {
+		scope = 1;
+		scopeAuthor = 1;
+		author = "Rib";
+	};
+	class BDA_ShipHat_AS: BDA_ShipHat_Base { //Cruiser (Halcyon)
+		scope = 2;
+		scopeAuthor = 2;
+		displayName = "Cap [Arizona Sword]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AS.paa"};
+	};
+	class BDA_ShipHat_OC: BDA_ShipHat_Base { //Destroyer (Halberd)
+		scope = 2;
+		scopeAuthor = 2;
+		displayName = "Cap [Occam's Chainsaw]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_OC.paa"};
+	};
+	class BDA_ShipHat_MQ: BDA_ShipHat_Base { //Destroyer (Halberd)
+		scope = 2;
+		scopeAuthor = 2;
+		displayName = "Cap [Mississippi Queen]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_MQ.paa"};
+	};
+	class BDA_ShipHat_AC: BDA_ShipHat_Base { //Frigate (Paris)
+		scope = 2;
+		scopeAuthor = 2;
+		displayName = "Cap [Alaskan Conquest]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AC.paa"};
+	};
+	class BDA_ShipHat_BI: BDA_ShipHat_Base { //Frigate (Charon)
+		displayName = "Cap [Big Iron]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_BI.paa"};
+	};
+
+	class BDA_ShipHat_PAC: BDA_ShipHat_Base { //Destroyer (Halberd)
+		displayName = "Cap [Pomp and Circumstance]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_PAC.paa"};
+	};
+	class BDA_ShipHat_AITH: BDA_ShipHat_Base { //Frigate (Charon)
+		displayName = "Cap [Ace In The Hole]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AITH.paa"};
+	};
+	class BDA_ShipHat_LDU: BDA_ShipHat_Base { //Frigate (Charon)
+		displayName = "Cap [Land Down Under]";
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_LDU.paa"};
+	};
+
+
 	
 	//end
 
