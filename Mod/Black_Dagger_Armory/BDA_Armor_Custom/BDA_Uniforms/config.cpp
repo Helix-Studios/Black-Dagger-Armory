@@ -63,6 +63,27 @@ class cfgWeapons
 			mass=10;
 		};
 	};
+	class BDA_Navy_Uniform_Knight: U_C_Scientist
+	{
+		author="Rib";
+		scope=2;
+		displayName="Naval BDU (N. Knight)";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Knight_CO.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformModel="-";
+			uniformClass="BDA_Navy_Uniform_Knight_F";
+			containerClass="Supply100";
+			mass=10;
+		};
+	};
 
 };
 
@@ -90,6 +111,17 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Shadow_CO.paa"
+		};
+	};
+	class BDA_Navy_Uniform_Knight_F: C_scientist_F
+	{
+		author="Rib";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
+		modelSides[]={3};
+		uniformClass="BDA_Navy_Uniform_Knight";
+		hiddenSelectionsTextures[]=
+		{
+			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Knight_CO.paa"
 		};
 	};
 
