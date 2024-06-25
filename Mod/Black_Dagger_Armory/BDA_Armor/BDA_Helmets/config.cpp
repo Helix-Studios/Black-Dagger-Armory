@@ -688,7 +688,7 @@ class cfgWeapons
 		scope = 2;
 		scopeAuthor = 2;
 		displayName = "Cap [Arizona Sword]";
-		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_AS.paa"};
+		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_Ari.paa"};
 	};
 	class BDA_ShipHat_OC: BDA_ShipHat_Base { //Destroyer (Halberd)
 		scope = 2;
