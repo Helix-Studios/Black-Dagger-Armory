@@ -84,18 +84,18 @@ class CfgVehicles {
 			"UNSC_HW2_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
-			"\BDA_Vehicles\data\BDA_G_body_co.paa",
-			"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-			"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
+			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
+			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 		};
 		class textureSources {
 			class BDA_Green {
 				displayName="UNSC Green";
 				author="Splitjaw/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\BDA_G_body_co.paa",
-					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+					"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
 			};
@@ -103,9 +103,9 @@ class CfgVehicles {
 				displayName="UNSC Black";
 				author="Splitjaw/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\BDA_B_body_co.paa",
-					"\BDA_Vehicles\data\BDA_B_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
+					"\BDA_Vehicles\data\pelican\BDA_B_body_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
 			};
@@ -125,7 +125,7 @@ class CfgVehicles {
 				textures[]=
 				{
 					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\body_co.paa",
-					"\BDA_Vehicles\data\wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\wings_and_gear_co.paa",
 					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
@@ -4270,18 +4270,18 @@ class CfgVehicles {
 			"UNSC_HW2_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
-			"\BDA_Vehicles\data\BDA_G_body_co.paa",
-			"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-			"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
+			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
+			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 		};
 		class textureSources {
 			class BDA_Green {
 				displayName="UNSC Green";
 				author="Splitjaw/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\BDA_G_body_co.paa",
-					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
+					"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
 			};
@@ -4289,19 +4289,9 @@ class CfgVehicles {
 				displayName="UNSC Black";
 				author="Splitjaw/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\BDA_B_body_co.paa",
-					"\BDA_Vehicles\data\BDA_B_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
-				};
-				factions[]={"B_UNSCODST"};
-			};
-			class BDA_Whiskey {
-				displayName="UNSC Whiskey";
-				author="Splitjaw/Grif";
-				textures[]={
-					"\BDA_Vehicles\data\BDA_W_body_co.paa",
-					"\BDA_Vehicles\data\BDA_W_wings_and_gear_co.paa",
-					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
+					"\BDA_Vehicles\data\pelican\BDA_B_body_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_B_weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
 			};
@@ -4311,7 +4301,7 @@ class CfgVehicles {
 				textures[]=
 				{
 					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\body_co.paa",
-					"\BDA_Vehicles\data\wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\wings_and_gear_co.paa",
 					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
