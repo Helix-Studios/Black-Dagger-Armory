@@ -80,7 +80,6 @@ class CfgVehicles {
 		textureList[]={
 			"BDA_Green", 1,
 			"BDA_Black", 1,
-			"BDA_Winter", 1,
 			"BDA_Whiskey", 1,
 			"UNSC_HW2_Winter", 1
 		};
@@ -4267,7 +4266,6 @@ class CfgVehicles {
 		textureList[]={
 			"BDA_Green", 1,
 			"BDA_Black", 1,
-			"BDA_Winter", 1,
 			"BDA_Whiskey", 1,
 			"UNSC_HW2_Winter", 1
 		};
