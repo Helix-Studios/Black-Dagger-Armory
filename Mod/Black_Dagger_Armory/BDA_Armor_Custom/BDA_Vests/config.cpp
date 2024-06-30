@@ -176,10 +176,10 @@ class cfgWeapons
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_2_CO.paa",//Shoulder camo2
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Rib_CO.paa", //legs camo3
 			"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_odst_CO.paa"//camo5
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Rib_CO.paa"//camo5
 		};
 		class ItemInfo: ItemInfo {
 			containerClass="Supply200";
