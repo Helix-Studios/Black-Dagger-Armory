@@ -762,7 +762,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Puma: BDA_Armor_RF_Big {
+	class BDA_Armor_Puma: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Puma)";
 		hiddenSelectionsTextures[]= {

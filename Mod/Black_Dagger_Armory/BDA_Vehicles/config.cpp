@@ -80,6 +80,8 @@ class CfgVehicles {
 		textureList[]={
 			"BDA_Green", 1,
 			"BDA_Black", 1,
+			"BDA_Winter", 1,
+			"BDA_Whiskey", 1,
 			"UNSC_HW2_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
@@ -105,6 +107,16 @@ class CfgVehicles {
 					"\BDA_Vehicles\data\BDA_B_body_co.paa",
 					"\BDA_Vehicles\data\BDA_B_wings_and_gear_co.paa",
 					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
+				};
+				factions[]={"B_UNSCODST"};
+			};
+			class BDA_Whiskey {
+				displayName="UNSC Whiskey 316";
+				author="Splitjaw/Grif";
+				textures[]={
+					"\BDA_Vehicles\data\BDA_W_body_co.paa",
+					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
 			};
@@ -4255,6 +4267,8 @@ class CfgVehicles {
 		textureList[]={
 			"BDA_Green", 1,
 			"BDA_Black", 1,
+			"BDA_Winter", 1,
+			"BDA_Whiskey", 1,
 			"UNSC_HW2_Winter", 1
 		};
 		hiddenSelectionsTextures[]={
@@ -4279,6 +4293,16 @@ class CfgVehicles {
 				textures[]={
 					"\BDA_Vehicles\data\BDA_B_body_co.paa",
 					"\BDA_Vehicles\data\BDA_B_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
+				};
+				factions[]={"B_UNSCODST"};
+			};
+			class BDA_Whiskey {
+				displayName="UNSC Whiskey";
+				author="Splitjaw/Grif";
+				textures[]={
+					"\BDA_Vehicles\data\BDA_W_body_co.paa",
+					"\BDA_Vehicles\data\BDA_W_wings_and_gear_co.paa",
 					"\BDA_Vehicles\data\BDA_B_weaponry_co.paa"
 				};
 				factions[]={"B_UNSCODST"};
