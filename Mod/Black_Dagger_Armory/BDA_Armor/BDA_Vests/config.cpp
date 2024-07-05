@@ -942,18 +942,31 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Pilot_2: OPTRE_FC_M52B_Armor_Vest {
+	class BDA_M52B_Pilot_Armor_B: OPTRE_FC_M52B_Armor_Vest {
 		dlc = "BDA";
 		author = "Rib";
-		displayName="M52B Body Armor (81st Naval Air Squadron)";
+		displayName="M52B Body Armor - Black (81st Naval Air Squadron)";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
-			"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_CO.paa"
+			"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_B_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
 			containerClass="Supply200";
 			hiddenSelectionsTextures[]={
-				"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_CO.paa"
+				"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_B_CO.paa"
+			};
+		};
+	};
+
+	class BDA_M52B_Pilot_Armor_G: BDA_M52B_Pilot_Armor_B {
+		displayName="M52B Body Armor - Green (81st Naval Air Squadron)";
+		hiddenSelectionsTextures[]= {
+			"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_G_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			containerClass="Supply200";
+			hiddenSelectionsTextures[]={
+				"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_G_CO.paa"
 			};
 		};
 	};
