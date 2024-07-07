@@ -44,7 +44,7 @@ lbSetCurSel [42003, 0];
 
 lbClear 42006;
 
-squadLists = ["Default", "1st CMD", "1-1", "1-2", "1-3", "2nd CMD", "2-1", "2-2"];
+squadLists = ["Default", "1st CMD", "1-1", "1-2", "1-3", "2nd CMD", "2-1", "2-2", "2-3"];
 
 {
 	// Current result is saved in variable _x
