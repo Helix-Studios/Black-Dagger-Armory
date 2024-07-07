@@ -2,8 +2,8 @@ class CfgPatches
 {
     class BDA_Weapons 
     {
-        author = "Rib";
-		name = "Ribs Weapons";
+        author = "Black Dagger Development Crew";
+		name = "Black Dagger Weapons";
 		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG"};
 		requiredVersion = 0.100000;
 		units[] = {};

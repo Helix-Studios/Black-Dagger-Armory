@@ -2,7 +2,7 @@ class cfgpatches
 {
 	class BDA_Flags
 	{
-		author="Schlopp";
+		author="Black Dagger Development Crew";
 		requiredAddons[]={};
 		weapons[]={};
 		units[]={};

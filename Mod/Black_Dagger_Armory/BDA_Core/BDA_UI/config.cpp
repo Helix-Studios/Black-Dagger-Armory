@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class BDA_Markers
 	{
+		author = "Black Dagger Development Crew";
 		requiredAddons[]=
 		{
 			"A3_Data_F"

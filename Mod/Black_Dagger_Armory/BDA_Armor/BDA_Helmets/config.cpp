@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BDA_Helmets
 	{
-		author="Schlopp";
+		author="Black Dagger Development Crew";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",
@@ -64,8 +64,7 @@ class cfgWeapons
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			hiddenSelections[]=
 			{
 				"camo",
@@ -87,7 +86,7 @@ class cfgWeapons
 		scope=1;
 		scopeArsenal=1;
 		scopeCurator=1;
-		author="Schlopp";
+		author="Rib";
 		displayName="CH252D Helmet";
 		picture="\BDA_Armor\BDA_Helmets\data\icons\BDA_ODST_Helmet";
 		model="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
@@ -102,8 +101,7 @@ class cfgWeapons
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			uniformModel="\OPTRE_UNSC_Units\Army\odst_helmet_dp.p3d";
 			hiddenSelections[]=
 			{

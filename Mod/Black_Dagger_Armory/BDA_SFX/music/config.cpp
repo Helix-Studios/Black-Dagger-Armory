@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class BDA_Sounds
 	{
+		author = "Black Dagger Development Crew";
 		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;

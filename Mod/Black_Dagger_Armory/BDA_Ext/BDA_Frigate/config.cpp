@@ -2,6 +2,7 @@ class CfgPatches
 {
 	class BDA_Frigate
 	{
+		author = "Black Dagger Development Crew";
 		units[]=
 		{
 			"BDA_Frigate"

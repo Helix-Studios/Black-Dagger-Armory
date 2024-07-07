@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BDA_Uniforms
 	{
-		author="Schlopp";
+		author="Black Dagger Development Crew";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",

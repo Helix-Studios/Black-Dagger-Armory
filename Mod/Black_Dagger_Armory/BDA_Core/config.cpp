@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class BDA_Core
 	{
-		author="Schlopp/Rib";
+		author="Black Dagger Development Crew";
 		requiredAddons[]=
 		{
 			"A3_Weapons_F",

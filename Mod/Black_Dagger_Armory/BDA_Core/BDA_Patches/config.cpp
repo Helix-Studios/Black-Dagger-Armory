@@ -2,6 +2,7 @@ class CfgPatches {
 
 	class BDA_Patches
 	{
+		author = "Black Dagger Development Crew";
 		units[] = {};
 		weapons[] = {};
 		requiredAddons[] = {};
