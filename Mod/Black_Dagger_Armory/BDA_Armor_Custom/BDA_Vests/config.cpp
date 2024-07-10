@@ -41,7 +41,7 @@ class cfgWeapons
 	/*intern*/ class BDA_Armor_RF_Big;
 	/*intern*/ class BDA_Armor_RF_P2;
 	/*intern*/ class BDA_Armor_Pilot;
-	/*intern*/ class BDA_Armor_Pilot_2;
+	/*intern*/ class BDA_M52B_Pilot_Armor_B;
 	class OPTRE_UNSC_M52D_Armor_Stripes;
 
 	class BDA_Armor_Mustang: OPTRE_UNSC_M52D_Armor {
@@ -709,7 +709,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Jager: BDA_Armor_Pilot_2 {
+	class BDA_Armor_Jager: BDA_M52B_Pilot_Armor_B {
 		author = "Rib/Grif";
 		displayName="M52B Body Armor (R. Jager)";
 		hiddenSelectionsTextures[]= {
@@ -717,7 +717,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Parhau: BDA_Armor_Pilot_2 {
+	class BDA_Armor_Parhau: BDA_M52B_Pilot_Armor_B {
 		author = "Grif";
 		displayName="M52B Body Armor (R. Parhau)";
 		hiddenSelectionsTextures[]= {
