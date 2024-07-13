@@ -50,7 +50,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 		};
@@ -100,7 +100,7 @@ class cfgWeapons
 			{
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 			};
@@ -114,7 +114,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Flowers_CO.paa"
 		};
@@ -162,7 +162,7 @@ class cfgWeapons
 			{
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Flowers_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Flowers_CO.paa"
 			};
@@ -177,7 +177,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_CO.paa",//Shoulder camo2
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Rib_CO.paa", //legs camo3
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Rib_CO.paa", //legs camo3
 			"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Rib_CO.paa"//camo5
 		};
@@ -238,7 +238,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",//vest camo
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_2_CO.paa",//Shoulder camo2
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Rib_CO.paa", //legs camo3
+				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Rib_CO.paa", //legs camo3
 				"optre_unsc_units\army\data\ghillie_woodland_co", //camo4
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Rib_odst_CO.paa"//camo5
 			};
@@ -252,7 +252,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
 		};
@@ -312,7 +312,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
 			};
@@ -326,7 +326,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Boston4_CO.paa"
 		};
@@ -334,7 +334,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Boston4_CO.paa"
 			};
@@ -399,7 +399,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Cards_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 		};
@@ -459,7 +459,7 @@ class cfgWeapons
 			{
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Cards_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
 			};
@@ -473,7 +473,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Knight_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Knight_CO.paa"
 		};
@@ -533,7 +533,7 @@ class cfgWeapons
 			{
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_S1_Medic_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Knight_CO.paa"
 			};
@@ -547,7 +547,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Carthwright_CO.paa"
 		};
@@ -606,7 +606,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]= {
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Carthwright_CO.paa"
 			};
@@ -619,7 +619,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Legs_Ryder.paa",
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Ryder.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Vest_Ryder.paa"
 		};
@@ -631,7 +631,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Pey_Medic_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Pey_CO.paa"
 		};
@@ -643,7 +643,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Chase_CO.paa"
 		};
@@ -655,7 +655,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Arturo_CO.paa"
 		};
@@ -667,7 +667,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Griffin_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Griffin_CO.paa"
 		};
@@ -679,7 +679,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Sniper_CO.paa"
 		};
@@ -691,7 +691,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Beefe_CO.paa"
 		};
@@ -703,7 +703,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Smith_Medic_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Smith_CO.paa"
 		};
@@ -732,7 +732,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Reynolds_CO.paa"
 		};
@@ -744,7 +744,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Zodiac_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zodiac_CO.paa"
 		};
@@ -756,7 +756,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Conrad_CO.paa"
 		};
@@ -768,7 +768,7 @@ class cfgWeapons
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Legs_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Puma_CO.paa"
 		};
