@@ -251,7 +251,7 @@ class cfgWeapons
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Zarush_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
@@ -276,18 +276,18 @@ class cfgWeapons
 	//			"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
-				"AS_MediumLeft",
+	//			"AS_MediumLeft", 
 				"AS_MediumRight",
 				"AS_ODSTCQBLeft",
 				"AS_ODSTCQBRight",
 				"AS_ODSTLeft",
 				"AS_ODSTRight",
 	//			"AS_ODSTSniperRight",
-	//			"AS_ODSTSniperLeft",
+				"AS_ODSTSniperLeft",
 				"AS_SmallRight",
 				"AS_SmallLeft",
 				"AP_AR",
-				"AP_BR",
+	//			"AP_BR", 
 				"AP_Canteen",
 				"AP_GL",
 	//			"AP_Knife",
@@ -311,7 +311,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Mustang_CO.paa",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Zarush_CO.paa",
 				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
@@ -503,12 +503,12 @@ class cfgWeapons
 	//			"AS_ODSTRight",
 				"AS_ODSTCQBLeft",
 				"AS_ODSTCQBRight",
-				"AS_ODSTSniperRight",
+				"AS_ODSTSniperRight", 
 				"AS_ODSTSniperLeft",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AP_AR",
-	//			"AP_BR",
+				"AP_BR",
 				"AP_GL",
 				"AP_Knife",
 				"AP_MGThigh",
@@ -771,6 +771,17 @@ class cfgWeapons
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Puma_CO.paa"
+		};
+	};
+	class BDA_Armor_Covell: BDA_Armor_DM {
+		author = "Grif";
+		displayName = "M52D Body Armor (S. Covell)";
+		hiddenSelectionsTextures[] = {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Covell_CO.paa"
 		};
 	};
 
