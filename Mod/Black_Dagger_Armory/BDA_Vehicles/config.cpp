@@ -10138,7 +10138,7 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_UNSCODST";
 		side = 1;
-		displayName = "AV-15 Super Hornet";
+		displayName = "AV-15 Heavy Hornet";
 		weapons[] = {
 			"OPTRE_GUA23AW",
 			"CMFlareLauncher",
@@ -10227,8 +10227,6 @@ class CfgVehicles {
 			"Woodland", 1,
 			"Winter", 1
 		};
-
-		
 		class Components {
 			class TransportPylonsComponent {
 				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
@@ -10426,8 +10424,8 @@ class CfgVehicles {
 		author = "Rib";
 		side = 1;
 		faction = "B_UNSCODST";
-		displayName = "UH-145 Falcon";
-		armor = 220;
+		displayName = "UH-145S Falcon";
+		armor = 200;
 		cost = 1500;
 		class TransportBackpacks {
 			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
