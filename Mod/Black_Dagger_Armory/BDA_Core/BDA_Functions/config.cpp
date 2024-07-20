@@ -41,8 +41,17 @@ class CfgFunctions {
 			class updateLoadLB {};
 			class getScopes {};
 		};
+		class BDA_Markers
+		{
+			file = "\BDA_Core\BDA_Functions\Markers";
+			class isLZ {};
+			class isFM {};
+			class isFrd {};
+			class isEnm {};
+		};
     };
 };
+enableDebugConsole[] = { "76561198805462515", "76561198249403686" };
 
 class CfgWallaceLoad 
 {
