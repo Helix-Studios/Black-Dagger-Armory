@@ -64,7 +64,7 @@ class CfgVehicles {
 	/*extern*/ class Splits_Pelican_base;
 	/*extern*/ class OPTRE_UNSC_hornet;
 	/*extern*/ class OPTRE_AV22_Sparrowhawk;
-	/*extern*/ class OPTRE_UNSC_falcon_armed_S;
+	/*extern*/ class OPTRE_UNSC_falcon_S;
 	/*extern*/ class VTOL_02_Base_F;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
@@ -132,9 +132,9 @@ class CfgVehicles {
 			};
 		};
 		//Structural
-		armor = 420;
+		armor = 300;
 		maxSpeed = 900;
-		fuelConsumptionRate = 0.27;
+		fuelConsumptionRate = 0.3;
 
 		//Weapons
 		magazines[] = {
@@ -10421,12 +10421,12 @@ class CfgVehicles {
 		};
 	};
 
-	class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_armed_S {
+	class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_S {
 		dlc = "BDA";
 		author = "Rib";
 		side = 1;
 		faction = "B_UNSCODST";
-		displayName = "UH-145 Falcon Heavy (Armed)";
+		displayName = "UH-145 Falcon";
 		armor = 220;
 		cost = 1500;
 		class TransportBackpacks {
@@ -10446,17 +10446,10 @@ class CfgVehicles {
 			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
 			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
 		};
-		weapons[]=
-		{
-			"OPTRE_M638",
-			"CMFlareLauncher",
-			"Laserdesignator_pilotCamera",
-		};
 		magazines[]=
 		{
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
-			"OPTRE_2000Rnd_20mm_HE",
 			"Laserbatteries"
 		};
 	};
