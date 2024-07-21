@@ -137,6 +137,7 @@ class CfgWeapons
 	/*extern*/ class missiles_SCALPEL;
 	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
 	/*extern*/ class OPTRE_M73;
+	/*extern*/ class OPTRE_Smartfinder;
 
     class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F 
     {
@@ -172,8 +173,11 @@ class CfgWeapons
 		magazineReloadTime = 0.200000;
 	};
 
-	class BDA_M73: OPTRE_M73 {
-		scope = 1;
-		displayName = "[BDA] M73 Light Machine Gun";
+	class BDA_Smartfinder: OPTRE_Smartfinder {
+		author = "Rib/OPTRE";
+		displayName = "H-20 Smartfinder";
+		class WeaponSlotsInfo {
+			mass = 5;
+		};
 	};
 };

@@ -4,5 +4,5 @@ Author: Wallace
 Sub Author: Rib
 Description: This script checks if the player is in binos
 */
-if ((currentWeapon player == "OPTRE_Smartfinder") && (cameraView == "GUNNER")) exitWith {true};
+if ((currentWeapon player == "BDA_Smartfinder") && (cameraView == "GUNNER")) exitWith {true};
 false

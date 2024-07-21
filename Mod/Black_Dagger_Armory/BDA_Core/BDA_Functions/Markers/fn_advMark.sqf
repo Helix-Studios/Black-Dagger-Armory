@@ -2,7 +2,7 @@
 File : fn_advMark.sqf
 Author: Wallace
 Sub Author: Rib
-Description: This script creates a marking system from ace actions on a drone, gunseat or binos so that marking can be easily done.
+Description: This script creates a marking system from ace actions on a drone OR gunseat so that marking can be easily done.
 */
 
 WAL_seed = round(random 1e6); 

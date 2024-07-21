@@ -43,7 +43,7 @@ class CfgFunctions {
 		};
 		class BDA_Markers
 		{
-			file = "\BDA_Core\BDA_Functions\Markers";
+			file = "\BDA_Core\BDA_Functions\Markers\markerplace";
 			class isLZ {};
 			class isFM {};
 			class isFrd {};
@@ -83,4 +83,32 @@ class CfgWallaceLoad
 	{
 		name = "Rocket Jockey Kit";
 	};
+};
+
+class CfgVehicles {
+    class Man;
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class Markers {
+                displayName = "Place Marker";
+                condition = "[] call BDA_fnc_isBino";
+				class MarkLZ {
+                displayName = "Mark LZ";
+				statement = "[] call BDA_fnc_isLZ";
+            	};
+				class MarkFM {
+                displayName = "Mark Firemission";
+				statement = "[] call BDA_fnc_isFM";
+            	};
+				class MarkFRND {
+                displayName = "Mark Friendly";
+				statement = "[] call BDA_fnc_isFrd";
+            	};
+				class MarkENMY {
+                displayName = "Mark Enemy";
+				statement = "[] call BDA_fnc_isEnm";
+            	};
+            };
+        };
+    };
 };
