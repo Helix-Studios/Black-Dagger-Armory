@@ -251,7 +251,7 @@ class cfgWeapons
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Zarush_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Zarush_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
@@ -311,7 +311,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]={
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor_Custom\BDA_Vests\data\BDA_Zarush_CO.paa",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Zarush_CO.paa",
 				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Zarush_CO.paa"
@@ -322,19 +322,18 @@ class cfgWeapons
 	class BDA_Armor_Boston: BDA_Armor_RF {
 		author="Rib";
 		displayName="M52D Body Armor (L. Boston)";
-		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Vest_Boston_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Boston_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Boston4_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
 			hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_Vest_Boston_CO.paa",
 				"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Boston_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Boston4_CO.paa"
 			};
@@ -385,7 +384,7 @@ class cfgWeapons
 				"APO_AR",
 	//			"APO_Knife",
 				"APO_BR",
-				"APO_SMG",
+	//			"APO_SMG",
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
@@ -401,7 +400,7 @@ class cfgWeapons
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Cards_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Cards_CO.paa"
 		};
 		class ItemInfo: ItemInfo {
 			hiddenSelections[]= {
@@ -461,7 +460,7 @@ class cfgWeapons
 				"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Cards_CO.paa",
 				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
-				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Scythe_CO.paa"
+				"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Cards_CO.paa"
 			};
 		};
 	};
@@ -472,7 +471,7 @@ class cfgWeapons
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Knight_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Knight_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Knight_CO.paa"
@@ -532,7 +531,7 @@ class cfgWeapons
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-				"BDA_Armor\BDA_Vests\data\BDA_Armor_S1_Medic_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_Knight_CO.paa",
 				"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co",
 				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Knight_CO.paa"
