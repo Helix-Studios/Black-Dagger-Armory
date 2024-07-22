@@ -538,6 +538,80 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class BDA_Armor_Griffin: OPTRE_UNSC_M52D_Armor {
+		author="Grif";
+		displayName="M52D Body Armor (T. Griffin)";
+		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_Armor_Griffin_CO.paa",
+			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Griffin_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Griffin_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			hiddenSelections[]= {
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+	//			"A_KneesLeft",
+	//			"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+	//			"A_ODST",
+				"A_TacPad",
+	//			"A_ShinArmorLeft",
+	//			"A_ShinArmorRight",
+	//			"AS_BaseLeft",
+	//			"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+	//			"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTLeft",
+	//			"AS_ODSTRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperRight", 
+				"AS_ODSTSniperLeft",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+	//			"APO_Knife",
+	//			"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+				"BDA_Armor\BDA_Vests\data\BDA_Armor_Griffin_CO.paa",
+				"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Griffin_CO.paa",
+				"optre_unsc_units\army\data\ghillie_woodland_co",
+				"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Griffin_CO.paa"
+			};
+		};
+	};
 
 	class BDA_Armor_Carthwright: OPTRE_UNSC_M52D_Armor {
 		author="Grif + Rib";
@@ -657,18 +731,6 @@ class cfgWeapons
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Arturo_CO.paa"
-		};
-	};
-
-	class BDA_Armor_Griffin: BDA_Armor_RF {
-		author = "Grif";
-		displayName = "M52D Body Armor (T. Griffin)";
-		hiddenSelectionsTextures[] = {
-			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
-			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Griffin_CO.paa",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Griffin_CO.paa"
 		};
 	};
 
