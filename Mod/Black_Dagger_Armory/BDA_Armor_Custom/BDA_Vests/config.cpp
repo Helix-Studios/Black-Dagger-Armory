@@ -694,7 +694,7 @@ class cfgWeapons
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor_Custom\BDA_Legs\data\BDA_Legs_Ryder.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"BDA_Armor_Custom\BDA_Vests\data\BDA_Vest_Ryder.paa"
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Ryder_CO.paa"
 		};
 	};
 
