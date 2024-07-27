@@ -695,10 +695,17 @@ class cfgWeapons
 		dlc="BDA";
 		scope=2;
 		author = "Rib";
-		displayName = "VX15 Pilot Helmet";
+		displayName = "VX15 Pilot Helmet - Black (81st Naval Air Squadron)";
 		subItems[] = {"Integrated_NVG_TI_1_F"};
 		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Helmets\data\BDA_Helipilot_Helmet_CO.paa"
+			"BDA_Armor\BDA_Helmets\data\BDA_Helipilot_Helmet_B_CO.paa"
+		};
+	};
+	class BDA_Heli_Pilot_Helmet_G: BDA_Heli_Pilot_Helmet {
+		displayName = "VX15 Pilot Helmet - Green (81st Naval Air Squadron)";
+		subItems[] = {"Integrated_NVG_TI_1_F"};
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Helmets\data\BDA_Helipilot_Helmet_G_CO.paa"
 		};
 	};
 
