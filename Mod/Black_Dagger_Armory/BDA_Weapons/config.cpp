@@ -137,7 +137,7 @@ class CfgWeapons
 	/*extern*/ class missiles_SCALPEL;
 	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
 	/*extern*/ class OPTRE_M73;
-	/*extern*/ class OPTRE_Smartfinder;
+	/*extern*/ class Laserdesignator;
 
     class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F 
     {
@@ -173,9 +173,18 @@ class CfgWeapons
 		magazineReloadTime = 0.200000;
 	};
 
-	class BDA_Smartfinder: OPTRE_Smartfinder {
+	class BDA_Smartfinder: Laserdesignator {
 		author = "Rib/OPTRE";
 		displayName = "H-20 Smartfinder";
+		descriptionShort="Smartfinder Laser Designator";
+		model="\OPTRE_Weapons\items\smartfinder.p3d";
+		modelOptics="\A3\Weapons_F_beta\Binocular\lasermarker_optics";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
 		class WeaponSlotsInfo {
 			mass = 5;
 		};

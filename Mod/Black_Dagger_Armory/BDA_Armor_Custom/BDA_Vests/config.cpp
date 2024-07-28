@@ -415,7 +415,7 @@ class cfgWeapons
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 	//			"A_ODST",
-				"A_TacPad",
+	//			"A_TacPad",
 	//			"A_ShinArmorLeft",
 	//			"A_ShinArmorRight",
 	//			"AS_BaseLeft",
@@ -450,7 +450,7 @@ class cfgWeapons
 				"APO_AR",
 				"APO_Knife",
 				"APO_BR",
-				"APO_SMG",
+	//			"APO_SMG",
 				"APO_Sniper",
 	//			"CustomKit_Scorch"
 			};

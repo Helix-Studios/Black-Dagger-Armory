@@ -8,8 +8,10 @@ class CfgPatches
 			"A3_Weapons_F",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
+			"ace_common",
 			"OPTRE_Core",
-            "BDA_Core"
+            "BDA_Core",
+			"BDA_Weapons"
 		};
 		units[]={};
 		weapons[]={};
@@ -31,6 +33,8 @@ class CfgFunctions {
 			class vehSupply {};
 			class medicCheck {};
 			class notify {};
+			class isBino {};
+			class advMark {};
         };
 		class BDA_Loadouts 
 		{
@@ -43,15 +47,20 @@ class CfgFunctions {
 		};
 		class BDA_Markers
 		{
-			file = "\BDA_Core\BDA_Functions\Markers\markerplace";
+			file = "\BDA_Core\BDA_Functions\Markers";
 			class isLZ {};
 			class isFM {};
 			class isFrd {};
 			class isEnm {};
+			class isCM {};
+		};
+		class BDA_Transf 
+		{
+			file = "\BDA_Core\BDA_Functions\transf_scipts";
+			
 		};
     };
 };
-enableDebugConsole[] = { "76561198805462515", "76561198249403686" };
 
 class CfgWallaceLoad 
 {
@@ -108,7 +117,13 @@ class CfgVehicles {
                 displayName = "Mark Enemy";
 				statement = "[] call BDA_fnc_isEnm";
             	};
+				class MarkCM {
+				displayName = "Mark CAS Mission";
+				statement = "[] call BDA_fnc_isCM";
+				};
             };
         };
     };
 };
+
+enableDebugConsole[] = { "76561198805462515", "76561198249403686", "76561198066703139" };

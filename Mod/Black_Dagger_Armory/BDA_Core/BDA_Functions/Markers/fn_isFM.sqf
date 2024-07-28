@@ -10,7 +10,7 @@ _channelSay = currentChannel;
 
 _mrkStr = createMarker [_var, _wPos, _channelSay, player];
 _mrkStr setMarkerColor "ColorRed";
-_mrkStr setMarkerText format["Firemission: %1", _FMSelect];
-_mrkStr setMarkerType "BDA_Destroy_Marker";
+_mrkStr setMarkerText format["FM: %1", _FMSelect];
+_mrkStr setMarkerType "BDA_ord_Marker";
 _gridPos = mapGridPosition getMarkerPos _mrkStr;
 systemChat format["Marked Firemission %2 at %1", _gridPos, _FMSelect];
