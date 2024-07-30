@@ -722,7 +722,7 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Arturo: BDA_Armor_AR {
+	class BDA_Armor_Arturo: BDA_Armor_RF_Big {
 		author = "Rib";
 		displayName = "M52D Body Armor (L. Arturo)";
 		hiddenSelectionsTextures[]= {
