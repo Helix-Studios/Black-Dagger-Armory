@@ -1,4 +1,4 @@
-defaultLoadouts = ["BDA_Rifleman", "BDA_AutoRifleman", "BDA_Sniper", "BDA_EOD", "BDA_Demolitions", "BDA_Grenadier", "BDA_RktJky"];
+defaultLoadouts = ["BDA_Rifleman", "BDA_AutoRifleman", "BDA_Sniper", "BDA_EOD", "BDA_Demolitions", "BDA_Grenadier", "BDA_RktJky", "BDA_Breacher"];
 
 createDialog "BDA_LoadoutDiag";
 
