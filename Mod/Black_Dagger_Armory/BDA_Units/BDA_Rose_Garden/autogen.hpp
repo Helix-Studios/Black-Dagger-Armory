@@ -5,8 +5,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 class CfgFactionClasses {
-    class BDA_RoseGarden {
-        displayName = "Rose Garden";
+    class BDA_RoseGarden_Fac {
+        displayName = "Rose Garden Collective";
         side = 0;
         flag = "\OPTRE_Core\Data\flag_Ins_ca.paa";
         icon = "\OPTRE_Core\Data\flag_Ins_ca.paa";
@@ -686,7 +686,7 @@ class CfgVehicles {
 
     };
 
-    class BDA_RoseGarden__01 : BDA_RoseGarden_Marksman_01 {
+    class BDA_RoseGarden_Sniper_01 : BDA_RoseGarden_Marksman_01 {
         author = "CPO. G. Shadow";
         scope = 2;
         scopeCurator = 2;

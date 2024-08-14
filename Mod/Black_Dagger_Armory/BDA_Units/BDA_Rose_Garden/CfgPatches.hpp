@@ -1,36 +1,36 @@
 class CfgPatches {
-    class O_OPTREInsurgents {
+    class BDA_RoseGarden {
         units[] = {
-            "O_OPTREInsurgents_Rifleman_01",
-            "O_OPTREInsurgents_Autoriflemen_01",
-            "O_OPTREInsurgents_Rifleman_AT_01",
-            "O_OPTREInsurgents_Marksman_01",
-            "O_OPTREInsurgents__01",
-            "O_OPTREInsurgents_Breacher_01",
-            "O_OPTREInsurgents_RTO_01",
-            "O_OPTREInsurgents_Shield_Breacher_01",
-            "O_OPTREInsurgents_Crewman_01",
-            "O_OPTREInsurgents_Grenadier_01",
-            "O_OPTREInsurgents_Warthog_01",
-            "O_OPTREInsurgents_AA_Warthog_01",
-            "O_OPTREInsurgents_APC_Warthog_01",
-            "O_OPTREInsurgents_VBIED_01",
-            "O_OPTREInsurgents_TD_Warthog_01",
-            "O_OPTREInsurgents_Oryx_IFV_01",
-            "O_OPTREInsurgents_Scorpion_01",
-            "O_OPTREInsurgents_Hornet_01",
-            "O_OPTREInsurgents_Pelican_01",
-            "O_OPTREInsurgents_Field_Gun_01",
-            "O_OPTREInsurgents_MG_Turret_01",
-            "O_OPTREInsurgents_AA_Turret_01",
-            "O_OPTREInsurgents_Falcon_01",
-            "O_OPTREInsurgents_MG_Boat_01",
-            "O_OPTREInsurgents_Tarantula_AA_01",
-            "O_OPTREInsurgents_AU_44_01",
-            "O_OPTREInsurgents_M400_Arkhangelsk_01",
-            "O_OPTREInsurgents_M1015_Mule_01",
-            "O_OPTREInsurgents_Team_Leader_01",
-            "O_OPTREInsurgents_Lasermen_01"
+            "BDA_RoseGarden_Rifleman_01",
+            "BDA_RoseGarden_Autoriflemen_01",
+            "BDA_RoseGarden_Rifleman_AT_01",
+            "BDA_RoseGarden_Marksman_01",
+            "BDA_RoseGarden_Sniper_01",
+            "BDA_RoseGarden_Breacher_01",
+            "BDA_RoseGarden_RTO_01",
+            "BDA_RoseGarden_Shield_Breacher_01",
+            "BDA_RoseGarden_Crewman_01",
+            "BDA_RoseGarden_Grenadier_01",
+            "BDA_RoseGarden_Warthog_01",
+            "BDA_RoseGarden_AA_Warthog_01",
+            "BDA_RoseGarden_APC_Warthog_01",
+            "BDA_RoseGarden_VBIED_01",
+            "BDA_RoseGarden_TD_Warthog_01",
+            "BDA_RoseGarden_Oryx_IFV_01",
+            "BDA_RoseGarden_Scorpion_01",
+            "BDA_RoseGarden_Hornet_01",
+            "BDA_RoseGarden_Pelican_01",
+            "BDA_RoseGarden_Field_Gun_01",
+            "BDA_RoseGarden_MG_Turret_01",
+            "BDA_RoseGarden_AA_Turret_01",
+            "BDA_RoseGarden_Falcon_01",
+            "BDA_RoseGarden_MG_Boat_01",
+            "BDA_RoseGarden_Tarantula_AA_01",
+            "BDA_RoseGarden_AU_44_01",
+            "BDA_RoseGarden_M400_Arkhangelsk_01",
+            "BDA_RoseGarden_M1015_Mule_01",
+            "BDA_RoseGarden_Team_Leader_01",
+            "BDA_RoseGarden_Lasermen_01"
         };
         weapons[] = {};
         requiredVersion = 1.62;
@@ -110,6 +110,6 @@ class CfgPatches {
             "A3_Soft_F_Orange_Van_02"
         };
         author = "CPO. G. Shadow";
-        authors[] = {"CPO. G. Shadow"};
+        authors[] = {"CPO. G. Shadow", "Rib"};
     };
 };
