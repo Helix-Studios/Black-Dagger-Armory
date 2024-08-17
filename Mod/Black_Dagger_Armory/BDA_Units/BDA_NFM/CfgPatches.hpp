@@ -120,6 +120,6 @@ class CfgPatches {
             "OPTRE_FC_Weapons_Shade"
         };
         author = "P01. N. Knight";
-        authors[] = {"P01. N. Knight"};
+        authors[] = {"P01. N. Knight", "Rib"};
     };
 };
