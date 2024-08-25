@@ -849,6 +849,18 @@ class cfgWeapons
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Parhau_CO.paa"
 		};
 	};
+
+	class BDA_Armor_Wolsey: BDA_Armor_RF {
+		author = "Grif";
+		displayName = "M52D Body Armor (T. Wolsey)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Wolsey_CO.paa"
+		};
+	};
 	//end
 };
 class cfgMods
