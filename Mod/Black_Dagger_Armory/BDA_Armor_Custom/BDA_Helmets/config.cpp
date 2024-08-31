@@ -1916,7 +1916,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_CH252D_Parhau_Helmet_dp: BDA_CH252D_Helmet_dp {
+	class BDA_CH252D_Wolsey_Helmet_dp: BDA_CH252D_Helmet_dp {
 		author="Grif";
 		hiddenSelectionsTextures[]=
 		{
