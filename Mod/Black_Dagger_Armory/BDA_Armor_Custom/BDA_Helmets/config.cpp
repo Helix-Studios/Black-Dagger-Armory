@@ -1920,7 +1920,7 @@ class cfgWeapons
 		author="Grif";
 		hiddenSelectionsTextures[]=
 		{
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Parhau_CO.paa",
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Wolsey_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -1936,7 +1936,7 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Parhau_CO.paa",
+				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Wolsey_CO.paa",
 				"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
