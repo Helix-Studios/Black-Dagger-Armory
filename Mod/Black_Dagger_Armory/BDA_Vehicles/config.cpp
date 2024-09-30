@@ -65,7 +65,6 @@ class CfgVehicles {
 	/*extern*/ class OPTRE_UNSC_hornet;
 	/*extern*/ class OPTRE_AV22_Sparrowhawk;
 	/*extern*/ class OPTRE_UNSC_falcon_S;
-	/*extern*/ class VTOL_02_Base_F;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
 		scope = 2;
@@ -4795,4 +4794,93 @@ class CfgVehicles {
 		};
 	};
 
+	class BDA_UNSC_D77_TC_Pelican_Single: BDA_UNSC_D77_TC_Pelican {
+		displayName = "D77-TC Pelican (Single)";
+		memoryPointDriverOptics= "PIP2_pos";
+		//Weapons
+		magazines[] = {
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"BDA_missiles_LGIR_Anvil3_x60",
+			"Splits_1200Rnd_Cannon_70mm_M370_MP",
+			"Laserbatteries"
+		};
+		weapons[] = {
+			"CMFlareLauncher",
+			"BDA_missiles_Guided_Anvil3",
+			"Splits_M370_70mm_autocannon",
+			"Laserdesignator_mounted"
+		};
+		class pilotCamera {
+			class Opticsin {
+				class Wide {
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.466;
+					minFov = 0.466;
+					maxFov = 0.466;
+					opticsDisplayName = "WFOV";
+					visionMode[] =
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					thermalMode[] = { 0,1 };
+					gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
+				};
+				class Medium: Wide {
+					initFov = 0.093;
+					minFov = 0.093;
+					maxFov = 0.093;
+					opticsDisplayName = "MFOV";
+                	gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
+				};
+				class Narrow: Wide {
+					initFov = 0.029;
+					minFov = 0.029;
+					maxFov = 0.029;
+					opticsDisplayName = "NFOV";
+					gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
+				};
+			};
+			class OpticsOut {
+				class Monocular {
+					initFov = 0.9;
+					minFov = 0.25;
+					maxFov = 1.25;
+					initAngleX = 0;
+					initAngleY = 0;
+					minAngleX = -65;
+					maxAngleX = 85;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minMoveX = -0.2;
+					maxMoveX = 0.2;
+					minMoveY = -0.1;
+					maxMoveY = 0.1;
+					minMoveZ = -0.1;
+					maxMoveZ = 0.2;
+					visionMode[] =
+					{
+						"Normal",
+						"NVG"
+					};
+					gunnerOpticsModel = "";
+					gunnerOpticsEffect[] = {};
+				};
+			};
+			pilotOpticsShowCursor = 1;
+			controllable = 1;
+		};
+		class Turrets {
+			delete MainTurret;
+			delete RearDoorGun;
+		};
+	};
+	
 }; //cfgend
