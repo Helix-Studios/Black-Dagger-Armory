@@ -36,6 +36,7 @@ class CfgVehicles
 		author="Rib";
 		DLC="BDA";
 		displayName="Frigate (Alaskan Conquest)";
+		faction = "B_BDCUNSC";
 		editorCategories="BDA_EdCat_BlackDagger";
 		editorSubcategory="BDA_EdSubCat_Frigate_UNSC";
 		hiddenSelectionsTextures[]=

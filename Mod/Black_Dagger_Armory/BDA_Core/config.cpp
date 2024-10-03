@@ -25,39 +25,6 @@ class CfgPatches
 	};
 };
 
-//--------editor categories------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-class CfgEditorCategories
-{
-	class BDA_EdCat_BlackDagger
-	{
-		displayName="Black Dagger Company";
-	};
-};
-
-class CfgEditorSubcategories
-{
-	class BDA_EdSubCat_Flags
-	{
-		displayName="Flags";
-	};
-	class BDA_EdSubCat_AerospaceShip
-	{
-		displayName="Aerospace Ships";
-	};
-	class BDA_EdSubCat_Vehicles
-	{
-		displayName="Vehicles";
-	};
-	class BDA_EdSubCat_Air
-	{
-		displayName="Aviation";
-	};
-	class BDA_ESC_Props {
-		displayName = "Props";
-	};
-};
-
 //------main menu--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 class CAWorld;
 class RscPicture;
@@ -158,7 +125,7 @@ class RscDisplayMain: RscStandardDisplay {
 
 		class Logo: RscActivePicture {
 			idc=0;
-			text = "BDA_Core\BDA_UI\images\BDA_Arizona_Sword.paa";
+			text = "BDA_Core\BlackDaggerArmory_Logo.paa";
 		};
 	};
 	class RscActiveText;

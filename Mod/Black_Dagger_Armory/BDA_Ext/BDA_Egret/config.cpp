@@ -11,7 +11,8 @@ class CfgPatches
 			"A3_Data_F",
 			"A3_Weapons_F_Gamma",
 			"A3_Sounds_F",
-			"A3_Sounds_F_Mark"
+			"A3_Sounds_F_Mark",
+			"B_BDCUNSC"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -33,11 +34,12 @@ class cfgVehicles
 	{
 		author="Schlopp";
 		scope=2;
-		editorCategory="BDA_EdCat_BlackDagger";
-		editorSubcategory="BDA_EdSubCat_AerospaceShip";
+		editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Props";
 		armor=500000;
 		displayname="Egret Spaceliner";
 		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_Egret.png";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -53,10 +55,12 @@ class cfgVehicles
 		scope=2;
 		armor=200000;
 		side=1;
-		faction="B_UNSCODST";
-		editorSubcategory="BDA_EdSubCat_AerospaceShip";
+		faction="B_BDCUNSC";
+		editorSubcategory="BDA_ESC_AerospaceShip";
 		displayname="Egret Spaceliner";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_Egret.png";
 		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";
+		crew = "B_BDA_Pilot";
 		hiddenSelections[]=
 		{
 			"camo"

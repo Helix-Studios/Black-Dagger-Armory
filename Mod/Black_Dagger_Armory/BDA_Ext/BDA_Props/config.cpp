@@ -5,7 +5,7 @@ class CfgPatches
         name="Project Archeron - Props";
 		author="Project Archeron Team";
 		requiredVersion=0.1;
-		requiredAddons[]={"BDA_Core"};
+		requiredAddons[]={"BDA_Core","B_BDCUNSC"};
 		units[]={};
 		weapons[]={};
     };
@@ -20,7 +20,8 @@ class CfgVehicles
         displayName = "Can [Bepis]";
         scope = 2;
         model = "BDA_Ext\BDA_Props\can1.p3d";
-        editorCategory="BDA_EdCat_BlackDagger";
+        faction = "B_BDCUNSC";
+        editorCategory="BDA_EC_BlackDagger";
 		editorSubcategory="BDA_ESC_Props";
         armor = 20;
         hiddenSelections[] = {"camo1"};

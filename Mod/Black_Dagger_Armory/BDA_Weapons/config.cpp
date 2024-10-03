@@ -8,7 +8,7 @@ class CfgPatches
 		requiredVersion = 0.100000;
 		units[] = {};
 		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder"};
-		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box"};
 		ammo[] = {"Ribs_M_Anvil3_LGIR"};
     };
 };
@@ -44,20 +44,24 @@ class CfgAmmo {
 		hit = 850;
 		caliber=1;
         explosionEffects="HelicopterExplosionEffects2";
-        missileLockMaxDistance=5000;
+        missileLockMaxDistance=4000;
         missileLockMinDistance=0;
         missileLockCone=360;
-        airlock=1;
         weaponLockSystem="1 + 2 + 4 + 8 + 16";
-        missileKeepLockedCone=180;
-        indirectHit=100;
+        missileKeepLockedCone=120;
+        indirectHit=80;
+        indirectHitRange=8;
         mass=2;
-        indirectHitRange=10;
 		maxSpeed=400;
         thrust=60;
         timeToLive=80;
         typicalSpeed=50;
         thrustTime=60;
+		explosive = 1;
+		airLock = 1;
+		irLock = 1;
+		canlock = 2;
+		laserLock = 1;
 	};
 };
 
@@ -65,6 +69,7 @@ class CfgMagazines {
 	/*extern*/ class VehicleMagazine;
 	/*extern*/ class 6Rnd_LG_scalpel;
 	/*extern*/ class OPTRE_100Rnd_95x40_Box;
+	class OPTRE_500Rnd_762x51_Box_Tracer;
  
 	class BDA_PylonMissile_AA_Pelican_x4: VehicleMagazine {
 		dlc = "BDA";
@@ -100,20 +105,29 @@ class CfgMagazines {
 		ammo = "Ribs_M_Anvil3_LGIR";
 		autoSeekTarget=1;
 	};
-	class BDA_95x40_Box_400rnd_Box: OPTRE_100Rnd_95x40_Box {
+	class BDA_95x40_400rnd_Box: OPTRE_100Rnd_95x40_Box {
 	dlc = "BDA";
 	scope = 2;
 	displayName = "400Rnd 9.5x40mm Box Mag";
-	descriptionshort="400 Round Box Magazine<br/>9.5x40mm<br/>";
+	ammo = "OPTRE_B_95x40_Tracer";
+	descriptionshort = "400 Round Box Magazine<br/>9.5x40mm<br/>";
 	count = 400;
 	mass = 95;
 	};
-	class BDA_95x40_Box_400rnd_Box_Tracer: BDA_95x40_Box_400rnd_Box {
+	class BDA_95x40_400rnd_Box_Tracer: BDA_95x40_400rnd_Box {
 	displayName = "400Rnd 9.5x40mm Box Mag (Tracers)";
-	ammo="OPTRE_B_95x40_Tracer";
-	descriptionshort="400 Round Box Magazine<br/>9.5x40mm<br/>Tracers";
-	tracersEvery=1;
-	lastRoundsTracer=400;
+	descriptionshort = "400 Round Box Magazine<br/>9.5x40mm<br/>Tracers";
+	tracersEvery = 1;
+	lastRoundsTracer = 400;
+	};
+	class BDA_1200rnd_762x51_Box_Tracer: OPTRE_500Rnd_762x51_Box_Tracer {
+		dlc = "BDA";
+		scope = 2;
+		displayName = "1200rnd 7.62x51mm Box Mag";
+		descriptionShort = "1200 Round box magazine 7.62mm";
+		count = 1200;
+		tracersEvery = 1;
+		lastRoundsTracer = 1200;
 	};
 
 };
