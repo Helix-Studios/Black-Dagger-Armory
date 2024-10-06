@@ -12,7 +12,7 @@ class CfgEditorSubcategories
 		displayName="Flags";
 	};
 	class BDA_ESC_AerospaceShip {
-		displayName="Aerospace Ships";
+		displayName="Ships";
 	};
 	class BDA_ESC_Vehicles {
 		displayName="Vehicles";

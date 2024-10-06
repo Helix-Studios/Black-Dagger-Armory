@@ -304,3 +304,9 @@ class CfgMarkers
 	markerClass = "BDA_Markers_USNC";
 	};
 };
+
+
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
+};

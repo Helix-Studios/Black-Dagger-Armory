@@ -25,7 +25,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_SquadLead";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -38,7 +37,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_Medic";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -90,7 +88,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_1_1";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -103,7 +100,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_1_1";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -155,7 +151,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_1_2";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -168,7 +163,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_1_2";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -220,7 +214,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_1_3";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -233,7 +226,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_1_3";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -285,7 +277,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_2_1";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -298,7 +289,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_2_1";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -350,7 +340,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_2_2";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -363,7 +352,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_2_2";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -415,7 +403,6 @@ class CfgGroups {
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_2_3";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
@@ -428,7 +415,6 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_2_3";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -480,21 +466,18 @@ class CfgGroups {
                         rank = "LIEUTENANT";
                         side = 1;
                         vehicle = "B_BDA_1_0";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_1_0";
-                        ace_engineer = 1;
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_Medic";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -516,21 +499,18 @@ class CfgGroups {
                         rank = "LIEUTENANT";
                         side = 1;
                         vehicle = "B_BDA_2_0";
-                        ace_engineer = 1;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_2_0";
-                        ace_engineer = 1;
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_Medic";
-                        ace_medical_MedicalClass = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
@@ -572,43 +552,36 @@ class CfgGroups {
                         rank = "LIEUTENANT";
                         side = 1;
                         vehicle = "B_BDA_PilotLead";
-                        ace_medical_MedicalClass = 1;
-                        ace_engineer = 2;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_PilotLead";
-                        ace_engineer = 2;
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_Pilot";
-                        ace_engineer = 1;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 1;
                         vehicle = "B_BDA_Pilot";
-                        ace_engineer = 1;
                     };
                     class Unit4 {
                         position[] = {-10,-10,0};
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_Pilot";
-                        ace_engineer = 1;
                     };
                     class Unit5 {
                         position[] = {15,-15,0};
                         rank = "PRIVATE";
                         side = 1;
                         vehicle = "B_BDA_Pilot";
-                        ace_engineer = 1;
                     };
                 };
 
@@ -624,29 +597,24 @@ class CfgGroups {
                         rank = "LIEUTENANT";
                         side = 1;
                         vehicle = "B_BDA_Crewman";
-                        ace_medical_MedicalClass = 1;
-                        ace_engineer = 2;
                     };
                     class Unit1 {
                         position[] = {5,-5,0};
                         rank = "SERGEANT";
                         side = 1;
                         vehicle = "B_BDA_Crewman";
-                        ace_engineer = 2;
                     };
                     class Unit2 {
                         position[] = {-5,-5,0};
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_Crewman";
-                        ace_engineer = 2;
                     };
                     class Unit3 {
                         position[] = {10,-10,0};
                         rank = "PRIVATE";
                         side = 1;
                         vehicle = "B_BDA_Crewman";
-                        ace_engineer = 2;
                     };
                 };
 

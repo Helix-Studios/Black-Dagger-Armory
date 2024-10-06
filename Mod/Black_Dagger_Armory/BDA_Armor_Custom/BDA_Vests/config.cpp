@@ -223,7 +223,7 @@ class cfgWeapons
 				"AP_AR",
 				"AP_Pack",
 				"AP_Pistol",
-	//			"AP_Rounds",
+				"AP_Rounds",
 	//			"AP_SG",
 				"AP_SMG",
 				"AP_Sniper",

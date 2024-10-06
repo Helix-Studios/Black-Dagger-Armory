@@ -1,9 +1,7 @@
-class CfgPatches 
-{
-    class BDA_MA2B_Dev 
-    {
-        author = "Rib";
-		name = "Ribs Weapons";
+class CfgPatches {
+    class BDA_MA2B_Dev {
+        author = "Project Archeron Team";
+		name = "Project Archeron Weapons";
 		requiredAddons[] = {"A3_Weapons_F", "OPTRE_Weapons"};
 		requiredVersion = 0.100000;
 		units[] = {};
@@ -13,11 +11,9 @@ class CfgPatches
     };
 };
 
-class CfgAmmo 
-{
+class CfgAmmo {
 	class B_762x51_Ball;
-	class BDA_Ammo_390_AP: B_762x51_Ball
-	{
+	class BDA_Ammo_390_AP: B_762x51_Ball {
 		hit=14;
 		typicalSpeed=900;
 		caliber=3;
@@ -25,11 +21,9 @@ class CfgAmmo
 	};
 };
 
-class CfgMagazines 
-{
+class CfgMagazines {
 	class 20Rnd_762x51_Mag;
-	class BDA30rnd_MA2b_Mag: 20Rnd_762x51_Mag
-	{
+	class BDA30rnd_MA2b_Mag: 20Rnd_762x51_Mag {
 		scope=2;
 		scopeArsenal=2;
 		author="Wallace";
@@ -52,8 +46,7 @@ class OPTRE_CowsSlot_Rail;
 class OPTRE_Pointers;
 class OPTRE_UnderBarrelSlot_rail;
 
-class CfgWeapons 
-{
+class CfgWeapons {
     class optic_Aco;
 	class InventoryOpticsItem_Base_F;
 	class muzzle_snds_H;
@@ -64,9 +57,8 @@ class CfgWeapons
 	};
 	class UGL_F;
 
-    class BDA_Dev_MA2B: BDA_RifleBaseAR
-	{
-		author="Black Dagger | Wallace";
+    class BDA_Dev_MA2B: BDA_RifleBaseAR {
+		author="Wallace";
 		scope=2;
 		scopeArsenal=2;
 		handAnim[]=
@@ -108,8 +100,7 @@ class CfgWeapons
 		};
 	};
 
-	class BDA_Wal_MA2B: BDA_Dev_MA2B 
-	{
+	class BDA_Wal_MA2B: BDA_Dev_MA2B {
 		displayName = "[BDA] MA2B (Wallace)";
 		baseWeapon = "BDA_Wal_MA2B";
 		hiddenSelections[]= {"camo"};

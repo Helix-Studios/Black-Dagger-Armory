@@ -9,25 +9,18 @@ class cfgpatches
 	};
 };
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-
-class CfgVehicles
-{
+class CfgVehicles {
 	class FlagCarrier;
 
-	class BDA_Flag_Base: FlagCarrier
-	{
+	class BDA_Flag_Base: FlagCarrier {
 		author="Schlopp";
 		displayName="Base Flag";
-		editorCategory="BDA_EdCat_BlackDagger";
-		editorSubcategory="BDA_EdSubCat_Flags";
-		class SimpleObject
-		{
+		editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Flags";
+		class SimpleObject {
 			eden=0;
 			animate[]=
 			{
-				
 				{
 					"flag",
 					0
@@ -52,10 +45,7 @@ class CfgVehicles
 	};
 };
 
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-class cfgMods
-{
-	author="";
-	timepacked="1612347698";
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
 };

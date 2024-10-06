@@ -296,8 +296,7 @@ class RscDisplayConfigure {
 	enableDisplay = 1;
 };
 
-
 class cfgMods {
 	author="Rib";
-	timepacked="1709231945";
+	timepacked="051020242250";
 };

@@ -73,7 +73,6 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{},{},{},{"OPTRE_UNSC_PT_ODST_Uniform",{{"FirstAidKit",1}}},{},{},"OPTRE_UNSC_Cap_ODST","",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ACE_Altimeter",""}};
 
-
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
 
@@ -238,6 +237,8 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_BR55_Grey","","","",{"OPTRE_36Rnd_95x40_Mag_Tracer",36},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"TCF_12Rnd_127x40_Mag_JHP",12},{},""},{"BDA_Uniform_B_SL",{{"ItemcTabHCam",1},{"ACE_IR_Strobe_Item",2},{"OPTRE_M9_Frag",2,1},{"TCF_12Rnd_127x40_Mag_JHP",2,12}}},{"BDA_Armor_MD",{{"OPTRE_36Rnd_95x40_Mag_Tracer",12,36}}},{"BDA_Rucksack_B_Medical",{{"ACE_epinephrine",10},{"ACE_morphine",3},{"ACE_splint",8},{"ACE_tourniquet",6},{"ACE_surgicalKit",1},{"ACE_salineIV_500",6},{"ACE_salineIV_250",6},{"ACE_salineIV",6},{"ACE_packingBandage",30},{"ACE_elasticBandage",50},{"ACE_fieldDressing",20},{"ACE_EntrenchingTool",1},{"ACE_CableTie",3},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"OPTRE_M2_Smoke_Purple",2,1},{"ACE_painkillers",2,10},{"TCF_12Rnd_127x40_Mag_JHP",2,12},{"TCF_36Rnd_95x40_Mag_JHP",8,36}}},"BDA_CH252D_Helmet","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
+        medic = 1;
+        ace_medical_MedicalClass = 2;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -279,6 +280,10 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"TCF_12Rnd_127x40_Mag_JHP",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_EntrenchingTool",1}}},{"BDA_Armor_DM",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"ACE_IR_Strobe_Item",1},{"ACE_CableTie",3},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B_Heavy",{{"MineDetector",1},{"ItemcTabHCam",1},{"ACE_M26_Clacker",1},{"ACE_DefusalKit",1},{"ace_marker_flags_white",5},{"ace_marker_flags_red",20},{"ace_marker_flags_blue",5},{"C7_Remote_Mag",4,1},{"C12_Remote_Mag",2,1},{"TCF_60Rnd_762x51_Mag_JHP",8,60},{"TCF_12Rnd_127x40_Mag_JHP",3,12},{"OPTRE_60Rnd_762x51_Mag",8,60}}},"BDA_CH252D_Helmet","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
+        ace_engineer = 1;
+        ace_engineer_engineerclass = 1;
+        ace_isEOD = 1;
+        explosiveSpecialist = 1;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -736,6 +741,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","OPTRE_MA5_SmartLink",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"TCF_12Rnd_127x40_Mag_JHP",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_CableTie",6},{"ACE_EntrenchingTool",1},{"ACE_IR_Strobe_Item",3}}},{"BDA_Armor_RF_P1",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B",{{"ItemcTabHCam",1},{"TCF_12Rnd_127x40_Mag_JHP",3,12},{"OPTRE_60Rnd_762x51_Mag",8,60}}},"BDA_CH252D_Helmet_P1","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
+        ace_engineer = 1;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -778,6 +784,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","OPTRE_MA5_SmartLink",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"TCF_12Rnd_127x40_Mag_JHP",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_CableTie",6},{"ACE_EntrenchingTool",1},{"ACE_IR_Strobe_Item",3}}},{"BDA_Armor_RF_P2",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B",{{"ItemcTabHCam",1},{"TCF_12Rnd_127x40_Mag_JHP",3,12},{"OPTRE_60Rnd_762x51_Mag",8,60}}},"BDA_CH252D_Helmet_P2","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
+        ace_engineer = 1;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -860,6 +867,7 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_M7","OPTRE_M6C_compensator","","",{"OPTRE_60Rnd_5x23mm_Mag",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"BDA_Navy_Uniform_Avi2",{{"ACE_IR_Strobe_Item",2}}},{"BDA_M52B_Pilot_Armor_G",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M2_Smoke_Blue",2,1},{"OPTRE_M2_Smoke_Red",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M9_Frag",2,1},{"OPTRE_12Rnd_127x40_Mag",2,12},{"ACE_painkillers",1,10},{"TCF_48Rnd_5x23mm_Mag_HV",8,48}}},{"BDA_Naval_Belt_R",{{"ToolKit",1},{"ItemcTabHCam",1}}},"BDA_Heli_Pilot_Helmet_G","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
+        ace_engineer = 2;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -901,6 +909,8 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_M7","OPTRE_M6C_compensator","","",{"OPTRE_60Rnd_5x23mm_Mag",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"BDA_Navy_Uniform_Avi1",{{"ACE_IR_Strobe_Item",2}}},{"BDA_M52B_Pilot_Armor_B",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M2_Smoke_Blue",2,1},{"OPTRE_M2_Smoke_Red",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M9_Frag",2,1},{"OPTRE_12Rnd_127x40_Mag",2,12},{"ACE_painkillers",1,10},{"TCF_48Rnd_5x23mm_Mag_HV",8,48}}},{"BDA_Naval_Belt_R",{{"ToolKit",1},{"ItemcTabHCam",1}}},"BDA_Heli_Pilot_Helmet","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
+        ace_engineer = 2;
+        ace_medical_MedicalClass = 1;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -940,6 +950,8 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_M7","OPTRE_M6C_compensator","","",{"OPTRE_60Rnd_5x23mm_Mag",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"BDA_Navy_Uniform_Avi2",{{"ACE_IR_Strobe_Item",2}}},{"BDA_Armor_Pilot",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M2_Smoke_Blue",2,1},{"OPTRE_M2_Smoke_Red",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M9_Frag",2,1},{"OPTRE_12Rnd_127x40_Mag",2,12},{"ACE_painkillers",1,10},{"TCF_48Rnd_5x23mm_Mag_HV",8,48}}},{},"BDA_VX19_Helmet","",{"OPTRE_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","TFAR_microdagr",""}};
 
+        ace_engineer = 2;
+        ace_medical_MedicalClass = 1;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
@@ -985,6 +997,11 @@ class CfgVehicles {
 
         ALiVE_orbatCreator_loadout[] = {{"OPTRE_BR55HB","","","Optre_Recon_Sight_Green",{"OPTRE_36Rnd_95x40_Mag",36},{},""},{},{"OPTRE_M6C","","","OPTRE_M6C_Scope",{"TCF_12Rnd_127x40_Mag_NARQT",12},{},""},{"BDA_Uniform_B",{{"ACE_elasticBandage",20},{"MineDetector",1},{"ACE_DefusalKit",1},{"ACE_EarPlugs",1},{"ACE_Chemlight_HiGreen",1,1}}},{"BDA_Armor_Ribbington_v2",{{"OPTRE_Biofoam",8},{"ToolKit",1},{"ACE_M26_Clacker",1},{"murshun_cigs_cigpack",2,20},{"murshun_cigs_lighter",1,100},{"TCF_12Rnd_127x40_Mag_NARQT",2,12},{"OPTRE_36Rnd_95x40_Mag",1,36}}},{"BDA_Naval_Belt_R",{{"ACE_EntrenchingTool",1},{"ItemcTabHCam",1},{"ACE_splint",4},{"ACE_tourniquet",4},{"ACE_morphine",4},{"ACE_CableTie",3},{"ACE_epinephrine",2},{"ACE_IR_Strobe_Item",1},{"OPTRE_MA5Suppressor",1},{"OPTRE_M6C_compensator",1},{"OPTRE_M2_Smoke_Blue",2,1},{"OPTRE_M2_Smoke",3,1},{"OPTRE_M8_Flare_Green",2,1},{"OPTRE_M9_Frag",3,1},{"OPTRE_ELB47_Strobe",1,1},{"TCF_12Rnd_127x40_Mag_NARQT",2,12},{"OPTRE_36Rnd_95x40_Mag",10,36},{"TCF_36Rnd_95x40_Mag_JHP",5,36}}},"BDA_CH252D_Rib_Helmet","OPTRE_CBRN",{"BDA_Smartfinder","","","",{"Laserbatteries",1},{},""},{"ItemMap","ItemcTab","TFAR_anprc152","ItemCompass","ACE_Altimeter",""}};
 
+        ace_engineer = 2;
+        ace_engineer_engineerclass = 2;
+        ace_medical_MedicalClass = 2;
+        ace_isEOD = 1;
+        explosiveSpecialist = 1;
 
         class EventHandlers : EventHandlers {
             class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};

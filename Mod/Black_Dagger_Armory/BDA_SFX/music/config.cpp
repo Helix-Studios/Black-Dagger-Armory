@@ -45,7 +45,7 @@ class CfgMusic
 			1
 		};
 		theme="Halo 2";
-		duration="251";
+		duration="251"; //time in seconds
 		musicClass="BDA_2";
 	};
 	class BDA_WarthogRun
@@ -367,10 +367,24 @@ class CfgMusic
 			1
 		};
 		theme="Helldivers OST - A Cup of Liber Tea";
-		duration="337";
+		duration="217";
 		musicClass="BDA_OTH";
 	};
+	class BDA_Impact {
+		name="Impact (Arbiter Extended Mix)";
+		sound[]=
+		{
+			"BDA_SFX\music\data\Impact-Arbiter-Extended-Mix-Halo-2.ogg",
+			1,
+			1
+		};
+		theme="Halo 2";
+		duration="281";
+		musicClass="BDA_2";
+	};
+
 };
+
 class cfgMods {
 	author="Rib";
 	timepacked="051020242250";
