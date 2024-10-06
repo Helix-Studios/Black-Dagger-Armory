@@ -141,6 +141,8 @@ class cfgMagazineWells {
 			"BDA_95x40_Box_400rnd_Box_Tracer"
 		};
 	};
+	
+	
 };
 
 class CfgWeapons 

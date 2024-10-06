@@ -11,7 +11,6 @@ class CfgPatches {
 		{
 			"OPTRE_Core",
 			"OPTRE_Frigate",
-			"Dmns_Structures_Halberd_Skybox"
 			"BDA_Core",
 			"B_BDCUNSC"
 		};
@@ -28,8 +27,7 @@ class CfgVehicles {
 		faction = "B_BDCUNSC";
 		editorCategory="BDA_EC_BlackDagger";
 		editorSubcategory="BDA_ESC_AerospaceShip";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Ext\BDA_Frigate\data\decals_aq_ca.paa",
 			"OPTRE_Frigate\data\Paris_back_co.paa",
 			"OPTRE_Frigate\data\Paris_front_co.paa",

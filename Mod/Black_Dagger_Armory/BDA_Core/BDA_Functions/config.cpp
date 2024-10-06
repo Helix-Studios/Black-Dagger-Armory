@@ -22,6 +22,12 @@ class CfgPatches
 };
 #include "\BDA_Core\BDA_Functions\loadouts\BDA_LoadoutDiag.hpp"
 
+class Extended_Preinit_EventHandlers {
+	class BDA_fnc_vehCamoChange {
+		init="call compile preprocessFileLineNumbers 'BDA_Core\BDA_Functions\preinit.sqf";
+	};
+};
+
 class CfgFunctions {
     class BDA_Scripts 
     {
@@ -35,6 +41,7 @@ class CfgFunctions {
 			class notify {};
 			class isBino {};
 			class advMark {};
+			class vehCamoChange {};
         };
 		class BDA_Loadouts 
 		{
