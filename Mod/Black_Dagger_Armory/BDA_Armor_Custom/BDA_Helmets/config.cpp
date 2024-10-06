@@ -104,7 +104,6 @@ class cfgWeapons
 		};
 	};
 
-
 	class BDA_CH252D_Carthwright_Helmet: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (M. Carthwright)";
 		hiddenSelectionsTextures[]= {
@@ -157,7 +156,6 @@ class cfgWeapons
 		};
 	};
 
-
 	class BDA_CH252D_Flowers_Helmet: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (J. Flowers)";
 		hiddenSelectionsTextures[]= {
@@ -209,7 +207,6 @@ class cfgWeapons
 			};
 		};
 	};
-
 
 	class BDA_CH252D_Beefus_Helmet: BDA_CH252D_Helmet {
 		displayName="CH252D Helmet (G. Beefus)";
@@ -1707,22 +1704,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class BDA_Heli_Pilot_Jager_Helmet: BDA_Heli_Pilot_Helmet {
-		author = "Rib";
-		displayName = "VX15 Pilot Helmet (R. Jager)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Jager_Helmet_CO.paa"
-		};
-	};
-
-	class BDA_Heli_Pilot_Parhau_Helmet: BDA_Heli_Pilot_Helmet {
-		author="Grif";
-		displayName = "VX15 Pilot Helmet (R. Parhau)";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Parhau_Helmet_CO.paa"
-		};
-	};
-
+	
 	class BDA_CH252D_Lefferts_Helmet: BDA_CH252D_Helmet {
 		author="Grif";
 		displayName="CH252D Helmet (J. Lefferts)";
@@ -1942,6 +1924,7 @@ class cfgWeapons
 			};
 		};
 	};
+	
 	class BDA_CH252D_Burkett_Helmet: BDA_CH252D_Helmet {
 		author="Zarush";
 		displayName="CH252D Helmet (J. Burkett)";
@@ -2106,11 +2089,28 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	//Pilots
+	class BDA_Heli_Pilot_Jager_Helmet: BDA_Heli_Pilot_Helmet {
+		author = "Rib";
+		displayName = "VX15 Pilot Helmet (R. Jager)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Jager_Helmet_CO.paa"
+		};
+	};
+
+	class BDA_Heli_Pilot_Parhau_Helmet: BDA_Heli_Pilot_Helmet {
+		author="Grif";
+		displayName = "VX15 Pilot Helmet (R. Parhau)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Parhau_Helmet_CO.paa"
+		};
+	};
+
 	//end
 };	
-class cfgMods
-{
+
+class cfgMods {
 	author="Rib";
-	timepacked="0601241250";
+	timepacked="051020242250";
 };
-	

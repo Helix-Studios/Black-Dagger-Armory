@@ -4,3 +4,8 @@
 #include "CfgEditorCategories.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"
+
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
+};

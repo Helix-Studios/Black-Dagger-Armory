@@ -13,19 +13,9 @@ class CfgPatches
 		{
 			"OPTRE_Core",
 			"OPTRE_Frigate",
-			"BDA_Core"
+			"BDA_Core",
+			"B_BDCUNSC"
 		};
-	};
-};
-class CfgEditorCategories
-{
-	class BDA_EdCat_Blackdagger;
-};
-class CfgEditorSubcategories
-{
-	class BDA_EdSubCat_Frigate_UNSC
-	{
-		displayName="Black Dagger Ships";
 	};
 };
 class CfgVehicles
@@ -33,12 +23,12 @@ class CfgVehicles
 	class OPTRE_Frigate_UNSC;
 	class BDA_Frigate: OPTRE_Frigate_UNSC
 	{
-		author="Rib";
 		DLC="BDA";
+		author="Rib";
 		displayName="Frigate (Alaskan Conquest)";
 		faction = "B_BDCUNSC";
-		editorCategories="BDA_EdCat_BlackDagger";
-		editorSubcategory="BDA_EdSubCat_Frigate_UNSC";
+		editorCategories="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_AerospaceShip";
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Ext\BDA_Frigate\data\decals_ca.paa",
@@ -51,4 +41,9 @@ class CfgVehicles
 			eden=1;
 		};
 	};
+};
+
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
 };

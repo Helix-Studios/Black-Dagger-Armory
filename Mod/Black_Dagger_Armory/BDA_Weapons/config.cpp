@@ -204,3 +204,8 @@ class CfgWeapons
 		};
 	};
 };
+
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
+};

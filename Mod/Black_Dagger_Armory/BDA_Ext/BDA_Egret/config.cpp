@@ -121,8 +121,7 @@ class cfgVehicles
 		};
 	};
 };
-class cfgMods
-{
-	author="Schlopp";
-	timepacked="1680888487";
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
 };

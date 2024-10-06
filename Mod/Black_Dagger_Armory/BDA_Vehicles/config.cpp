@@ -11367,7 +11367,10 @@ class CfgVehicles {
 			"Laserbatteries"
 		};
 	};
-
-	
 	
 }; //cfgend
+
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
+};

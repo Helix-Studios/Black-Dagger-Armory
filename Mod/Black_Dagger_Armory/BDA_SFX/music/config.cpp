@@ -359,9 +359,19 @@ class CfgMusic
 		duration="728";
 		musicClass="BDA_OTH";
 	};
+	class BDA_Helldiver {
+		name="Helldivers OST";
+		sound[]={
+			"BDA_SFX\music\data\HELLDIVER.ogg",
+			1,
+			1
+		};
+		theme="Helldivers OST - A Cup of Liber Tea";
+		duration="337";
+		musicClass="BDA_OTH";
+	};
 };
-class cfgMods
-{
-	author="Schlopp/Rib";
-	timepacked="1683667119";
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
 };

@@ -42,7 +42,7 @@ class cfgWeapons
 //------------------------------------------------------------------// Naval Uniforms
 
 
-	class BDA_Navy_Uniform_Shadow: U_C_Scientist
+	/*class BDA_Navy_Uniform_Shadow: U_C_Scientist
 	{
 		author="Rib";
 		scope=2;
@@ -62,22 +62,20 @@ class cfgWeapons
 			containerClass="Supply100";
 			mass=10;
 		};
-	};
-	class BDA_Navy_Uniform_Knight: U_C_Scientist
-	{
+	};*/
+
+	class BDA_Navy_Uniform_Knight: U_C_Scientist {
+		dlc="BDA";
 		author="Rib";
 		scope=2;
 		displayName="Naval BDU (N. Knight)";
-		hiddenSelections[]=
-		{
+		hiddenSelections[]= {
 			"camo"
 		};
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Knight_CO.paa"
 		};
-		class ItemInfo: UniformItem
-		{
+		class ItemInfo: UniformItem {
 			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_Knight_F";
 			containerClass="Supply100";
@@ -102,7 +100,7 @@ class CfgVehicles
 
 	//------------------------------------------------------------------// Naval Uniform
 
-	class BDA_Navy_Uniform_Shadow_F: C_scientist_F
+	/*class BDA_Navy_Uniform_Shadow_F: C_scientist_F
 	{
 		author="Rib";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
@@ -112,17 +110,20 @@ class CfgVehicles
 		{
 			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Shadow_CO.paa"
 		};
-	};
-	class BDA_Navy_Uniform_Knight_F: C_scientist_F
-	{
+	};*/
+	class BDA_Navy_Uniform_Knight_F: C_scientist_F {
 		author="Rib";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
 		modelSides[]={3};
 		uniformClass="BDA_Navy_Uniform_Knight";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Knight_CO.paa"
 		};
 	};
 
+};
+
+class cfgMods {
+	author="Rib";
+	timepacked="051020242250";
 };
