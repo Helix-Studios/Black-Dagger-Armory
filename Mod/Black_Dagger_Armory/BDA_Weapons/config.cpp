@@ -4,11 +4,11 @@ class CfgPatches
     {
         author = "Black Dagger Development Crew";
 		name = "Black Dagger Weapons";
-		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle"};
+		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG"};
 		requiredVersion = 0.100000;
 		units[] = {};
-		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax"};
-		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer"};
+		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box"};
 		ammo[] = {"Ribs_M_Anvil3_LGIR"};
     };
 };
@@ -41,7 +41,7 @@ class CfgAmmo {
 
 	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
 		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
-		hit = 650;
+		hit = 850;
 		caliber=1;
         explosionEffects="HelicopterExplosionEffects2";
         missileLockMaxDistance=4000;
@@ -106,19 +106,19 @@ class CfgMagazines {
 		autoSeekTarget=1;
 	};
 	class BDA_95x40_400rnd_Box: OPTRE_100Rnd_95x40_Box {
-		dlc = "BDA";
-		scope = 2;
-		displayName = "400Rnd 9.5x40mm Box Mag";
-		ammo = "OPTRE_B_95x40_Tracer";
-		descriptionshort = "400 Round Box Magazine<br/>9.5x40mm<br/>";
-		count = 400;
-		mass = 95;
+	dlc = "BDA";
+	scope = 2;
+	displayName = "400Rnd 9.5x40mm Box Mag";
+	ammo = "OPTRE_B_95x40_Tracer";
+	descriptionshort = "400 Round Box Magazine<br/>9.5x40mm<br/>";
+	count = 400;
+	mass = 95;
 	};
 	class BDA_95x40_400rnd_Box_Tracer: BDA_95x40_400rnd_Box {
-		displayName = "400Rnd 9.5x40mm Box Mag (Tracers)";
-		descriptionshort = "400 Round Box Magazine<br/>9.5x40mm<br/>Tracers";
-		tracersEvery = 1;
-		lastRoundsTracer = 400;
+	displayName = "400Rnd 9.5x40mm Box Mag (Tracers)";
+	descriptionshort = "400 Round Box Magazine<br/>9.5x40mm<br/>Tracers";
+	tracersEvery = 1;
+	lastRoundsTracer = 400;
 	};
 	class BDA_1200rnd_762x51_Box_Tracer: OPTRE_500Rnd_762x51_Box_Tracer {
 		dlc = "BDA";
@@ -142,18 +142,21 @@ class cfgMagazineWells {
 		};
 	};
 	
+	
 };
 
-class CfgWeapons {
+class CfgWeapons 
+{
     /*extern*/ class RocketPods;
     /*extern*/ class missiles_ASRAAM;
 	/*extern*/ class missiles_titan;
 	/*extern*/ class missiles_SCALPEL;
 	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
-	/*extern*/ class OPTRE_M247T_Coax;
+	/*extern*/ class OPTRE_M73;
 	/*extern*/ class Laserdesignator;
 
-    class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F {
+    class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F 
+    {
         scope = 2;
         displayName = "ANVIL III LGIR Missile Pods";
 		descriptionShort = "LGIR Missiles";
@@ -184,12 +187,6 @@ class CfgWeapons {
         };
 		reloadTime = 0.200000;
 		magazineReloadTime = 0.200000;
-	};
-
-	class BDA_M247T_Coax: OPTRE_M247T_Coax {
-		Magazines[] = {
-		"BDA_1200rnd_762x51_Box_Tracer"
-		};
 	};
 
 	class BDA_Smartfinder: Laserdesignator {
