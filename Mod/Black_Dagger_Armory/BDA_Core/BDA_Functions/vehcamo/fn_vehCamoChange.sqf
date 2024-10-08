@@ -18,12 +18,12 @@ if(_camoType isEqualTo "") then {
     _camoType = _camoTypeList select 0;
 };
 
-//camo type checking
+//camo type validation
 if(!(_camoType in _camoTypeList)) exitWith {
     systemChat format ["%1, %2 not in %3,time,_camoType,_camoTypeList"]
 };
 
-_camos = getArray (_config >> "textureSources" >> _camoType >> "camos");
+_camos = getArray (_config >> "textureSources" >> _camoType >> "textures");
 {
     _vehicle setObjectTextureGlobal[_forEachIndex,_x];
 } forEach _camos;

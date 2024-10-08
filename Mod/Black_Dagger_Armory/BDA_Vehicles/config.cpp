@@ -5,7 +5,6 @@ class CfgPatches {
 		{
 			"BDA_UNSC_D77_TC_Pelican",
 			"BDA_UNSC_D77_TC_Pelican_Single",
-			"OPTRE_UNSC_Marine_Soldier_Rifleman_AR",
 			"BDA_UNSC_Hornet",
 			"BDA_UNSC_Hornet_Lite",
 			"BDA_UNSC_UH145A_Falcon2"
@@ -164,7 +163,7 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 		};
 
-		class ACE_SelfActions: ACE_SelfActions {
+		/*class ACE_SelfActions {
 			class BDA_CamoChange {
 				displayName = "Change Camo";
 				exceptions[] = {
@@ -249,7 +248,7 @@ class CfgVehicles {
 					};
 				};
 			};
-		};
+		};*/
 
 		class textureSources {
 			class UNSC_BDA_Green {
@@ -4386,6 +4385,215 @@ class CfgVehicles {
 			};
 		};
 
+		//turrets
+		class Turrets: Turrets {
+			class MainTurret: MainTurret {
+				isCopilot=1;
+				CanEject=0;
+				body = "mainturret";
+				gun = "maingun";
+				animationsourcebody = "mainturret";
+				animationSourceGun = "maingun";
+				gunAxis = "Osa Hlavne";
+				gunBeg = "Usti hlavne";
+				gunEnd = "konec hlavne";
+				ejectDeadGunner = 0;
+				minElev=-51;
+				maxElev=9;
+				initElev=6;
+				minTurn=-120;
+				maxTurn=120;
+				initTurn=0;
+				turretAxis = "OsaVeze";
+				maxHorizontalRotSpeed = 1.75;
+				maxVerticalRotSpeed = 1.5;
+				gunnerAction = "Splits_Gunner_Pelican";
+				gunnerInAction = "Splits_Gunner_Pelican";
+				gunnerGetInAction = "pilot_Heli_Light_02_Enter";
+				gunnerGetOutAction = "pilot_Heli_Light_02_Exit";
+				precisegetinout=1;
+				gunnerName = "Primary Gunner";
+				proxyindex = 1;
+				gunnerCompartments="Compartment2";
+				hideWeaponsGunner = 1;
+				soundServo[] = { "",0.01,1 };
+				stabilizedInAxes = 3;
+				commanding = -2;
+				primaryGunner = 1;
+				turretInfoType = "RscOptics_crows";
+				discreteDistance[]={100,200,300,400,500,600,700,800,1000,1200,1500,1800,2100,2500};
+				discreteDistanceInitIndex=5;
+				showAllTargets=4;
+				playerPosition=3;
+				memoryPointsGetInGunner = "Pos Gunner";
+				memoryPointsGetInGunnerDir = "Pos Gunner dir";
+				gunnerLeftHandAnimName = "lever_pilot";
+				gunnerRightHandAnimName = "stick_copilot";
+				memoryPointGun = "machinegun";
+				weapons[] = { "Splits_M370_70mm_autocannon", "Laserdesignator_mounted"  };
+				magazines[] =
+				{
+					"Splits_1200Rnd_Cannon_70mm_M370_MP",
+					"Splits_1200Rnd_Cannon_70mm_M370_HE",
+					"Laserbatteries"
+				};
+				memoryPointGunnerOptics = "PIP2_pos";
+				memoryPointGunnerOutOptics= "gunnerview";
+				castGunnerShadow = 1;
+				startEngine = 0;
+				gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_02_F.p3d";
+				gunnerForceOptics = 0;
+				hasGunner = 1;
+				class OpticsIn
+				{
+					class Wide
+					{
+						initAngleX=0;
+						minAngleX=-30;
+						maxAngleX=30;
+						initAngleY=0;
+						minAngleY=-100;
+						maxAngleY=100;
+						initFov=0.46599999;
+						minFov=0.46599999;
+						maxFov=0.46599999;
+						opticsDisplayName="WFOV";
+						visionMode[]=
+						{
+							"Normal",
+							"NVG",
+							"Ti"
+						};
+						thermalMode[]={0,1};
+						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
+					};
+					class Medium: Wide
+					{
+						initFov=0.093000002;
+						minFov=0.093000002;
+						maxFov=0.093000002;
+						opticsDisplayName="MFOV";
+						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
+					};
+					class Narrow: Wide
+					{
+						initFov=0.028999999;
+						minFov=0.028999999;
+						maxFov=0.028999999;
+						opticsDisplayName="NFOV";
+						gunnerOpticsModel="\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
+					};
+				};
+				class OpticsOut
+				{
+					class Monocular
+					{
+						initFov=0.89999998;
+						minFov=0.25;
+						maxFov=1.25;
+						initAngleX=0;
+						initAngleY=0;
+						minAngleX=-65;
+						maxAngleX=85;
+						minAngleY=-150;
+						maxAngleY=150;
+						minMoveX=-0.2;
+						maxMoveX=0.2;
+						minMoveY=-0.1;
+						maxMoveY=0.1;
+						minMoveZ=-0.1;
+						maxMoveZ=0.2;
+						visionMode[]=
+						{
+							"Normal",
+							"NVG"
+						};
+						gunnerOpticsModel="";
+						gunnerOpticsEffect[]={};
+					};
+				};
+			};
+			class RearDoorGun: RearDoorGun {
+				gunnerType = "B_BDA_Crewman";
+				gunnerName = "Door Gunner";
+				weapons[] = {
+					"BDA_M247T_Coax"
+				};
+				magazines[] = {
+					"BDA_1200rnd_762x51_Box_Tracer"
+				}; 
+			};
+			class CargoTurret_01: CargoTurret_01
+			{
+				gunnerName="Standing Seat 1";
+				crew="B_BDA_SquadLead";
+			};
+			class CargoTurret_02: CargoTurret_02
+			{
+				gunnerName="Standing Seat 2";
+				crew="B_BDA_Breacher";
+			};
+			class CargoTurret_03: CargoTurret_03
+			{
+				gunnerName="Standing Seat 3";
+				crew="B_BDA_Rocket";
+			};
+			class CargoTurret_04: CargoTurret_04
+			{
+				gunnerName="Standing Seat 4";
+				crew="B_BDA_Rifleman";
+			};
+			class CargoTurret_05: CargoTurret_05
+			{
+				gunnerName="Standing Seat 5";
+				crew="B_BDA_Autorifleman";
+			};
+			class CargoTurret_06: CargoTurret_06
+			{
+				gunnerName="Standing Seat 6";
+			};
+			class CargoTurret_07: CargoTurret_07
+			{
+				gunnerName="Standing Seat 7";
+			};
+			class CargoTurret_08: CargoTurret_08
+			{
+				gunnerName="Standing Seat 8";
+			};
+			class CargoTurret_09: CargoTurret_09
+			{
+				gunnerName="Standing Seat 9";
+				crew="B_BDA_Sniper";
+			};
+			class CargoTurret_10: CargoTurret_10
+			{
+				gunnerName="Standing Seat 10";
+			};
+			class CargoTurret_11: CargoTurret_11
+			{
+				gunnerName="Standing Seat 11";
+				crew="B_BDA_Teamleader";
+			};
+			class CargoTurret_12: CargoTurret_12
+			{
+				gunnerName="Standing Seat 12";
+			};
+			class CargoTurret_13: CargoTurret_13
+			{
+				gunnerName="Standing Seat 13";
+				crew="B_BDA_Crewman";
+			};
+			class CargoTurret_14: CargoTurret_14
+			{
+				gunnerName="Standing Seat 14";
+			};
+			class CargoTurret_15: CargoTurret_15
+			{
+				gunnerName="Standing Seat 15";
+				crew="B_BDA_Rifleman";
+			};
+		};
+		
 		//misc
 		class SimpleObject
 		{
@@ -5474,11 +5682,12 @@ class CfgVehicles {
 		side = 1;
 		vehicleClass = "Air";
 		dlc="BDA";
-		author = "Splitjaw & Rib & I'm Kreepy";
+		author = "Rib & I'm Kreepy";
 		faction = "B_BDCUNSC";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.png";
 		displayName = "D77-TC Pelican (Single)";
 		memoryPointDriverOptics= "PIP2_pos";
+
 		//Weapons
 		weapons[] = {
 			"CMFlareLauncher",
@@ -5569,7 +5778,7 @@ class CfgVehicles {
 				gunnerType = "B_BDA_Crewman";
 				gunnerName = "Door Gunner";
 				weapons[] = {
-					"OPTRE_M247T_Coax"
+					"BDA_M247T_Coax"
 				};
 				magazines[] = {
 					"BDA_1200rnd_762x51_Box_Tracer"
@@ -5648,7 +5857,7 @@ class CfgVehicles {
 			};
 		};
 
-		class ACE_SelfActions: ACE_SelfActions {
+		/*class ACE_SelfActions {
 			class BDA_CamoChange {
 				displayName = "Change Camo";
 				exceptions[] = {
@@ -5733,7 +5942,7 @@ class CfgVehicles {
 					};
 				};
 			};
-		};
+		};*/
 
 		class textureSources {
 			class UNSC_BDA_Green {
@@ -11045,7 +11254,7 @@ class CfgVehicles {
 			"Winter", 1
 		};
 
-		class ACE_SelfActions: ACE_SelfActions {
+		/*class ACE_SelfActions {
 			class BDA_CamoChange {
 				displayName = "Change Camo";
 				exceptions[] = {
@@ -11153,7 +11362,7 @@ class CfgVehicles {
 					icon = "";
 				};
 			};
-		};
+		};*/
 
 		class Components {
 			class TransportPylonsComponent {
@@ -11430,7 +11639,7 @@ class CfgVehicles {
 			"Winter", 1
 		};
 
-		class ACE_SelfActions: ACE_SelfActions {
+		/*class ACE_SelfActions {
 			class BDA_CamoChange {
 				displayName = "Change Camo";
 				exceptions[] = {
@@ -11538,7 +11747,7 @@ class CfgVehicles {
 					icon = "";
 				};
 			};
-		};
+		};*/
 
 		class Components {
 			class TransportPylonsComponent {
