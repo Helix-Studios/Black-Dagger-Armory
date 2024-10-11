@@ -5857,6 +5857,16 @@ class CfgVehicles {
 			};
 		};
 
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class WinterCamo {
+                displayName = "Winter";
+				statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+            };
+        };
+
 		/*class ACE_SelfActions {
 			class BDA_CamoChange {
 				displayName = "Change Camo";
