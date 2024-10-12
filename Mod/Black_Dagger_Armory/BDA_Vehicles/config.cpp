@@ -188,7 +188,7 @@ class CfgVehicles {
 				displayName="UNSC Whiskey 316";
 				author="Splitjaw/Grif/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\BDA_W_body_co.paa",
+					"\BDA_Vehicles\data\customs\BDA_W_body_co.paa",
 					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
 					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
 				};
@@ -198,9 +198,9 @@ class CfgVehicles {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
 				textures[]= {
-					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\body_co.paa",
-					"\BDA_Vehicles\data\pelican\wings_and_gear_co.paa",
-					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\weaponry_co.paa"
+					"\BDA_Vehicles\data\pelican\BDA_Wi_body_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_Wi_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_Wi_weaponry_co.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};
@@ -5626,15 +5626,15 @@ class CfgVehicles {
 		weapons[] = {
 			"CMFlareLauncher",
 			"BDA_missiles_Guided_Anvil3",
-			"Splits_M370_70mm_autocannon",
+			"BDA_MG470_40mm",
 			"Laserdesignator_mounted"
 		};
 		magazines[] = {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"BDA_missiles_LGIR_Anvil3_x60",
-			"Splits_1200Rnd_Cannon_70mm_M370_MP",
-			"Splits_1200Rnd_Cannon_70mm_M370_HE",
+			"BDA_400rnd_40mm_G_MP_Belt",
+			"BDA_400rnd_40mm_G_HE_Belt"
 			"Laserbatteries"
 		};
 		crew = "B_BDA_Pilot";
@@ -5829,7 +5829,7 @@ class CfgVehicles {
 				displayName="UNSC Whiskey 316";
 				author="Splitjaw/Grif/Rib";
 				textures[]={
-					"\BDA_Vehicles\data\BDA_W_body_co.paa",
+					"\BDA_Vehicles\data\customs\BDA_W_body_co.paa",
 					"\BDA_Vehicles\data\BDA_G_wings_and_gear_co.paa",
 					"\BDA_Vehicles\data\BDA_G_weaponry_co.paa"
 				};
@@ -5839,9 +5839,9 @@ class CfgVehicles {
 				displayName="UNSC Winter";
 				author="SplitJaw/Rib";
 				textures[]= {
-					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\body_co.paa",
-					"\BDA_Vehicles\data\pelican\wings_and_gear_co.paa",
-					"Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\weaponry_co.paa"
+					"\BDA_Vehicles\data\pelican\BDA_Wi_body_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_Wi_wings_and_gear_co.paa",
+					"\BDA_Vehicles\data\pelican\BDA_Wi_weaponry_co.paa"
 				};
 				factions[]={"B_BDCUNSC"};
 			};

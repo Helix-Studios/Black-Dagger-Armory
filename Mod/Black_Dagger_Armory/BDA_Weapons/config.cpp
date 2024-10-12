@@ -7,8 +7,8 @@ class CfgPatches
 		requiredAddons[] = {"A3_Weapons_F","A3_Data_F_Jets","Splits_Weapons_Vehicle","Splits_Weaponry_Ammo", "OPTRE_Weapons_MG","OPTRE_Weapons_Vehicle"};
 		requiredVersion = 0.100000;
 		units[] = {};
-		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax"};
-		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer"};
+		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_400rnd_40mm_G_Belt"};
 		ammo[] = {"Ribs_M_Anvil3_LGIR"};
     };
 };
@@ -38,6 +38,8 @@ class CfgAmmo {
 	/*extern*/ class M_AT;
 	/*extern*/ class Missile_AGM_02_F;
 	/*extern*/ class Splits_M_ATA_Anaconda_AA;
+	/*extern*/ class B_40mm_HE;
+	/*extern*/ class B_40mm_MP;
 
 	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
 		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
@@ -62,6 +64,14 @@ class CfgAmmo {
 		irLock = 1;
 		canlock = 2;
 		laserLock = 1;
+	};
+	class BDA_40mm_HE: B_40mm_HE {
+		hit = 160;
+		typicalSpeed = 950;
+	};
+	class BDA_40mm_MP: B_40mm_MP {
+		hit = 210;
+		typicalSpeed = 900;
 	};
 };
 
@@ -129,6 +139,24 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundsTracer = 1200;
 	};
+	class BDA_400rnd_40mm_G_HE_Belt: VehicleMagazine {
+		author = "Rib";
+		scope = 2;
+		ammo = "BDA_40mm_HE";
+		initSpeed = 950;
+		maxLeadSpeed = 30;
+		nameSound = "";
+		count = 400;
+		displayName = "M470 40mm Drum HE";
+		descriptionShort = "M470 40mm Drum HE";
+		muzzleImpulseFactor[] = {0.1,0.1};
+	};
+	class BDA_400rnd_40mm_G_MP_Belt: BDA_400rnd_40mm_G_HE_Belt {
+		ammo = "BDA_40mm_MP";
+		displayName = "M470 40mm Drum MP";
+		initSpeed = 900;
+		descriptionShort = "M470 40mm Drum MP";
+	};
 
 };
 
@@ -152,6 +180,8 @@ class CfgWeapons {
 	/*extern*/ class Missile_AGM_02_Plane_CAS_01_F;
 	/*extern*/ class OPTRE_M247T_Coax;
 	/*extern*/ class Laserdesignator;
+	/*extern*/ class GMG_40mm;
+	/*extern*/ class GMG_F;
 
     class BDA_missiles_Guided_Anvil3: Missile_AGM_02_Plane_CAS_01_F {
         scope = 2;
@@ -208,6 +238,137 @@ class CfgWeapons {
 			mass = 5;
 		};
 	};
+
+	class BDA_MG470_40mm: GMG_40mm {
+		author = "Rib";
+		displayName = "MG-470 Automatic Grenade Launcher";
+		magazines[] = {
+			"BDA_400rnd_40mm_G_MP_Belt",
+			"BDA_400rnd_40mm_G_HE_Belt"
+		};
+		magazineReloadTime = 3;
+		showAimCursorInternal = 0;
+		modes[] = {
+			"manual",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+		class manual: GMG_F {
+			displayName="40mm explosives";
+			sounds[]= {
+				"StandardSound"
+			};
+			class StandardSound {
+				begin1[]= {
+					"A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG_01",
+					1.1220185,
+					1,
+					1200
+				};
+				begin2[]= {
+					"A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG_02",
+					1.1220185,
+					1,
+					1200
+				};
+				begin3[]= {
+					"A3\Sounds_F\arsenal\weapons_static\Static_GMG\GMG_03",
+					1.1220185,
+					1,
+					1200
+				};
+				soundBegin[]= {
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin3",
+					0.34
+				};
+			};
+			soundContinuous=0;
+			soundBurst=0;
+			dispersion=0.0049999999;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: manual {
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=6;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=50;
+			minRange=16;
+			minRangeProbab=0.1;
+			midRange=100;
+			midRangeProbab=0.5;
+			maxRange=200;
+			maxRangeProbab=0.2;
+		};
+		class short: close {
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=5;
+			aiRateOfFire=1;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=150;
+			minRange=100;
+			minRangeProbab=0.5;
+			midRange=250;
+			midRangeProbab=0.69999999;
+			maxRange=500;
+			maxRangeProbab=0.75;
+		};
+		class medium: close {
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=5;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=400;
+			minRange=400;
+			minRangeProbab=0.75;
+			midRange=800;
+			midRangeProbab=0.80000001;
+			maxRange=1200;
+			maxRangeProbab=0.75;
+		};
+		class far: close {
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=3;
+			aiRateOfFire=4;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=1000;
+			minRange=1000;
+			minRangeProbab=0.76999998;
+			midRange=1200;
+			midRangeProbab=0.75;
+			maxRange=1500;
+			maxRangeProbab=0.1;
+		};
+		class GunParticles {
+			class effect1 {
+				positionName="usti hlavne";
+				directionName="konec hlavne";
+				effectName="GrenadeLauncherCloud";
+			};
+		};
+	};
+	//end
 };
 
 class cfgMods {

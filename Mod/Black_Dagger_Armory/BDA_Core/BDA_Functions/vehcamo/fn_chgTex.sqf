@@ -23,9 +23,9 @@ switch (_vehCamo) do {
 	{
 		if(_vehClass isEqualTo "BDA_UNSC_D77_TC_Pelican_Single" or _vehClass isEqualTo "BDA_UNSC_D77_TC_Pelican") then 
 		{
-			_tarVeh setObjectTextureGlobal [0, "Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\body_co.paa"];
-			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\pelican\wings_and_gear_co.paa"];
-			_tarVeh setObjectTextureGlobal [2, "Splits\Splits_Vehicles\Pelican\data\HW2_19th_winter\weaponry_co.paa"];
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\pelican\BDA_Wi_body_co.paa"];
+			_tarVeh setObjectTextureGlobal [1, "\BDA_Vehicles\data\pelican\BDA_Wi_wings_and_gear_co.paa"];
+			_tarVeh setObjectTextureGlobal [2, "\BDA_Vehicles\data\pelican\BDA_Wi_weaponry_co.paa"];
 		};
 		systemChat "Applying winter texture";
 	};
