@@ -39,7 +39,7 @@ class cfgVehicles
 		armor=500000;
 		displayname="Egret Spaceliner";
 		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_Egret.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_Egret.jpg";
 		hiddenSelections[]=
 		{
 			"camo"
@@ -58,7 +58,7 @@ class cfgVehicles
 		faction="B_BDCUNSC";
 		editorSubcategory="BDA_ESC_AerospaceShip";
 		displayname="Egret Spaceliner";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_Egret.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_Egret.jpg";
 		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";
 		crew = "B_BDA_Pilot";
 		hiddenSelections[]=

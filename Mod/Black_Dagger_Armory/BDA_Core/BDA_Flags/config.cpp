@@ -11,6 +11,8 @@ class cfgpatches
 
 class CfgVehicles {
 	class FlagCarrier;
+	class Banner_01_F;
+	class OPTRE_CTF_Flag_Base;
 
 	class BDA_Flag_Base: FlagCarrier {
 		author="Schlopp";
@@ -33,6 +35,30 @@ class CfgVehicles {
 		};
 	};
 
+	class BDA_Banner: Banner_01_F {
+		scope = 2;
+		scopeCurator = 2;
+		author = "Rib";
+		displayName = "Black Dagger Company Banner";
+		editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Flags";
+		hiddenSelectionsTextures[] = {
+			"BDA_Core\BDA_Flags\data\BDA_Flag_BlackDagger.paa"
+		};
+	};
+
+	class BDA_CTF_Banner: OPTRE_CTF_Flag_Base {
+		scope = 2;
+		scopeCurator = 2;
+		author = "Rib";
+		displayName = "Black Dagger Company Banner";
+		editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Flags";
+		hiddenSelectionsTextures[] = {
+			"BDA_Core\BDA_Flags\data\BDA_Flag_BlackDagger.paa"
+		};
+	};
+
 	class BDA_Flag_BlackDagger: BDA_Flag_Base
 	{
 		scope=2;
@@ -47,5 +73,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="051020242250";
+	timepacked="1210241652";
 };

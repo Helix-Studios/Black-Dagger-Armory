@@ -50,7 +50,7 @@ class CfgVehicles {
     class B_crew_F_OCimport_02 : B_crew_F_OCimport_01 { class EventHandlers; };
 
     class B_BDA_Rook : B_Survivor_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rook.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rook.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -89,7 +89,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Rifleman: B_soldier_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rifleman.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rifleman.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -130,7 +130,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Autorifleman : B_soldier_AR_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Autorifleman.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Autorifleman.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -171,7 +171,7 @@ class CfgVehicles {
     };
 
     class B_BDA_SquadLead : B_Soldier_SL_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_SquadLead.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_SquadLead.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -212,7 +212,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Medic : B_medic_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Medic.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Medic.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -255,7 +255,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Demo : B_soldier_exp_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Demo.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Demo.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -300,7 +300,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Rocket : B_soldier_AT_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rocket.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rocket.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -348,7 +348,7 @@ class CfgVehicles {
         side = 1;
         faction = "B_BDCUNSC";
 
-        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default.png"};
+        identityTypes[] = {"Head_NATO","LanguageENG_F","G_NATO_default.jpg"};
 
         uniformClass = "BDA_Uniform_B_SL";
 
@@ -381,7 +381,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Breacher : B_Soldier_TL_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Breacher.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Breacher.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -393,8 +393,8 @@ class CfgVehicles {
 
         uniformClass = "BDA_Uniform_B_SL";
 
-        linkedItems[] = {"BDA_Armor_RF","BDA_CH252D_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
-        respawnlinkedItems[] = {"BDA_Armor_RF","BDA_CH252D_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
+        linkedItems[] = {"BDA_Armor_BR","BDA_CH252D_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
+        respawnlinkedItems[] = {"BDA_Armor_BR","BDA_CH252D_Helmet","ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"};
 
         weapons[] = {"OPTRE_MA5B","OPTRE_M6C","OPTRE_Binoculars"};
         respawnWeapons[] = {"OPTRE_MA5B","OPTRE_M6C","OPTRE_Binoculars"};
@@ -404,7 +404,7 @@ class CfgVehicles {
 
         backpack = "BDA_Rucksack_B";
 
-        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_CableTie",12},{"ACE_EntrenchingTool",1},{"ACE_IR_Strobe_Item",3},{"TCF_60Rnd_762x51_Mag_JHP",1,60}}},{"BDA_Armor_RF",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B",{{"ItemcTabHCam",1},{"ACE_wirecutter",1},{"OPTRE_12Rnd_8Gauge_Slugs",2,12},{"OPTRE_60Rnd_762x51_Mag",8,60},{"OPTRE_12Rnd_127x40_Mag",1,12},{{"OPTRE_MA5B","","","",{},{},""},1}}},"BDA_CH252D_Helmet","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
+        ALiVE_orbatCreator_loadout[] = {{"OPTRE_MA5B","","","",{"TCF_60Rnd_762x51_Mag_JHP",60},{},""},{},{"OPTRE_M6C","OPTRE_M6C_compensator","","OPTRE_M6C_Scope",{"OPTRE_12Rnd_127x40_Mag",12},{},""},{"BDA_Uniform_B_SL",{{"ACE_CableTie",12},{"ACE_EntrenchingTool",1},{"ACE_IR_Strobe_Item",3},{"TCF_60Rnd_762x51_Mag_JHP",1,60}}},{"BDA_Armor_RF",{{"ACE_fieldDressing",10},{"ACE_elasticBandage",10},{"ACE_packingBandage",10},{"ACE_quikclot",10},{"ACE_epinephrine",4},{"ACE_splint",2},{"ACE_tourniquet",4},{"OPTRE_M9_Frag",2,1},{"OPTRE_M2_Smoke",2,1},{"OPTRE_M2_Smoke_Blue",2,1},{"ACE_painkillers",1,10}}},{"BDA_Rucksack_B",{{"ItemcTabHCam",1},{"ACE_wirecutter",1},{"OPTRE_12Rnd_8Gauge_Slugs",2,12},{"OPTRE_60Rnd_762x51_Mag",8,60},{"OPTRE_12Rnd_127x40_Mag",1,12},{{"OPTRE_M90A","","","",{},{},""},1}}},"BDA_CH252D_Helmet","",{"OPTRE_Binoculars","","","",{},{},""},{"ItemMap","ItemGPS","TFAR_anprc152","ItemCompass","ItemWatch","OPTRE_NVG"}};
 
 
         class EventHandlers : EventHandlers {
@@ -422,7 +422,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Sniper : B_Sharpshooter_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Sniper.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Sniper.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -463,7 +463,7 @@ class CfgVehicles {
     };
 
     class B_BDA_1_1 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_1.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_1.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -505,7 +505,7 @@ class CfgVehicles {
     };
 
     class B_BDA_1_2 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_2.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_2.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -547,7 +547,7 @@ class CfgVehicles {
     };
 
     class B_BDA_1_3 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_3.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_3.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -589,7 +589,7 @@ class CfgVehicles {
     };
 
     class B_BDA_2_1 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_1.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_1.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -631,7 +631,7 @@ class CfgVehicles {
     };
 
     class B_BDA_2_2 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_2.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_2.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -673,7 +673,7 @@ class CfgVehicles {
     };
 
     class B_BDA_2_3 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_3.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_3.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -715,7 +715,7 @@ class CfgVehicles {
     };
 
     class B_BDA_1_0 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_0.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_1_0.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -758,7 +758,7 @@ class CfgVehicles {
     };
 
     class B_BDA_2_0 : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_0.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_2_0.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -801,7 +801,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Grenadier : B_BDA_Rifleman {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Grenadier.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Grenadier.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -842,7 +842,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Pilot : B_BDA_Rook {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Pilot.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Pilot.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -884,7 +884,7 @@ class CfgVehicles {
     };
 
     class B_BDA_PilotLead : B_BDA_Rook {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_PilotLead.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_PilotLead.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -927,7 +927,7 @@ class CfgVehicles {
     };
 
     class B_BDA_Crewman : B_crew_F_OCimport_02 {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Crewman.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Crewman.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;
@@ -971,7 +971,7 @@ class CfgVehicles {
     // HEROES OF BLACK DAGGER
 
     class B_BDA_Rib : B_BDA_SquadLead {
-        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rib.png";
+        editorPreview = "\BDA_Units\b_bdcunsc\data\preview\B_BDA_Rib.jpg";
         author = "Rib";
         scope = 2;
         scopeCurator = 2;

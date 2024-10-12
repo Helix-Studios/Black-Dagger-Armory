@@ -98,7 +98,7 @@ class RscDisplayMain: RscStandardDisplay {
 			idc=-1;
 			text="Join BDC Discord";
 			tooltip="Click to join the Black Dagger Discord";
-			url="https://discord.gg/nbqWj7Q6JP";
+			url="https://discord.gg/blackdaggercompany";
 			colorBackground[]={0,0,0,0.69999999};
 			colorBackgroundActive[]={1,0,0,0,2};
 			borderSize=0.054000001;
@@ -124,7 +124,7 @@ class RscDisplayMain: RscStandardDisplay {
 		};*/
 
 		class Logo: RscActivePicture {
-			idc=0;
+			idc=-1;
 			text = "BDA_Core\BlackDaggerArmory_Logo.paa";
 		};
 	};
@@ -140,13 +140,13 @@ class RscDisplayMain: RscStandardDisplay {
 	};
 
 	class controlsBackground {
-		class LoadingPic1: RscPicture {
-			idc=1;
+		class BDAMainMenuPicture: RscPicture {
+			idc = 7010;
 			x = SafeZoneX;
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text = "BDA_Core\BDA_MM\bda_mm_2.paa";
+			text = "BDA_Core\BDA_MM\longpatrol.paa";
 		};
 	};
 };
@@ -154,10 +154,10 @@ class RscDisplayMain: RscStandardDisplay {
 class RscDisplayLoading {
 	class Variants {
 		class LoadingBackground_BDA_1 {
-			idd = 250;
+			idd = 7120;
 			class controls {
 				class LoadingPicture_bda_2: RscPicture {
-				idc=1;
+				idc = 7020;
 				x="SafeZoneX";
 				y="SafeZoneY";
 				h="SafeZoneH";
@@ -169,31 +169,19 @@ class RscDisplayLoading {
 		class Loading_West1: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_3: RscPicture {
-				idc=1;
+				idc = 7220;
 				x="SafeZoneX";
 				y="SafeZoneY";
 				h="SafeZoneH";
 				w="SafeZoneW";
-				text="BDA_Core\BDA_MM\bda_mm_3.paa";
-				};
-			};
-		};
-		class Loading_West2: LoadingBackground_BDA_1 {
-			class controls {
-				class LoadingPicture_bda_5: RscPicture {
-				idc=1;
-				x="SafeZoneX";
-				y="SafeZoneY";
-				h="SafeZoneH";
-				w="SafeZoneW";
-				text="BDA_Core\BDA_MM\bda_mm_5.paa";
+				text="BDA_Core\BDA_MM\1-2breach.paa";
 				};
 			};
 		};
 		class Loading_West3: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_6: RscPicture {
-				idc=1;
+				idc = 7320;
 				x="SafeZoneX";
 				y="SafeZoneY";
 				h="SafeZoneH";
@@ -205,7 +193,7 @@ class RscDisplayLoading {
 		class Loading_West4: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_4: RscPicture {
-				idc=1;
+				idc = 7420;
 				x="SafeZoneX";
 				y="SafeZoneY";
 				h="SafeZoneH";
@@ -217,19 +205,19 @@ class RscDisplayLoading {
 		class Loading_West5: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_1: RscPicture {
-				idc=1;
+				idc = 7520;
 				x="SafeZoneX";
 				y="SafeZoneY";
 				h="SafeZoneH";
 				w="SafeZoneW";
-				text="BDA_Core\BDA_MM\bda_mm_1.paa";
+				text="BDA_Core\BDA_MM\2-1patrol.paa";
 				};
 			};
 		};
 		class Loading_West6: LoadingBackground_BDA_1 {
 			class controls {
 				class LoadingPicture_bda_1: RscPicture {
-				idc=1;
+				idc = 7620;
 				x="SafeZoneX";
 				y="SafeZoneY";
 				h="SafeZoneH";
@@ -241,17 +229,15 @@ class RscDisplayLoading {
 	};
 };
 
-
-
 class RscDisplayLoadMission: RscStandardDisplay {
 	class controlsBackground {
 		class LoadingPicture_bda_m: RscPicture {
-			idc=1000;
+			idc = 7720;
 			x = SafeZoneX;
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text="BDA_Core\BDA_MM\bda_mm_5.paa";
+			text="BDA_Core\BDA_MM\pilot.paa";
 		};
 	};
 };
@@ -259,7 +245,7 @@ class RscDisplayLoadMission: RscStandardDisplay {
 class RscDisplayStart: RscStandardDisplay {
 	class controls {
 		class LoadingPicture_bda_s: RscPicture {
-			idc=1000;
+			idc=1245;
 			x = SafeZoneX;
 			y = SafeZoneY;
 			h = SafeZoneH;
@@ -272,18 +258,18 @@ class RscDisplayStart: RscStandardDisplay {
 class RscDisplayMPPlayers;
 class RscDisplayClientWait: RscDisplayMPPlayers {
 	class LoadingPicture_bda_mp: RscPicture {
-		idc=1000;
+		idc = 7820;
 		x = SafeZoneX;
 		y = SafeZoneY;
 		h = SafeZoneH;
 		w = SafeZoneW;
-		text = "BDA_Core\BDA_MM\bda_mm_6.paa";
+		text = "BDA_Core\BDA_MM\cardselite.paa";
 	};
 };
 
 class RscDisplayClient: RscStandardDisplay {
 	class controlsBackground {
-		idc=1000;
+		idc = 7920;
 		colorText[]={1,1,1,1};
 		x = SafeZoneX;
 		y = SafeZoneY;
@@ -298,5 +284,5 @@ class RscDisplayConfigure {
 
 class cfgMods {
 	author="Rib";
-	timepacked="051020242250";
+	timepacked="1210241847";
 };

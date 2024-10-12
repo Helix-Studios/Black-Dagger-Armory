@@ -8,38 +8,38 @@ class CfgPatches
 		requiredVersion = 0.100000;
 		units[] = {};
 		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
-		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_400rnd_40mm_G_Belt"};
-		ammo[] = {"Ribs_M_Anvil3_LGIR"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_400rnd_40mm_G_HE_Belt","BDA_400rnd_40mm_G_MP_Belt"};
+		ammo[] = {"Ribs_M_Anvil3_LGIR","BDA_40mm_HE","BDA_40mm_MP"};
     };
 };
 
-/*extern*/ class SensorTemplatePassiveRadar;
-/*extern*/ class SensorTemplateAntiRadiation;
-/*extern*/ class SensorTemplateActiveRadar;
-/*extern*/ class SensorTemplateIR;
-/*extern*/ class SensorTemplateVisual;
-/*extern*/ class SensorTemplateMan;
-/*extern*/ class SensorTemplateLaser;
-/*extern*/ class SensorTemplateNV;
-/*extern*/ class SensorTemplateDataLink;
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
 
 class CfgAmmo {
-	/*extern*/ class MissileCore;
+	/*arma*/ class MissileCore;
 
 	class MissileBase: MissileCore {
-		/*extern*/ class Components;
+		class Components;
 	};
-	/*extern*/ class BulletBase;
-	/*extern*/ class RocketBase;
-	/*extern*/ class LaserBombCore;
-	/*extern*/ class BombCore;
-	/*extern*/ class ShellBase;
-	/*extern*/ class Missile_AA_04_F;
-	/*extern*/ class M_AT;
+	/*arma*/ class BulletBase;
+	/*arma*/ class RocketBase;
+	/*arma*/ class LaserBombCore;
+	/*arma*/ class BombCore;
+	/*arma*/ class ShellBase;
+	/*arma*/ class Missile_AA_04_F;
+	/*arma*/ class M_AT;
 	/*extern*/ class Missile_AGM_02_F;
 	/*extern*/ class Splits_M_ATA_Anaconda_AA;
-	/*extern*/ class B_40mm_HE;
-	/*extern*/ class B_40mm_MP;
+	/*arma*/ class B_30mm_HE;
+	/*arma*/ class B_40mm_GPR;
 
 	class Ribs_M_Anvil3_LGIR: Missile_AGM_02_F {
 		model = "Splits\Splits_Weaponry\Aircraft\Anvil_1_missile_fly.p3d";
@@ -65,13 +65,13 @@ class CfgAmmo {
 		canlock = 2;
 		laserLock = 1;
 	};
-	class BDA_40mm_HE: B_40mm_HE {
+	class BDA_40mm_HE: B_30mm_HE {
 		hit = 160;
-		typicalSpeed = 950;
+		typicalSpeed = 1000;
 	};
-	class BDA_40mm_MP: B_40mm_MP {
+	class BDA_40mm_MP: B_40mm_GPR {
 		hit = 210;
-		typicalSpeed = 900;
+		typicalSpeed = 800;
 	};
 };
 
@@ -79,7 +79,7 @@ class CfgMagazines {
 	/*extern*/ class VehicleMagazine;
 	/*extern*/ class 6Rnd_LG_scalpel;
 	/*extern*/ class OPTRE_100Rnd_95x40_Box;
-	class OPTRE_500Rnd_762x51_Box_Tracer;
+	/*extern*/ class OPTRE_500Rnd_762x51_Box_Tracer;
  
 	class BDA_PylonMissile_AA_Pelican_x4: VehicleMagazine {
 		dlc = "BDA";
@@ -143,19 +143,20 @@ class CfgMagazines {
 		author = "Rib";
 		scope = 2;
 		ammo = "BDA_40mm_HE";
-		initSpeed = 950;
+		initSpeed = 1100;
 		maxLeadSpeed = 30;
 		nameSound = "";
 		count = 400;
-		displayName = "M470 40mm Drum HE";
-		descriptionShort = "M470 40mm Drum HE";
+		displayName = "MG470 40mm Drum HE";
+		descriptionShort = "MG470 40mm Drum HE";
+		tracersEvery = 2;
 		muzzleImpulseFactor[] = {0.1,0.1};
 	};
 	class BDA_400rnd_40mm_G_MP_Belt: BDA_400rnd_40mm_G_HE_Belt {
 		ammo = "BDA_40mm_MP";
-		displayName = "M470 40mm Drum MP";
 		initSpeed = 900;
-		descriptionShort = "M470 40mm Drum MP";
+		displayName = "MG470 40mm Drum MP";
+		descriptionShort = "MG470 40mm Drum MP";
 	};
 
 };
@@ -242,6 +243,7 @@ class CfgWeapons {
 	class BDA_MG470_40mm: GMG_40mm {
 		author = "Rib";
 		displayName = "MG-470 Automatic Grenade Launcher";
+		descriptionShort = "MG-470 AGL";
 		magazines[] = {
 			"BDA_400rnd_40mm_G_MP_Belt",
 			"BDA_400rnd_40mm_G_HE_Belt"
@@ -368,10 +370,9 @@ class CfgWeapons {
 			};
 		};
 	};
-	//end
 };
 
 class cfgMods {
 	author="Rib";
-	timepacked="051020242250";
+	timepacked="1210241618";
 };

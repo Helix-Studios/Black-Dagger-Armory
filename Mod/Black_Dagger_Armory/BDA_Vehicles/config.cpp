@@ -30,10 +30,6 @@ class CfgPatches {
 	};
 };
 
-class CfgFactionClasses {
-	class B_BDCUNSC;
-};
-
 class SensorTemplatePassiveRadar;
 class SensorTemplateAntiRadiation;
 class SensorTemplateActiveRadar;
@@ -148,7 +144,7 @@ class CfgVehicles {
 		author = "Splitjaw & Rib";
 		faction = "B_BDCUNSC";
 		displayName = "D77-TC Pelican";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		crew = "B_BDA_Pilot";
 		//textures
 		textureList[]={
@@ -5618,7 +5614,7 @@ class CfgVehicles {
 		dlc="BDA";
 		author = "Rib & I'm Kreepy";
 		faction = "B_BDCUNSC";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_D77_TC_Pelican.jpg";
 		displayName = "D77-TC Pelican (Single)";
 		memoryPointDriverOptics= "PIP2_pos";
 
@@ -5634,7 +5630,7 @@ class CfgVehicles {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"BDA_missiles_LGIR_Anvil3_x60",
 			"BDA_400rnd_40mm_G_MP_Belt",
-			"BDA_400rnd_40mm_G_HE_Belt"
+			"BDA_400rnd_40mm_G_HE_Belt",
 			"Laserbatteries"
 		};
 		crew = "B_BDA_Pilot";
@@ -11035,7 +11031,7 @@ class CfgVehicles {
 		faction = "B_BDCUNSC";
 		side = 1;
 		displayName = "AV-15 Hornet Lite";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 200;
 		hiddenSelectionsTextures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
@@ -11362,7 +11358,7 @@ class CfgVehicles {
 		faction = "B_BDCUNSC";
 		side = 1;
 		displayName = "AV-15 Heavy Hornet";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		crew = "B_BDA_Pilot";
 		weapons[] = {
 			"OPTRE_GUA23AW",
@@ -11705,7 +11701,7 @@ class CfgVehicles {
 		side = 1;
 		faction = "B_BDCUNSC";
 		displayName = "UH-145S Falcon";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.png";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
 		crew = "B_BDA_Pilot";
 		armor = 200;
 		cost = 1500;
@@ -11738,5 +11734,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="051020242250";
+	timepacked="1210241618";
 };

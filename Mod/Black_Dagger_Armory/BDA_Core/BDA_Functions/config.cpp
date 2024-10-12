@@ -134,5 +134,5 @@ enableDebugConsole[] = { "76561198805462515", "76561198249403686", "765611980667
 
 class cfgMods {
 	author="Rib";
-	timepacked="051020242250";
+	timepacked="1210241618";
 };
