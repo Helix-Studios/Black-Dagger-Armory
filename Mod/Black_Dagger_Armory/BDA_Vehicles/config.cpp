@@ -168,15 +168,15 @@ class CfgVehicles {
                 displayName = "Change Camo";
 				class GreenCamo {
 					displayName = "Green";
-					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
 				class WinterCamo {
 					displayName = "Winter";
-					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
 				class BlackCamo {
 					displayName = "Black";
-					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
             	};
             };
         };
