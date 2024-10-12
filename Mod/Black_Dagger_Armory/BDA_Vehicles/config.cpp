@@ -163,111 +163,6 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 		};
 
-		class ACE_SelfActions {
-            class vehCamo {
-                displayName = "Change Camo";
-				class GreenCamo {
-					displayName = "Green";
-					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
-            	};
-				class WinterCamo {
-					displayName = "Winter";
-					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
-            	};
-				class BlackCamo {
-					displayName = "Black";
-					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
-            	};
-            };
-        };
-
-		/*class ACE_SelfActions {
-			class BDA_CamoChange {
-				displayName = "Change Camo";
-				exceptions[] = {
-					"isNotInside",
-					"isNotSwimming",
-					"isNotSitting"
-				};
-				icon = "";
-				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled = 0;
-				priority = 2;
-				class DefaultCamos {
-					displayName = "Standard Camo";
-					icon = "";
-					class BDA_Greens {
-						displayName = "Green";
-						icon = "";
-						class BDA_Olive {
-							displayName = "Olive";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Green'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-					};
-					class BDA_Arctics {
-						displayName = "Arctics";
-						icon = "";
-						class BDA_Winter {
-							displayName = "Winter";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Winter'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-					};
-					class BDA_Night {
-						displayName = "Night";
-						icon = "";
-						class BDA_Black {
-							displayName = "Black";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Black'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-					};
-				};
-				class CustomCamos {
-					displayName = "Custom Camos";
-					icon = "";
-					class BDA_Whiskey {
-						displayName = "Whiskey 316"
-						exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Whiskey316'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-					};
-				};
-			};
-		};*/
-
 		class textureSources {
 			class UNSC_BDA_Green {
 				displayName="UNSC Green";
@@ -310,6 +205,27 @@ class CfgVehicles {
 				factions[]={"B_BDCUNSC"};
 			};
 		};
+
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class GreenCamo {
+					displayName = "Green";
+					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+            	};
+				class WinterCamo {
+					displayName = "Winter";
+					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+            	};
+				class BlackCamo {
+					displayName = "Black";
+					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
+            	};
+				class Customs {
+					displayName = "Custom Livieries";
+				};
+            };
+        };
 
 		//Structural
 		armor = 300;
@@ -5875,110 +5791,18 @@ class CfgVehicles {
 			};
 		};
 
-		class ACE_SelfActions {
-            class vehCamo {
-                displayName = "Change Camo";
-				class GreenCamo {
-					displayName = "Green";
-					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
-            	};
-				class WinterCamo {
-					displayName = "Winter";
-					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
-            	};
-				class BlackCamo {
-					displayName = "Black";
-					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
-            	};
-            };
-        };
-
-		/*class ACE_SelfActions {
-			class BDA_CamoChange {
-				displayName = "Change Camo";
-				exceptions[] = {
-					"isNotInside",
-					"isNotSwimming",
-					"isNotSitting"
-				};
-				icon = "";
-				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled = 0;
-				priority = 2;
-				class DefaultCamos {
-					displayName = "Standard Camo";
-					icon = "";
-					class BDA_Greens {
-						displayName = "Green";
-						icon = "";
-						class BDA_Olive {
-							displayName = "Olive";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Green'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-					};
-					class BDA_Arctics {
-						displayName = "Arctics";
-						icon = "";
-						class BDA_Winter {
-							displayName = "Winter";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Winter'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-					};
-					class BDA_Night {
-						displayName = "Night";
-						icon = "";
-						class BDA_Black {
-							displayName = "Black";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Black'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-					};
-				};
-				class CustomCamos {
-					displayName = "Custom Camos";
-					icon = "";
-					class BDA_Whiskey {
-						displayName = "Whiskey 316"
-						exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'UNSC_BDA_Whiskey316'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-					};
-				};
-			};
-		};*/
+		//textures
+		textureList[]={
+			"UNSC_BDA_Green", 1,
+			"UNSC_BDA_Black", 1,
+			"UNSC_BDA_Whiskey316", 1,
+			"UNSC_BDA_Winter", 1
+		};
+		hiddenSelectionsTextures[]={
+			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
+			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
+			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
+		};
 
 		class textureSources {
 			class UNSC_BDA_Green {
@@ -6023,18 +5847,26 @@ class CfgVehicles {
 			};
 		};
 
-		//textures
-		textureList[]={
-			"UNSC_BDA_Green", 1,
-			"UNSC_BDA_Black", 1,
-			"UNSC_BDA_Whiskey316", 1,
-			"UNSC_BDA_Winter", 1
-		};
-		hiddenSelectionsTextures[]={
-			"\BDA_Vehicles\data\pelican\BDA_G_body_co.paa",
-			"\BDA_Vehicles\data\pelican\BDA_G_wings_and_gear_co.paa",
-			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
-		};
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class GreenCamo {
+					displayName = "Green";
+					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+				class WinterCamo {
+					displayName = "Winter";
+					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+				class BlackCamo {
+					displayName = "Black";
+					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+				class Customs {
+					displayName = "Custom Livieries";
+				};
+            };
+        };
 
 		//Structural
 		armor = 280;
@@ -11290,115 +11122,59 @@ class CfgVehicles {
 			"BDA_Winter", 1
 		};
 
-		/*class ACE_SelfActions {
-			class BDA_CamoChange {
-				displayName = "Change Camo";
-				exceptions[] = {
-					"isNotInside",
-					"isNotSwimming",
-					"isNotSitting"
-				};
-				icon = "";
-				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled = 0;
-				priority = 2;
-				class DefaultCamos {
-					displayName = "Standard Camo";
-					icon = "";
-					class BDA_Greens {
-						displayName = "Green";
-						icon = "";
-						class BDA_Standard {
-							displayName = "Standard";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'standard'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-						class BDA_Olive: BDA_Standard {
-							displayName = "Olive";
-							statement = "[_target,'Olive'] call BDA_fnc_vehCamoChange;";
-						};
-						class BDA_Woodland: BDA_Standard {
-							displayName = "Woodland";
-							statement = "[_target,'Woodland'] call BDA_fnc_vehCamoChange;";
-						};
-						class BDA_Jungle: BDA_Standard {
-							displayName = "Jungle";
-							statement = "[_target,'Jungle'] call BDA_fnc_vehCamoChange;";
-						};
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class Temperate {
+					displayName = "Temperate Ops";
+					class GreenCamo {
+						displayName = "Standard";
+						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
-					class BDA_Arctics {
-						displayName = "Arctics";
-						icon = "";
-						class BDA_Winter {
-							displayName = "Winter";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'Winter'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-						class BDA_Grey: BDA_Winter {
-							displayName = "Winter";
-							statement = "[_target,'Grey'] call BDA_fnc_vehCamoChange;";
-						};
+					class JungleCamo {
+						displayName = "Jungle";
+						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
-					class BDA_Night {
-						displayName = "Night";
-						icon = "";
-						class BDA_Black {
-							displayName = "Black";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'blackout'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-						class BDA_Dark {
-							displayName = "Dark";
-							statement = "[_target,'dark'] call BDA_fnc_vehCamoChange;";
-						};
+					class OliveCamo {
+						displayName = "Olive";
+						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
-					class BDA_Arid {
-						displayName = "Arid";
-						class BDA_Desert {
-							displayName = "Desert";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'Desert'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
+					class WoodlandCamo {
+						displayName = "Woodland";
+						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
-				class CustomCamos {
-					displayName = "Custom Camos";
-					icon = "";
+				class Winter {
+					displayName = "Winter Ops";
+					class WinterCamo {
+						displayName = "Winter";
+						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+					class GreyCamo {
+						displayName = "Grey";
+						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
 				};
-			};
-		};*/
+				class Night {
+					displayName = "Night Ops";
+					class BlackCamo {
+						displayName = "Blackout";
+						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+					class DarkCamo {
+						displayName = "Darkie";
+						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+				};
+				class Desert {
+					displayName = "Desert Ops";
+					class DesertCamo {
+						displayName = "Desert Tan";
+						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+				};
+            };
+        };
 
 		class Components {
 			class TransportPylonsComponent {
@@ -11611,55 +11387,55 @@ class CfgVehicles {
 			class BDA_standard {
 				displayName="Standard Marine";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Blackout {
 				displayName="Blackout";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Dark {
 				displayName="Urban";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Desert {
 				displayName="Desert";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Grey {
 				displayName="Grey";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Jungle {
 				displayName="Jungle";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Olive {
 				displayName="Olive";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Woodland {
 				displayName="Woodland";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 			class BDA_Winter {
 				displayName="Winter";
 				author="Black Dagger Armory";
-				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
 		};
@@ -11675,115 +11451,59 @@ class CfgVehicles {
 			"BDA_Winter", 1
 		};
 
-		/*class ACE_SelfActions {
-			class BDA_CamoChange {
-				displayName = "Change Camo";
-				exceptions[] = {
-					"isNotInside",
-					"isNotSwimming",
-					"isNotSitting"
-				};
-				icon = "";
-				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-				showDisabled = 0;
-				priority = 2;
-				class DefaultCamos {
-					displayName = "Standard Camo";
-					icon = "";
-					class BDA_Greens {
-						displayName = "Green";
-						icon = "";
-						class BDA_Standard {
-							displayName = "Standard";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'standard'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-						class BDA_Olive: BDA_Standard {
-							displayName = "Olive";
-							statement = "[_target,'Olive'] call BDA_fnc_vehCamoChange;";
-						};
-						class BDA_Woodland: BDA_Standard {
-							displayName = "Woodland";
-							statement = "[_target,'Woodland'] call BDA_fnc_vehCamoChange;";
-						};
-						class BDA_Jungle: BDA_Standard {
-							displayName = "Jungle";
-							statement = "[_target,'Jungle'] call BDA_fnc_vehCamoChange;";
-						};
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class Temperate {
+					displayName = "Temperate Ops";
+					class GreenCamo {
+						displayName = "Standard";
+						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
-					class BDA_Arctics {
-						displayName = "Arctics";
-						icon = "";
-						class BDA_Winter {
-							displayName = "Winter";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'Winter'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-						class BDA_Grey: BDA_Winter {
-							displayName = "Winter";
-							statement = "[_target,'Grey'] call BDA_fnc_vehCamoChange;";
-						};
+					class JungleCamo {
+						displayName = "Jungle";
+						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
-					class BDA_Night {
-						displayName = "Night";
-						icon = "";
-						class BDA_Black {
-							displayName = "Black";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'blackout'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
-						class BDA_Dark {
-							displayName = "Dark";
-							statement = "[_target,'dark'] call BDA_fnc_vehCamoChange;";
-						};
+					class OliveCamo {
+						displayName = "Olive";
+						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
-					class BDA_Arid {
-						displayName = "Arid";
-						class BDA_Desert {
-							displayName = "Desert";
-							exceptions[] = {
-								"isNotInside",
-								"isNotSwimming",
-								"isNotSitting"
-							};
-							condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
-							statement = "[_target,'Desert'] call BDA_fnc_vehCamoChange;";
-							showDisabled = 0;
-							runOnHover = 0;
-							priority = 2;
-						};
+					class WoodlandCamo {
+						displayName = "Woodland";
+						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
-				class CustomCamos {
-					displayName = "Custom Camos";
-					icon = "";
+				class Winter {
+					displayName = "Winter Ops";
+					class WinterCamo {
+						displayName = "Winter";
+						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+					class GreyCamo {
+						displayName = "Grey";
+						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
 				};
-			};
-		};*/
+				class Night {
+					displayName = "Night Ops";
+					class BlackCamo {
+						displayName = "Blackout";
+						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+					class DarkCamo {
+						displayName = "Darkie";
+						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+				};
+				class Desert {
+					displayName = "Desert Ops";
+					class DesertCamo {
+						displayName = "Desert Tan";
+						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+					};
+				};
+            };
+        };
 
 		class Components {
 			class TransportPylonsComponent {

@@ -9,6 +9,7 @@ _tarVeh = objectParent player;
 diag_log _tarVeh;
 
 switch (_vehCamo) do {
+	//pelcain
 	case "UNSC_BDA_Green": {
 		if(_vehClass isEqualTo "BDA_UNSC_D77_TC_Pelican_Single" or _vehClass isEqualTo "BDA_UNSC_D77_TC_Pelican") then 
 		{
@@ -37,6 +38,72 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying blackout texture";
 	};
+	//hornet
+	case "BDA_Standard": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"];
+		};
+		systemChat "Applying Marine texture";
+	};
+	case "BDA_Black": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"];
+		};
+		systemChat "Applying Black texture";
+	};
+	case "BDA_Dark": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"];
+		};
+		systemChat "Applying Dark texture";
+	};
+	case "BDA_Desert": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"];
+		};
+		systemChat "Applying Desert texture";
+	};
+	case "BDA_Grey": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"];
+		};
+		systemChat "Applying Grey texture";
+	};
+	case "BDA_Jungle": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"];
+		};
+		systemChat "Applying Jungle texture";
+	};
+	case "BDA_Olive": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"];
+		};
+		systemChat "Applying Olive texture";
+	};
+	case "BDA_Woodland": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"];
+		};
+		systemChat "Applying Woodland texture";
+	};
+	case "BDA_Winter": {
+		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
+		{
+			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"];
+		};
+		systemChat "Applying Winter texture";
+	};
+	
+
 	
 	default { };
 };
