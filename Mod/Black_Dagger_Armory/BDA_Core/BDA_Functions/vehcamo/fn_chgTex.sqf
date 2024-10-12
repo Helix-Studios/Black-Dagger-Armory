@@ -46,7 +46,7 @@ switch (_vehCamo) do {
 		};
 		systemChat "Applying Marine texture";
 	};
-	case "BDA_Black": {
+	case "BDA_Blackout": {
 		if(_vehClass isEqualTo "BDA_UNSC_Hornet_Lite" or _vehClass isEqualTo "BDA_UNSC_Hornet") then 
 		{
 			_tarVeh setObjectTextureGlobal [0, "\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"];

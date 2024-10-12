@@ -11037,21 +11037,6 @@ class CfgVehicles {
 		displayName = "AV-15 Hornet Lite";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.png";
 		crew = "B_BDA_Pilot";
-		weapons[] = {
-			"OPTRE_GUA23AW",
-			"CMFlareLauncher",
-			"Laserdesignator_pilotCamera",
-			"OPTRE_missiles_C2GMLS",
-			"OPTRE_missiles_Anvil3"
-		};
-		magazines[] = {
-			"OPTRE_2000Rnd_30mm_HE",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"Laserbatteries",
-			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_32Rnd_Anvil3_missiles",
-		};
 		armor = 200;
 		hiddenSelectionsTextures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 		class textureSources {
@@ -11175,6 +11160,23 @@ class CfgVehicles {
 				};
             };
         };
+
+		//weapons
+		weapons[] = {
+			"OPTRE_GUA23A",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera",
+			"OPTRE_missiles_C2GMLS",
+			"OPTRE_missiles_Anvil3"
+		};
+		magazines[] = {
+			"OPTRE_2000Rnd_20mm_HEIAP",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries",
+			"OPTRE_8Rnd_C2GMLS_missiles",
+			"OPTRE_32Rnd_Anvil3_missiles",
+		};
 
 		class Components {
 			class TransportPylonsComponent {
