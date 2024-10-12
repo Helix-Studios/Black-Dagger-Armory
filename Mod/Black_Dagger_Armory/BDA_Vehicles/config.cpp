@@ -163,6 +163,24 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\pelican\BDA_G_weaponry_co.paa"
 		};
 
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class GreenCamo {
+					displayName = "Green";
+					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+				class WinterCamo {
+					displayName = "Winter";
+					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+				class BlackCamo {
+					displayName = "Black";
+					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+            };
+        };
+
 		/*class ACE_SelfActions {
 			class BDA_CamoChange {
 				displayName = "Change Camo";
@@ -5860,9 +5878,17 @@ class CfgVehicles {
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
+				class GreenCamo {
+					displayName = "Green";
+					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
 				class WinterCamo {
-                displayName = "Winter";
-				statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+					displayName = "Winter";
+					statement = "['UNSC_BDA_Winter', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
+            	};
+				class BlackCamo {
+					displayName = "Black";
+					statement = "['UNSC_BDA_Black', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
             	};
             };
         };
@@ -11197,55 +11223,55 @@ class CfgVehicles {
 		armor = 200;
 		hiddenSelectionsTextures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 		class textureSources {
-			class standard {
+			class BDA_standard {
 				displayName="Standard Marine";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class blackout {
+			class BDA_Blackout {
 				displayName="Blackout";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class dark {
+			class BDA_Dark {
 				displayName="Urban";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Desert {
+			class BDA_Desert {
 				displayName="Desert";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Grey {
+			class BDA_Grey {
 				displayName="Grey";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Jungle {
+			class BDA_Jungle {
 				displayName="Jungle";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Olive {
+			class BDA_Olive {
 				displayName="Olive";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Woodland {
+			class BDA_Woodland {
 				displayName="Woodland";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Winter {
+			class BDA_Winter {
 				displayName="Winter";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
@@ -11253,15 +11279,15 @@ class CfgVehicles {
 			};
 		};
 		textureList[]= {
-			"standard", 1,
-			"blackout", 1,
-			"dark", 1,
-			"Desert", 1,
-			"Grey", 1,
-			"Jungle", 1,
-			"Olive", 1,
-			"Woodland", 1,
-			"Winter", 1
+			"BDA_Standard", 1,
+			"BDA_Blackout", 1,
+			"BDA_Dark", 1,
+			"BDA_Desert", 1,
+			"BDA_Grey", 1,
+			"BDA_Jungle", 1,
+			"BDA_Olive", 1,
+			"BDA_Woodland", 1,
+			"BDA_Winter", 1
 		};
 
 		/*class ACE_SelfActions {
@@ -11582,55 +11608,55 @@ class CfgVehicles {
 			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
 		};
 		class textureSources {
-			class standard {
+			class BDA_standard {
 				displayName="Standard Marine";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class blackout {
+			class BDA_Blackout {
 				displayName="Blackout";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class dark {
+			class BDA_Dark {
 				displayName="Urban";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Desert {
+			class BDA_Desert {
 				displayName="Desert";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Grey {
+			class BDA_Grey {
 				displayName="Grey";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Jungle {
+			class BDA_Jungle {
 				displayName="Jungle";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Olive {
+			class BDA_Olive {
 				displayName="Olive";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Woodland {
+			class BDA_Woodland {
 				displayName="Woodland";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
 				factions[]={"B_BDCUNSC"};
 			};
-			class Winter {
+			class BDA_Winter {
 				displayName="Winter";
 				author="Black Dagger Armory";
 				textures[]={"BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
@@ -11638,15 +11664,15 @@ class CfgVehicles {
 			};
 		};
 		textureList[]= {
-			"standard", 1,
-			"blackout", 1,
-			"dark", 1,
-			"Desert", 1,
-			"Grey", 1,
-			"Jungle", 1,
-			"Olive", 1,
-			"Woodland", 1,
-			"Winter", 1
+			"BDA_Standard", 1,
+			"BDA_Blackout", 1,
+			"BDA_Dark", 1,
+			"BDA_Desert", 1,
+			"BDA_Grey", 1,
+			"BDA_Jungle", 1,
+			"BDA_Olive", 1,
+			"BDA_Woodland", 1,
+			"BDA_Winter", 1
 		};
 
 		/*class ACE_SelfActions {

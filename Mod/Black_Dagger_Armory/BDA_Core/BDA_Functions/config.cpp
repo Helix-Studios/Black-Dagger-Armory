@@ -35,12 +35,10 @@ class CfgFunctions {
 			class notify {};
 			class isBino {};
 			class advMark {};
-			class chgTex {};
         };
 		class BDA_Vehcamo {
 			file = "\BDA_Core\BDA_Functions\vehcamo";
-			class vcc_init {};
-			class vehCamoChange {};
+			class chgTex {};
 		};
 		class BDA_Loadouts 
 		{
