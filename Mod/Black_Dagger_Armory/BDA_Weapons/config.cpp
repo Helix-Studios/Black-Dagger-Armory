@@ -8,7 +8,7 @@ class CfgPatches
 		requiredVersion = 0.100000;
 		units[] = {};
 		weapons[] = {"BDA_missiles_Guided_Anvil3","BDA_weapon_Guided_AA_Bottom_Launcher", "BDA_Smartfinder","BDA_M247T_Coax","BDA_MG470_40mm"};
-		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_400rnd_40mm_G_HE_Belt","BDA_400rnd_40mm_G_MP_Belt"};
+		magazines[] = {"BDA_missiles_LGIR_Anvil3_x60","BDA_PylonMissile_AA_Pelican_x4","BDA_1200rnd_762x51_Box_Tracer","BDA_95x40_400rnd_Box_Tracer","BDA_95x40_400rnd_Box","BDA_1200rnd_762x51_Box_Tracer","BDA_250rnd_40mm_G_HE_Belt","BDA_250rnd_40mm_G_MP_Belt"};
 		ammo[] = {"Ribs_M_Anvil3_LGIR","BDA_40mm_HE","BDA_40mm_MP"};
     };
 };
@@ -139,20 +139,20 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundsTracer = 1200;
 	};
-	class BDA_400rnd_40mm_G_HE_Belt: VehicleMagazine {
+	class BDA_250rnd_40mm_G_HE_Belt: VehicleMagazine {
 		author = "Rib";
 		scope = 2;
 		ammo = "BDA_40mm_HE";
 		initSpeed = 1100;
 		maxLeadSpeed = 30;
 		nameSound = "";
-		count = 400;
+		count = 250;
 		displayName = "MG470 40mm Drum HE";
 		descriptionShort = "MG470 40mm Drum HE";
 		tracersEvery = 2;
 		muzzleImpulseFactor[] = {0.1,0.1};
 	};
-	class BDA_400rnd_40mm_G_MP_Belt: BDA_400rnd_40mm_G_HE_Belt {
+	class BDA_250rnd_40mm_G_MP_Belt: BDA_250rnd_40mm_G_HE_Belt {
 		ammo = "BDA_40mm_MP";
 		initSpeed = 900;
 		displayName = "MG470 40mm Drum MP";
@@ -245,8 +245,8 @@ class CfgWeapons {
 		displayName = "MG-470 Automatic Grenade Launcher";
 		descriptionShort = "MG-470 AGL";
 		magazines[] = {
-			"BDA_400rnd_40mm_G_MP_Belt",
-			"BDA_400rnd_40mm_G_HE_Belt"
+			"BDA_250rnd_40mm_G_MP_Belt",
+			"BDA_250rnd_40mm_G_HE_Belt"
 		};
 		magazineReloadTime = 3;
 		showAimCursorInternal = 0;

@@ -5629,8 +5629,8 @@ class CfgVehicles {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"BDA_missiles_LGIR_Anvil3_x60",
-			"BDA_400rnd_40mm_G_MP_Belt",
-			"BDA_400rnd_40mm_G_HE_Belt",
+			"BDA_250rnd_40mm_G_MP_Belt",
+			"BDA_250rnd_40mm_G_HE_Belt",
 			"Laserbatteries"
 		};
 		crew = "B_BDA_Pilot";
