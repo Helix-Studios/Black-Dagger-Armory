@@ -124,7 +124,7 @@ class RscDisplayMain: RscStandardDisplay {
 		};*/
 
 		class Logo: RscActivePicture {
-			idc=-1;
+			idc=1;
 			text = "BDA_Core\BlackDaggerArmory_Logo.paa";
 		};
 	};
