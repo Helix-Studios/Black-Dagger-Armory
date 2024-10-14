@@ -1,22 +1,29 @@
-class CfgPatches
-{
-	class BDA_Accessories
-	{
+class CfgPatches {
+	class BDA_Accessories {
 		author="Black Dagger Development Crew";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"A3_Weapons_F",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
 			"OPTRE_Core",
 			"OPTRE_UNSC_Units",
 			"OPTRE_UNSC_Units_Army",
-			"DMNS_Supplies_F_Bags"
+			"DMNS_Supplies_F_Bags",
+			"NSM_patch_end",
+			"OPTRE_Weapons_Backpacks"
 		};
 		units[]={};
 		weapons[]={};
-		magazines[]={};
-		ammo[]={};
+		vehicles[]={
+			"BDA_S13_Jumppack",
+			"BDA_Rucksack_B",
+			"BDA_Rucksack_B_Medical",
+			"BDA_Rucksack_B_Heavy",
+			"BDA_Rucksack_B_Super_Heavy",
+			"BDA_Rucksack_B_SL",
+			"BDA_COMM_Uplink_Module",
+			"BDA_Naval_Belt_R"
+			};
 		requiredVersion=0.1;
 	};
 };
@@ -29,6 +36,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class ItemInfo;
 	class Bag_Base;
+	class NSM_neutral_XD_1_Backpack;
 
 	class Weapon_Bag_Base: Bag_Base {
 		/*extern*/ class assembleInfo;
@@ -150,8 +158,7 @@ class CfgVehicles
 		tf_hasLRradio=1;
 	};
 
-	class BDA_Naval_Belt_R: BDA_Rucksack_B
-	{
+	class BDA_Naval_Belt_R: BDA_Rucksack_B {
 		picture="\A3\Characters_F\data\ui\icon_V_Belt_CA.paa";
 		displayName="NAVCOM Carrier Belt";
 		model="\A3\Characters_F\BLUFOR\equip_b_belt";
@@ -171,6 +178,57 @@ class CfgVehicles
 		tf_range=30000;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
+	};
+
+	class BDA_S13_Jumppack: NSM_neutral_XD_1_Backpack {
+		dlc = "BDA";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Rib, Namenai & OPTRE";
+		displayName = "S13 SOLA Jumppack";
+		model="\OPTRE_weapons\backpacks\jetpack.p3d";
+        maximumload = 250;
+		mass = 75;
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
+		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
+		//NSM
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_energy_capacity = 300;
+		NSM_jumppack_recharge = 8;
+		NSM_jumppack_jump_type[] = {
+			{"Forward Jump",{
+					12, //forward v m/s
+					20, //vert v m/s
+					50, //cost energy
+					0, //angle
+					0, //directional bool
+					0 //can prone jump bool
+				}},
+			{"Short Jump",{25,7,20,0,1,1}},
+			{"High Jump",{5,35,50,0,0,0}}	//custom - doesn't work... FOR now
+		};
+		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
+        NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+	};
+	class BDA_S13_Jumppack_On: BDA_S13_Jumppack {
+		scope=1;
+		scopeArsenal=1;
+		scopeCurator=1;
+		model="\OPTRE_weapons\backpacks\jetpack_on.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"optre_vehicles\pelican\data\bolt_blue_ca.paa",
+			"\BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"
+		};
 	};
 
 	class BDA_UAV_Backpack: Weapon_Bag_Base {
@@ -197,6 +255,6 @@ class CfgVehicles
 };
 class cfgMods
 {
-	author="Schlopp";
-	timepacked="1683669322";
+	author="Rib";
+	timepacked="1310241852";
 };
