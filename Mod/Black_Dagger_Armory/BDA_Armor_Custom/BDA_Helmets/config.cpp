@@ -2107,6 +2107,14 @@ class cfgWeapons
 		};
 	};
 
+	class BDA_Heli_Pilot_Frank_Helmet: BDA_Heli_Pilot_Helmet {
+		author="Grif";
+		displayName = "VX15 Pilot Helmet (R. Frank)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helipilot_Frank_Helmet_CO.paa"
+		};
+	};
+
 	//end
 };	
 
