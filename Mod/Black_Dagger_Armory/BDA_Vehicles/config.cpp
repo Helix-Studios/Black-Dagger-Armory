@@ -4288,7 +4288,7 @@ class CfgVehicles {
 			};
 		};
 
-		//Storage
+		//Cargo
 		class TransportItems {
 			class _xx_FirstAidKit {name="FirstAidKit"; count=15;};
 			class _xx_Medikit {name="Medikit"; count=5;};
@@ -4302,6 +4302,8 @@ class CfgVehicles {
 			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
 			//class _xx_ACE_
 		};
+
+		ace_cargo_space = 48;
 		class Ace_Cargo {
 			class Cargo {
 				class xx_SpareWheel {
@@ -9931,6 +9933,7 @@ class CfgVehicles {
 			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=20;};
 			//class _xx_ACE_
 		};
+		ace_cargo_space = 48;
 		class Ace_Cargo {
 			class Cargo {
 				class xx_SpareWheel {
