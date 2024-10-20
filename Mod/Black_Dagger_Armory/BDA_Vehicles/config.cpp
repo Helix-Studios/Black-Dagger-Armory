@@ -205,6 +205,7 @@ class CfgVehicles {
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
+				condition = "driver vehicle player isEqualTo player";
 				class GreenCamo {
 					displayName = "Green";
 					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican'] call BDA_fnc_chgTex";
@@ -5848,6 +5849,7 @@ class CfgVehicles {
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
+				condition = "driver vehicle player isEqualTo player";
 				class GreenCamo {
 					displayName = "Green";
 					statement = "['UNSC_BDA_Green', 'BDA_UNSC_D77_TC_Pelican_Single'] call BDA_fnc_chgTex";
@@ -11109,6 +11111,7 @@ class CfgVehicles {
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
+				condition = "driver vehicle player isEqualTo player";
 				class Temperate {
 					displayName = "Temperate Ops";
 					class GreenCamo {
@@ -11455,6 +11458,7 @@ class CfgVehicles {
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
+				condition = "driver vehicle player isEqualTo player";
 				class Temperate {
 					displayName = "Temperate Ops";
 					class GreenCamo {
