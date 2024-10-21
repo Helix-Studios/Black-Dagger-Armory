@@ -1,12 +1,9 @@
 systemChat "Working Textures";
 _vehCamo = _this select 0;
 _vehClass = _this select 1;
-systemChat _vehCamo;
-systemChat _vehClass;
 
 //this really doesn't work ;)
 _tarVeh = objectParent player;
-diag_log _tarVeh;
 
 switch (_vehCamo) do {
 	//pelcain
