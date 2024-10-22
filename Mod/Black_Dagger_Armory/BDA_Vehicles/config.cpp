@@ -16,6 +16,7 @@ class CfgPatches {
 			"A3_Air_F",
 			"A3_Air_F_Beta",
 			"A3_Weapons_F",
+			"A3_Drones_F"
 			"OPTRE_Core",
 			"BDA_Core",
 			"B_BDCUNSC",
@@ -5640,68 +5641,56 @@ class CfgVehicles {
 
 		//single seat stuff
 		class pilotCamera {
-			class Opticsin {
+			class OpticsIn {
 				class Wide {
-					initAngleX = 0;
-					minAngleX = -30;
-					maxAngleX = 30;
-					initAngleY = 0;
-					minAngleY = -100;
-					maxAngleY = 100;
-					initFov = 0.466;
-					minFov = 0.466;
-					maxFov = 0.466;
 					opticsDisplayName = "WFOV";
-					visionMode[] =
-					{
-						"Normal",
-						"NVG",
-						"Ti"
-					};
-					thermalMode[] = { 0,1 };
-					gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_wide_F";
+					initAngleX = 0;
+					minAngleX = 0;
+					maxAngleX = 0;
+					initAngleY = 0;
+					minAngleY = 0;
+					maxAngleY = 0;
+					initFov = "(60 / 120)";
+					minFov = "(60 / 120)";
+					maxFov = "(60 / 120)";
+					directionStabilized = 1;
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0,1};
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
 				};
 				class Medium: Wide {
-					initFov = 0.093;
-					minFov = 0.093;
-					maxFov = 0.093;
 					opticsDisplayName = "MFOV";
-                	gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_medium_F";
+					initFov = "(12 / 120)";
+					minFov = "(12 / 120)";
+					maxFov = "(12 / 120)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
 				};
 				class Narrow: Wide {
-					initFov = 0.029;
-					minFov = 0.029;
-					maxFov = 0.029;
 					opticsDisplayName = "NFOV";
-					gunnerOpticsModel = "\A3\Weapons_F_Beta\Reticle\Heli_Attack_01_Optics_Gunner_narrow_F";
+					initFov = "(4 / 120)";
+					minFov = "(4 / 120)";
+					maxFov = "(4 / 120)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+				class VeryNarrow: Wide {
+					opticsDisplayName = "VFOV";
+					initFov = "(2 / 120)";
+					minFov = "(2 / 120)";
+					maxFov = "(2 / 120)";
+					gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
 				};
 			};
-			class OpticsOut {
-				class Monocular {
-					initFov = 0.9;
-					minFov = 0.25;
-					maxFov = 1.25;
-					initAngleX = 0;
-					initAngleY = 0;
-					minAngleX = -65;
-					maxAngleX = 85;
-					minAngleY = -150;
-					maxAngleY = 150;
-					minMoveX = -0.2;
-					maxMoveX = 0.2;
-					minMoveY = -0.1;
-					maxMoveY = 0.1;
-					minMoveZ = -0.1;
-					maxMoveZ = 0.2;
-					visionMode[] =
-					{
-						"Normal",
-						"NVG"
-					};
-					gunnerOpticsModel = "";
-					gunnerOpticsEffect[] = {};
-				};
-			};
+			minTurn = -180;
+			maxTurn = 180;
+			initTurn = 0;
+			minElev = -20;
+			maxElev = 90;
+			initElev = 5;
+			maxXRotSpeed = 1.0;
+			maxYRotSpeed = 1.0;
+			maxMouseXRotSpeed = 0.5;
+			maxMouseYRotSpeed = 0.5;
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 		};
