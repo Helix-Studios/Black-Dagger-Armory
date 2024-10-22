@@ -80,8 +80,7 @@ class CfgVehicles
 		{
 		};
 	};
-	class BDA_Rucksack_B_Medical: BDA_Rucksack_B
-	{
+	class BDA_Rucksack_B_Medical: BDA_Rucksack_B {
 		author="Schlopp";
 		displayName="ILCS Backpack (Medic)";
 		hiddenSelections[]=
@@ -90,8 +89,7 @@ class CfgVehicles
 			"AP_Heavy"
 		};
 	};
-	class BDA_Rucksack_B_Heavy: BDA_Rucksack_B
-	{
+	class BDA_Rucksack_B_Heavy: BDA_Rucksack_B {
 		author="Schlopp";
 		maximumLoad=550;
 		mass=50;
@@ -102,8 +100,7 @@ class CfgVehicles
 			"biofoam"
 		};
 	};
-	class BDA_Rucksack_B_Super_Heavy: BDA_Rucksack_B
-	{
+	class BDA_Rucksack_B_Super_Heavy: BDA_Rucksack_B {
 		author="Rib";
 		maximumLoad=800;
 		mass=60;
@@ -114,8 +111,7 @@ class CfgVehicles
 			"biofoam"
 		};
 	};
-	class BDA_Rucksack_B_SL: BDA_Rucksack_B
-	{
+	class BDA_Rucksack_B_SL: BDA_Rucksack_B {
 		maximumLoad=400;
 		mass=50;
 		displayName="ILCS Rucksack UL/CNM";
@@ -137,8 +133,7 @@ class CfgVehicles
 		tf_range=25000;
 	};
 
-	class BDA_COMM_Uplink_Module: BDA_Rucksack_B
-	{
+	class BDA_COMM_Uplink_Module: BDA_Rucksack_B {
 		picture="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
 		displayName="UNSC Communications Uplink Module";
 		model="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
@@ -254,5 +249,5 @@ class CfgVehicles
 class cfgMods
 {
 	author="Rib";
-	timepacked="1310241852";
+	timepacked="221020241827";
 };
