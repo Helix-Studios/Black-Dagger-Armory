@@ -37,7 +37,6 @@ class CfgVehicles
 	class ItemInfo;
 	class Bag_Base;
 	class NSM_neutral_XD_1_Backpack;
-
 	class Weapon_Bag_Base: Bag_Base {
 		/*extern*/ class assembleInfo;
 	};
@@ -193,7 +192,6 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
-		//NSM
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_energy_capacity = 300;
 		NSM_jumppack_recharge = 8;

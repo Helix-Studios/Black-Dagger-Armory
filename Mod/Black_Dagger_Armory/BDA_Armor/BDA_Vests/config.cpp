@@ -26,7 +26,6 @@ class cfgWeapons {
 	/*arma*/ class HeadgearItem;
 	/*arma*/ class Uniform_Base;
 	/*arma*/ class HitpointsProtectionInfo;
-	/*arma*/ class V_Rangemaster_belt;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor_Rifleman;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor_Demolitions;
@@ -1004,7 +1003,7 @@ class cfgWeapons {
 		};
 	};
 
-	//Aviation
+	//Naval
 	class BDA_Armor_Pilot: OPTRE_UNSC_M52D_Armor {
 		dlc = "BDA";
 		author = "Rib";
@@ -1104,16 +1103,6 @@ class cfgWeapons {
 			containerClass="Supply200";
 			hiddenSelectionsTextures[]={
 				"\BDA_Armor\BDA_Vests\data\BDA_M52B_Armor_G_CO.paa"
-			};
-		};
-	};
-	class BDA_Naval_Belt: V_Rangemaster_Belt {
-		author="Schlopp";
-		displayName="NAVCOM Carrier Belt";
-		class ItemInfo: ItemInfo {
-			containerClass= "Supply200";
-			hiddenSelectionsTextures[]= {
-				"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
 			};
 		};
 	};
