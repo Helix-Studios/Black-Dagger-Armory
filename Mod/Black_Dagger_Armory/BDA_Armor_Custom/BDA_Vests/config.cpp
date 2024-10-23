@@ -781,7 +781,20 @@ class cfgWeapons
 		};
 	};
 
-	class BDA_Armor_Parhau: BDA_M52B_Pilot_Armor_B {
+	class BDA_Armor_Parhau: BDA_Armor_RF {
+		scope = 1;
+		author = "Grif";
+		displayName = "M52D Body Armor (R. Parhau)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Parhau_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Pilot_Parhau: BDA_M52B_Pilot_Armor_B {
 		author = "Grif";
 		displayName="M52B Body Armor (R. Parhau)";
 		hiddenSelectionsTextures[]= {
