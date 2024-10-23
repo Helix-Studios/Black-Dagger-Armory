@@ -151,17 +151,15 @@ class CfgVehicles
 		tf_hasLRradio=1;
 	};
 	class BDA_Naval_Belt_R: BDA_Rucksack_B {
-		isBackpack = 1;
 		picture="\A3\Characters_F\data\ui\icon_V_Belt_CA.paa";
 		displayName="NAVCOM Carrier Belt";
 		model="\A3\Characters_F\BLUFOR\equip_b_belt";
-		allowedSlots[]={901};
 		maximumLoad=400;
 		mass=10;
-		hiddenSelections[]= {
+		hiddenSelections[] = {
 			"camo"
 		};
-		hiddenSelectionsTextures[]= {
+		hiddenSelectionsTextures[] = {
 			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
 		};
 		tf_encryptionCode="tf_west_radio_code";
