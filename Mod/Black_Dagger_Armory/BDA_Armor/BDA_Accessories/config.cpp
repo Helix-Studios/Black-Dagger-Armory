@@ -16,14 +16,16 @@ class CfgPatches {
 		weapons[]={};
 		vehicles[]={
 			"BDA_S13_Jumppack",
+			"BDA_S13_Jumppack_RTO",
 			"BDA_Rucksack_B",
 			"BDA_Rucksack_B_Medical",
 			"BDA_Rucksack_B_Heavy",
 			"BDA_Rucksack_B_Super_Heavy",
 			"BDA_Rucksack_B_SL",
 			"BDA_COMM_Uplink_Module",
+			"BDA_Rucksack_B_TEST",
 			"BDA_Naval_Belt_R"
-			};
+		};
 		requiredVersion=0.1;
 	};
 };
@@ -107,14 +109,12 @@ class CfgVehicles
 		displayName="ILCS Rucksack (Super Heavy)";
 		hiddenSelections[]=
 		{
-			"camo1",
-			"biofoam"
+			"camo1"
 		};
 	};
 	class BDA_Rucksack_B_SL: BDA_Rucksack_B {
-		maximumLoad=400;
-		mass=50;
 		displayName="ILCS Rucksack UL/CNM";
+		mass = 50;
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -139,8 +139,7 @@ class CfgVehicles
 		model="\OPTRE_UNSC_Units\Army\NVGs\HUL\V_UL";
 		maximumLoad=400;
 		mass=40;
-		hiddenSelections[]=
-		{
+		hiddenSelections[]= {
 			"camo1"
 		};
 		hiddenSelectionsTextures[]={};
@@ -151,19 +150,18 @@ class CfgVehicles
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 	};
-
 	class BDA_Naval_Belt_R: BDA_Rucksack_B {
+		isBackpack = 1;
 		picture="\A3\Characters_F\data\ui\icon_V_Belt_CA.paa";
 		displayName="NAVCOM Carrier Belt";
 		model="\A3\Characters_F\BLUFOR\equip_b_belt";
+		allowedSlots[]={901};
 		maximumLoad=400;
 		mass=10;
-		hiddenSelections[]=
-		{
+		hiddenSelections[]= {
 			"camo"
 		};
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
 		};
 		tf_encryptionCode="tf_west_radio_code";
@@ -184,8 +182,8 @@ class CfgVehicles
 		model="\OPTRE_weapons\backpacks\jetpack.p3d";
         maximumload = 250;
 		mass = 75;
-        hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_energy_capacity = 300;
@@ -220,8 +218,28 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"optre_vehicles\pelican\data\bolt_blue_ca.paa",
-			"\BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"
+			"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"
 		};
+	};
+
+	class BDA_S13_Jumppack_RTO: BDA_S13_Jumppack {
+		displayName = "S13 SOLA Jumppack RTO";
+		maximumLoad = 200;
+		mass = 80;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+	};
+	class BDA_S13_Jumppack_RTO_On: BDA_S13_Jumppack_On {
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
 	};
 
 	class BDA_UAV_Backpack: Weapon_Bag_Base {
@@ -249,5 +267,5 @@ class CfgVehicles
 class cfgMods
 {
 	author="Rib";
-	timepacked="221020241827";
+	timepacked="231020241044";
 };
