@@ -109,7 +109,8 @@ class CfgVehicles
 		displayName="ILCS Rucksack (Super Heavy)";
 		hiddenSelections[]=
 		{
-			"camo1"
+			"camo1",
+			"biofoam"
 		};
 	};
 	class BDA_Rucksack_B_SL: BDA_Rucksack_B {
@@ -178,7 +179,7 @@ class CfgVehicles
 		author = "Rib, Namenai & OPTRE";
 		displayName = "S13 SOLA Jumppack";
 		model="\OPTRE_weapons\backpacks\jetpack.p3d";
-        maximumload = 250;
+        maximumload = 400;
 		mass = 75;
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
@@ -222,8 +223,8 @@ class CfgVehicles
 
 	class BDA_S13_Jumppack_RTO: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack RTO";
-		maximumLoad = 200;
-		mass = 80;
+		maximumLoad = 400;
+		mass = 85;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 		tf_encryptionCode="tf_west_radio_code";

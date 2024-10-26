@@ -40,8 +40,7 @@ class CfgFunctions {
 			file = "\BDA_Core\BDA_Functions\vehcamo";
 			class chgTex {};
 		};
-		class BDA_Loadouts 
-		{
+		class BDA_Loadouts {
 			file = "\BDA_Core\BDA_Functions\loadouts";
 			class menuInit {};
 			class openLoadouts {};
@@ -49,8 +48,7 @@ class CfgFunctions {
 			class updateLoadLB {};
 			class getScopes {};
 		};
-		class BDA_Markers
-		{
+		class BDA_Markers {
 			file = "\BDA_Core\BDA_Functions\Markers";
 			class isLZ {};
 			class isFM {};
@@ -58,10 +56,18 @@ class CfgFunctions {
 			class isEnm {};
 			class isCM {};
 		};
-		class BDA_Transf 
-		{
+		class BDA_Transf {
 			file = "\BDA_Core\BDA_Functions\transf_scipts";
-			
+		};
+		class BDA_PeliMagSys {
+			file = "\BDA_Core\BDA_Functions\PeliMagSys";
+			class pelicanloadvalidate {};
+			class pelicanunloadvalidate {};
+			class pelicanload_unloadallsupplypods {};
+			class pelicanloadsupplypodsmenudetachmentmenu {};
+			class pelicanloadsupplypodsmenuload {};
+			class pelicanloadsupplypodsmenuopened {};
+			class pelicanloadsupplypodsmenuunload {};
 		};
     };
 };
