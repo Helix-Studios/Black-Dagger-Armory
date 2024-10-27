@@ -64,7 +64,7 @@ class CfgFunctions {
 			class pelicanloadvalidate {};
 			class pelicanunloadvalidate {};
 			class pelicanload_unloadallsupplypods {};
-			class pelicanloadsupplypodsmenudetachmentmenu {};
+			class pelicanloadsupplypodmenudetachmenu {};
 			class pelicanloadsupplypodsmenuload {};
 			class pelicanloadsupplypodsmenuopened {};
 			class pelicanloadsupplypodsmenuunload {};

@@ -21,8 +21,7 @@ class CfgPatches
 		requiredVersion=0.1;
 	};
 };
-class cfgWeapons
-{
+class cfgWeapons {
 	/*arma*/ class ItemInfo;
 	/*arma*/ class UniformItem;
 	/*arma*/ class VestItem;

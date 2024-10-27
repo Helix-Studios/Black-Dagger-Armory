@@ -22,7 +22,6 @@ class CfgPatches {
 };
 
 class CfgVehicles {
-	class ItemInfo;
     class BDA_Rucksack_B;
     class BDA_Rucksack_B_SL;
     class BDA_Naval_Belt_R;

@@ -61,8 +61,7 @@ class WeaponCloudsMGun;
 class CfgVehicles {
 	class ACE_SelfActions;
 	class Helicopter;
-	class Helicopter_Base_F: Helicopter
-	{
+	class Helicopter_Base_F: Helicopter {
 		class Turrets;
 		class HitPoints;
 		class ViewPilot;
@@ -4437,6 +4436,14 @@ class CfgVehicles {
 				class xx_SpareTrack {
 					type="ACE_Track";
 					amount=4;
+				};
+				class xx_BDA_Ammo_SupplyPod {
+					type = "BDA_Ammo_SupplyPod";
+					amount = 1;
+				};
+				class xx_BDA_Medical_SupplyPod {
+					type = "BDA_Medical_SupplyPod";
+					amount = 1;
 				};
 			};
 		};
@@ -10176,6 +10183,14 @@ class CfgVehicles {
 					type="ACE_Track";
 					amount=2;
 				};
+				class xx_BDA_Ammo_SupplyPod {
+					type = "BDA_Ammo_SupplyPod";
+					amount = 1;
+				};
+				class xx_BDA_Medical_SupplyPod {
+					type = "BDA_Medical_SupplyPod";
+					amount = 1;
+				};
 			};
 		};
 
@@ -11347,57 +11362,57 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class GreenCamo {
 						displayName = "Standard";
-						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Green', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class OliveCamo {
 						displayName = "Olive";
-						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Olive', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class WinterCamo {
 						displayName = "Winter";
-						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Winter', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class GreyCamo {
 						displayName = "Grey";
-						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Grey', 'BDA_UNSC_Hornet_Lite_Lite'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 					class DarkCamo {
 						displayName = "Darkie";
-						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Dark', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Desert', 'BDA_UNSC_Hornet_Lite'] call BDA_fnc_chgTex";
 					};
 				};
             };
@@ -11607,7 +11622,7 @@ class CfgVehicles {
 		author = "Rib";
 		faction = "B_BDCUNSC";
 		side = 1;
-		displayName = "AV-15 VTOL Hornet";
+		displayName = "AV-15 Hornet VTOL";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
 		model="\OPTRE_Vehicles_Air\Hornet\hornet.p3d";
 		icon="OPTRE_Vehicles_Air\Hornet\HornetIcon.paa";
@@ -11630,6 +11645,12 @@ class CfgVehicles {
 			"OPTRE_32Rnd_Anvil3_missiles",
 		};
 
+		hiddenSelections[]= {
+			"camo1",
+			"clan",
+			"clan_text",
+			"insignia"
+		};
 		hiddenSelectionsTextures[]={
 			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
 		};
@@ -11708,57 +11729,57 @@ class CfgVehicles {
 					displayName = "Temperate Ops";
 					class GreenCamo {
 						displayName = "Standard";
-						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Green', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class JungleCamo {
 						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class OliveCamo {
 						displayName = "Olive";
-						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Olive', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class WoodlandCamo {
 						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 				};
 				class Winter {
 					displayName = "Winter Ops";
 					class WinterCamo {
 						displayName = "Winter";
-						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Winter', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 					class GreyCamo {
 						displayName = "Grey";
-						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Grey', 'BDA_UNSC_Hornet_VTOL'] call BDA_fnc_chgTex";
 					};
 				};
 				class Night {
 					displayName = "Night Ops";
 					class BlackCamo {
 						displayName = "Blackout";
-						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 					class DarkCamo {
 						displayName = "Darkie";
-						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
 				class Desert {
 					displayName = "Desert Ops";
 					class DesertCamo {
 						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 						condition = "driver vehicle player isEqualTo player";
+						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
 					};
 				};
             };
@@ -21779,57 +21800,38 @@ class CfgVehicles {
 		};
 
 		class Turrets {
-			class CargoTurret_01: CargoTurret
-			{
-				gunnerAction="passenger_bench_1";
-				gunnerCompartments="Compartment1";
-				memoryPointsGetInGunner="pos_cargo_r";
-				memoryPointsGetInGunnerDir="pos_cargo_r_dir";
-				gunnerName="Passenger 1R";
-				proxyIndex=1;
-				maxElev=30;
-				minElev=-30;
-				maxTurn=90;
-				minTurn=-90;
-				isPersonTurret=0;
-				ejectDeadGunner=1;
-				enabledByAnimationSource="";
-				memoryPointGunnerOptics="";
-			};
-			class CargoTurret_02: CargoTurret_01
-			{
-				gunnerCompartments="Compartment2";
-				memoryPointsGetInGunner="pos_cargo_l";
-				memoryPointsGetInGunnerDir="pos_cargo_l_dir";
-				gunnerName="Passenger 1L";
-				proxyIndex=2;
-			};
-			class CargoTurret_03: CargoTurret_01
-			{
-				gunnerName="Passenger 2R";
-				proxyIndex=3;
-			};
-			class CargoTurret_04: CargoTurret_02
-			{
-				gunnerName="Passenger 2L";
-				proxyIndex=4;
-			};
-			class CargoTurret_05: CargoTurret_01
-			{
-				gunnerAction="passenger_flatground_2";
-				gunnerName="Passenger 3R";
-				proxyIndex=5;
-			};
-			class CargoTurret_06: CargoTurret_02
-			{
-				gunnerAction="passenger_flatground_2";
-				gunnerName="Passenger 3L";
-				proxyIndex=6;
+			class CargoTurret {};
+		};
+
+		class Reflectors {
+			class Right {
+				position="Light_L_pos";
+				direction="Light_L_dir";
+				hitpoint="Light_L_hitpoint";
+				selection="Light_L";
+				color[]={1900,1800,1700};
+				ambient[]={5,5,5};
+				size=1;
+				innerAngle=100;
+				outerAngle=179;
+				coneFadeCoef=10;
+				intensity=1;
+				useFlare=1;
+				dayLight=0;
+				flareSize=1;
+				class Attenuation
+				{
+					start=1;
+					constant=0;
+					linear=0;
+					quadratic=0.25;
+					hardLimitStart=30;
+					hardLimitEnd=60;
+				};
 			};
 		};
 
-		class HitPoints
-		{
+		class HitPoints {
 			class HitHull
 			{
 				armor=0.1;
@@ -21870,8 +21872,7 @@ class CfgVehicles {
 		driveOnComponent[]= {
 			"skid"
 		};
-		class Wheels {
-		};
+		class Wheels {};
 		cost = 150000;
 		accuracy = 1.5;
 		armor = 220;
@@ -22309,6 +22310,56 @@ class CfgVehicles {
 			"ropeOriginLeft",
 			"ropeOriginRight"
 		};
+		gunBeg[]=
+		{
+			"z_gunL_muzzle",
+			"z_gunR_muzzle"
+		};
+		gunEnd[]=
+		{
+			"z_gunL_chamber",
+			"z_gunR_chamber"
+		};
+		memoryPointGun[]=
+		{
+			"z_gunL_muzzle",
+			"z_gunR_muzzle"
+		};
+		memoryPointLMissile="Rocket_1";
+		memoryPointRMissile="Rocket_2";
+		class Damage {
+			tex[]={};
+			mat[]=
+			{
+				"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext.rvmat",
+				"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_damage.rvmat",
+				"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_destruct.rvmat",
+				"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass.rvmat",
+				"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass_damage.rvmat",
+				"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_glass_destruct.rvmat",
+				"A3\data_F\default.rvmat",
+				"A3\data_F\default.rvmat",
+				"A3\data_F\default_destruct.rvmat"
+			};
+		};
+		class AnimationSources {
+			class gatling_alt
+			{
+				source="ammo";
+				weapon="OPTRE_GUA23AW";
+			};
+			class gatling_alt_rot
+			{
+				source="ammoRandom";
+				weapon="OPTRE_GUA23AW";
+			};
+			class Missiles_revolving
+			{
+				source="revolving";
+				weapon="OPTRE_missiles_Anvil3";
+			};
+		};
+
 	};
 
 	class BDA_UNSC_Hornet: OPTRE_UNSC_Hornet {
@@ -22704,5 +22755,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="261020242018";
+	timepacked="271020241600";
 };
