@@ -29,12 +29,10 @@ class CfgPatches {
 		requiredVersion=0.1;
 	};
 };
-class CfgVehicles
-{
+class CfgVehicles {
 	class ContainerSupply;
 	class B_TacticalPack_blk;
 	class B_Bergen_Base;
-	class V_Rangemaster_Belt;
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class ItemInfo;
 	class Bag_Base;
