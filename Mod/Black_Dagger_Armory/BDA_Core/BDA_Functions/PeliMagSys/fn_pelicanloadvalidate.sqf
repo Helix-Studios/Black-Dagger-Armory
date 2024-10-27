@@ -15,7 +15,7 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "OPTRE_M12A1_LRV" or _veh isKindOf "OPTRE_M12_LRV" or _veh isKindOf "OPTRE_M12G1_LRV" or _veh isKindOf "OPTRE_M12R_AA" or _veh isKindOf "OPTRE_M813_TT" or _veh isKindOf "OPTRE_M12_FAV_APC") : {
+	case (_veh isKindOf "OPTRE_M12A1_LRV" or _veh isKindOf "OPTRE_M12_LRV" or _veh isKindOf "OPTRE_M12G1_LRV" or _veh isKindOf "OPTRE_M12R_AA" or _veh isKindOf "OPTRE_M813_TT" or _veh isKindOf "OPTRE_M12_FAV_APC" or _veh isKindOf "OPTRE_M12_FAV_MED" or _veh isKindOf "OPTRE_M194_RV") : {
 		_veh attachTo [_spelican,[0,-6.5,-1.0]]; // left right // back forward // up down
 		_loaded = true;
 	};
@@ -31,12 +31,12 @@ switch true do {
 		_veh attachTo [_spelican,[0,-6.5,-0.25]];
 		_loaded = true;
 	};
-	case (_veh isKindOf "DMNS_M511_Springbok_APC") : { //replace with springbok
+	case (_veh isKindOf "DMNS_M511_Springbok_APC") : {
 		_veh attachTo [_spelican,[0,-8.5,-1.25]];
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "DMNS_M511_Springbok_MGS" or _veh isKindOf "DMNS_M511_Springbok_AA" or _veh isKindOf "DMNS_M511_Springbok_IFV") : { //replace with springbok
+	case (_veh isKindOf "DMNS_M511_Springbok_MGS" or _veh isKindOf "DMNS_M511_Springbok_AA" or _veh isKindOf "DMNS_M511_Springbok_IFV") : {
 		_veh attachTo [_spelican,[0,-8.5,-1.55]];
 		_veh setDir 180;
 		_loaded = true;
@@ -61,7 +61,7 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "optre_catfish_unarmed_f" or _veh isKindOf "optre_catfish_mg_f") : {
+	case (_veh isKindOf "optre_catfish_unarmed_f" or _veh isKindOf "optre_catfish_mg_f" or _veh isKindOf "optre_catfish_aa_f") : {
 		_veh attachTo [_spelican,[-0.27,-6.5,-0.75]];
 		_loaded = true;
 	};
