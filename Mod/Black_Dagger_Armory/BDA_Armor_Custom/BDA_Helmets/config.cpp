@@ -23,25 +23,8 @@ class CfgPatches
 		requiredVersion=0.1;
 	};
 };
-class cfgWeapons
-{
-	/*arma*/ class ItemInfo;
-	/*arma*/ class UniformItem;
-	/*arma*/ class VestItem;
-	/*arma*/ class HeadgearItem;
-	/*arma*/ class Uniform_Base;
-	/*arma*/ class HitpointsProtectionInfo;
-	/*extern*/ class OPTRE_UNSC_CH252D_Helmet;
-	/*extern*/ class OPTRE_UNSC_CH252D_Helmet_Base;
-	/*extern*/ class OPTRE_UNSC_CH252D_Helmet_dp;
-	/*extern*/ class OPTRE_UNSC_Recon_Helmet;
-	/*extern*/ class OPTRE_UNSC_Recon_Helmet_dp;
-	/*extern*/ class OPTRE_FC_VX19_Helmet;
-	/*extern*/ class OPTRE_FC_VX19_Helmet_dp;
-	/*extern*/ class OPTRE_Helmet_NavyDeckCrew;
-	/*extern*/ class OPTRE_PatrolCap_Navy;
-	/*extern*/ class OPTRE_UNSC_Cap_ODST;
-	/*arma*/ class H_Booniehat_oli;
+
+class cfgWeapons {
 	/*extern*/ class VES_S1ONIR;
 	/*extern*/ class VES_S1ONIR_dp;
 	/*intern*/ class BDA_CH252D_Helmet;
@@ -59,8 +42,7 @@ class cfgWeapons
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			hiddenSelections[]=
 			{
 				"camo",

@@ -1,7 +1,5 @@
-class CfgPatches 
-{
-    class BDA_MapMarkers
-    {
+class CfgPatches {
+    class BDA_MapMarkers {
 		author = "Rib";
 		requiredVersion=0.1;
 		requiredAddons[]={"BDA_Core", "A3_Data_F"};
@@ -10,16 +8,13 @@ class CfgPatches
     };
 };
 
-class CfgMarkerClasses
-{
-	class BDA_MC_Markers
-	{
+class CfgMarkerClasses {
+	class BDA_MC_Markers {
 		displayName="BDA Markers";
 	};
 };
 
-class CfgMarkers 
-{
+class CfgMarkers {
 	class b_air;
 	class b_antiair;
 	class b_armor;
@@ -341,7 +336,7 @@ class CfgMarkers
 
 	class BDA_4_2_Marker: BDA_Dot_Marker
 	{
-		icon="\BDA_Core\BDA_UI\markers\MapMarkers\4-1.paa";
+		icon="\BDA_Core\BDA_UI\markers\MapMarkers\4-2.paa";
 		name="4-2";
 	};
 

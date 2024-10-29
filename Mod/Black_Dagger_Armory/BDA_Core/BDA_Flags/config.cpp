@@ -1,7 +1,5 @@
-class cfgpatches
-{
-	class BDA_Flags
-	{
+class CfgPatches {
+	class BDA_Flags {
 		author="Black Dagger Development Crew";
 		requiredAddons[]={};
 		weapons[]={};
@@ -51,7 +49,7 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		author = "Rib";
-		displayName = "Black Dagger Company Banner";
+		displayName = "Black Dagger Company Banner CTF";
 		editorCategory="BDA_EC_BlackDagger";
 		editorSubcategory="BDA_ESC_Flags";
 		hiddenSelectionsTextures[] = {
@@ -59,8 +57,7 @@ class CfgVehicles {
 		};
 	};
 
-	class BDA_Flag_BlackDagger: BDA_Flag_Base
-	{
+	class BDA_Flag_BlackDagger: BDA_Flag_Base {
 		scope=2;
 		scopeCurator=2;
 		displayName="Black Dagger Company Flag";

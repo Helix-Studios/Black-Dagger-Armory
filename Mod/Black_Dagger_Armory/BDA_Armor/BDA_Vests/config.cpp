@@ -1,8 +1,7 @@
 class CfgPatches {
 	class BDA_Vests {
 		author="Black Dagger Development Crew";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"A3_Weapons_F",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
@@ -19,13 +18,9 @@ class CfgPatches {
 		requiredVersion=0.1;
 	};
 };
+
 class cfgWeapons {
 	/*arma*/ class ItemInfo;
-	/*arma*/ class UniformItem;
-	/*arma*/ class VestItem;
-	/*arma*/ class HeadgearItem;
-	/*arma*/ class Uniform_Base;
-	/*arma*/ class HitpointsProtectionInfo;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor_Rifleman;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor_Demolitions;
@@ -37,8 +32,7 @@ class cfgWeapons {
 		author="Black Dagger Development Crew";
 		displayName="M52D Body Armor (Rifleman)";
 		picture="\BDA_Armor\BDA_Vests\data\icons\BDA_ODST_Armor";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
 			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
@@ -307,8 +301,7 @@ class cfgWeapons {
 		};
 	};
 
-
-	//Scythe
+	//1stPlt
 	class BDA_Armor_RF_P1: BDA_Armor_RF {
 		displayName="M52D Body Armor (Rifleman, 1stPLT)";
 		hiddenSelectionsTextures[]=

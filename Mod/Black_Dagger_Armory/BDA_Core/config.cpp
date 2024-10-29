@@ -1,10 +1,7 @@
-class CfgPatches
-{
-	class BDA_Core
-	{
+class CfgPatches {
+	class BDA_Core {
 		author="Black Dagger Development Crew";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"A3_Weapons_F",
 			"A3_Data_F_Enoch_Loadorder",
 			"A3_Map_Altis",
@@ -108,20 +105,6 @@ class RscDisplayMain: RscStandardDisplay {
 			w="0.25";
 			h="0.05";
 		};
-		/*class ConnectTS: RscButton {
-			idc=-1;
-			text="Join BDC TS3";
-			tooltip="Click to join the Black Dagger TS";
-			url="";
-			colorBackground[]={0,0,0,0.69999999};
-			colorBackgroundActive[]={1,0,0,0,2};
-			borderSize=0.054000001;
-			colorBorder[]={0,0,0,0};
-			x="safeZoneX + 0.2 * safeZoneW";
-			y="safeZoneY + 0.2 * safeZoneH";
-			w="0.25";
-			h="0.05";
-		};*/
 
 		class Logo: RscActivePicture {
 			idc=1;

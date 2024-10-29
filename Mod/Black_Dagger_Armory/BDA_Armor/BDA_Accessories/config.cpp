@@ -30,12 +30,10 @@ class CfgPatches {
 	};
 };
 class CfgVehicles {
-	class ContainerSupply;
-	class B_TacticalPack_blk;
 	class B_Bergen_Base;
 	class OPTRE_UNSC_Army_Soldier_WDL;
-	class Bag_Base;
 	class NSM_neutral_XD_1_Backpack;
+	class Bag_Base;
 	class Weapon_Bag_Base: Bag_Base {
 		/*extern*/ class assembleInfo;
 	};

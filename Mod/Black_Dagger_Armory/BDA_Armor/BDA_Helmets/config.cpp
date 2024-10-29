@@ -23,12 +23,6 @@ class CfgPatches
 };
 class cfgWeapons {
 	/*arma*/ class ItemInfo;
-	/*arma*/ class UniformItem;
-	/*arma*/ class VestItem;
-	/*arma*/ class HeadgearItem;
-	/*arma*/ class Uniform_Base;
-	/*arma*/ class HitpointsProtectionInfo;
-	/*extern*/ class OPTRE_UNSC_CH252D_Helmet;
 	/*extern*/ class OPTRE_UNSC_CH252D_Helmet_Base;
 	/*extern*/ class OPTRE_UNSC_CH252D_Helmet_dp;
 	/*extern*/ class OPTRE_UNSC_Recon_Helmet;
@@ -774,7 +768,6 @@ class cfgWeapons {
 		displayName = "Cap [Big Iron]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_BI.paa"};
 	};
-
 	class BDA_ShipHat_PAC: BDA_ShipHat_Base { //Destroyer (Halberd)
 		scope = 2;
 		scopeAuthor = 2;
@@ -793,8 +786,6 @@ class cfgWeapons {
 		displayName = "Cap [Land Down Under]";
 		hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Helmets\data\BDA_Cap_LDU.paa"};
 	};
-
-
 	
 	//end
 

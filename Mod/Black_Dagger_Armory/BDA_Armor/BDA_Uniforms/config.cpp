@@ -10,7 +10,7 @@ class CfgPatches {
 			"OPTRE_UNSC_Units_Army",
 			"BDA_Core"
 		};
-		units[]={"BDA_Uniform_B_UNSC", "BDA_Uniform_B_SL_UNSC", "BDA_Uniform_ONI_UNSC", "BDA_Navy_Uniform_ONI_F", "BDA_Navy_Uniform_G_F", "BDA_Navy_Uniform_R_F", "BDA_Navy_Uniform_P_F", "BDA_Navy_Uniform_B_F", "BDA_Navy_Uniform_Avi1_F", "BDA_Navy_Uniform_Avi2_F"};
+		units[]={};
 		weapons[]={};
 		magazines[]={};
 		ammo[]={};
@@ -22,10 +22,6 @@ class CfgPatches {
 
 class cfgWeapons {
 	class UniformItem;
-	class VestItem;
-	class Uniform_Base;
-	class ItemInfo;
-	class HitpointsProtectionInfo;
 	class U_B_HeliPilotCoveralls;
 	class OPTRE_UNSC_Army_Uniform_WDL;
 	class OPTRE_UNSC_Navy_Uniform;
@@ -39,27 +35,23 @@ class cfgWeapons {
 		scope=2;
 		author="Schlopp";
 		displayName="Cross-Branch BDU (Black)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: UniformItem
 		{
 			uniformClass="BDA_Uniform_B_UNSC";
 		};
 	};
 
     class BDA_Uniform_B_SL: BDA_Uniform_B {
-		scope=2;
-		author="Schlopp";
 		displayName="Cross-Branch BDU (Black, Slim Legs)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: UniformItem
 		{
 			uniformClass="BDA_Uniform_B_SL_UNSC";
 		};
 	};
 
 	class BDA_Uniform_ONI_SL: BDA_Uniform_B {
-		scope=2;
-		author="Schlopp";
 		displayName="Cross-Branch BDU (ONI)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: UniformItem
 		{
 			uniformClass="BDA_Uniform_ONI_UNSC";
 		};
@@ -68,10 +60,10 @@ class cfgWeapons {
 //------------------------------------------------------------------// Naval Uniforms
 
 	class BDA_Base_Navy_Uniform: U_C_Scientist {
+		dlc = "BDA";
 		author = "Black Dagger Development Group";
 		scope = 1;
 		scopeCurator = 2;
-		side = 1;
 		hiddenSelections[]= {
 			"camo"
 		};
@@ -81,7 +73,7 @@ class cfgWeapons {
 		scope=2;
 		author="Schlopp";
 		displayName="Naval BDU (ONI)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: UniformItem
 		{
 			uniformClass="BDA_Navy_Uniform_ONI_F";
 		};
@@ -131,7 +123,6 @@ class cfgWeapons {
 		};
 	};
 
-
 	class BDA_Navy_Uniform_G: BDA_Base_Navy_Uniform {
 		scope=2;
 		displayName="Naval BDU (Maintenance)";
@@ -178,7 +169,6 @@ class cfgWeapons {
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 class CfgVehicles {
-	class ContainerSupply;
 	class B_Helipilot_F;
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	class OPTRE_UNSC_Navy_Soldier;
@@ -201,9 +191,6 @@ class CfgVehicles {
 	};
 
 	class BDA_Uniform_B_SL_UNSC: BDA_Uniform_B_UNSC {
-		scope=2;
-		scopeCurator=2;
-		author="Schlopp";
 		uniformClass="BDA_Uniform_B_SL";
 		hiddenSelections[]= {
 			"camo",
@@ -214,13 +201,9 @@ class CfgVehicles {
 		};
 	};
 
-	class BDA_Uniform_ONI_UNSC: OPTRE_UNSC_Army_Soldier_WDL {
-		scope=1;
-		scopeCurator=1;
-		author="Schlopp";
+	class BDA_Uniform_ONI_UNSC: BDA_Uniform_B_UNSC {
 		uniformClass="BDA_Uniform_ONI_SL";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa",
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa"
 		};
@@ -237,6 +220,7 @@ class CfgVehicles {
 	//------------------------------------------------------------------// Naval Uniform
 
 	class BDA_Base_Naval_Uniform: C_scientist_F {
+		dlc = "BDA";
 		author = "Rib";
 		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\C_scientist_F.jpg";
 		modelSides[]={3};

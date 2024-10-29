@@ -27,19 +27,14 @@ class CfgVehicles {
     class BDA_Naval_Belt_R;
 
 	class BDA_Rib_Belt: BDA_Naval_Belt_R {
-		model = "";
 		displayName = "NAVCOM Carrier Belt (R. Ribbington)";
 		maximumLoad=500;
 		mass=10;
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Vests\data\BDA_Belt_NAVCOM_CO.paa"
-		};
+		hiddenSelectionsTextures[]= {};
 	};
-
 };
 
-class cfgMods
-{
+class cfgMods {
 	author="Rib";
 	timepacked="231020241044";
 };
