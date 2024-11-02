@@ -59,6 +59,10 @@ class CfgFunctions {
 		class BDA_Transf {
 			file = "\BDA_Core\BDA_Functions\transf_scipts";
 		};
+		class BDA_AirVehThrust {
+			file = "\BDA_Core\BDA_Functions\AirVehThrust";
+			class dofalcthrust {};
+		};
 		class BDA_PeliMagSys {
 			file = "\BDA_Core\BDA_Functions\PeliMagSys";
 			class pelicanloadvalidate {};

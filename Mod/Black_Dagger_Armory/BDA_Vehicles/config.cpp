@@ -11355,6 +11355,36 @@ class CfgVehicles {
 			"BDA_Winter", 1
 		};
 
+		class UserActions {
+			class ThrusterEngage {
+				userActionID = 90;
+				displayName = "Engage Thrusters";
+				textToolTip = "Engage Thrusters";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
+				priority=10;
+				showWindow=0;
+				radius=100000;
+				animPeriod=5;
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+			};
+			class ThrusterDisengage: ThrusterEngage {
+				userActionID = 91;
+				displayName = "Disengage Thrusters";
+				textToolTip = "Disengage Thrusters";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+			};
+			class AirbrakeEngage: ThrusterEngage {
+				userActionID = 92;
+				displayName = "Engage Airbrakes";
+				textToolTip = "Engage Airbrakes";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
+				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
+			};
+		};
+
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
@@ -22460,6 +22490,36 @@ class CfgVehicles {
 			"BDA_Winter", 1
 		};
 
+		class UserActions {
+			class ThrusterEngage {
+				userActionID = 90;
+				displayName = "Engage Thrusters";
+				textToolTip = "Engage Thrusters";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
+				priority=10;
+				showWindow=0;
+				radius=100000;
+				animPeriod=5;
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+			};
+			class ThrusterDisengage: ThrusterEngage {
+				userActionID = 91;
+				displayName = "Disengage Thrusters";
+				textToolTip = "Disengage Thrusters";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+			};
+			class AirbrakeEngage: ThrusterEngage {
+				userActionID = 92;
+				displayName = "Engage Airbrakes";
+				textToolTip = "Engage Airbrakes";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
+				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
+			};
+		};
+
 		class ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
@@ -22723,10 +22783,41 @@ class CfgVehicles {
 		displayName = "UH-145S Falcon";
 		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
 		crew = "B_BDA_Pilot";
-		armor = 200;
+		armor = 300;
 		cost = 900;
 		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
+
+		class UserActions {
+			class ThrusterEngage {
+				userActionID = 90;
+				displayName = "Engage Thrusters";
+				textToolTip = "Engage Thrusters";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
+				priority=10;
+				showWindow=0;
+				radius=100000;
+				animPeriod=5;
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+			};
+			class ThrusterDisengage: ThrusterEngage {
+				userActionID = 91;
+				displayName = "Disengage Thrusters";
+				textToolTip = "Disengage Thrusters";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+			};
+			class AirbrakeEngage: ThrusterEngage {
+				userActionID = 92;
+				displayName = "Engage Airbrakes";
+				textToolTip = "Engage Airbrakes";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
+				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
+			};
+		};
+
 		class TransportBackpacks {
 			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
 		};
