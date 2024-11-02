@@ -24,10 +24,18 @@ class CfgPatches {
 class cfgWeapons {
 	/*extern*/ class VES_S1ONIR;
 	/*extern*/ class VES_S1ONIR_dp;
-	/*intern*/ class BDA_CH252D_Helmet;
-	/*intern*/ class BDA_CH252D_Helmet_dp;
-	/*intern*/ class BDA_VX19_Helmet;
-	/*intern*/ class BDA_VX19_Helmet_dp;
+	/*intern*/ class BDA_CH252D_Helmet {
+		class ItemInfo;
+	};
+	/*intern*/ class BDA_CH252D_Helmet_dp {
+		class ItemInfo;
+	};
+	/*intern*/ class BDA_VX19_Helmet {
+		class ItemInfo;
+	};
+	/*intern*/ class BDA_VX19_Helmet_dp {
+		class ItemInfo;
+	};
 	/*intern*/ class BDA_Heli_Pilot_Helmet;
 
 
