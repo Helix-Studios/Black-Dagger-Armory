@@ -22,20 +22,13 @@ class CfgPatches {
 };
 
 class cfgWeapons {
+	class ItemInfo;
 	/*extern*/ class VES_S1ONIR;
 	/*extern*/ class VES_S1ONIR_dp;
-	/*intern*/ class BDA_CH252D_Helmet {
-		class ItemInfo;
-	};
-	/*intern*/ class BDA_CH252D_Helmet_dp {
-		class ItemInfo;
-	};
-	/*intern*/ class BDA_VX19_Helmet {
-		class ItemInfo;
-	};
-	/*intern*/ class BDA_VX19_Helmet_dp {
-		class ItemInfo;
-	};
+	/*intern*/ class BDA_CH252D_Helmet;
+	/*intern*/ class BDA_CH252D_Helmet_dp;
+	/*intern*/ class BDA_VX19_Helmet;
+	/*intern*/ class BDA_VX19_Helmet_dp;
 	/*intern*/ class BDA_Heli_Pilot_Helmet;
 
 
@@ -2172,7 +2165,7 @@ class cfgWeapons {
 
 	class BDA_CH252D_Pal_Helmet: BDA_CH252D_Helmet {
 		author="Rib";
-		displayName="CH252D Helmet (L. Tucker)";
+		displayName="CH252D Helmet (P. Pal)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Pey_CO.paa",
 			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",

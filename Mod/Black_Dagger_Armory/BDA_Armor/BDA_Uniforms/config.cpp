@@ -67,14 +67,18 @@ class cfgWeapons {
 		hiddenSelections[]= {
 			"camo"
 		};
+		class ItemInfo: UniformItem {
+			uniformModel="-";
+			containerClass="Supply120";
+			mass=10;
+		};
 	};
 
 	class BDA_Navy_Uniform_ONI: U_B_HeliPilotCoveralls {
 		scope=2;
 		author="Schlopp";
 		displayName="Naval BDU (ONI)";
-		class ItemInfo: UniformItem
-		{
+		class ItemInfo: UniformItem {
 			uniformClass="BDA_Navy_Uniform_ONI_F";
 		};
 	};
@@ -82,16 +86,11 @@ class cfgWeapons {
 	class BDA_Navy_Uniform_B: BDA_Base_Navy_Uniform {
 		scope=2;
 		displayName="Naval BDU";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
 		};
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Navy_Uniform_B_F";
-			containerClass="Supply120";
-			mass=10;
 		};
 	};
 
@@ -101,11 +100,8 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi1_CO.paa"
 		};
-		class ItemInfo: UniformItem {
-			uniformModel="-";
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Navy_Uniform_Avi1_F";
-			containerClass="Supply120";
-			mass=10;
 		};
 	};
 
@@ -116,10 +112,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi2_CO.paa"
 		};
 		class ItemInfo: UniformItem {
-			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_Avi2_F";
-			containerClass="Supply120";
-			mass=10;
 		};
 	};
 
@@ -130,10 +123,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
 		};
 		class ItemInfo: UniformItem {
-			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_G_F";
-			containerClass="Supply100";
-			mass=10;
 		};
 	};
 	class BDA_Navy_Uniform_R: BDA_Base_Navy_Uniform {
@@ -143,10 +133,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
 		};
 		class ItemInfo: UniformItem {
-			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_R_F";
-			containerClass="Supply100";
-			mass=10;
 		};
 	};
 	class BDA_Navy_Uniform_P: BDA_Base_Navy_Uniform {
@@ -156,10 +143,7 @@ class cfgWeapons {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
 		};
 		class ItemInfo: UniformItem {
-			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_P_F";
-			containerClass="Supply100";
-			mass=10;
 		};
 	};
 
@@ -183,8 +167,7 @@ class CfgVehicles {
 		scopeCurator=2;
 		author="Schlopp";
 		uniformClass="BDA_Uniform_B";
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_B_CO.paa",
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_B_CO.paa"
 		};
@@ -207,8 +190,7 @@ class CfgVehicles {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa",
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_ONI_CO.paa"
 		};
-		hiddenSelections[]=
-		{
+		hiddenSelections[]= {
 			"camo",
 			"camo2",
 			"insignia",

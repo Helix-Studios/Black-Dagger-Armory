@@ -27,25 +27,18 @@ class cfgWeapons {
 
 //------------------------------------------------------------------// Naval Uniforms
 
-
 	class BDA_Navy_Uniform_Shadow: BDA_Base_Navy_Uniform {
 		author="Rib";
 		scope=0;
 		displayName="Naval BDU (G. Shadow)";
-		hiddenSelections[]=
-		{
+		hiddenSelections[]= {
 			"camo"
 		};
-		hiddenSelectionsTextures[]=
-		{
+		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Shadow_CO.paa"
 		};
-		class ItemInfo: UniformItem
-		{
-			uniformModel="-";
+		class ItemInfo: UniformItem {
 			uniformClass="BDA_Navy_Uniform_Shadow_F";
-			containerClass="Supply100";
-			mass=10;
 		};
 	};
 
@@ -60,10 +53,7 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Uniforms\data\BDA_Navy_Uniform_Knight_CO.paa"
 		};
 		class ItemInfo: UniformItem {
-			uniformModel="-";
 			uniformClass="BDA_Navy_Uniform_Knight_F";
-			containerClass="Supply100";
-			mass=10;
 		};
 	};
 };
