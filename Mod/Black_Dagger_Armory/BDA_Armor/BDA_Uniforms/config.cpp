@@ -22,6 +22,7 @@ class CfgPatches {
 
 class cfgWeapons {
 	class UniformItem;
+	class ItemInfo;
 	class U_B_HeliPilotCoveralls;
 	class OPTRE_UNSC_Army_Uniform_WDL;
 	class OPTRE_UNSC_Navy_Uniform;
@@ -43,7 +44,7 @@ class cfgWeapons {
 
     class BDA_Uniform_B_SL: BDA_Uniform_B {
 		displayName="Cross-Branch BDU (Black, Slim Legs)";
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass="BDA_Uniform_B_SL_UNSC";
 		};
@@ -51,7 +52,7 @@ class cfgWeapons {
 
 	class BDA_Uniform_ONI_SL: BDA_Uniform_B {
 		displayName="Cross-Branch BDU (ONI)";
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass="BDA_Uniform_ONI_UNSC";
 		};
@@ -69,7 +70,7 @@ class cfgWeapons {
 		};
 		class ItemInfo: UniformItem {
 			uniformModel="-";
-			containerClass="Supply120";
+			containerClass=Supply120;
 			mass=10;
 		};
 	};
@@ -111,7 +112,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi2_CO.paa"
 		};
-		class ItemInfo: UniformItem {
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Navy_Uniform_Avi2_F";
 		};
 	};
@@ -122,7 +123,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
 		};
-		class ItemInfo: UniformItem {
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Navy_Uniform_G_F";
 		};
 	};
@@ -132,7 +133,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
 		};
-		class ItemInfo: UniformItem {
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Navy_Uniform_R_F";
 		};
 	};
@@ -142,7 +143,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]={
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
 		};
-		class ItemInfo: UniformItem {
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Navy_Uniform_P_F";
 		};
 	};

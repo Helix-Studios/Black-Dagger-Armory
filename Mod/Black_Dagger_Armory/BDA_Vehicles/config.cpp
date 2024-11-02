@@ -8,7 +8,8 @@ class CfgPatches {
 			"BDA_UNSC_Hornet",
 			"BDA_UNSC_Hornet_Lite",
 			"BDA_UNSC_Hornet_VTOL",
-			"BDA_UNSC_UH145A_Falcon2"
+			"BDA_UNSC_UH145A_Falcon2",
+			"BDA_AV22_Sparrowhawk_B"
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -59,7 +60,6 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 class WeaponCloudsMGun;
 
 class CfgVehicles {
-	class ACE_SelfActions;
 	class Helicopter;
 	class Helicopter_Base_F: Helicopter {
 		class Turrets;
@@ -134,6 +134,7 @@ class CfgVehicles {
 	/*extern*/ class OPTRE_UNSC_hornet;
 	/*extern*/ class OPTRE_AV22_Sparrowhawk;
 	/*extern*/ class OPTRE_UNSC_falcon_S;
+	/*extern*/ class OPTRE_UNSC_falcon_medical;
 	class VTOL_Base_F;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
@@ -11275,6 +11276,389 @@ class CfgVehicles {
 		};
 	};
 
+	class BDA_UNSC_Hornet: OPTRE_UNSC_Hornet {
+		dlc = "BDA";
+		author = "Rib";
+		faction = "B_BDCUNSC";
+		side = 1;
+		displayName = "AV-15 Heavy Hornet";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
+		crew = "B_BDA_Pilot";
+		OPTRE_canThrust = 1;
+		weapons[] = {
+			"OPTRE_GUA23AW",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera",
+			"OPTRE_missiles_C2GMLS",
+			"OPTRE_missiles_Anvil3"
+		};
+		magazines[] = {
+			"OPTRE_2000Rnd_30mm_HE",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries",
+			"OPTRE_8Rnd_C2GMLS_missiles",
+			"OPTRE_8Rnd_C2GMLS_missiles",
+			"OPTRE_32Rnd_Anvil3_missiles",
+		};
+		armor = 240;
+
+		hiddenSelectionsTextures[]={
+			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
+		};
+		class textureSources {
+			class BDA_standard {
+				displayName="Standard Marine";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Blackout {
+				displayName="Blackout";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Dark {
+				displayName="Urban";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Desert {
+				displayName="Desert";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Grey {
+				displayName="Grey";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Jungle {
+				displayName="Jungle";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Olive {
+				displayName="Olive";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Woodland {
+				displayName="Woodland";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+			class BDA_Winter {
+				displayName="Winter";
+				author="Black Dagger Armory";
+				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
+				factions[]={"B_BDCUNSC"};
+			};
+		};
+		textureList[]= {
+			"BDA_Standard", 1,
+			"BDA_Blackout", 1,
+			"BDA_Dark", 1,
+			"BDA_Desert", 1,
+			"BDA_Grey", 1,
+			"BDA_Jungle", 1,
+			"BDA_Olive", 1,
+			"BDA_Woodland", 1,
+			"BDA_Winter", 1
+		};
+
+		class UserActions {
+			class ThrusterEngage {
+				userActionID = 90;
+				displayName = "<t color='#b00c00'>Engage Thrusters";
+				textToolTip = "Engage Thrusters";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
+				priority=10;
+				showWindow=0;
+				radius=100000;
+				animPeriod=5;
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+			};
+			class ThrusterDisengage: ThrusterEngage {
+				userActionID = 91;
+				displayName = "<t color='#ffe11c'>Disengage Thrusters";
+				textToolTip = "Disengage Thrusters";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+			};
+			class AirbrakeEngage: ThrusterEngage {
+				userActionID = 92;
+				displayName = "<t color='#0e2cc2'>Engage Airbrakes";
+				textToolTip = "Engage Airbrakes";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
+				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
+			};
+		};
+
+		class ACE_SelfActions {
+            class vehCamo {
+                displayName = "Change Camo";
+				class Temperate {
+					displayName = "Temperate Ops";
+					class GreenCamo {
+						displayName = "Standard";
+						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+					class JungleCamo {
+						displayName = "Jungle";
+						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+					class OliveCamo {
+						displayName = "Olive";
+						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+					class WoodlandCamo {
+						displayName = "Woodland";
+						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+				};
+				class Winter {
+					displayName = "Winter Ops";
+					class WinterCamo {
+						displayName = "Winter";
+						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+					class GreyCamo {
+						displayName = "Grey";
+						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+				};
+				class Night {
+					displayName = "Night Ops";
+					class BlackCamo {
+						displayName = "Blackout";
+						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+					class DarkCamo {
+						displayName = "Darkie";
+						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+				};
+				class Desert {
+					displayName = "Desert Ops";
+					class DesertCamo {
+						displayName = "Desert Tan";
+						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
+						condition = "driver vehicle player isEqualTo player";
+					};
+				};
+            };
+        };
+
+		class Components {
+			class TransportPylonsComponent {
+				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
+				class pylons {
+					class pylons1 {
+						maxweight=600;
+						hardpoints[] = {"OPAEX_Hardpoint_AV14"};
+						attachment="OPTRE_8rnd_C2GMLS_missiles";
+						bay=-1;
+						priority=2;
+						UIposition[]={0.100000,0.2};
+						turret[]={};
+					};
+					class pylons2: pylons1 {
+						mirroredMissilePos=1;
+						UIposition[]={0.22,0.2};
+					};
+					class pylons3: pylons1 {
+						mirroredMissilePos=1;
+						UIposition[]={0.42,0.2};
+					};
+					class pylons4: pylons1 {
+						mirroredMissilePos=1;
+						UIposition[]={0.54,0.2};
+					};
+				};
+				class Presets {
+					class Empty {
+						displayName="Empty";
+						attachment[]={};
+					};
+					class Default {
+						displayName="Combat Air Patrol";
+						attachment[]={
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_8rnd_C2GMLS_missiles",
+							"OPTRE_8rnd_C2GMLS_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
+						};
+					};
+					class CAS_AT {
+						displayName="Vehicle Hunter";
+						attachment[]={
+							"OPTRE_2Rnd_Jackknife_missile",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_16Rnd_Anvil3_missiles",
+							"OPTRE_2Rnd_Jackknife_missile"
+						};
+					};
+					class CAS_Rockets {
+						displayName="CAS Strafe";
+						attachment[]={
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles",
+							"OPTRE_32Rnd_Anvil3_missiles"
+						};
+					};
+				};
+			};
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2500;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						maxTrackableSpeed=100;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=5000;
+							maxRange=6000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=4000;
+							maxRange=5000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableSpeed=100;
+						angleRangeHorizontal=180;
+						angleRangeVertical=90;
+						groundNoiseDistanceCoef=-1;
+						maxGroundNoiseDistance=-1;
+						minSpeedThreshold=0;
+						maxSpeedThreshold=0;
+						aimDown=30;
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={5000,3000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay="SensorDisplay";
+				class Components: components
+				{
+					class VehiclePrimaryGunnerDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="PrimaryGunner";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType="TransportFeedDisplayComponent";
+						source="Missile";
+					};
+					class SensorDisplay
+					{
+						componentType="SensorsDisplayComponent";
+						range[]={5000,3000,16000,8000};
+						resource="RscCustomInfoSensors";
+					};
+				};
+			};
+		};
+	};
+
 	class BDA_UNSC_Hornet_Lite: OPTRE_UNSC_Hornet {
 		dlc = "BDA";
 		author = "Rib";
@@ -11358,7 +11742,7 @@ class CfgVehicles {
 		class UserActions {
 			class ThrusterEngage {
 				userActionID = 90;
-				displayName = "Engage Thrusters";
+				displayName = "<t color='#b00c00'>Engage Thrusters";
 				textToolTip = "Engage Thrusters";
 				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
 				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
@@ -11371,14 +11755,14 @@ class CfgVehicles {
 			};
 			class ThrusterDisengage: ThrusterEngage {
 				userActionID = 91;
-				displayName = "Disengage Thrusters";
+				displayName = "<t color='#ffe11c'>Disengage Thrusters";
 				textToolTip = "Disengage Thrusters";
 				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
 				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
 			};
 			class AirbrakeEngage: ThrusterEngage {
 				userActionID = 92;
-				displayName = "Engage Airbrakes";
+				displayName = "<t color='#0e2cc2'>Engage Airbrakes";
 				textToolTip = "Engage Airbrakes";
 				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
 				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
@@ -21830,7 +22214,7 @@ class CfgVehicles {
 		};
 
 		class Turrets {
-			class CargoTurret {};
+			delete cargoTurret;
 		};
 
 		class Reflectors {
@@ -21905,10 +22289,9 @@ class CfgVehicles {
 		class Wheels {};
 		cost = 150000;
 		accuracy = 1.5;
-		armor = 220;
+		armor = 240;
 		fuelCapacity=650;
 		gearRetracting=0;
-		accuracy=0.5;
 		gunnerCanSee=31;
 		commanderCanSee=31;
 		driverCanSee=31;
@@ -22392,111 +22775,99 @@ class CfgVehicles {
 
 	};
 
-	class BDA_UNSC_Hornet: OPTRE_UNSC_Hornet {
+	class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_S {
 		dlc = "BDA";
+		scope = 2;
+		scopeCurator = 2;
 		author = "Rib";
-		faction = "B_BDCUNSC";
 		side = 1;
-		displayName = "AV-15 Heavy Hornet";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_Hornet.jpg";
+		faction = "B_BDCUNSC";
+		displayName = "UH-145S Falcon";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
 		crew = "B_BDA_Pilot";
+		armor = 250;
+		cost = 1000;
+		maximumLoad = 1000;
 		OPTRE_canThrust = 1;
-		weapons[] = {
-			"OPTRE_GUA23AW",
-			"CMFlareLauncher",
-			"Laserdesignator_pilotCamera",
-			"OPTRE_missiles_C2GMLS",
-			"OPTRE_missiles_Anvil3"
-		};
-		magazines[] = {
-			"OPTRE_2000Rnd_30mm_HE",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"Laserbatteries",
-			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_32Rnd_Anvil3_missiles",
-		};
-		armor = 220;
+		ace_cargo_space = 12;
 
-		hiddenSelectionsTextures[]={
-			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
-		};
-		class textureSources {
-			class BDA_standard {
-				displayName="Standard Marine";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Blackout {
-				displayName="Blackout";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Black.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Dark {
-				displayName="Urban";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Dark.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Desert {
-				displayName="Desert";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Desert.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Grey {
-				displayName="Grey";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Grey.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Jungle {
-				displayName="Jungle";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Jungle.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Olive {
-				displayName="Olive";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Olive.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Woodland {
-				displayName="Woodland";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Woodland.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-			class BDA_Winter {
-				displayName="Winter";
-				author="Black Dagger Armory";
-				textures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Winter.paa"};
-				factions[]={"B_BDCUNSC"};
-			};
-		};
-		textureList[]= {
-			"BDA_Standard", 1,
-			"BDA_Blackout", 1,
-			"BDA_Dark", 1,
-			"BDA_Desert", 1,
-			"BDA_Grey", 1,
-			"BDA_Jungle", 1,
-			"BDA_Olive", 1,
-			"BDA_Woodland", 1,
-			"BDA_Winter", 1
+		hiddenSelectionsTextures[]= {
+			"\optre_vehicles_air\falcon\data\falcon_main_co.paa", //main
+			"\optre_vehicles_air\falcon\data\falcon_attachments_co.paa", //attachment
+			"\optre_vehicles_air\falcon\data\falcon_interior_co.paa", // Int
+			"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa", // glass1
+			"\optre_vehicles_air\falcon\data\falcon_glass_ca.paa", // glass2
+			"\optre_vehicles_air\falcon\data\decal\unsc_var1\falcon_decal_ca.paa" //DECAL!
 		};
 
 		class UserActions {
+			class polarize {
+				userActionID=50;
+				displayName="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\polarize.paa' size='2' /> Polarize";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\polarize.paa' size='2.5' />";
+				position="";
+				priority=1.5;
+				radius=1.8;
+				animPeriod=2;
+				onlyForplayer=0;
+				showWindow=1;
+				condition="((this getVariable['OPTRE_Glass_Polarized',0]) == 0) && ((missionNamespace getVariable ['bis_fnc_moduleRemoteControl_unit', player]) isEqualTo (driver this))";
+				statement="[this,'camoGlass','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_Polarized.rvmat','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass.rvmat',0] call OPTRE_fnc_vehicle_glass_toggle_polarize;";
+			};
+			class depolo: polarize {
+				userActionID=51;
+				displayName="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\depolarize.paa' size='2' /> Depolarize";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\depolarize.paa' size='2.5' />";
+				condition="((this getVariable['OPTRE_Glass_Polarized',0]) == 1) && ((missionNamespace getVariable ['bis_fnc_moduleRemoteControl_unit', player]) isEqualTo (driver this))";
+				statement="[this,'camoGlass','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_Polarized.rvmat','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass.rvmat',0] call OPTRE_fnc_vehicle_glass_toggle_polarize;";
+			};
+			class CabinOpen {
+				userActionID=52;
+				displayName="Open Cabin";
+				displayNameDefault="Open Cabin";
+				textToolTip="Open Cabin";
+				position="cargo_door_handle";
+				showWindow=0;
+				radius=150;
+				priority=4;
+				onlyForPlayer=0;
+				condition="((this animationPhase ""cockpit_door"" < 0.5) AND (this animationPhase ""cockpit_slide"" < 0.5) AND (alive this) AND (player in [driver this]))";
+				statement="this animate [""cockpit_door"",1]; this animate [""cockpit_slide"",1];";
+				animPeriod=5;
+			};
+			class CabinClose: CabinOpen {
+				userActionID=53;
+				displayName="Close Cabin";
+				displayNameDefault="Close Cabin";
+				textToolTip="Close Cabin";
+				condition="((this animationPhase ""cockpit_door"" > 0.5) AND (this animationPhase ""cockpit_slide"" > 0.5) AND (alive this) AND (player in [driver this]))";
+				statement="this animate [""cockpit_door"",0]; this animate [""cockpit_slide"",0];";
+			};
+			class cyclePIP {
+				userActionID=54;
+				displayName="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\cycle.paa' size='2'/> <t color='#61a2c9' >Cycle Camera</t>";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\cycle.paa' size='2.5' />";
+				position="";
+				priority=1.5;
+				radius=1.8;
+				animPeriod=2;
+				onlyForplayer=0;
+				showWindow=1;
+				condition="((alive this) AND (player in [driver this]))";
+				statement="[this] call OPTRE_fnc_falcon_pip_change_next;";
+			};
+			class togglePip: cyclePIP {
+				userActionID=55;
+				displayName="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\toggle.paa' size='2'/> <t color='#ddd400' >Toggle  Camera</t>";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\toggle.paa' size='2.5' />";
+				statement="[this] call OPTRE_fnc_falcon_pip_toggle;";
+			};
 			class ThrusterEngage {
 				userActionID = 90;
-				displayName = "Engage Thrusters";
+				displayName = "<t color='#b00c00'>Engage Thrusters";
 				textToolTip = "Engage Thrusters";
 				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
+				statement="0 = this spawn V_FZ_fnc_Thruster400Engage";
 				priority=10;
 				showWindow=0;
 				radius=100000;
@@ -22506,175 +22877,298 @@ class CfgVehicles {
 			};
 			class ThrusterDisengage: ThrusterEngage {
 				userActionID = 91;
-				displayName = "Disengage Thrusters";
+				displayName = "<t color='#ffe11c'>Disengage Thrusters";
 				textToolTip = "Disengage Thrusters";
 				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage";
 			};
 			class AirbrakeEngage: ThrusterEngage {
 				userActionID = 92;
-				displayName = "Engage Airbrakes";
+				displayName = "<t color='#0e2cc2'>Engage Airbrakes";
 				textToolTip = "Engage Airbrakes";
 				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
 				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
 			};
 		};
 
-		class ACE_SelfActions {
-            class vehCamo {
-                displayName = "Change Camo";
-				class Temperate {
-					displayName = "Temperate Ops";
-					class GreenCamo {
-						displayName = "Standard";
-						statement = "['BDA_Green', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-					class JungleCamo {
-						displayName = "Jungle";
-						statement = "['BDA_Jungle', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-					class OliveCamo {
-						displayName = "Olive";
-						statement = "['BDA_Olive', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-					class WoodlandCamo {
-						displayName = "Woodland";
-						statement = "['BDA_Woodland', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-				};
-				class Winter {
-					displayName = "Winter Ops";
-					class WinterCamo {
-						displayName = "Winter";
-						statement = "['BDA_Winter', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-					class GreyCamo {
-						displayName = "Grey";
-						statement = "['BDA_Grey', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-				};
-				class Night {
-					displayName = "Night Ops";
-					class BlackCamo {
-						displayName = "Blackout";
-						statement = "['BDA_Blackout', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-					class DarkCamo {
-						displayName = "Darkie";
-						statement = "['BDA_Dark', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-				};
-				class Desert {
-					displayName = "Desert Ops";
-					class DesertCamo {
-						displayName = "Desert Tan";
-						statement = "['BDA_Desert', 'BDA_UNSC_Hornet'] call BDA_fnc_chgTex";
-						condition = "driver vehicle player isEqualTo player";
-					};
-				};
-            };
-        };
+		class TransportBackpacks {
+			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
+		};
+		class TransportItems {
+			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
+			class _xx_Medikit {name="Medikit"; count=5;};
+			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
+			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
+			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
+			class _xx_Toolkit {name="ToolKit"; count=1;};
+			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
+			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
+			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
+			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
+			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
+			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
+		};
+		magazines[]= {
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries"
+		};
+	};
 
-		class Components {
+	class BDA_UNSC_MH145_Falcon: OPTRE_UNSC_Falcon_Medical {
+		dlc = "BDA";
+		scope = 2;
+		scopeCurator = 2;
+		author = "Rib";
+		displayName = "MH-145 Falcon";
+		side = 1;
+		faction = "B_BDCUNSC";
+		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
+		crew = "B_BDA_Pilot";
+		armor = 300;
+		cost = 500;
+		maximumLoad = 1000;
+		OPTRE_canThrust = 1;
+		ace_cargo_space = 12;
+		
+		class UserActions {
+			class polarize {
+				userActionID=50;
+				displayName="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\polarize.paa' size='2' /> Polarize";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\polarize.paa' size='2.5' />";
+				position="";
+				priority=1.5;
+				radius=1.8;
+				animPeriod=2;
+				onlyForplayer=0;
+				showWindow=1;
+				condition="((this getVariable['OPTRE_Glass_Polarized',0]) == 0) && ((missionNamespace getVariable ['bis_fnc_moduleRemoteControl_unit', player]) isEqualTo (driver this))";
+				statement="[this,'camoGlass','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_Polarized.rvmat','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass.rvmat',0] call OPTRE_fnc_vehicle_glass_toggle_polarize;";
+			};
+			class depolo: polarize {
+				userActionID=51;
+				displayName="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\depolarize.paa' size='2' /> Depolarize";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\vehicle_glass_polarize\icons\depolarize.paa' size='2.5' />";
+				condition="((this getVariable['OPTRE_Glass_Polarized',0]) == 1) && ((missionNamespace getVariable ['bis_fnc_moduleRemoteControl_unit', player]) isEqualTo (driver this))";
+				statement="[this,'camoGlass','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass_ca.paa','\OPTRE_Vehicles_Air\Falcon\data\Polarized\Falcon_Glass_Polarized.rvmat','\OPTRE_Vehicles_Air\Falcon\data\Falcon_Glass.rvmat',0] call OPTRE_fnc_vehicle_glass_toggle_polarize;";
+			};
+			class CabinOpen {
+				userActionID=52;
+				displayName="Open Cabin";
+				displayNameDefault="Open Cabin";
+				textToolTip="Open Cabin";
+				position="cargo_door_handle";
+				showWindow=0;
+				radius=150;
+				priority=4;
+				onlyForPlayer=0;
+				condition="((this animationPhase ""cockpit_door"" < 0.5) AND (this animationPhase ""cockpit_slide"" < 0.5) AND (alive this) AND (player in [driver this]))";
+				statement="this animate [""cockpit_door"",1]; this animate [""cockpit_slide"",1];";
+				animPeriod=5;
+			};
+			class CabinClose: CabinOpen {
+				userActionID=53;
+				displayName="Close Cabin";
+				displayNameDefault="Close Cabin";
+				textToolTip="Close Cabin";
+				condition="((this animationPhase ""cockpit_door"" > 0.5) AND (this animationPhase ""cockpit_slide"" > 0.5) AND (alive this) AND (player in [driver this]))";
+				statement="this animate [""cockpit_door"",0]; this animate [""cockpit_slide"",0];";
+			};
+			class cyclePIP {
+				userActionID=54;
+				displayName="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\cycle.paa' size='2'/> <t color='#61a2c9' >Cycle Camera</t>";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\cycle.paa' size='2.5' />";
+				position="";
+				priority=1.5;
+				radius=1.8;
+				animPeriod=2;
+				onlyForplayer=0;
+				showWindow=1;
+				condition="((alive this) AND (player in [driver this]))";
+				statement="[this] call OPTRE_fnc_falcon_pip_change_next;";
+			};
+			class togglePip: cyclePIP {
+				userActionID=55;
+				displayName="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\toggle.paa' size='2'/> <t color='#ddd400' >Toggle  Camera</t>";
+				displayNameDefault="<img image='\OPTRE_FunctionsLibrary\Falcon_PIP\icons\toggle.paa' size='2.5' />";
+				statement="[this] call OPTRE_fnc_falcon_pip_toggle;";
+			};
+			class ThrusterEngage {
+				userActionID = 90;
+				displayName = "<t color='#b00c00'>Engage Thrusters";
+				textToolTip = "Engage Thrusters";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				statement="0 = this spawn V_FZ_fnc_Thruster400Engage";
+				priority=10;
+				showWindow=0;
+				radius=100000;
+				animPeriod=5;
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+			};
+			class ThrusterDisengage: ThrusterEngage {
+				userActionID = 91;
+				displayName = "<t color='#ffe11c'>Disengage Thrusters";
+				textToolTip = "Disengage Thrusters";
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage";
+			};
+			class AirbrakeEngage: ThrusterEngage {
+				userActionID = 92;
+				displayName = "<t color='#0e2cc2'>Engage Airbrakes";
+				textToolTip = "Engage Airbrakes";
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
+				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
+			};
+		};
+
+		class TransportBackpacks {
+			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
+		};
+		class TransportItems {
+			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
+			class _xx_Medikit {name="Medikit"; count=5;};
+			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
+			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
+			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
+			class _xx_Toolkit {name="ToolKit"; count=1;};
+			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
+			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
+			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
+			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
+			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
+			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
+		};
+		magazines[]= {
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries"
+		};
+	};
+
+	class BDA_AV22_Sparrowhawk_B: OPTRE_AV22_Sparrowhawk {
+		scope = 2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		dlc = "BDA";
+		author = "Rib";
+		displayName = "AV-22B Sparrowhawk";
+		faction = "B_BDCUNSC";
+		crew = "B_BDA_Pilot";
+		tf_range=25000;
+		tf_isolatedAmount=0.40000001;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		enableRadio=1;
+
+		class TransportBackpacks {
+			class _xx_B_Parachute {
+				backpack="B_Parachute";
+				count=2;
+			};
+		};
+		class TransportItems {};
+
+		hiddenSelections[]= {
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"attach_noseLaser",
+			"attach_CannonHeavy",
+			"attach_Decal1",
+			"attach_Decal2"
+		};
+		hiddenSelectionsTextures[]= {
+			"OPTRE_Vehicles_Air\sparrowhawk\data\body_01_co.paa", //camo1
+			"OPTRE_Vehicles_Air\sparrowhawk\data\body_02_co.paa", //camo2
+			"OPTRE_Vehicles_Air\sparrowhawk\data\body_03_co.paa", //camo3
+			"OPTRE_Vehicles_Air\sparrowhawk\data\body_04_co.paa", //camo4
+			"OPTRE_Vehicles_Air\sparrowhawk\data\body_05_co.paa", //camo5
+			"OPTRE_Vehicles_Air\sparrowhawk\data\autocannon_co.paa", //autocanon
+			"OPTRE_Vehicles_Air\sparrowhawk\data\feed_autocannon_co.paa", //feedautocannon
+			"",
+			"",
+			"OPTRE_Vehicles_Air\sparrowhawk\data\decal_01_ca.paa", //decal?
+		};
+		weapons[]=
+		{
+			"OPTRE_MISRIAH_Cannon",
+			"CMFlareLauncher"
+		};
+		magazines[]=
+		{
+			"OPTRE_2500Rnd_50mm_HE2",
+			"OPTRE_2500Rnd_50mm_APFSDS",
+			"168Rnd_CMFlare_Chaff_Magazine",
+			"168Rnd_CMFlare_Chaff_Magazine"
+		};
+
+		class Components;
+		class Components: Components {
 			class TransportPylonsComponent {
-				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
+				UIPicture="\OPTRE_Vehicles_Air\Sparrowhawk\sparrowhawkPylonImage.paa";
 				class pylons {
-					class pylons1 {
-						maxweight=600;
-						hardpoints[] = {"OPAEX_Hardpoint_AV14"};
-						attachment="OPTRE_8rnd_C2GMLS_missiles";
+					class WingPylonRight1
+					{
+						maxweight=560;
+						hardpoints[]=
+						{
+							"OPAEX_Hardpoint_AV22"
+						};
+						attachment="OPTRE_6Rnd_C2GMLS_missiles";
 						bay=-1;
-						priority=2;
-						UIposition[]={0.100000,0.2};
+						priority=3;
+						UIposition[]={0.34999999,0.1};
 						turret[]={};
 					};
-					class pylons2: pylons1 {
-						mirroredMissilePos=1;
-						UIposition[]={0.22,0.2};
+					class WingPylonRight2: WingPylonRight1
+					{
+						priority=2;
+						UIposition[]={0.30000001,0.134};
+						attachment="OPTRE_4Rnd_Scorpion_missiles";
 					};
-					class pylons3: pylons1 {
-						mirroredMissilePos=1;
-						UIposition[]={0.42,0.2};
+					class WingPylonRight3: WingPylonRight1
+					{
+						priority=1;
+						UIposition[]={0.34999999,0.167};
+						attachment="OPTRE_2Rnd_Jackknife_missile";
 					};
-					class pylons4: pylons1 {
+					class WingPylonLeft3: WingPylonRight3
+					{
+						mirroredMissilePos=3;
+						UIposition[]={0.34999999,0.40000001};
+					};
+					class WingPylonLeft2: WingPylonRight2
+					{
+						mirroredMissilePos=2;
+						UIposition[]={0.30000001,0.43399999};
+					};
+					class WingPylonLeft1: WingPylonRight1
+					{
 						mirroredMissilePos=1;
-						UIposition[]={0.54,0.2};
+						UIposition[]={0.34999999,0.46700001};
 					};
 				};
 				class Presets {
-					class Empty {
+					class Empty
+					{
 						displayName="Empty";
 						attachment[]={};
 					};
-					class Default {
-						displayName="Combat Air Patrol";
-						attachment[]={
-							"OPTRE_32Rnd_Anvil3_missiles",
-							"OPTRE_8rnd_C2GMLS_missiles",
-							"OPTRE_8rnd_C2GMLS_missiles",
-							"OPTRE_32Rnd_Anvil3_missiles",
-						};
-					};
-					class CAS_AT {
-						displayName="Vehicle Hunter";
-						attachment[]={
-							"OPTRE_2Rnd_Jackknife_missile",
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_16Rnd_Anvil3_missiles",
-							"OPTRE_2Rnd_Jackknife_missile"
-						};
-					};
-					class CAS_Rockets {
-						displayName="CAS Strafe";
-						attachment[]={
-							"OPTRE_32Rnd_Anvil3_missiles",
-							"OPTRE_32Rnd_Anvil3_missiles",
-							"OPTRE_32Rnd_Anvil3_missiles",
-							"OPTRE_32Rnd_Anvil3_missiles"
-						};
-					};
 				};
 			};
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
+			class SensorsManagerComponent {
+				class Components {
+					class IRSensorComponent: SensorTemplateIR {
 						class AirTarget
-						{
-							minRange=500;
-							maxRange=4000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
 						{
 							minRange=500;
 							maxRange=3000;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-						maxTrackableSpeed=300;
-						animDirection="mainGun";
-						angleRangeHorizontal=46;
-						angleRangeVertical=34;
-						aimdown=-0.25;
-					};
-					class VisualSensorComponent: SensorTemplateVisual
-					{
-						class AirTarget
-						{
-							minRange=500;
-							maxRange=2500;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
@@ -22685,14 +23179,34 @@ class CfgVehicles {
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
+						maxTrackableSpeed=300;
+						animDirection="mainGun";
+						angleRangeHorizontal=46;
+						angleRangeVertical=34;
+						aimdown=-0.25;
+					};
+					class VisualSensorComponent: SensorTemplateVisual {
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=1500;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
 						maxTrackableSpeed=100;
 						animDirection="mainGun";
 						angleRangeHorizontal=46;
 						angleRangeVertical=34;
 						aimdown=-0.25;
 					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
 						class AirTarget
 						{
 							minRange=5000;
@@ -22744,7 +23258,7 @@ class CfgVehicles {
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[]={5000,3000,16000,8000};
+						range[]={4000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -22767,78 +23281,68 @@ class CfgVehicles {
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[]={5000,3000,16000,8000};
+						range[]={4000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
 			};
 		};
-	};
-
-	class BDA_UNSC_UH145A_Falcon2: OPTRE_UNSC_falcon_S {
-		dlc = "BDA";
-		author = "Rib";
-		side = 1;
-		faction = "B_BDCUNSC";
-		displayName = "UH-145S Falcon";
-		editorPreview = "\BDA_Units\b_bdcunsc\data\preview\BDA_UNSC_UH145A_Falcon2.jpg";
-		crew = "B_BDA_Pilot";
-		armor = 300;
-		cost = 900;
-		maximumLoad = 1000;
-		OPTRE_canThrust = 1;
-
+		
 		class UserActions {
-			class ThrusterEngage {
-				userActionID = 90;
-				displayName = "Engage Thrusters";
-				textToolTip = "Engage Thrusters";
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
-				priority=10;
-				showWindow=0;
-				radius=100000;
+			class FullAirbrakeEngage {
+				userActionID=57;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
+				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngage";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
 				animPeriod=5;
 				onlyForPlayer=0;
 				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
 			};
-			class ThrusterDisengage: ThrusterEngage {
-				userActionID = 91;
-				displayName = "Disengage Thrusters";
-				textToolTip = "Disengage Thrusters";
+			class HalfAirbrakeEngage: FullAirbrakeEngage {
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName="<t color='#F28D00'>Engage Airbrakes (Half)";
+				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
+				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngage";
+				textToolTip="<t color='#F28D00'>Engage Airbrakes (Half)";
+				userActionID=58;
+			};
+			class Thruster400Engage: FullAirbrakeEngage  {
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName="<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
+				statement="0 = this spawn V_FZ_fnc_Thruster400Engage";
+				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID=52;
+			};
+			class Thruster400Disengage: FullAirbrakeEngage  {
 				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
+				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
+				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage";
+				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID=53;
 			};
-			class AirbrakeEngage: ThrusterEngage {
-				userActionID = 92;
-				displayName = "Engage Airbrakes";
-				textToolTip = "Engage Airbrakes";
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
-				statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
+			class Afterburnerss600Engage: FullAirbrakeEngage  {
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				statement="0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				userActionID=54;
 			};
-		};
-
-		class TransportBackpacks {
-			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
-		};
-		class TransportItems {
-			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
-			class _xx_Medikit {name="Medikit"; count=5;};
-			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
-			class _xx_OPTRE_Biofoam {name="OPTRE_Biofoam"; count=20;};
-			class _xx_ACE_Splint {name="ACE_Splint"; count=16;};
-			class _xx_Toolkit {name="ToolKit"; count=1;};
-			class _xx_ACE_WaterBottle {name="ACE_WaterBottle"; count=5;};
-			class _xx_ACE_EntrenchingTool {name="ACE_EntrenchingTool"; count=4;};
-			class _xx_adv_aceCPR_AED {name="adv_aceCPR_AED"; count=1;};
-			class _xx_ACE_IR_Strobe_Item {name="ACE_IR_Strobe_Item"; count=6;};
-			class _xx_ACE_tourniquet {name = "ACE_tourniquet"; count = 8;};
-			class _xx_ACE_morphine {name = "ACE_morphine"; count = 10;};
-		};
-		magazines[]= {
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"Laserbatteries"
+			class Afterburners600Disengage: FullAirbrakeEngage  {
+				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				statement="0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				userActionID=55;
+			};
 		};
 	};
 	
