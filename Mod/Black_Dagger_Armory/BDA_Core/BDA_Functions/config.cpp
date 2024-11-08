@@ -61,7 +61,7 @@ class CfgFunctions {
 		};
 		class BDA_AirVehThrust {
 			file = "\BDA_Core\BDA_Functions\AirVehThrust";
-			class dofalcthrust {};
+			
 		};
 		class BDA_PeliMagSys {
 			file = "\BDA_Core\BDA_Functions\PeliMagSys";
