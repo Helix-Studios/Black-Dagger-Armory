@@ -36,24 +36,21 @@ class cfgWeapons {
 		scope=2;
 		author="Schlopp";
 		displayName="Cross-Branch BDU (Black)";
-		class ItemInfo: UniformItem
-		{
+		class ItemInfo: UniformItem {
 			uniformClass="BDA_Uniform_B_UNSC";
 		};
 	};
 
     class BDA_Uniform_B_SL: BDA_Uniform_B {
 		displayName="Cross-Branch BDU (Black, Slim Legs)";
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Uniform_B_SL_UNSC";
 		};
 	};
 
 	class BDA_Uniform_ONI_SL: BDA_Uniform_B {
 		displayName="Cross-Branch BDU (ONI)";
-		class ItemInfo: ItemInfo
-		{
+		class ItemInfo: ItemInfo {
 			uniformClass="BDA_Uniform_ONI_UNSC";
 		};
 	};
@@ -70,7 +67,7 @@ class cfgWeapons {
 		};
 		class ItemInfo: UniformItem {
 			uniformModel="-";
-			containerClass=Supply120;
+			containerClass="Supply120";
 			mass=10;
 		};
 	};
