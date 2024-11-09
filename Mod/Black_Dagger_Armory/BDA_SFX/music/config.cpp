@@ -27,6 +27,10 @@ class CfgMusicClasses
 	{
 		displayName="Black Dagger (Other)";
 	};
+	class BDA_MGS
+	{
+		displayName="Black Dagger (Metal Gear)";
+	};
 	class BDA_CMS
 	{
 		displayName="Black Dagger (Crimson Storm)";
@@ -382,10 +386,58 @@ class CfgMusic
 		duration="281";
 		musicClass="BDA_2";
 	};
+	class BDA_MGS_VirtuousMission {
+		name="Virtuous Mission";
+		sound[]=
+		{
+			"BDA_SFX\music\data\VirtuousMission.ogg",
+			1,
+			1
+		};
+		theme="Metal Gear Solid 3: Snake Eater";
+		duration="366"; //time in seconds
+		musicClass="BDA_MGS";
+	};
+	class BDA_MGS_WhatAThrill_SnakeEater {
+		name="What A Thrill Snake Eater";
+		sound[]=
+		{
+			"BDA_SFX\music\data\WhatAThrill_SnakeEater.ogg",
+			1,
+			1
+		};
+		theme="Metal Gear Solid 3: Snake Eater";
+		duration="160"; //time in seconds
+		musicClass="BDA_MGS";
+	};
+	class BDA_MGS_WhoAmIReally {
+		name="Who Am I Really";
+		sound[]=
+		{
+			"BDA_SFX\music\data\WhoAmIReally.ogg",
+			1,
+			1
+		};
+		theme="Metal Gear Solid 2: Subsistence";
+		duration="481"; //time in seconds
+		musicClass="BDA_MGS";
+	};
+	class BDA_MGS_YellDeadCell {
+		name="Yell - Dead Cell";
+		sound[]=
+		{
+			"BDA_SFX\music\data\YellDeadCell.ogg",
+			1,
+			1
+		};
+		theme="Metal Gear Solid 2: Subsistence";
+		duration="148"; //time in seconds
+		musicClass="BDA_MGS";
+	};
 
 };
 
 class cfgMods {
 	author="Rib";
-	timepacked="051020242250";
+	timepacked="0911240313";
 };

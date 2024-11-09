@@ -12033,7 +12033,7 @@ class CfgVehicles {
 	class BDA_UNSC_Hornet_VTOL: VTOL_Base_F {
 		scope = 2
 		scopeCurator = 2;
-		scopeArsenal = 1;
+		scopeArsenal = 2;
 		vehicleClass = "BDA_UNSC_Air_Class";
 		dlc = "BDA";
 		author = "Rib";
@@ -23205,10 +23205,8 @@ class CfgVehicles {
             };
         };
 
-		class TransportBackpacks {
-			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
-		};
 		class TransportItems {
+			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
 			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
 			class _xx_Medikit {name="Medikit"; count=5;};
 			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
@@ -23495,10 +23493,8 @@ class CfgVehicles {
 			};
 		};
 
-		class TransportBackpacks {
-			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
-		};
 		class TransportItems {
+			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
 			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
 			class _xx_Medikit {name="Medikit"; count=5;};
 			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
@@ -23526,7 +23522,7 @@ class CfgVehicles {
 		side=1;
 		dlc = "BDA";
 		author = "Rib";
-		displayName = "AV-22B Sparrowhawk";
+		displayName = "AV-22B Sparrowhawk (WIP)";
 		faction = "B_BDCUNSC";
 		crew = "B_BDA_Pilot";
 		tf_range=25000;
@@ -23535,15 +23531,14 @@ class CfgVehicles {
 		tf_hasLRradio=1;
 		enableRadio=1;
 
-		class TransportBackpacks {
+		class TransportItems {
 			class _xx_B_Parachute {
 				backpack="B_Parachute";
 				count=2;
 			};
 		};
-		class TransportItems {};
 
-		hiddenSelections[]= {
+		hiddenSelections[] = {
 			"camo1",
 			"camo2",
 			"camo3",
@@ -23556,23 +23551,21 @@ class CfgVehicles {
 			"attach_Decal1",
 			"attach_Decal2"
 		};
-		hiddenSelectionsTextures[]= { //work out this bullshit... interiors and decals 
+		hiddenSelectionsTextures[] = { //work out this bullshit... interiors and decals 
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_1_co.paa", //camo1
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_2_co.paa", //camo2
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_3_co.paa", //camo3
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_4_co.paa", //camo4
-			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co_co.paa", //camo5
+			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_5_co.paa", //camo5
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_cannon_co.paa", //autocanon
 			"\BDA_Vehicles\data\sparrowhawk\black\BDA_sparrowhawk_blk_fcannon_co.paa", //feedautocannon
-			"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa", //decal 1 - wHERE IS 2?!!?
+			"\BDA_Vehicles\data\sparrowhawk\decals\decal_02_ca.paa" //decal 1 - wHERE IS 2?!!?
 		};
-		weapons[]=
-		{
+		weapons[] = {
 			"OPTRE_MISRIAH_Cannon",
 			"CMFlareLauncher"
 		};
-		magazines[]=
-		{
+		magazines[] = {
 			"OPTRE_2500Rnd_50mm_HE2",
 			"OPTRE_2500Rnd_50mm_APFSDS",
 			"168Rnd_CMFlare_Chaff_Magazine",
@@ -23584,11 +23577,9 @@ class CfgVehicles {
 			class TransportPylonsComponent {
 				UIPicture="\OPTRE_Vehicles_Air\Sparrowhawk\sparrowhawkPylonImage.paa";
 				class pylons {
-					class WingPylonRight1
-					{
+					class WingPylonRight1 {
 						maxweight=560;
-						hardpoints[]=
-						{
+						hardpoints[] = {
 							"OPAEX_Hardpoint_AV22"
 						};
 						attachment="OPTRE_6Rnd_C2GMLS_missiles";
@@ -23597,30 +23588,25 @@ class CfgVehicles {
 						UIposition[]={0.34999999,0.1};
 						turret[]={};
 					};
-					class WingPylonRight2: WingPylonRight1
-					{
+					class WingPylonRight2: WingPylonRight1 {
 						priority=2;
 						UIposition[]={0.30000001,0.134};
 						attachment="OPTRE_4Rnd_Scorpion_missiles";
 					};
-					class WingPylonRight3: WingPylonRight1
-					{
+					class WingPylonRight3: WingPylonRight1 {
 						priority=1;
 						UIposition[]={0.34999999,0.167};
 						attachment="OPTRE_2Rnd_Jackknife_missile";
 					};
-					class WingPylonLeft3: WingPylonRight3
-					{
+					class WingPylonLeft3: WingPylonRight3 {
 						mirroredMissilePos=3;
 						UIposition[]={0.34999999,0.40000001};
 					};
-					class WingPylonLeft2: WingPylonRight2
-					{
+					class WingPylonLeft2: WingPylonRight2 {
 						mirroredMissilePos=2;
 						UIposition[]={0.30000001,0.43399999};
 					};
-					class WingPylonLeft1: WingPylonRight1
-					{
+					class WingPylonLeft1: WingPylonRight1 {
 						mirroredMissilePos=1;
 						UIposition[]={0.34999999,0.46700001};
 					};
@@ -23821,5 +23807,5 @@ class CfgVehicles {
 
 class cfgMods {
 	author="Rib";
-	timepacked="271020241600";
+	timepacked="0811242120";
 };

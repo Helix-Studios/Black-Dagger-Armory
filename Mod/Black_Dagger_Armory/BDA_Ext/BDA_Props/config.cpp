@@ -34,14 +34,39 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = "Rib";
+        editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Props";
         displayName = "[BDA] Supply Pod (Ammo)";
-        vehicleClass = "BDA_UNSC_Ammo_Class";
         transportMaxWeapons = 100;
 		transportMaxMagazines = 1000;
 		maximumLoad = 20000;
 		supplyRadius = 2.000000;
 		armor = 15000;
         class TransportMagazines {
+		};
+        class TransportWeapons { 
+		};
+		class TransportItems {
+            class xx_ACE_M26_Clacker {
+                name = "ACE_M26_Clacker";
+                count = 4;
+            };
+            class xx_OPTRE_M7 {
+                name = "OPTRE_M7";
+                count = 2;
+            };
+            class xx_TCF_M73H {
+                name = "TCF_M73H";
+                count = 1;
+            };
+            class xx_DMNS_M96_LAW {
+                name = "DMNS_M96_LAW";
+                count = 5;
+            };
+            class xx_BDA_RifleBaseAR {
+                name = "BDA_RifleBaseAR";
+                count = 4;
+            };
             //mags
             class xx_TCF_48Rnd_5x23mm_Mag_JHPT {
                 name = "TCF_48Rnd_5x23mm_Mag_JHPT";
@@ -276,30 +301,6 @@ class CfgVehicles {
                 count = 10;
             };
 		};
-        class TransportWeapons {
-            class xx_OPTRE_M7 {
-                name = "OPTRE_M7";
-                count = 2;
-            };
-            class xx_TCF_M73H {
-                name = "TCF_M73H";
-                count = 1;
-            };
-            class xx_DMNS_M96_LAW {
-                name = "DMNS_M96_LAW";
-                count = 4;
-            };
-            class xx_BDA_RifleBaseAR {
-                name = "BDA_RifleBaseAR";
-                count = 4;
-            };
-		};
-		class TransportItems {
-            class xx_ACE_M26_Clacker {
-                name = "ACE_M26_Clacker";
-                count = 4;
-            };
-		};
     };
 
     class BDA_Medical_SupplyPod: OPTRE_Ammo_SupplyPod_Medical {
@@ -307,6 +308,8 @@ class CfgVehicles {
         scope = 2;
         scopeCurator = 2;
         author = "Rib";
+        editorCategory="BDA_EC_BlackDagger";
+		editorSubcategory="BDA_ESC_Props";
         displayName = "[BDA] Supply Pod (Medical)";
 		maximumLoad = 10000;
 		class TransportMagazines {
