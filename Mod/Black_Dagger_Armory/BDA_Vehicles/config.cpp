@@ -131,17 +131,7 @@ class CfgVehicles {
 	class Heli_Light_01_Base_F: Helicopter_Base_H {};
 	class OPTRE_Falcon_Base: Heli_Light_01_Base_F {};
 	class OPTRE_Hornet_Base: Helicopter_Base_H {
-		class Exhaust;
-		class pilotCamera;
-		class MFD;
 		class Components;
-		class Turrets;
-		class Viewpilot;
-		class Damage;
-		class Sounds;
-		class AnimationSources;
-		class HitPoints;
-		class Reflectors;
 	};
 	class OPTRE_UNSC_falcon_S: OPTRE_Falcon_Base {};
 	class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H {};
@@ -11311,10 +11301,14 @@ class CfgVehicles {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"Laserbatteries",
 			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_32Rnd_Anvil3_missiles",
+			"OPTRE_16Rnd_Anvil3_missiles",
 		};
 		armor = 240;
+
+		//Radar & Sensors
+		radartype=4;
+		lockdetectionsystem="2 + 4 + 8";
+		incomingMissileDetectionSystem="8 + 16";
 
 		hiddenSelectionsTextures[]={
 			"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"
@@ -11473,7 +11467,7 @@ class CfgVehicles {
             };
         };
 
-		class Components {
+		class Components: Components {
 			class TransportPylonsComponent {
 				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
 				class pylons {
@@ -11680,6 +11674,12 @@ class CfgVehicles {
 		cost = 2000;
 		OPTRE_canThrust = 1;
 		hiddenSelectionsTextures[]={"\BDA_Vehicles\data\hornet\BDA_Hornet_Marine.paa"};
+
+		//Radar & Sensors
+		radartype=4;
+		lockdetectionsystem="2 + 4 + 8";
+		incomingMissileDetectionSystem="8 + 16";
+
 		class textureSources {
 			class BDA_standard {
 				displayName="Standard Marine";
@@ -11849,10 +11849,10 @@ class CfgVehicles {
 			"168Rnd_CMFlare_Chaff_Magazine",
 			"Laserbatteries",
 			"OPTRE_8Rnd_C2GMLS_missiles",
-			"OPTRE_32Rnd_Anvil3_missiles",
+			"OPTRE_16Rnd_Anvil3_missiles",
 		};
 
-		class Components {
+		class Components: Components {
 			class TransportPylonsComponent {
 				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
 				class pylons {
@@ -11898,10 +11898,8 @@ class CfgVehicles {
 					};
 				};
 			};
-			class SensorsManagerComponent
-			{
-				class Components
-				{
+			class SensorsManagerComponent {
+				class Components {
 					class IRSensorComponent: SensorTemplateIR
 					{
 						class AirTarget
@@ -11982,8 +11980,7 @@ class CfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
-			{
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft {
 				class Components: components
 				{
 					class VehiclePrimaryGunnerDisplay
@@ -12004,8 +12001,7 @@ class CfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
-			{
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight {
 				defaultDisplay="SensorDisplay";
 				class Components: components
 				{
@@ -22443,9 +22439,11 @@ class CfgVehicles {
 		canUseScanner=1;
 		nvScanner=1;
 		laserScanner=1;
-		weaponLockSystem="2+4+8+16";
-		LockDetectionSystem="8 + 4";
+		//Radar & Sensors
+		radartype=4;
+		lockdetectionsystem="2 + 4 + 8";
 		incomingMissileDetectionSystem="8 + 16";
+		weaponLockSystem="2+4+8+16";
 		irScanToEyeFactor=1;
 		irScanRangeMin=200;
 		irScanRangeMax=10000;
@@ -22455,7 +22453,6 @@ class CfgVehicles {
 		laserTarget=0;
 		radarTarget=1;
 		radarTargetSize=2;
-		radarType=4;
 		receiveRemoteTargets=1;
 		reportRemoteTargets=1;
 		reportOwnPosition=1;

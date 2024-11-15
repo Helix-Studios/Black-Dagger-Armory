@@ -20,140 +20,9 @@ class CfgPatches {
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
-class cfgWeapons {
-	class UniformItem;
-	class ItemInfo;
-	class U_B_HeliPilotCoveralls;
-	class OPTRE_UNSC_Army_Uniform_WDL;
-	class OPTRE_UNSC_Navy_Uniform;
-	class U_C_Scientist;
-
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
-//------------------------------------------------------------------// Uniform - Black.
-
-    class BDA_Uniform_B: OPTRE_UNSC_Army_Uniform_WDL {
-		scope=2;
-		author="Schlopp";
-		displayName="Cross-Branch BDU (Black)";
-		class ItemInfo: UniformItem {
-			uniformClass="BDA_Uniform_B_UNSC";
-		};
-	};
-
-    class BDA_Uniform_B_SL: BDA_Uniform_B {
-		displayName="Cross-Branch BDU (Black, Slim Legs)";
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Uniform_B_SL_UNSC";
-		};
-	};
-
-	class BDA_Uniform_ONI_SL: BDA_Uniform_B {
-		displayName="Cross-Branch BDU (ONI)";
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Uniform_ONI_UNSC";
-		};
-	};
-
-//------------------------------------------------------------------// Naval Uniforms
-
-	class BDA_Base_Navy_Uniform: U_C_Scientist {
-		dlc = "BDA";
-		author = "Black Dagger Development Group";
-		scope = 1;
-		scopeCurator = 2;
-		hiddenSelections[]= {
-			"camo"
-		};
-		class ItemInfo: UniformItem {
-			uniformModel="-";
-			containerClass="Supply120";
-			mass=10;
-		};
-	};
-
-	class BDA_Navy_Uniform_ONI: U_B_HeliPilotCoveralls {
-		scope=2;
-		author="Schlopp";
-		displayName="Naval BDU (ONI)";
-		class ItemInfo: UniformItem {
-			uniformClass="BDA_Navy_Uniform_ONI_F";
-		};
-	};
-
-	class BDA_Navy_Uniform_B: BDA_Base_Navy_Uniform {
-		scope=2;
-		displayName="Naval BDU";
-		hiddenSelectionsTextures[]= {
-			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Navy_Uniform_B_F";
-		};
-	};
-
-	class BDA_Navy_Uniform_Avi1: BDA_Base_Navy_Uniform {
-		scope=2;
-		displayName="Naval BDU (81st Naval Air Squadron - Gray)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi1_CO.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Navy_Uniform_Avi1_F";
-		};
-	};
-
-	class BDA_Navy_Uniform_Avi2: BDA_Base_Navy_Uniform {
-		scope=2;
-		displayName="Naval BDU (81st Naval Air Squadron - Green)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi2_CO.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Navy_Uniform_Avi2_F";
-		};
-	};
-
-	class BDA_Navy_Uniform_G: BDA_Base_Navy_Uniform {
-		scope=2;
-		displayName="Naval BDU (Maintenance)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Navy_Uniform_G_F";
-		};
-	};
-	class BDA_Navy_Uniform_R: BDA_Base_Navy_Uniform {
-		scope=2;
-		displayName="Naval BDU (Ordnance)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Navy_Uniform_R_F";
-		};
-	};
-	class BDA_Navy_Uniform_P: BDA_Base_Navy_Uniform {
-		scope=2;
-		displayName="Naval BDU (Fuel)";
-		hiddenSelectionsTextures[]={
-			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
-		};
-		class ItemInfo: ItemInfo {
-			uniformClass="BDA_Navy_Uniform_P_F";
-		};
-	};
-
-
-};
-
-//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
 class CfgVehicles {
 	class B_Helipilot_F;
 	class OPTRE_UNSC_Army_Soldier_WDL;
-	class OPTRE_UNSC_Navy_Soldier;
 	class C_scientist_F;
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
@@ -161,14 +30,16 @@ class CfgVehicles {
 //------------------------------------------------------------------// Uniform - Black.
 
     class BDA_Uniform_B_UNSC: OPTRE_UNSC_Army_Soldier_WDL {
-		scope=2;
-		scopeCurator=2;
+		dlc = "BDA";
 		author="Schlopp";
+		model="\OPTRE_UNSC_Units\Army\uniform.p3d";
 		uniformClass="BDA_Uniform_B";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_B_CO.paa",
 			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_B_CO.paa"
 		};
+		items[]={};
+		respawnItems[]={};
 	};
 
 	class BDA_Uniform_B_SL_UNSC: BDA_Uniform_B_UNSC {
@@ -263,3 +134,138 @@ class CfgVehicles {
 	};
 
 };
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+class cfgWeapons {
+	class UniformItem;
+	class ItemInfo;
+	class U_B_HeliPilotCoveralls;
+	class OPTRE_UNSC_Army_Uniform_WDL;
+	class U_C_Scientist;
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//------------------------------------------------------------------// Uniform - Black.
+
+    class BDA_Uniform_B: OPTRE_UNSC_Army_Uniform_WDL {
+		dlc = "BDA";
+		scope=2;
+		author="Schlopp";
+		displayName="Cross-Branch BDU (Black)";
+		picture="\BDA_Armor\BDA_Uniforms\data\icons\BDA_ODST_Uniform.paa";
+		class ItemInfo: ItemInfo {
+			uniformModel="-";
+			uniformClass="BDA_Uniform_B_UNSC";
+			containerClass="Supply120";
+			mass=40;
+			modelSides[]={6};
+		};
+	};
+
+    class BDA_Uniform_B_SL: BDA_Uniform_B {
+		displayName="Cross-Branch BDU (Black, Slim Legs)";
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Uniform_B_SL_UNSC";
+		};
+	};
+
+	class BDA_Uniform_ONI_SL: BDA_Uniform_B {
+		displayName="Cross-Branch BDU (ONI)";
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Uniform_ONI_UNSC";
+		};
+	};
+
+//------------------------------------------------------------------// Naval Uniforms
+
+	class BDA_Base_Navy_Uniform: U_C_Scientist {
+		dlc = "BDA";
+		author = "Black Dagger Development Group";
+		scope = 1;
+		scopeCurator = 1;
+		hiddenSelections[]= {
+			"camo"
+		};
+		class ItemInfo: ItemInfo {
+			uniformModel="-";
+			containerClass="Supply120";
+			mass=10;
+		};
+	};
+
+	class BDA_Navy_Uniform_ONI: U_B_HeliPilotCoveralls {
+		scope=2;
+		author="Schlopp";
+		displayName="Naval BDU (ONI)";
+		class ItemInfo: UniformItem {
+			uniformClass="BDA_Navy_Uniform_ONI_F";
+		};
+	};
+
+	class BDA_Navy_Uniform_B: BDA_Base_Navy_Uniform {
+		scope=2;
+		displayName="Naval BDU";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_B_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Navy_Uniform_B_F";
+		};
+	};
+
+	class BDA_Navy_Uniform_Avi1: BDA_Base_Navy_Uniform {
+		scope=2;
+		displayName="Naval BDU (81st Naval Air Squadron - Gray)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi1_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Navy_Uniform_Avi1_F";
+		};
+	};
+
+	class BDA_Navy_Uniform_Avi2: BDA_Base_Navy_Uniform {
+		scope=2;
+		displayName="Naval BDU (81st Naval Air Squadron - Green)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Navy_Uniform_Avi2_CO.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Navy_Uniform_Avi2_F";
+		};
+	};
+
+	class BDA_Navy_Uniform_G: BDA_Base_Navy_Uniform {
+		scope=2;
+		displayName="Naval BDU (Maintenance)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_G_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Navy_Uniform_G_F";
+		};
+	};
+	class BDA_Navy_Uniform_R: BDA_Base_Navy_Uniform {
+		scope=2;
+		displayName="Naval BDU (Ordnance)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_R_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Navy_Uniform_R_F";
+		};
+	};
+	class BDA_Navy_Uniform_P: BDA_Base_Navy_Uniform {
+		scope=2;
+		displayName="Naval BDU (Fuel)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Uniforms\data\BDA_Uniform_Deckcrew_P_co.paa"
+		};
+		class ItemInfo: ItemInfo {
+			uniformClass="BDA_Navy_Uniform_P_F";
+		};
+	};
+
+};
+
