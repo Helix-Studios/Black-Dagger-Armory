@@ -35,6 +35,7 @@ class CfgFunctions {
 			class notify {};
 			class isBino {};
 			class advMark {};
+			class vehRRR {};
         };
 		class BDA_Vehcamo {
 			file = "\BDA_Core\BDA_Functions\vehcamo";

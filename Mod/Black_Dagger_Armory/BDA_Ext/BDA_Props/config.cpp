@@ -4,10 +4,23 @@ class CfgPatches {
         name="Project Archeron - Props";
 		author="Project Archeron Team";
 		requiredVersion=0.1;
-		requiredAddons[]={"BDA_Core","B_BDCUNSC","OPTRE_Misc_Crates"};
-		units[]={};
+		requiredAddons[]={
+            "BDA_Core",
+            "B_BDCUNSC",
+            "CBA_Main",
+            "Extended_Eventhandlers",
+            "A3_Supplies_F_Heli",
+            "OPTRE_Misc_Crates",
+            "ace_interaction"};
+		units[]={
+            "BDA_Ammo_SupplyPod",
+            "BDA_Medical_SupplyPod",
+            "BDC_Rearm",
+            "BDC_Repair",
+            "BDC_Refuel",
+            "PA_Can_B"
+        };
 		weapons[]={};
-        vehicles[]={"BDA_Ammo_SupplyPod","BDA_Medical_SupplyPod","PA_Can_B"};
     };
 };
 
@@ -15,6 +28,9 @@ class CfgVehicles {
     class Thing;
     class OPTRE_Ammo_SupplyPod_Empty;
     class OPTRE_Ammo_SupplyPod_Medical;
+    class B_Slingload_01_Ammo_F;
+    class B_Slingload_01_Fuel_F;
+    class B_Slingload_01_Repair_F;
 
     class PA_Can_B: Thing {
         displayName = "Can [Bepis]";
@@ -371,6 +387,117 @@ class CfgVehicles {
             };
 		};
     };
+    
+    class BDC_Rearm: B_Slingload_01_Ammo_F {
+        scope = 2;
+        scopeCurator = 2;
+        side = 3;
+        editorCategory = "BDA_EC_BlackDagger";
+        editorSubcategory = "BDA_ESC_Props";
+        author = "Rib/Apollo";
+        destrType = "DestructNo";
+        maximumLoad = 9999999;
+        ace_cargo_size = 2;
+        ace_cargo_canLoad = 1;
+        displayName = "Vehicle Rearm";
+        ace_rearm_defaultSupply = 500000;
+        class UserActions {
+            class A3_BD_Rearm {
+                displayName = "Rearm Vehicles";
+                position = "BDC_Rearm";
+                radius = 40;
+                condition = "!isNull objectParent player";
+                statement = "call BDA_fnc_Rearm_Supply";
+                onlyforplayer = 0;
+            };
+        };
+        class ACE_Actions {
+            class ACE_BD_Rearm {
+                displayName = "Rearm Vehicles";
+                position = "BDC_Rearm";
+                selection = "";
+                distance = 40;
+                condition = "!isNull objectParent player";
+                statement = "call BDA_fnc_Rearm_Supply";    
+            };
+        };
+    };
+    
+    class BDC_Refuel: B_Slingload_01_Fuel_F {
+        scope = 2;
+        scopeCurator = 2;
+        side = 3;
+        editorCategory = "BDA_EC_BlackDagger";
+        editorSubcategory = "BDA_ESC_Props";
+        author = "Rib/Apollo";
+        destrType = "DestructNo";
+        maximumLoad = 9999999;
+        ace_cargo_size = 2;
+        ace_cargo_canLoad = 1;
+        displayName = "Vehicle Refuel";
+        ace_refuel_fuelCargo = 500000;
+        ace_refuel_hooks[] = {{0.3,-1,-0.6},{0.7,-1,-0.6}};
+        ace_refuel_flowRate = 2;
+        ace_refuel_canReceive = 1;
+        class UserActions {
+            class A3_BD_Refuel {
+                displayName = "Refuel Vehicles";
+                position = "BDC_Refuel";
+                radius = 40;
+                condition = "!isNull objectParent player";
+                statement = "call BDA_fnc_Refuel_Supply";
+                onlyforplayer = 0;
+            };
+        };
+        class ACE_Actions {
+            class ACE_BD_Refuel {
+                displayName = "Refuel Vehicles";
+                position = "BDA_Refuel";
+                selection = "";
+                distance = 40;
+                condition = "!isNull objectParent player";
+                statement = "call BDA_fnc_Refuel_Supply";
+            };
+        };
+    };
+
+    class BDC_Repair: B_Slingload_01_Repair_F {
+        scope = 2;
+        scopeCurator = 2;
+        side = 3;
+        editorCategory = "BDA_EC_BlackDagger";
+        editorSubcategory = "BDA_ESC_Props";
+        author = "Rib/Apollo";
+        destrType = "DestructNo";
+        maximumLoad = 9999999;
+        ace_cargo_size = 2;
+        ace_cargo_canLoad = 1;
+        displayName = "Vehicle Repair";
+        ace_repair_canRepair = 1;
+        ace_repair_spareWheels = 16;
+        ace_repair_spareTracks = 8;
+        class UserActions {
+            class A3_BD_Repair {
+                displayName = "Repair Vehicles";
+                position = "BDC_Repair";
+                radius = 40;
+                condition = "!isNull objectParent player";
+                statement = "call BDA_fnc_Repair_Supply";
+                onlyforplayer = 0;
+            };
+        };
+        class ACE_Actions {
+            class ACE_BD_Repair {
+                displayName = "Repair Vehicles";
+                position = "BDC_Repair";
+                selection = "";
+                distance = 40;
+                condition = "!isNull objectParent player";
+                statement = "call BDA_fnc_Repair_Supply";
+            };
+        };
+    };
+
 //end
 };
 
