@@ -1,10 +1,7 @@
-class CfgPatches
-{
-	class BDA_Vests_C
-	{
+class CfgPatches {
+	class BDA_Vests_C {
 		author="Black Dagger Development Crew";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"A3_Weapons_F",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
@@ -23,12 +20,9 @@ class CfgPatches
 		skipWhenMissingDependencies=1;
 	};
 };
-class cfgWeapons
-{
+class cfgWeapons {
 	/*arma*/ class ItemInfo;
-	/*arma*/ class UniformItem;
 	/*arma*/ class VestItem;
-	/*arma*/ class HeadgearItem;
 	/*arma*/ class Uniform_Base;
 	/*arma*/ class HitpointsProtectionInfo;
 	/*extern*/ class OPTRE_UNSC_M52D_Armor;
@@ -957,6 +951,18 @@ class cfgWeapons
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Hohman_CO.paa"
+		};
+	};
+
+	class BDA_Armor_Karson: BDA_Armor_RF {
+		author = "Rib";
+		displayName = "M52D Body Armor (J. Karson)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Karson_CO.paa"
 		};
 	};
 	//end
