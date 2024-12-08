@@ -180,8 +180,8 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		NSM_jumppack_is_jumppack = 1;
-		NSM_jumppack_energy_capacity = 300;
-		NSM_jumppack_recharge = 8;
+		NSM_jumppack_energy_capacity = 180;
+		NSM_jumppack_recharge = 9;
 		NSM_jumppack_jump_type[] = {
 			{"Forward Jump",{
 					12, //forward v m/s
@@ -215,6 +215,13 @@ class CfgVehicles {
 			"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"
 		};
 	};
+
+	class BDA_S13_Jumppack_Heavy: BDA_S13_Jumppack {
+		displayName = "S13 SOLA Jumppack (Heavy)";
+        maximumload = 550;
+		mass = 100;
+	};
+	class BDA_S13_Jumppack_Heavy_On: BDA_S13_Jumppack_On {};
 
 	class BDA_S13_Jumppack_RTO: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack RTO";
