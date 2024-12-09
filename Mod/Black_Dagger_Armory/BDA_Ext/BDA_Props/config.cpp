@@ -15,9 +15,9 @@ class CfgPatches {
 		units[]={
             "BDA_Ammo_SupplyPod",
             "BDA_Medical_SupplyPod",
-            "BDC_Rearm",
-            "BDC_Repair",
-            "BDC_Refuel",
+            "BDA_Rearm",
+            "BDA_Repair",
+            "BDA_Refuel",
             "PA_Can_B"
         };
 		weapons[]={};
@@ -388,7 +388,7 @@ class CfgVehicles {
 		};
     };
     
-    class BDC_Rearm: B_Slingload_01_Ammo_F {
+    class BDA_Rearm: B_Slingload_01_Ammo_F {
         scope = 2;
         scopeCurator = 2;
         side = 3;
@@ -404,7 +404,7 @@ class CfgVehicles {
         class UserActions {
             class A3_BD_Rearm {
                 displayName = "Rearm Vehicles";
-                position = "BDC_Rearm";
+                position = "BDA_Rearm";
                 radius = 40;
                 condition = "!isNull objectParent player";
                 statement = "call BDA_fnc_Rearm_Supply";
@@ -414,7 +414,7 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_BD_Rearm {
                 displayName = "Rearm Vehicles";
-                position = "BDC_Rearm";
+                position = "BDA_Rearm";
                 selection = "";
                 distance = 40;
                 condition = "!isNull objectParent player";
@@ -423,7 +423,7 @@ class CfgVehicles {
         };
     };
     
-    class BDC_Refuel: B_Slingload_01_Fuel_F {
+    class BDA_Refuel: B_Slingload_01_Fuel_F {
         scope = 2;
         scopeCurator = 2;
         side = 3;
@@ -442,7 +442,7 @@ class CfgVehicles {
         class UserActions {
             class A3_BD_Refuel {
                 displayName = "Refuel Vehicles";
-                position = "BDC_Refuel";
+                position = "BDA_Refuel";
                 radius = 40;
                 condition = "!isNull objectParent player";
                 statement = "call BDA_fnc_Refuel_Supply";
@@ -461,7 +461,7 @@ class CfgVehicles {
         };
     };
 
-    class BDC_Repair: B_Slingload_01_Repair_F {
+    class BDA_Repair: B_Slingload_01_Repair_F {
         scope = 2;
         scopeCurator = 2;
         side = 3;
@@ -479,7 +479,7 @@ class CfgVehicles {
         class UserActions {
             class A3_BD_Repair {
                 displayName = "Repair Vehicles";
-                position = "BDC_Repair";
+                position = "BDA_Repair";
                 radius = 40;
                 condition = "!isNull objectParent player";
                 statement = "call BDA_fnc_Repair_Supply";
@@ -489,7 +489,7 @@ class CfgVehicles {
         class ACE_Actions {
             class ACE_BD_Repair {
                 displayName = "Repair Vehicles";
-                position = "BDC_Repair";
+                position = "BDA_Repair";
                 selection = "";
                 distance = 40;
                 condition = "!isNull objectParent player";
