@@ -17,6 +17,8 @@ class CfgPatches {
 		vehicles[]={
 			"BDA_S13_Jumppack",
 			"BDA_S13_Jumppack_RTO",
+			"BDA_S13_Jumppack_Medic",
+			"BDA_S13_Jumppack_Heavy",
 			"BDA_Rucksack_B",
 			"BDA_Rucksack_B_Medical",
 			"BDA_Rucksack_B_Heavy",
@@ -177,11 +179,11 @@ class CfgVehicles {
         maximumload = 400;
 		mass = 75;
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
+        hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_Outlaw_co.paa"};
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		NSM_jumppack_is_jumppack = 1;
-		NSM_jumppack_energy_capacity = 180;
-		NSM_jumppack_recharge = 9;
+		NSM_jumppack_energy_capacity = 120;
+		NSM_jumppack_recharge = 10;
 		NSM_jumppack_jump_type[] = {
 			{"Forward Jump",{
 					12, //forward v m/s
@@ -216,6 +218,29 @@ class CfgVehicles {
 		};
 	};
 
+	class BDA_S13_Jumppack_DEV: BDA_S13_Jumppack {
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		displayName = "S13 SOLA Jumppack (DEV)";
+        maximumload = 500;
+        hiddenSelectionsTextures[] = {"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_co.paa"};
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_energy_capacity = 120;
+		NSM_jumppack_recharge = 10;
+		NSM_jumppack_jump_type[] = {
+			{"Forward Jump",{
+					12, //forward v m/s
+					20, //vert v m/s
+					50, //cost energy
+					0, //angle
+					0, //directional bool
+					1 //can prone jump bool
+				}},
+			{"Short Jump",{25,7,20,0,1,1}},
+			{"High Jump",{5,35,50,0,0,1}}	//custom - doesn't work... FOR now
+		};
+	};
+
 	class BDA_S13_Jumppack_Heavy: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack (Heavy)";
         maximumload = 550;
@@ -223,8 +248,15 @@ class CfgVehicles {
 	};
 	class BDA_S13_Jumppack_Heavy_On: BDA_S13_Jumppack_On {};
 
+	class BDA_S13_Jumppack_Medic: BDA_S13_Jumppack {
+		displayName = "S13 SOLA Jumppack (Medic)";
+		hiddenSelectionsTextures[]={"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_MED_CO.paa"};
+	};
+	class BDA_S13_Jumppack_Medic_On: BDA_S13_Jumppack_On {};
+
 	class BDA_S13_Jumppack_RTO: BDA_S13_Jumppack {
 		displayName = "S13 SOLA Jumppack RTO";
+		hiddenSelectionsTextures[]={"BDA_Armor\BDA_Accessories\data\BDA_jetpack_S13_SOLA_CMD_CO.paa"};
 		maximumLoad = 400;
 		mass = 85;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
