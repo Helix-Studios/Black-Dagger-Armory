@@ -831,6 +831,254 @@ class cfgWeapons {
 		};
 	};
 	
+	//Outlaw
+	class BDA_Armor_RF_P3: BDA_Armor_RF {
+		displayName="M52D Body Armor (Rifleman, 3rdPLT)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+		};
+	};
+	class BDA_Armor_MD_P3: BDA_Armor_MD {
+		displayName="M52D Body Armor (Medic, 3rdPLT)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S6_Medic_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+		};
+	};
+	class BDA_Armor_DM_P3: BDA_Armor_DM {
+		displayName="M52D Body Armor (Demolitions, 3rdPLT)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+		};
+	};
+	class BDA_Armor_SN_P3: BDA_Armor_SN {
+		displayName="M52D Body Armor (Sniper, 3rdPLT)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+		};
+	};
+	class BDA_Armor_AR_P3: BDA_Armor_AR {
+		displayName="M52D Body Armor (Autorifleman, 3rdPLT)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+		};
+	};
+	class BDA_Armor_BR_P3: BDA_Armor_BR {
+		displayName="M52D Body Armor (Breacher, 3rdPLT)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
+		};
+	};
+	
+	//3-1
+	class BDA_Armor_RF_S7: BDA_Armor_RF {
+		displayName="M52D Body Armor (Rifleman, 3-1)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_MD_S7: BDA_Armor_MD {
+		displayName="M52D Body Armor (Medic, 3-1)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S7_Medic_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_Medic_CO.paa"
+		};
+	};
+	class BDA_Armor_DM_S7: BDA_Armor_DM {
+		displayName="M52D Body Armor (Demolitions, 3-1)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_SN_S7: BDA_Armor_SN {
+		displayName="M52D Body Armor (Sniper, 3-1)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_AR_S7: BDA_Armor_AR {
+		displayName="M52D Body Armor (Autorifleman, 3-1)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_BR_S7: BDA_Armor_BR {
+		displayName="M52D Body Armor (Breacher, 3-1)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+
+	//3-2
+	class BDA_Armor_RF_S8: BDA_Armor_RF {
+		displayName="M52D Body Armor (Rifleman, 3-2)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_MD_S8: BDA_Armor_MD {
+		displayName="M52D Body Armor (Medic, 3-2)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S7_Medic_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_Medic_CO.paa"
+		};
+	};
+	class BDA_Armor_DM_S8: BDA_Armor_DM {
+		displayName="M52D Body Armor (Demolitions, 3-2)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_SN_S8: BDA_Armor_SN {
+		displayName="M52D Body Armor (Sniper, 3-2)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_AR_S8: BDA_Armor_AR {
+		displayName="M52D Body Armor (Autorifleman, 3-2)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_BR_S8: BDA_Armor_BR {
+		displayName="M52D Body Armor (Breacher, 3-2)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+
+	//3-3
+	class BDA_Armor_RF_S9: BDA_Armor_RF {
+		displayName="M52D Body Armor (Rifleman, 3-3)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_MD_S9: BDA_Armor_MD {
+		displayName="M52D Body Armor (Medic, 3-3)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_S7_Medic_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_Medic_CO.paa"
+		};
+	};
+	class BDA_Armor_DM_S9: BDA_Armor_DM {
+		displayName="M52D Body Armor (Demolitions, 3-3)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_SN_S9: BDA_Armor_SN {
+		displayName="M52D Body Armor (Sniper, 3-3)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_AR_S9: BDA_Armor_AR {
+		displayName="M52D Body Armor (Autorifleman, 3-3)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	class BDA_Armor_BR_S9: BDA_Armor_BR {
+		displayName="M52D Body Armor (Breacher, 3-3)";
+		hiddenSelectionsTextures[]={
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_S7_CO.paa"
+		};
+	};
+	
 	//Detachments
 	class BDA_Armor_RF_ONI: OPTRE_UNSC_M52D_Armor {
 		author="Schlopp";
