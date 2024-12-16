@@ -846,7 +846,7 @@ class cfgWeapons {
 		displayName="M52D Body Armor (Medic, 3rdPLT)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
-			"BDA_Armor\BDA_Vests\data\BDA_Armor_S6_Medic_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_Scythe_Medic_CO.paa",
 			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"BDA_Armor\BDA_Vests\data\BDA_M52D_Armor_Outlaw_CO.paa"
