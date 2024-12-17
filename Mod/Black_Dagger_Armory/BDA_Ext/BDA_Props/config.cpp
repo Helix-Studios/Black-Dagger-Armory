@@ -141,15 +141,15 @@ class CfgVehicles {
                 count = 20;
             };
             class xx_OPTRE_100Rnd_762x51_Box_Tracer {
-                name = "TCF_400Rnd_762x51_Box_APT";
+                name = "OPTRE_100Rnd_762x51_Box_Tracer";
                 count = 40;
             };
             class xx_OPTRE_15Rnd_762x51_Mag_Tracer {
-                name = "TCF_400Rnd_762x51_Box_APT";
+                name = "OPTRE_15Rnd_762x51_Mag_Tracer";
                 count = 60;
             };
             class xx_OPTRE_60Rnd_762x51_Mag_Tracer {
-                name = "TCF_400Rnd_762x51_Box_APT";
+                name = "OPTRE_60Rnd_762x51_Mag_Tracer";
                 count = 60;
             };
             class xx_TCF_400Rnd_762x51_Box_APT {
@@ -391,7 +391,6 @@ class CfgVehicles {
     class BDA_Rearm: B_Slingload_01_Ammo_F {
         scope = 2;
         scopeCurator = 2;
-        side = 3;
         editorCategory = "BDA_EC_BlackDagger";
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib/Apollo";
@@ -426,7 +425,6 @@ class CfgVehicles {
     class BDA_Refuel: B_Slingload_01_Fuel_F {
         scope = 2;
         scopeCurator = 2;
-        side = 3;
         editorCategory = "BDA_EC_BlackDagger";
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib/Apollo";
@@ -464,7 +462,6 @@ class CfgVehicles {
     class BDA_Repair: B_Slingload_01_Repair_F {
         scope = 2;
         scopeCurator = 2;
-        side = 3;
         editorCategory = "BDA_EC_BlackDagger";
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib/Apollo";
