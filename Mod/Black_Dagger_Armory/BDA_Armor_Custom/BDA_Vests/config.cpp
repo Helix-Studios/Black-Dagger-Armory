@@ -918,7 +918,7 @@ class cfgWeapons {
 		};
 	};
 
-	class BDA_Armor_Lockwood: BDA_Armor_MD {
+	class BDA_Armor_Lockwood: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Lockwood)";
 		hiddenSelectionsTextures[]= {
