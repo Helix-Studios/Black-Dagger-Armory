@@ -822,7 +822,7 @@ class cfgWeapons {
 		};
 	};
 	
-	class BDA_Armor_Conrad: BDA_Armor_AR {
+	class BDA_Armor_Conrad: BDA_Armor_RF {
 		author = "Grif";
 		displayName = "M52D Body Armor (A. Conrad)";
 		hiddenSelectionsTextures[]= {
