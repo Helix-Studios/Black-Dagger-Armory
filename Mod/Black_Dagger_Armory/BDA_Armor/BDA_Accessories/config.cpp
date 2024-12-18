@@ -188,12 +188,12 @@ class CfgVehicles {
 			{"Forward Jump",{
 					12, //forward v m/s
 					20, //vert v m/s
-					50, //cost energy
+					45, //cost energy
 					0, //angle
 					0, //directional bool
 					0 //can prone jump bool
 				}},
-			{"Short Jump",{25,7,20,0,1,1}},
+			{"Short Jump",{25,7,25,0,1,1}},
 			{"High Jump",{5,35,50,0,0,0}}	//custom - doesn't work... FOR now
 		};
 		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
