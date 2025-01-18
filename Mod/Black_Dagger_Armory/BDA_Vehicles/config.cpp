@@ -12190,14 +12190,17 @@ class CfgVehicles {
             };
         };
 
-		class MFD {
-			class B_Plane_Fighter_01_static_HUD {
+		class MFD
+		{
+			class B_Plane_Fighter_01_static_HUD
+			{
 				enableParallax=0;
 				helmetMountedDisplay=1;
 				helmetPosition[]={-0.032499999,0.032499999,0.1};
 				helmetRight[]={0.064999998,0,0};
 				helmetDown[]={0,-0.064999998,0};
-				class Pos10Vector {
+				class Pos10Vector
+				{
 					type="vector";
 					pos0[]={0.5,0.5};
 					pos10[]={1.225,1.1};
@@ -12210,7 +12213,8 @@ class CfgVehicles {
 				borderTop=0;
 				borderBottom=0;
 				color[]={0.082000002,0.40799999,0.039000001,1};
-				class Bones {
+				class Bones
+				{
 					class PlaneW
 					{
 						type="fixed";
@@ -12345,18 +12349,6 @@ class CfgVehicles {
 					{
 						maxAngle=360;
 						max=10;
-					};
-					class ThrustVectoringRotation
-					{
-						type="rotational";
-						source="vtolvectoring";
-						sourceScale=100;
-						center[]={0.89899999,0.5};
-						min=0;
-						max=100;
-						minAngle=180;
-						maxAngle=270;
-						aspectRatio=0.98290598;
 					};
 					class Target
 					{
@@ -12597,17 +12589,34 @@ class CfgVehicles {
 					{
 						source="LarTargetDist";
 					};
+					class VelocityVector
+					{
+						type = "vector";
+						source = "velocityToView";
+						pos0[] = {0.5,0.5};
+						pos10[] = {0.734,0.73};
+					};
+					class ForwardVector
+					{
+						type = "vector";
+						source = "forward";
+						pos0[] = {0,0};
+						pos10[] = {0.234,0.23};
+					};
 				};
-				class Draw {
+				class Draw
+				{
 					width=1;
 					alpha="user3";
-					color[]= {
+					color[]=
+					{
 						"user0",
 						"user1",
 						"user2"
 					};
 					condition="(1 - (cameraHeadingDiffY<=-40) + (abs(cameraHeadingDiffX)>=30))*on";
-					class VelocityLine {
+					class VelocityLine
+					{
 						type="line";
 						width=1;
 						points[]=
@@ -12704,7 +12713,8 @@ class CfgVehicles {
 							{}
 						};
 					};
-					class PlaneW {
+					class PlaneW
+					{
 						clipTL[]={0,1};
 						clipBR[]={1,0};
 						type="line";
@@ -12755,7 +12765,57 @@ class CfgVehicles {
 							}
 						};
 					};
-					class PlaneMovementCrosshair {
+					class ThrustVectoringAuto
+					{
+						condition = "-vtolvectoring";
+						class VectorigNumber
+						{
+							type = "text";
+							source = "static";
+							sourceScale = 1;
+							text = "AUTO";
+							align = "left";
+							scale = 1;
+							pos[] = {{0.132,0.74},1};
+							right[] = {{0.167,0.74},1};
+							down[] = {{0.132,0.765},1};
+						};
+					};
+					class ThrustVectoring
+					{
+						condition = "1+vtolvectoring";
+						class VectorigNumber
+						{
+							type = "text";
+							source = "vtolvectoring";
+							sourceScale = 90;
+							align = "left";
+							scale = 1;
+							pos[] = {{0.116,0.744},1};
+							right[] = {{0.151,0.744},1};
+							down[] = {{0.116,0.769},1};
+						};
+						class ThrustVectoringText
+						{
+							type = "text";
+							source = "static";
+							text = "°";
+							scale = 1;
+							sourceScale = 1;
+							align = "left";
+							pos[] = {{0.132,0.745},1};
+							right[] = {{0.167,0.745},1};
+							down[] = {{0.132,0.77},1};
+						};
+						class VectoringArrow
+						{
+							type = "line";
+							width = 3.0;
+							points[] = {{"ThrustVectoringRotation",{0.01,0.0},1},{"ThrustVectoringRotation",{0.04,0.0},1},{},{"ThrustVectoringRotation",{0.04,0.02},1},{"ThrustVectoringRotation",{0.04,-0.02},1},{}};
+						};
+					};
+					class PlaneMovementCrosshair
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -12879,7 +12939,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class MachineGunCrosshairGroup {
+					class MachineGunCrosshairGroup
+					{
 						type="group";
 						condition="-2+(mgun+rocket)*ImpactDistance";
 						class MachineGunCrosshair
@@ -13415,7 +13476,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class AAMissileCrosshairGroup {
+					class AAMissileCrosshairGroup
+					{
 						type="group";
 						condition="AAmissile";
 						class AAMissileCrosshair
@@ -13842,7 +13904,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class ATMissileCrosshairGroup {
+					class ATMissileCrosshairGroup
+					{
 						condition="ATmissile";
 						type="group";
 						class ATMissileCrosshair
@@ -13957,7 +14020,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class RocketCrosshairGroup {
+					class RocketCrosshairGroup
+					{
 						type="group";
 						condition="Rocket";
 						class MachineGunCrosshair
@@ -14088,7 +14152,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class BombCrosshairGroup {
+					class BombCrosshairGroup
+					{
 						type="group";
 						condition="bomb";
 						class BombCrosshair
@@ -14627,7 +14692,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class WeaponsText {
+					class WeaponsText
+					{
 						condition="1- mgun";
 						class WeaponsText
 						{
@@ -14653,9 +14719,11 @@ class CfgVehicles {
 							};
 						};
 					};
-					class MGunText {
+					class MGunText
+					{
 						condition="mgun";
-						class WeaponsText {
+						class WeaponsText
+						{
 							type="text";
 							source="static";
 							text="GUN";
@@ -14679,7 +14747,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class AmmoText {
+					class AmmoText
+					{
 						type="text";
 						source="ammo";
 						sourceScale=1;
@@ -14701,7 +14770,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class Laser {
+					class Laser
+					{
 						condition="laseron";
 						class LaserText
 						{
@@ -14727,7 +14797,12 @@ class CfgVehicles {
 							};
 						};
 					};
-					class TargetLocking {
+					class ILS
+					{
+						condition="ils";
+					};
+					class TargetLocking
+					{
 						condition="missilelocking";
 						blinkingPattern[]={0.2,0.2};
 						blinkingStartsOn=1;
@@ -14785,7 +14860,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class TargetLocked {
+					class TargetLocked
+					{
 						condition="missilelocked";
 						class shape
 						{
@@ -14841,7 +14917,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class IncomingMissile {
+					class IncomingMissile
+					{
 						condition="incomingmissile";
 						blinkingPattern[]={0.30000001,0.30000001};
 						blinkingStartsOn=1;
@@ -14870,7 +14947,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class StallGroup {
+					class StallGroup
+					{
 						type="group";
 						condition="stall";
 						color[]={1,0,0};
@@ -14900,7 +14978,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class TargetingPodGroup {
+					class TargetingPodGroup
+					{
 						condition="1-pilotcameralock";
 						class TargetingPodDir
 						{
@@ -15092,7 +15171,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class TargetingPodGroupOn {
+					class TargetingPodGroupOn
+					{
 						condition="pilotcameralock";
 						class TargetingPodDir
 						{
@@ -15332,7 +15412,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class MainCenterLine1 {
+					class MainCenterLine1
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -15361,7 +15442,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class MainCenterLine2 {
+					class MainCenterLine2
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -15380,7 +15462,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class MainCenterLine3 {
+					class MainCenterLine3
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -15409,7 +15492,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class SpeedIndicatorBox {
+					class SpeedIndicatorBox
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -15446,7 +15530,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class BrakesWarn {
+					class BrakesWarn
+					{
 						type="text";
 						source="userText";
 						sourceScale=1;
@@ -15480,7 +15565,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class OverSpeedGroup {
+					class OverSpeedGroup
+					{
 						type="group";
 						condition="speed > 185";
 						color[]={1,0,0};
@@ -15547,172 +15633,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class ThrottleNumber {
-						type="text";
-						source="throttle";
-						sourceScale=100;
-						align="left";
-						scale=1;
-						pos[]=
-						{
-							"PlaneW",
-							{0.40000001,-0.075999998},
-							1
-						};
-						right[]=
-						{
-							"PlaneW",
-							
-							{
-								"0.4 + 0.04",
-								-0.075999998
-							},
-							1
-						};
-						down[]=
-						{
-							"PlaneW",
-							
-							{
-								0.40000001,
-								"-0.076 + 0.05"
-							},
-							1
-						};
-					};
-					class ThrottleText {
-						type="text";
-						source="static";
-						text="%";
-						scale=1;
-						sourceScale=1;
-						align="right";
-						pos[]=
-						{
-							"PlaneW",
-							{0.43000001,-0.075999998},
-							1
-						};
-						right[]=
-						{
-							"PlaneW",
-							
-							{
-								"0.43 + 0.04",
-								-0.075999998
-							},
-							1
-						};
-						down[]=
-						{
-							"PlaneW",
-							
-							{
-								0.43000001,
-								"-0.076 + 0.05"
-							},
-							1
-						};
-					};
-					class ThrustVectoring {
-						condition="1+vtolvectoring";
-						class VectoringNumber
-						{
-							type="text";
-							source="vtolvectoring";
-							sourceScale=90;
-							align="left";
-							scale=1;
-							pos[]=
-							{
-								{0.88,0.5},
-								1
-							};
-							right[]=
-							{
-								{0.93000001,0.5},
-								1
-							};
-							down[]=
-							{
-								{0.88,0.53500003},
-								1
-							};
-						};
-						class VectoringArrow
-						{
-							type="line";
-							width=3;
-							points[]=
-							{
-								
-								{
-									"ThrustVectoringRotation",
-									{-0.034000002,-0.0060000001},
-									1
-								},
-								
-								{
-									"ThrustVectoringRotation",
-									{-0.044,0},
-									1
-								},
-								
-								{
-									"ThrustVectoringRotation",
-									{-0.034000002,0.0060000001},
-									1
-								},
-								
-								{
-									"ThrustVectoringRotation",
-									{-0.034000002,-0.0060000001},
-									1
-								},
-								{},
-								
-								{
-									"ThrustVectoringRotation",
-									{-0.044,0},
-									1
-								},
-								
-								{
-									"ThrustVectoringRotation",
-									{-0.0040000002,0},
-									1
-								},
-								{}
-							};
-						};
-					};
-					class ThrustVectoringAuto {
-						condition="-vtolvectoring";
-						class VectoringText
-						{
-							type="text";
-							source="static";
-							text="AUTO";
-							align="left";
-							scale=1;
-							pos[]=
-							{
-								{0.889,0.54000002},
-								1
-							};
-							right[]=
-							{
-								{0.93900001,0.54000002},
-								1
-							};
-							down[]=
-							{
-								{0.889,0.57499999},
-								1
-							};
-						};
-					};
-					class AlphaNumber {
+					class AlphaNumber
+					{
 						type="text";
 						source="AoA";
 						sourceScale=57.295799;
@@ -15745,7 +15667,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class AlphaText {
+					class AlphaText
+					{
 						type="text";
 						source="static";
 						text="AoA:";
@@ -15778,7 +15701,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class GNumber {
+					class GNumber
+					{
 						type="text";
 						source="userText";
 						sourceIndex=4;
@@ -15812,7 +15736,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class GText {
+					class GText
+					{
 						type="text";
 						source="static";
 						text="G:";
@@ -15845,7 +15770,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class SpeedGroup {
+					class SpeedGroup
+					{
 						type="group";
 						condition="speed < 185";
 						class SpeedNumber
@@ -15875,7 +15801,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class Grid {
+					class Grid
+					{
 						condition="on";
 						class CoordXNumber
 						{
@@ -15944,47 +15871,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class ILS {
-						condition="ils";
-						class Glideslope
-						{
-							clipTL[]={0,0};
-							clipBR[]={1,1};
-							class airport
-							{
-								type="line";
-								points[]=
-								{
-									
-									{
-										"airport1",
-										1
-									},
-									
-									{
-										"airport2",
-										1
-									},
-									
-									{
-										"airport4",
-										1
-									},
-									
-									{
-										"airport3",
-										1
-									},
-									
-									{
-										"airport1",
-										1
-									}
-								};
-							};
-						};
-					};
-					class AltitudeIndicatorBox {
+					class AltitudeIndicatorBox
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -16021,7 +15909,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class AltitudeNumberASL {
+					class AltitudeNumberASL
+					{
 						type="text";
 						source="altitudeASL";
 						sourceScale=1;
@@ -16046,7 +15935,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class AltitudeRadarText {
+					class AltitudeRadarText
+					{
 						type="text";
 						source="static";
 						text="R";
@@ -16080,7 +15970,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class AltitudeNumberAGL {
+					class AltitudeNumberAGL
+					{
 						type="text";
 						source="altitudeAGL";
 						sourceScale=1;
@@ -16107,7 +15998,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class PitchNumber {
+					class PitchNumber
+					{
 						type="text";
 						source="horizonDive";
 						sourceScale=57.295799;
@@ -16140,7 +16032,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class PitchText {
+					class PitchText
+					{
 						type="text";
 						source="static";
 						text="P:";
@@ -16173,7 +16066,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class RollNumber {
+					class RollNumber
+					{
 						type="text";
 						source="horizonBank";
 						sourceScale=57.295799;
@@ -16206,7 +16100,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class RollText {
+					class RollText
+					{
 						type="text";
 						source="static";
 						text="R:";
@@ -16239,7 +16134,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class ClimbNumber {
+					class ClimbNumber
+					{
 						type="text";
 						source="vspeed";
 						sourceScale=1;
@@ -16272,7 +16168,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class ClimbText {
+					class ClimbText
+					{
 						type="text";
 						source="static";
 						text="C:";
@@ -16305,7 +16202,8 @@ class CfgVehicles {
 							1
 						};
 					};
-					class HeadingArrow {
+					class HeadingArrow
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -16339,7 +16237,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class WP {
+					class WP
+					{
 						condition="wpvalid";
 						class WPdist
 						{
@@ -16454,7 +16353,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class HeadingRotation {
+					class HeadingRotation
+					{
 						condition="abs(cameraDir-heading)*( (abs(heading-cameraDir))<=355)-5";
 						class HeadingHeadNumber
 						{
@@ -16536,7 +16436,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class HeadingScale {
+					class HeadingScale
+					{
 						type="scale";
 						NeverEatSeaWeed=1;
 						horizontal=1;
@@ -16560,7 +16461,8 @@ class CfgVehicles {
 						right[]={0.14300001,0.0546};
 						down[]={0.096000001,0.093000002};
 					};
-					class HeadingIndicatorBox {
+					class HeadingIndicatorBox
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -16597,7 +16499,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class HeadingIndicatorArrow {
+					class HeadingIndicatorArrow
+					{
 						type="polygon";
 						points[]=
 						{
@@ -16624,7 +16527,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class HeadingNumber {
+					class HeadingNumber
+					{
 						type="text";
 						source="heading";
 						sourceScale=1;
@@ -16636,7 +16540,7 @@ class CfgVehicles {
 							
 							{
 								0,
-								"(-0.5			)"
+								"(-0.5   )"
 							},
 							1
 						};
@@ -16646,7 +16550,7 @@ class CfgVehicles {
 							
 							{
 								0.029999999,
-								"(-0.5			)"
+								"(-0.5   )"
 							},
 							1
 						};
@@ -16656,12 +16560,13 @@ class CfgVehicles {
 							
 							{
 								0,
-								"(-0.5 + 0.045	)"
+								"(-0.5 + 0.045 )"
 							},
 							1
 						};
 					};
-					class HorizonBankRot {
+					class HorizonBankRot
+					{
 						type="line";
 						width=2;
 						points[]=
@@ -16708,7 +16613,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class HorizonBankRotLines {
+					class HorizonBankRotLines
+					{
 						type="line";
 						width=3;
 						points[]=
@@ -16791,7 +16697,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class Horizont {
+					class Horizont
+					{
 						clipTL[]={0.2,0.2};
 						clipBR[]={0.80000001,0.80000001};
 						class Dimmed
@@ -21920,7 +21827,8 @@ class CfgVehicles {
 							};
 						};
 					};
-					class RadarBoxes {
+					class RadarBoxes
+					{
 						type="radartoview";
 						pos0[]={0.5,0.5};
 						pos10[]={0.773,0.773};
@@ -21954,7 +21862,8 @@ class CfgVehicles {
 							}
 						};
 					};
-					class TargetDiamond {
+					class TargetDiamond
+					{
 						class shape
 						{
 							type="line";
@@ -22082,14 +21991,14 @@ class CfgVehicles {
 						class AirTarget
 						{
 							minRange=500;
-							maxRange=4000;
+							maxRange=3000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=500;
-							maxRange=3000;
+							maxRange=2000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
@@ -22104,14 +22013,14 @@ class CfgVehicles {
 						class AirTarget
 						{
 							minRange=500;
-							maxRange=2500;
+							maxRange=2000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
 						class GroundTarget
 						{
 							minRange=500;
-							maxRange=2000;
+							maxRange=1500;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
@@ -22174,7 +22083,7 @@ class CfgVehicles {
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[]={5000,3000,16000,8000};
+						range[]={4000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -22197,7 +22106,7 @@ class CfgVehicles {
 					class SensorDisplay
 					{
 						componentType="SensorsDisplayComponent";
-						range[]={5000,3000,16000,8000};
+						range[]={4000,2000,16000,8000};
 						resource="RscCustomInfoSensors";
 					};
 				};
@@ -22495,16 +22404,8 @@ class CfgVehicles {
 			1,
 			600
 		};
-		soundLocked[]= {
-			"\A3\Sounds_F\weapons\Rockets\opfor_lock_1",
-			"db-20",
-			1
-		};
-		soundIncommingMissile[]= {
-			"\A3\Sounds_F\weapons\Rockets\opfor_lock_2",
-			"db-20",
-			1
-		};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1",1.0,1};
+		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1",0.31622776,1.0};
 		soundEnviron[]= {
 			"",
 			"db-30",
