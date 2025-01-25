@@ -6583,7 +6583,8 @@ class CfgVehicles
 							"O_MISSILE_PYLON",
 							"O_BOMB_PYLON_HELI",
 							"UNI_SCALPEL",
-							"20MM_TWIN_CANNON"
+							"OPAEX_Hardpoint_AV22",
+							"OPTRE_30mm_Cannon"
 						};
 						turret[]={0};
 						UIposition[]={0.059999999,0.40000001};
@@ -6597,7 +6598,7 @@ class CfgVehicles
 							"O_MISSILE_PYLON",
 							"O_BOMB_PYLON_HELI",
 							"UNI_SCALPEL",
-							"20MM_TWIN_CANNON"
+							"OPTRE_30mm_Cannon"
 						};
 						UIposition[]={0.079999998,0.34999999};
 					};
