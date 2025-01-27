@@ -3,10 +3,11 @@ class cfgPatches {
         requiredAddons[]={
             "A3_Air_F_Beta",
             "A3_Air_F_Beta_Heli_Attack_02",
+			"O_1ITA"
         };
         requiredVersion=0.1;
         units[]={
-        
+			"BDA_1ITA_Kaijman_Dynamic"
         };
         weapons[]={};
     };
@@ -33,13 +34,11 @@ class AirplaneHUD;
 
 class CfgVehicles {
     class Air;
-	class Helicopter: Air
-	{
+	class Helicopter: Air {
 		class Turrets;
 		class HitPoints;
 	};
-	class Helicopter_Base_F: Helicopter
-	{
+	class Helicopter_Base_F: Helicopter {
 		class Turrets: Turrets
 		{
 			class MainTurret;
