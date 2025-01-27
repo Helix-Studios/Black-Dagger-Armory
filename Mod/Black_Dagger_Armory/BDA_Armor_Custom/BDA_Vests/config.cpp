@@ -978,7 +978,7 @@ class cfgWeapons {
 		};
 	};
 
-		class BDA_Armor_Fonza: BDA_Armor_MD {
+	class BDA_Armor_Fonza: BDA_Armor_MD {
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Fonza)";
 		hiddenSelectionsTextures[]= {
@@ -989,6 +989,18 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Fonza_CO.paa"
 		};
 	};
+
+	class BDA_Armor_McCoy: BDA_Armor_RF {
+		author = "Grif";
+		displayName = "M52D Body Armor (C. McCoy)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_McCoy_CO.paa"
+		};
+	};	
 	//end
 };
 
