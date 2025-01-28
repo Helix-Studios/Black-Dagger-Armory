@@ -73,6 +73,10 @@ class CfgVehicles {
         scopeAuthor = 2;
         author = "Rib";
         displayName = "M480 Super Alligator";
+		faction = "";
+        crew = "";
+        typicalCargo[] = {
+		};
 		hiddenSelectionsTextures[]= {
 			"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_CO.paa",
 			"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_CO.paa"

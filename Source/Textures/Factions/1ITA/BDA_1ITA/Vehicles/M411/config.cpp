@@ -80,6 +80,10 @@ class CfgVehicles {
         scopeAuthor = 2;
         author = "Rib";
         displayName = "M412 Bison IFV";
+		faction = "";
+        crew = "";
+        typicalCargo[] = {
+		};
         hiddenSelectionsTextures[]= {
 			"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
@@ -96,6 +100,10 @@ class CfgVehicles {
         scopeAuthor = 2;
         author = "Rib";
         displayName = "M413 Bison MGS";
+		faction = "";
+        crew = "";
+        typicalCargo[] = {
+		};
         hiddenSelectionsTextures[]= {
 			"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
