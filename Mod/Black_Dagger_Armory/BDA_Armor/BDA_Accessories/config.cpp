@@ -183,7 +183,7 @@ class CfgVehicles {
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_energy_capacity = 120;
-		NSM_jumppack_recharge = 10;
+		NSM_jumppack_recharge = 6;
 		NSM_jumppack_jump_type[] = {
 			{"Forward Jump",{
 					12, //forward v m/s
@@ -300,5 +300,5 @@ class CfgVehicles {
 class cfgMods
 {
 	author="Rib";
-	timepacked="231020241044";
+	timepacked="3001250210";
 };
