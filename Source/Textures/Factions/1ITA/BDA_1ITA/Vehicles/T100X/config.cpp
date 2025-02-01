@@ -59,22 +59,42 @@ class CfgVehicles {
 			class L2;
 		};
 	};
-    class O_MBT_02_railgun_F; 
+    class O_T_MBT_02_railgun_ghex_F; 
 
-    class BDA_1ITA_T1000X: O_MBT_02_railgun_F {
+    class BDA_1ITA_T1000X: O_T_MBT_02_railgun_ghex_F {
+		DLC="BDA";
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         author = "Rib";
-        displayName = "T1000X Cosmos MBT";
-        faction = "";
-        crew = "";
+        displayName = "T-1000X Cosmos MBT";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_CombatCrewman",
+			"O_1ITA_CombatCrewman",
+			"O_1ITA_Officer"
 		};
         hiddenSelectionsTextures[] = {
 			"a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa",
 			"a3\armor_f_gamma\mbt_02\data\mbt_02_turret_co.paa",
 			"a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa",
 			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
+		};
+		class TransportMagazines {
+			class _xx_SmokeShell {
+				magazine="SmokeShell";
+				count=2;
+			};
+			class _xx_SmokeShellRed {
+				magazine="SmokeShellRed";
+				count=2;
+			};
+		};
+		class TransportWeapons {
+			class _xx_OPTRE_BR55 {
+				weapons="OPTRE_BR55";
+				count=3;
+			};
 		};
     };
 };

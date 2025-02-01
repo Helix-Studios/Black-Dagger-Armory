@@ -70,12 +70,14 @@ class CfgVehicles {
 
     class BDA_1ITA_Kaijman_Dynamic: Heli_Attack_02_dynamicLoadout_base_F {
         scope = 2; 
-        scopeAuthor = 2;
+        scopeCurator = 2;
         author = "Rib";
         displayName = "M480 Super Alligator";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_Heli_Pilot";
         typicalCargo[] = {
+			"O_1ITA_Heli_Pilot",
+			"O_1ITA_CombatCrewman"
 		};
 		hiddenSelectionsTextures[]= {
 			"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_CO.paa",

@@ -77,12 +77,13 @@ class CfgVehicles {
 
     class BDA_1ITA_M412_IFV: OPTRE_M412_IFV_UNSC {
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         author = "Rib";
         displayName = "M412 Bison IFV";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[]= {
 			"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
@@ -100,9 +101,10 @@ class CfgVehicles {
         scopeAuthor = 2;
         author = "Rib";
         displayName = "M413 Bison MGS";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[]= {
 			"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",

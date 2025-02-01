@@ -73,11 +73,12 @@ class CfgVehicles {
     class BDA_1ITA_M12_APC: OPTRE_M12_FAV_APC { //APC Hog
         author = "Rib";
         scope = 2;
-        scopeAuthor = 2;
+        scopeCurator = 2;
         displayName = "M12 APC Warthog";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
@@ -96,9 +97,10 @@ class CfgVehicles {
         scope = 2;
         scopeAuthor = 2;
         displayName = "M813 Troop Transport Warthog";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
@@ -116,9 +118,10 @@ class CfgVehicles {
         scope = 2;
         scopeAuthor = 2;
         displayName = "M12 LRV (MG) Warthog";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
@@ -137,9 +140,10 @@ class CfgVehicles {
         scope = 2;
         scopeAuthor = 2;
         displayName = "M12A1 LRV (AT) Warthog";
-		faction = "";
-        crew = "";
+        faction = "O_1ITA";
+        crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
+			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
             "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
