@@ -2116,7 +2116,7 @@ class cfgWeapons {
 		displayName="CH252D Helmet (L. Tucker)";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Tucker_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S5_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S4_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -2132,7 +2132,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Tucker_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S5_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_S4_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -2717,7 +2717,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Byrne_Helmet_dp: BDA_CH252D_Helmet_dp {
-		author="Rib";
+		author="Grif";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Byrne_CO.paa",
 			"optre_fc_units\marines\data\h3_pilothelmet_visor_ca.paa",
