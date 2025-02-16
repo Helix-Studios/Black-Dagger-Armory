@@ -1,14 +1,16 @@
 class cfgPatches {
-    requiredAddons[]={
-        "OPTRE_Vehicles"
-        "O_1ITA"
-    };
-    requiredVersion=0.1;
-    units[]={
-        "BDA_1ITA_M412_IFV",
-        "BDA_1ITA_M413_MGS"
-    };
-    weapons[]={};
+	class BDA_1ITA_M411 {
+		requiredAddons[]={
+			"OPTRE_Vehicles"
+			"O_1ITA"
+		};
+		requiredVersion=0.1;
+		units[]={
+			"BDA_1ITA_M412_IFV",
+			"BDA_1ITA_M413_MGS"
+		};
+		weapons[]={};
+	};
 };
 
 class DefaultEventHandlers;
