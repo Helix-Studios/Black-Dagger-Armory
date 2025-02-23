@@ -89,7 +89,7 @@ class CfgVehicles {
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine"
 		};
-        class Components: Components {
+        class Components {
             class TransportPylonsComponent {
                 uiPicture="\A3\Air_F_Beta\Heli_Attack_02\Data\UI\Heli_Attack_02_3DEN_CA.paa";
 				class Pylons {

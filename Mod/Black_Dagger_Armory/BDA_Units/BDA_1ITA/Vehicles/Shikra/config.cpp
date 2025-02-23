@@ -13,6 +13,25 @@ class cfgPatches {
     };
 };
 
+class SensorTemplatePassiveRadar;
+class SensorTemplateAntiRadiation;
+class SensorTemplateActiveRadar;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateMan;
+class SensorTemplateLaser;
+class SensorTemplateNV;
+class SensorTemplateDataLink;
+class DefaultVehicleSystemsDisplayManagerLeft
+{
+	class components;
+};
+class DefaultVehicleSystemsDisplayManagerRight
+{
+	class components;
+};
+class AirplaneHUD;
+
 class CfgVehicles {
     class Air;
 	class Plane: Air
@@ -54,7 +73,7 @@ class CfgVehicles {
 
         weapons[] = {"weapon_Fighter_Gun_30mm", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
 		magazines[] = {"magazine_Fighter02_Gun30mm_AA_x180", "magazine_Fighter02_Gun30mm_AA_x180", "Laserbatteries", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
-        class Components: Components {
+        class Components {
 			class SensorsManagerComponent {
 				class Components {
 					class IRSensorComponent: SensorTemplateIR {

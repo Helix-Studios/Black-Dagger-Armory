@@ -1,7 +1,7 @@
 class cfgPatches {
 	class BDA_1ITA_M411 {
 		requiredAddons[]={
-			"OPTRE_Vehicles"
+			"OPTRE_Vehicles",
 			"O_1ITA"
 		};
 		requiredVersion=0.1;
