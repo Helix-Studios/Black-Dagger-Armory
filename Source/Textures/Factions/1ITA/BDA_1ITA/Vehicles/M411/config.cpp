@@ -88,13 +88,13 @@ class CfgVehicles {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[]= {
-			"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
+			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-			"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_90mm_co.paa"
 		};
     };
 
@@ -109,13 +109,13 @@ class CfgVehicles {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[]= {
-			"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
+			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-			"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_90mm_co.paa"
 		};
     };
 

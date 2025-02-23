@@ -8,8 +8,8 @@ class CfgFactionClasses {
     class O_1ITA {
         displayName = "1st Independent Tank Army";
         side = 0;
-        flag = "\OPTRE_Core\Data\flag_Ins_ca.paa";
-        icon = "\OPTRE_Core\Data\flag_Ins_ca.paa";
+        flag = "\BDA_1ITA\1ITA_FLAG.paa";
+        icon = "\BDA_1ITA\1ITA_FLAG.paa";
         priority = 0;
     };
 };

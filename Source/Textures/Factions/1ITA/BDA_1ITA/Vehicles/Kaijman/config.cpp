@@ -80,8 +80,8 @@ class CfgVehicles {
 			"O_1ITA_CombatCrewman"
 		};
 		hiddenSelectionsTextures[]= {
-			"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_CO.paa",
-			"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_CO.paa"
+			"\BDA_1ITA\Vehicles\Kaijman\Data\ITA_Kaijman_Body1_co.paa",
+			"\BDA_1ITA\Vehicles\Kaijman\Data\ITA_Kaijman_Body2_co.paa"
 		};
         armor=300;
         maxSpeed=400;

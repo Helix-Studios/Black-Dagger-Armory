@@ -7,8 +7,7 @@ class CfgPatches {
 		};
 		requiredVersion=0.1;
 		units[]= {
-			"O_MBT_02_railgun_F",
-			"O_T_MBT_02_railgun_ghex_F"
+			"BDA_1ITA_T1000X"
 		};
 		weapons[]={};
 	};
@@ -69,15 +68,16 @@ class CfgVehicles {
         displayName = "T-1000X Cosmos MBT";
         faction = "O_1ITA";
         crew = "O_1ITA_CombatCrewman";
+		armor = 400;
         typicalCargo[] = {
 			"O_1ITA_CombatCrewman",
 			"O_1ITA_CombatCrewman",
 			"O_1ITA_Officer"
 		};
         hiddenSelectionsTextures[] = {
-			"a3\armor_f_gamma\mbt_02\data\mbt_02_body_co.paa",
-			"a3\armor_f_gamma\mbt_02\data\mbt_02_turret_co.paa",
-			"a3\armor_f_gamma\mbt_02\data\mbt_02_co.paa",
+			"\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Body_co.paa",
+			"\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Turret_co.paa",
+			"\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Main_co.paa",
 			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
 		};
 		class TransportMagazines {

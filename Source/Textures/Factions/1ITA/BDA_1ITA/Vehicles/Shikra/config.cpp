@@ -43,11 +43,10 @@ class CfgVehicles {
         typicalCargo[] = {"O_1ITA_JetPilot"};
         armor = 140;
 
-
         hiddenSelectionsTextures[] = {
-            "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_co.paa", //change this
-            "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_co.paa", //and this
-            "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_co.paa", //and this
+            "\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_01_co.paa", 
+            "\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_02_co.paa",
+            "\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_01_co.paa", 
             "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa", 
             "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa", 
             "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_04_co.paa"

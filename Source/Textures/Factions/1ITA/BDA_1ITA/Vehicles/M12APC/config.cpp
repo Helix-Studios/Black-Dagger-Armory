@@ -81,12 +81,12 @@ class CfgVehicles {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\apc_lopo_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
 		};
@@ -103,11 +103,11 @@ class CfgVehicles {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
 		};
@@ -124,11 +124,11 @@ class CfgVehicles {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-			"\OPTRE_Vehicles\Warthog\data\turrets\m12_turret_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa",
 			"\OPTRE_Vehicles\warthog\data\apc_lopo_co.paa"
@@ -146,11 +146,11 @@ class CfgVehicles {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extupper_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
             "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-            "\OPTRE_Vehicles\Warthog\data\turrets\m12_turret_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
             "\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-            "\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
             "\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
             "\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
             "\OPTRE_Vehicles\warthog\data\apc_lopo_co.paa"
