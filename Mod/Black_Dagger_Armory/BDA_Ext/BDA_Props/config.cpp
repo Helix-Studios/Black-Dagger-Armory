@@ -31,6 +31,7 @@ class CfgVehicles {
     class B_Slingload_01_Ammo_F;
     class B_Slingload_01_Fuel_F;
     class B_Slingload_01_Repair_F;
+    class OPTRE_RS_ConsoleCorvette_SysGreen;
 
     class PA_Can_B: Thing {
         displayName = "Can [Bepis]";
@@ -406,7 +407,7 @@ class CfgVehicles {
                 position = "BDA_Rearm";
                 radius = 40;
                 condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Rearm_Supply";
+                statement = "call BDA_fnc_Rearm";
                 onlyforplayer = 0;
             };
         };
@@ -417,7 +418,7 @@ class CfgVehicles {
                 selection = "";
                 distance = 40;
                 condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Rearm_Supply";    
+                statement = "call BDA_fnc_Rearm";    
             };
         };
     };
@@ -443,7 +444,7 @@ class CfgVehicles {
                 position = "BDA_Refuel";
                 radius = 40;
                 condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Refuel_Supply";
+                statement = "call BDA_fnc_Refuel";
                 onlyforplayer = 0;
             };
         };
@@ -454,7 +455,7 @@ class CfgVehicles {
                 selection = "";
                 distance = 40;
                 condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Refuel_Supply";
+                statement = "call BDA_fnc_Refuel";
             };
         };
     };
@@ -479,7 +480,7 @@ class CfgVehicles {
                 position = "BDA_Repair";
                 radius = 40;
                 condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Repair_Supply";
+                statement = "call BDA_fnc_Repair";
                 onlyforplayer = 0;
             };
         };
@@ -490,7 +491,36 @@ class CfgVehicles {
                 selection = "";
                 distance = 40;
                 condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Repair_Supply";
+                statement = "call BDA_fnc_Repair";
+            };
+        };
+    };
+
+    class BDA_Spawn_Console: OPTRE_RS_ConsoleCorvette_SysGreen {
+        scope = 2;
+        scopeCurator = 2;
+        editorCategory = "BDA_EC_BlackDagger";
+        editorSubcategory = "BDA_ESC_Props";
+        author = "Rib";
+        displayName = "Air Spawn Console";
+        class UserActions {
+            class A3_BD_Spawn_AV14 {
+                displayName = "Spawn Vehicle AV14";
+                position = "";
+                radius = 40;
+                condition = "!isNull objectParent player";
+                statement = "[pad1, BDA_UNSC_Hornet] call BDA_fnc_vehSpawner;";
+                onlyforplayer = 0;
+            };
+        };
+        class ACE_Actions {
+            class ACE_BD_Spawn_AV14 {
+                displayName = "Spawn Vehicle AV14";
+                position = "";
+                selection = "";
+                distance = 40;
+                condition = "!isNull objectParent player";
+                statement = "[pad1, BDA_UNSC_Hornet] call BDA_fnc_vehSpawner;";
             };
         };
     };

@@ -1,3 +1,6 @@
+// Author = Rib
+// Works using defined texture paths here to change textures on the fly through actions
+
 systemChat "Working Textures";
 _vehCamo = _this select 0;
 _vehClass = _this select 1;

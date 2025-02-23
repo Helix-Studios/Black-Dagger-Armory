@@ -454,6 +454,141 @@ class CfgGroups {
                     };
                 };
 
+                class B_BDA_Squad_3_1 {
+                    name = "3-1 Squad";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_3_1";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_1";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_1";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_1";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_1";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_1";
+                    };
+                };
+
+                class B_BDA_Squad_3_2 {
+                    name = "3-2 Squad";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_3_2";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_2";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_2";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_2";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_2";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_2";
+                    };
+                };
+
+                class B_BDA_Squad_3_3 {
+                    name = "3-3 Squad";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_3_3";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_3";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_3";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_3";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_3";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "B_BDA_3_3";
+                    };
+                };
+
                 class B_BDA_1PltCmd {
                     name = "1st Platoon Command";
                     side = 1;
@@ -517,6 +652,39 @@ class CfgGroups {
                         rank = "CORPORAL";
                         side = 1;
                         vehicle = "B_BDA_1_0";
+                    };
+                };
+
+                class B_BDA_3PltCmd {
+                    name = "3rd Platoon Command";
+                    side = 1;
+                    faction = "B_BDCUNSC";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 1;
+                        vehicle = "B_BDA_3_0";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "B_BDA_3_0";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_Medic";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "B_BDA_3_0";
                     };
                 };
 

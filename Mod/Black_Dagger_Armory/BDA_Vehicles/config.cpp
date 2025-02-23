@@ -12190,10 +12190,8 @@ class CfgVehicles {
             };
         };
 
-		class MFD
-		{
-			class B_Plane_Fighter_01_static_HUD
-			{
+		class MFD {
+			class B_Plane_Fighter_01_static_HUD {
 				enableParallax=0;
 				helmetMountedDisplay=1;
 				helmetPosition[]={-0.032499999,0.032499999,0.1};
@@ -23104,7 +23102,6 @@ class CfgVehicles {
         };
 
 		class TransportItems {
-			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
 			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
 			class _xx_Medikit {name="Medikit"; count=5;};
 			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
@@ -23392,7 +23389,6 @@ class CfgVehicles {
 		};
 
 		class TransportItems {
-			class _xx_B_Parachute {backpack = "B_Parachute"; count = 9;}; //1 per passenger
 			class _xx_FirstAidKit {name="FirstAidKit"; count=10;};
 			class _xx_Medikit {name="Medikit"; count=5;};
 			class _xx_ACE_CableTie {name="ACE_CableTie"; count=20;};
@@ -23428,13 +23424,6 @@ class CfgVehicles {
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio=1;
 		enableRadio=1;
-
-		class TransportItems {
-			class _xx_B_Parachute {
-				backpack="B_Parachute";
-				count=2;
-			};
-		};
 
 		hiddenSelections[] = {
 			"camo1",

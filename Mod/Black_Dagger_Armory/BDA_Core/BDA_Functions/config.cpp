@@ -1,10 +1,7 @@
-class CfgPatches
-{
-	class BDA_Core_functions
-	{
+class CfgPatches {
+	class BDA_Core_functions {
 		author="Black Dagger Development Crew";
-		requiredAddons[]=
-		{
+		requiredAddons[]= {
 			"A3_Weapons_F",
 			"A3_characters_f_bootcamp",
 			"A3_Characters_F",
@@ -20,22 +17,18 @@ class CfgPatches
 		requiredVersion=0.1;
 	};
 };
-#include "\BDA_Core\BDA_Functions\loadouts\BDA_LoadoutDiag.hpp"
 
 class CfgFunctions {
-    class BDA_Scripts 
-    {
+    class BDA_Scripts {
         tag = "BDA";
-        class Core_Func 
-        {
+        class Core_Func {
             file = "\BDA_Core\BDA_Functions";
-            class vehSpawner {};
 			class vehSupply {};
+			class vehSpawner {};
 			class medicCheck {};
 			class notify {};
 			class isBino {};
 			class advMark {};
-			class vehRRR {};
         };
 		class BDA_Vehcamo {
 			file = "\BDA_Core\BDA_Functions\vehcamo";
@@ -62,7 +55,6 @@ class CfgFunctions {
 		};
 		class BDA_AirVehThrust {
 			file = "\BDA_Core\BDA_Functions\AirVehThrust";
-			
 		};
 		class BDA_PeliMagSys {
 			file = "\BDA_Core\BDA_Functions\PeliMagSys";
@@ -77,8 +69,9 @@ class CfgFunctions {
     };
 };
 
-class CfgWallaceLoad 
-{
+#include "\BDA_Core\BDA_Functions\loadouts\BDA_LoadoutDiag.hpp"
+
+class CfgWallaceLoad {
 	class BDA_Rifleman 
 	{
 		name = "Rifleman Kit";
