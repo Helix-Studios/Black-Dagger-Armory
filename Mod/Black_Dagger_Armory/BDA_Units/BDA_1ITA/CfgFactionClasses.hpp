@@ -13,3 +13,21 @@ class CfgFactionClasses {
         priority = 0;
     };
 };
+
+class CfgEditorCategories {
+	class BDA_EC_1ITA {
+		displayName="1st Independent Tank Army";
+	};
+};
+
+class CfgEditorSubcategories {
+	class 1ITA_ESC_AerospaceShip {
+		displayName="Ships";
+	};
+	class 1ITA_ESC_Vehicle {
+		displayName="Vehicles";
+	};
+	class 1ITA_ESC_Air {
+		displayName="Aviation";
+	};
+};

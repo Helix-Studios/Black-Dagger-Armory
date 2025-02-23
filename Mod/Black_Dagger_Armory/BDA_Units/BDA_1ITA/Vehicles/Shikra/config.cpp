@@ -58,14 +58,16 @@ class CfgVehicles {
         displayName = "Mk-214 Shikra";
         DLC = "BDA";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Air";
         crew = "O_1ITA_JetPilot";
         typicalCargo[] = {"O_1ITA_JetPilot"};
         armor = 140;
 
         hiddenSelectionsTextures[] = {
-            "\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_01_co.paa", 
-            "\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_02_co.paa",
-            "\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_01_co.paa", 
+            "\BDA_Units\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_01_co.paa", 
+            "\BDA_Units\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_02_co.paa",
+            "\BDA_Units\BDA_1ITA\Vehicles\Shikra\Data\bda_shikra_fuselage_01_co.paa", 
             "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa", 
             "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa", 
             "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_04_co.paa"

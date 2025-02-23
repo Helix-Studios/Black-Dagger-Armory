@@ -3,7 +3,7 @@ class cfgPatches {
         requiredAddons[]={
             "A3_Air_F_Beta",
             "A3_Air_F_Beta_Heli_Attack_02",
-			"O_1ITA"
+			"BDA_1ITA"
         };
         requiredVersion=0.1;
         units[]={
@@ -65,7 +65,6 @@ class CfgVehicles {
 		class ViewPilot;
 		class Components;
 	};
-    class Heli_Attack_02_base_F;
     class Heli_Attack_02_dynamicLoadout_base_F;
 
     class BDA_1ITA_Kaijman_Dynamic: Heli_Attack_02_dynamicLoadout_base_F {
@@ -74,14 +73,17 @@ class CfgVehicles {
         author = "Rib";
         displayName = "M480 Super Alligator";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Air";
+		side = 0;
         crew = "O_1ITA_Heli_Pilot";
         typicalCargo[] = {
 			"O_1ITA_Heli_Pilot",
 			"O_1ITA_CombatCrewman"
 		};
 		hiddenSelectionsTextures[]= {
-			"\BDA_1ITA\Vehicles\Kaijman\Data\ITA_Kaijman_Body1_co.paa",
-			"\BDA_1ITA\Vehicles\Kaijman\Data\ITA_Kaijman_Body2_co.paa"
+			"\BDA_Units\BDA_1ITA\Vehicles\Kaijman\Data\ITA_Kaijman_Body1_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\Kaijman\Data\ITA_Kaijman_Body2_co.paa"
 		};
         armor=300;
         maxSpeed=400;

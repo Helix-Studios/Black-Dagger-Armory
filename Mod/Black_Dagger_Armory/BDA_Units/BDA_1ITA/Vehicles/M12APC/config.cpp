@@ -2,7 +2,7 @@ class cfgPatches {
      class BDA_1ITA_M12APC {
         requiredAddons[]={
             "OPTRE_Vehicles",
-			"O_1ITA"
+			"BDA_1ITA"
         };
         requiredVersion=0.1;
         units[]={
@@ -76,17 +76,20 @@ class CfgVehicles {
         scopeCurator = 2;
         displayName = "M12 APC Warthog";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
+		side = 0;
         crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\apc_lopo_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
 		};
@@ -98,16 +101,19 @@ class CfgVehicles {
         scopeAuthor = 2;
         displayName = "M813 Troop Transport Warthog";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
+		side = 0;
         crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
 		};
@@ -119,16 +125,19 @@ class CfgVehicles {
         scopeAuthor = 2;
         displayName = "M12 LRV (MG) Warthog";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
+		side = 0;
         crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
 			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa",
 			"\OPTRE_Vehicles\warthog\data\apc_lopo_co.paa"
@@ -141,16 +150,19 @@ class CfgVehicles {
         scopeAuthor = 2;
         displayName = "M12A1 LRV (AT) Warthog";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
+		side = 0;
         crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[] = {
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
             "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
             "\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
             "\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
             "\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
             "\OPTRE_Vehicles\warthog\data\apc_lopo_co.paa"

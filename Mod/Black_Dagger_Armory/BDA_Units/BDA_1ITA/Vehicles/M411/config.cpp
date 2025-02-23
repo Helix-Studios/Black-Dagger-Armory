@@ -2,7 +2,7 @@ class cfgPatches {
 	class BDA_1ITA_M411 {
 		requiredAddons[]={
 			"OPTRE_Vehicles",
-			"O_1ITA"
+			"BDA_1ITA"
 		};
 		requiredVersion=0.1;
 		units[]={
@@ -82,19 +82,22 @@ class CfgVehicles {
         scopeCurator = 2;
         author = "Rib";
         displayName = "M412 Bison IFV";
+		side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
         crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[]= {
-			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_90mm_co.paa"
+			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_90mm_co.paa"
 		};
     };
 
@@ -104,18 +107,21 @@ class CfgVehicles {
         author = "Rib";
         displayName = "M413 Bison MGS";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
+		side = 0;
         crew = "O_1ITA_CombatCrewman";
         typicalCargo[] = {
 			"O_1ITA_Rifleman"
 		};
         hiddenSelectionsTextures[]= {
-			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-			"\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_90mm_co.paa"
+			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_90mm_co.paa"
 		};
     };
 

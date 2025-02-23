@@ -67,18 +67,34 @@ class CfgVehicles {
         author = "Rib";
         displayName = "T-1000X Cosmos MBT";
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+		editorSubcategory = "1ITA_ESC_Vehicle";
         crew = "O_1ITA_CombatCrewman";
 		armor = 400;
+		class textureSources {
+			class Black {
+				displayName = "Black";
+				author = "Rib";
+				textures[] = {
+					"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Body_co.paa",
+					"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Turret_co.paa",
+					"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Main_co.paa",
+					"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\camonet_1ITA_Stripe_co.paa"
+				};
+				factions[] = {"O_1ITA"};
+			};
+		};
+		textureList[] = {"Black",1};
+		hiddenSelectionsTextures[] = {
+			"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Body_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Turret_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Main_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\T100X\Data\camonet_1ITA_Stripe_co.paa"
+		};
         typicalCargo[] = {
 			"O_1ITA_CombatCrewman",
 			"O_1ITA_CombatCrewman",
 			"O_1ITA_Officer"
-		};
-        hiddenSelectionsTextures[] = {
-			"\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Body_co.paa",
-			"\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Turret_co.paa",
-			"\BDA_1ITA\Vehicles\T100X\Data\ITA_T1000X_Main_co.paa",
-			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
 		};
 		class TransportMagazines {
 			class _xx_SmokeShell {
@@ -90,11 +106,6 @@ class CfgVehicles {
 				count=2;
 			};
 		};
-		class TransportWeapons {
-			class _xx_OPTRE_BR55 {
-				weapons="OPTRE_BR55";
-				count=3;
-			};
-		};
+		class TransportWeapons {};
     };
 };

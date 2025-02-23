@@ -1,5 +1,5 @@
 class CfgPatches {
-    class O_1ITA {
+    class BDA_1ITA {
         units[] = {
             "O_1ITA_SquadLeader",
             "O_1ITA_Sniper",
@@ -32,7 +32,7 @@ class CfgPatches {
             "CUP_Core",
             "cba_xeh"
         };
-        author = "1stLt. R. Ribbington";
-        authors[] = {"1stLt. R. Ribbington"};
+        author = "Ribbington";
+        authors[] = {"Ribbington"};
     };
 };

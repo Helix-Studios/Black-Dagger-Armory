@@ -21,6 +21,7 @@ class CfgVehicles {
         displayName = "Squad Leader";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -61,6 +62,7 @@ class CfgVehicles {
         displayName = "Sniper";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -101,6 +103,7 @@ class CfgVehicles {
         displayName = "Radio Operator";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -141,6 +144,7 @@ class CfgVehicles {
         displayName = "Rifleman";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -181,6 +185,7 @@ class CfgVehicles {
         displayName = "Officer";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -221,6 +226,7 @@ class CfgVehicles {
         displayName = "Heavy Gunner";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -261,6 +267,7 @@ class CfgVehicles {
         displayName = "Autorifleman";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -301,6 +308,7 @@ class CfgVehicles {
         displayName = "Anti-Tank Specialist";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -341,6 +349,7 @@ class CfgVehicles {
         displayName = "Combat Medic";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -381,6 +390,7 @@ class CfgVehicles {
         displayName = "Combat Crewman";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -421,6 +431,7 @@ class CfgVehicles {
         displayName = "Heli Pilot";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
@@ -461,6 +472,7 @@ class CfgVehicles {
         displayName = "Jet Pilot";
         side = 0;
         faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
 
         identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
 
