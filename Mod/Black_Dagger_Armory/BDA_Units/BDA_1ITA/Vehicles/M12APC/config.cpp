@@ -86,9 +86,9 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
-			"\OPTRE_Vehicles\Warthog\data\apc_lopo_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\transp_lopo_night_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_Hog_APC.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_decals_ca.paa",
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa"
@@ -111,8 +111,8 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
-			"\OPTRE_Vehicles\Warthog\data\transp_lopo_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\transp_lopo_night_co.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_decals_ca.paa",
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_net_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\warthog_transport_decals_ca.paa"
@@ -136,7 +136,7 @@ class CfgVehicles {
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
 			"\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_decals_ca.paa",
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa",
@@ -161,7 +161,7 @@ class CfgVehicles {
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_extupper_co.paa",
             "\OPTRE_Vehicles\Warthog\data\M12HogMaav_extunder_co.paa",
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_turret_co.paa",
-            "\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+            "\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_decals_ca.paa",
 			"\BDA_Units\BDA_1ITA\Vehicles\M12APC\Data\ITA_M12_interior_co.paa",
             "\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
             "\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa",

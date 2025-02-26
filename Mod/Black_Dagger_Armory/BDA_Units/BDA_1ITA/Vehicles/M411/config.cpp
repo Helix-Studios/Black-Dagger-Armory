@@ -92,7 +92,7 @@ class CfgVehicles {
 		};
         hiddenSelectionsTextures[]= {
 			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
-			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_Misc_co.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
@@ -116,7 +116,7 @@ class CfgVehicles {
 		};
         hiddenSelectionsTextures[]= {
 			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_body_co.paa",
-			"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
+			"\BDA_Units\BDA_1ITA\Vehicles\M411\Data\ITA_Bison_Misc_co.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
