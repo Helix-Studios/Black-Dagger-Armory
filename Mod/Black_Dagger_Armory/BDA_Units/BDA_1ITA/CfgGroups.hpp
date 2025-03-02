@@ -6,7 +6,6 @@
 
 class CfgGroups {
     class EAST {
-
         class O_1ITA {
             name = "1st Independent Tank Army";
 
@@ -123,12 +122,49 @@ class CfgGroups {
             };
 
             class Motorized {
-                name = "Motorized Infantry";
+                name = "Motorized";
 
-            };
+                class o_1ITA_m413_hunter_squad {
+                    name = "M413 Hunter Squad";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
 
-            class Motorized_MTP {
-                name = "Motorized Infantry (MTP)";
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 0;
+                        vehicle = "BDA_1ITA_M413_MGS";
+                    };
+                    class Unit1 {
+                        position[] = {6,-15,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "BDA_1ITA_M413_MGS";
+                    };
+                };
+
+                class o_1ITA_m412_bison_patrol {
+                    name = "M412 Bison Patrol";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "LIEUTENANT";
+                        side = 0;
+                        vehicle = "BDA_1ITA_M412_IFV";
+                    };
+                    class Unit1 {
+                        position[] = {6,-15,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "BDA_1ITA_M412_IFV";
+                    };
+                };
 
             };
 
@@ -199,29 +235,94 @@ class CfgGroups {
 
             class Mechanized {
                 name = "Mechanized Infantry";
-
             };
 
             class Armored {
-                name = "Armor";
+                name = "Armored";
+
+                class o_1ITA_t1000x_platoon {
+                    name = "T-1000X Platoon";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CAPTAIN";
+                        side = 0;
+                        vehicle = "BDA_1ITA_T1000X";
+                    };
+                    class Unit1 {
+                        position[] = {10,-16,0};
+                        rank = "LIEUTENANT";
+                        side = 0;
+                        vehicle = "BDA_1ITA_T1000X";
+                    };
+                    class Unit2 {
+                        position[] = {-10,-16,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "BDA_1ITA_T1000X";
+                    };
+                };
 
             };
 
             class Artillery {
                 name = "Artillery";
-
             };
 
             class Naval {
                 name = "Naval";
-
             };
 
             class Air {
                 name = "Air";
 
-            };
+                class o_1ITA_m480_squadron {
+                    name = "M480 Super Alligator Squadron";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+                    rarityGroup = 0.5;
 
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "COLONEL";
+                        side = 0;
+                        vehicle = "BDA_1ITA_Kaijman_Dynamic";
+                    };
+                    class Unit1 {
+                        position[] = {22,-26,0};
+                        rank = "CAPTAIN";
+                        side = 0;
+                        vehicle = "BDA_1ITA_Kaijman_Dynamic";
+                    };
+                };
+
+                class o_1ITA_m214_wing {
+                    name = "M214 Shikra Wing";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_plane.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "COLONEL";
+                        side = 0;
+                        vehicle = "BDA_1ITA_Shikra";
+                    };
+                    class Unit1 {
+                        position[] = {23,-33,0};
+                        rank = "MAJOR";
+                        side = 0;
+                        vehicle = "BDA_1ITA_Shikra";
+                    };
+                };
+
+            };
 
         };
 

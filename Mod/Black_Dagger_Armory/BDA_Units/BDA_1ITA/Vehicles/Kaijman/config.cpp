@@ -65,9 +65,9 @@ class CfgVehicles {
 		class ViewPilot;
 		class Components;
 	};
-    class Heli_Attack_02_dynamicLoadout_base_F;
+    class O_Heli_Attack_02_black_F;
 
-    class BDA_1ITA_Kaijman_Dynamic: Heli_Attack_02_dynamicLoadout_base_F {
+    class BDA_1ITA_Kaijman_Dynamic: O_Heli_Attack_02_black_F {
         scope = 2; 
         scopeCurator = 2;
         author = "Rib";
@@ -91,7 +91,8 @@ class CfgVehicles {
 			"192Rnd_CMFlare_Chaff_Magazine",
 			"192Rnd_CMFlare_Chaff_Magazine"
 		};
-        class Components {
+		class Components;
+        class Components: Components {
             class TransportPylonsComponent {
                 uiPicture="\A3\Air_F_Beta\Heli_Attack_02\Data\UI\Heli_Attack_02_3DEN_CA.paa";
 				class Pylons {
@@ -123,11 +124,9 @@ class CfgVehicles {
 						UIposition[]={0.079999998,0.34999999};
 					};
 					class PylonRight2: PylonLeft2 {
-						mirroredMissilePos=2;
 						UIposition[]={0.56999999,0.34999999};
 					};
 					class PylonRight1: PylonLeft1 {
-						mirroredMissilePos=1;
 						UIposition[]={0.58999997,0.40000001};
 					};
 				};
@@ -166,7 +165,14 @@ class CfgVehicles {
 				};
 
             };
+			class SensorsManagerComponent;
+			class VehicleSystemsDisplayManagerComponentLeft;
+			class VehicleSystemsDisplayManagerComponentRight;
         };
+		class TransportBackpacks {};
+		class TransportMagazines {};
+		class TransportWeapons {};
+		class TransportItems {};
         crew = "O_1ITA_Heli_Pilot";
         typicalCargo[] = {"O_1ITA_Heli_Pilot"};
     };

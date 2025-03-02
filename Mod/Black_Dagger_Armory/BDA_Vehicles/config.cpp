@@ -21920,7 +21920,8 @@ class CfgVehicles {
 			};
 		};
 
-		class Components {
+		class Components;
+		class Components: Components {
 			class TransportPylonsComponent {
 				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
 				class pylons {
@@ -21980,21 +21981,16 @@ class CfgVehicles {
 					};
 				};
 			};
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
-						class AirTarget
-						{
+			class SensorsManagerComponent {
+				class Components {
+					class IRSensorComponent: SensorTemplateIR {
+						class AirTarget {
 							minRange=500;
 							maxRange=3000;
 							objectDistanceLimitCoef=1;
 							viewDistanceLimitCoef=1;
 						};
-						class GroundTarget
-						{
+						class GroundTarget {
 							minRange=500;
 							maxRange=2000;
 							objectDistanceLimitCoef=1;
@@ -22006,8 +22002,7 @@ class CfgVehicles {
 						angleRangeVertical=34;
 						aimdown=-0.25;
 					};
-					class VisualSensorComponent: SensorTemplateVisual
-					{
+					class VisualSensorComponent: SensorTemplateVisual {
 						class AirTarget
 						{
 							minRange=500;
@@ -22028,8 +22023,7 @@ class CfgVehicles {
 						angleRangeVertical=34;
 						aimdown=-0.25;
 					};
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
 						class AirTarget
 						{
 							minRange=5000;
@@ -22044,7 +22038,7 @@ class CfgVehicles {
 							objectDistanceLimitCoef=-1;
 							viewDistanceLimitCoef=-1;
 						};
-						maxTrackableSpeed=100;
+						maxTrackableSpeed=80;
 						angleRangeHorizontal=180;
 						angleRangeVertical=90;
 						groundNoiseDistanceCoef=-1;
@@ -22064,10 +22058,26 @@ class CfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
-			{
-				class Components: components
-				{
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft {
+				class Components: components {
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+						resource="RscCustomInfoCrew";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
 					class VehiclePrimaryGunnerDisplay
 					{
 						componentType="TransportFeedDisplayComponent";
@@ -22086,11 +22096,27 @@ class CfgVehicles {
 					};
 				};
 			};
-			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
-			{
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight {
 				defaultDisplay="SensorDisplay";
-				class Components: components
-				{
+				class Components: components {
+					class EmptyDisplay
+					{
+						componentType="EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType="MinimapDisplayComponent";
+						resource="RscCustomInfoAirborneMiniMap";
+					};
+					class CrewDisplay
+					{
+						componentType="CrewDisplayComponent";
+						resource="RscCustomInfoCrew";
+					};
+					class UAVDisplay
+					{
+						componentType="UAVFeedDisplayComponent";
+					};
 					class VehiclePrimaryGunnerDisplay
 					{
 						componentType="TransportFeedDisplayComponent";
