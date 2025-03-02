@@ -75,7 +75,8 @@ class CfgVehicles {
 
         weapons[] = {"weapon_Fighter_Gun_30mm", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
 		magazines[] = {"magazine_Fighter02_Gun30mm_AA_x180", "magazine_Fighter02_Gun30mm_AA_x180", "Laserbatteries", "240Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine"};
-        class Components {
+		class Components;
+		class Components: Components {
 			class SensorsManagerComponent {
 				class Components {
 					class IRSensorComponent: SensorTemplateIR {
