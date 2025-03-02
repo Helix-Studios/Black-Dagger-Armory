@@ -1039,6 +1039,19 @@ class cfgWeapons {
 			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Vel_CO.paa"
 		};
 	};
+
+	class BDA_Armor_Hunner: BDA_Armor_RF {
+		author = "Zarush";
+		displayName = "M52D Body Armor (T.Hunner)";
+		hiddenSelectionsTextures[]= {
+			"BDA_Armor\BDA_Vests\data\BDA_Vest_CO.paa",
+			"BDA_Armor\BDA_Vests\data\BDA_Armor_CO.paa",
+			"BDA_Armor\BDA_Legs\data\BDA_Legs_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"BDA_Armor_Custom\BDA_Vests\data\BDA_M52D_Armor_Hunner_CO.paa"
+		};
+	};
+	
 	//end
 };
 
