@@ -75,6 +75,38 @@ class CfgGroups {
                     };
                 };
 
+                class O_1ITA_infantry_team {
+                    name = "Fireteam";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_1ITA_SquadLeader";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_1ITA_Autorifleman";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_1ITA_AntiTankSpecialist";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "O_1ITA_Rifleman";
+                    };
+                };
+
             };
 
             class SpecOps {
@@ -116,6 +148,32 @@ class CfgGroups {
                         rank = "PRIVATE";
                         side = 0;
                         vehicle = "O_1ITA_AntiTankSpecialist";
+                    };
+                };
+
+                class O_1ITA_SOF_Heavy_Team {
+                    name = "Heavy Weapons Team";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "CAPTAIN";
+                        side = 0;
+                        vehicle = "O_1ITA_Heavy_Gunner";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_1ITA_Heavy_Gunner";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_1ITA_Heavy_Gunner";
                     };
                 };
 
@@ -231,6 +289,27 @@ class CfgGroups {
                     };
                 };
 
+                class O_1ITA_Support_Sniper_Team {
+                    name = "Sniper Team";
+                    side = 0;
+                    faction = "O_1ITA";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "O_1ITA_Sniper";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "CORPORAL";
+                        side = 0;
+                        vehicle = "O_1ITA_Rifleman";
+                    };
+                };
+
+                
             };
 
             class Mechanized {
