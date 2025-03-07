@@ -30,4 +30,7 @@ class CfgEditorSubcategories {
 	class 1ITA_ESC_Air {
 		displayName="Aviation";
 	};
+	class 1ITA_ESC_Story {
+		displayName="Campaign";
+	};
 };

@@ -1017,6 +1017,7 @@ class cfgWeapons {
 	};	
 
 	class BDA_Armor_Dusk: BDA_Armor_MD {
+		scope = 1;
 		author = "Grif";
 		displayName = "M52D Body Armor (R. Dusk)";
 		hiddenSelectionsTextures[]= {

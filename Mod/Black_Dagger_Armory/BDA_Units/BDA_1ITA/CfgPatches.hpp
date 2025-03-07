@@ -12,7 +12,13 @@ class CfgPatches {
             "O_1ITA_CombatMedic",
             "O_1ITA_CombatCrewman",
             "O_1ITA_Heli_Pilot",
-            "O_1ITA_JetPilot"
+            "O_1ITA_JetPilot",
+            "O_1ITA_Emile_Higgs",
+            "O_1ITA_General_Jeremiah_Bryers",
+            "O_1ITA_Colonel_Erin_Arnessen",
+            "O_1ITA_Michael_Summers",
+            "O_1ITA_TSG_Joto_Isakari",
+            "O_1ITA_Michael_Kargrove"
         };
         weapons[] = {};
         requiredVersion = 1.62;

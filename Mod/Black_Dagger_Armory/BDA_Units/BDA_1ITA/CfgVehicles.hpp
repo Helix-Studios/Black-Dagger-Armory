@@ -506,4 +506,244 @@ class CfgVehicles {
 
     };
 
+    class O_1ITA_General_Jeremiah_Bryers : O_1ITA_Officer {
+        author = "1stLt. R. Ribbington";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "General Jeremiah Bryers";
+        side = 0;
+        faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+        editorSubCategory = "1ITA_ESC_Story";
+
+        identityTypes[] = {"Head_Greek","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "U_B_ParadeUniform_01_US_F";
+
+        linkedItems[] = {"H_ParadeDressCap_01_US_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"H_ParadeDressCap_01_US_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"U_B_ParadeUniform_01_US_F",{}},{},{},"H_ParadeDressCap_01_US_F","immersion_cigs_cigar0",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_1ITA_Colonel_Erin_Arnessen : O_1ITA_Officer {
+        author = "1stLt. R. Ribbington";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Colonel Erin Arnessen";
+        side = 0;
+        faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+        editorSubCategory = "1ITA_ESC_Story";
+
+        identityTypes[] = {"Head_TK","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "U_I_E_ParadeUniform_01_LDF_F";
+
+        linkedItems[] = {"H_ParadeDressCap_01_LDF_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"H_ParadeDressCap_01_LDF_F","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"U_I_E_ParadeUniform_01_LDF_F",{}},{},{},"H_ParadeDressCap_01_LDF_F","murshun_cigs_cig0",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_1ITA_Emile_Higgs : O_1ITA_Officer {
+        author = "1stLt. R. Ribbington";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Emile Higgs";
+        side = 0;
+        faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+        editorSubCategory = "1ITA_ESC_Story";
+
+        identityTypes[] = {"Head_Greek","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "OPTRE_ONI_Researcher_Uniform";
+
+        linkedItems[] = {"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"OPTRE_ONI_Researcher_Uniform",{}},{},{},"","G_Spectacles",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_1ITA_Michael_Summers : O_1ITA_Officer {
+        author = "1stLt. R. Ribbington";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Michael Summers";
+        side = 0;
+        faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+        editorSubCategory = "1ITA_ESC_Story";
+
+        identityTypes[] = {"Head_Greek","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "OPTRE_ONI_Researcher_Uniform_Light";
+
+        linkedItems[] = {"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"OPTRE_ONI_Researcher_Uniform_Light",{}},{},{},"","G_Spectacles",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_1ITA_TSG_Joto_Isakari : O_1ITA_Officer {
+        author = "1stLt. R. Ribbington";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "TSG Joto Isakari";
+        side = 0;
+        faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+        editorSubCategory = "1ITA_ESC_Story";
+
+        identityTypes[] = {"Head_Asian","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "U_C_Driver_1_black";
+
+        linkedItems[] = {"TCF_M52A_MC_Vest_CEA_U","OPTRE_CPD_Beret","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"TCF_M52A_MC_Vest_CEA_U","OPTRE_CPD_Beret","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"U_C_Driver_1_black",{}},{"TCF_M52A_MC_Vest_CEA_U",{}},{},"OPTRE_CPD_Beret","G_Spectacles",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
+    class O_1ITA_Michael_Kargrove : O_1ITA_Officer {
+        author = "1stLt. R. Ribbington";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Michael Kargrove";
+        side = 0;
+        faction = "O_1ITA";
+		editorCategory = "BDA_EC_1ITA";
+        editorSubCategory = "1ITA_ESC_Story";
+
+        identityTypes[] = {"Head_NATO","LanguagePER_F","G_IRAN_default"};
+
+        uniformClass = "Rogue_CEUniform_U_B";
+
+        linkedItems[] = {"Rogue_CEArmourScout","VES_Beret_MP","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+        respawnlinkedItems[] = {"Rogue_CEArmourScout","VES_Beret_MP","ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch"};
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        ALiVE_orbatCreator_loadout[] = {{},{},{},{"Rogue_CEUniform_U_B",{}},{"Rogue_CEArmourScout",{}},{},"VES_Beret_MP","OPTRE_HUD_g_Glasses",{},{"ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""}};
+
+
+        class EventHandlers : EventHandlers {
+            class CBA_Extended_EventHandlers : CBA_Extended_EventHandlers_base {};
+
+            class ALiVE_orbatCreator {
+                init = "if (local (_this select 0)) then {_onSpawn = {_this = _this select 0;sleep 0.2; _backpack = gettext(configfile >> 'cfgvehicles' >> (typeof _this) >> 'backpack'); waituntil {sleep 0.2; backpack _this == _backpack};if !(_this getVariable ['ALiVE_OverrideLoadout',false]) then {_loadout = getArray(configFile >> 'CfgVehicles' >> (typeOf _this) >> 'ALiVE_orbatCreator_loadout'); _this setunitloadout _loadout;reload _this};};_this spawn _onSpawn;(_this select 0) addMPEventHandler ['MPRespawn', _onSpawn];};";
+            };
+
+        };
+
+        // custom attributes (do not delete)
+        ALiVE_orbatCreator_owned = 1;
+
+    };
+
 };

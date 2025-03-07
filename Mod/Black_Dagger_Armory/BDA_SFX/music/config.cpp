@@ -31,6 +31,9 @@ class CfgMusicClasses
 	{
 		displayName="Black Dagger (Metal Gear)";
 	};
+	class BDA_CP2077 {
+		displayName = "Black Dagger (Cyberpunk 2077)";
+	};
 	class BDA_CMS
 	{
 		displayName="Black Dagger (Crimson Storm)";
@@ -434,10 +437,70 @@ class CfgMusic
 		duration="148"; //time in seconds
 		musicClass="BDA_MGS";
 	};
+	class BDA_TRP {
+		name="The Rebel Path";
+		sound[]=
+		{
+			"BDA_SFX\music\data\CP2077\CP2077_TRP.ogg",
+			1,
+			1
+		};
+		theme="Cyberpunk 2077";
+		duration="251"; //time in seconds
+		musicClass="BDA_CP2077";
+	};
+	class BDA_TRPCello {
+		name="The Rebel Path (Cello)";
+		sound[]=
+		{
+			"BDA_SFX\music\data\CP2077\CP2077_TRP_Cello.ogg",
+			1,
+			1
+		};
+		theme="Cyberpunk 2077";
+		duration="260"; //time in seconds
+		musicClass="BDA_CP2077";
+	};
+	class BDA_ForcePro {
+		name="Force Projection";
+		sound[]=
+		{
+			"BDA_SFX\music\data\CP2077\CP2077_ForceProject.ogg",
+			1,
+			1
+		};
+		theme="Cyberpunk 2077";
+		duration="166"; //time in seconds
+		musicClass="BDA_CP2077";
+	};
+	class BDA_Wushu {
+		name="Wushu Dolls";
+		sound[]=
+		{
+			"BDA_SFX\music\data\CP2077\CP2077_WushuDolls.ogg",
+			1,
+			1
+		};
+		theme="Cyberpunk 2077";
+		duration="141"; //time in seconds
+		musicClass="BDA_CP2077";
+	};
+	class BDA_Juiced {
+		name="Juiced Up";
+		sound[]=
+		{
+			"BDA_SFX\music\data\CP2077\CP2077_Juiced.ogg",
+			1,
+			1
+		};
+		theme="Cyberpunk 2077";
+		duration="126"; //time in seconds
+		musicClass="BDA_CP2077";
+	};
 
 };
 
 class cfgMods {
 	author="Rib";
-	timepacked="0911240313";
+	timepacked="070320252103";
 };

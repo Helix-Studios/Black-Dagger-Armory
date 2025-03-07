@@ -2060,6 +2060,7 @@ class cfgWeapons {
 	};
 
 	class BDA_CH252D_Dusk_Helmet: BDA_CH252D_Helmet {
+		scope = 1;
 		author="Rib";
 		displayName="CH252D Helmet (R. Dusk)";
 		hiddenSelectionsTextures[]=
@@ -2089,6 +2090,7 @@ class cfgWeapons {
 		};
 	};
 	class BDA_CH252D_Dusk_Helmet_dp: BDA_CH252D_Helmet_dp {
+		scope = 1;
 		author="Rib";
 		hiddenSelectionsTextures[]= {
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Dusk_CO.paa",
