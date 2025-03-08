@@ -59,6 +59,31 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 class WeaponCloudsMGun;
 
 class CfgVehicles {
+	class Plane {
+		class ACE_Actions;
+		class ACE_SelfActions;
+	};
+	class Plane_Base_F: Plane {
+		class MarkerLights;
+		class Turrets;
+		class HitPoints;
+	};
+	class VTOL_Base_F: Plane_Base_F {
+		class AnimationSources;
+		class HitPoints: HitPoints {
+			class HitHull;
+		};
+		class CargoTurret;
+		class MarkerLights: MarkerLights {
+			class PositionWhite;
+		};
+		class NewTurret;
+		class Turrets: Turrets {
+			class CopilotTurret;
+		};
+		class ViewPilot;
+		class Components;
+	};
 	class Helicopter {
 		class ACE_Actions;
 		class ACE_SelfActions;
@@ -137,7 +162,6 @@ class CfgVehicles {
 	class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H {};
 	class OPTRE_AV22_Sparrowhawk: OPTRE_AV22_Sparrowhawk_Base {};
 	class OPTRE_UNSC_falcon_medical;
-	class VTOL_Base_F;
 
 	class BDA_UNSC_D77_TC_Pelican: Splits_Pelican_base {
 		scope = 2;
@@ -12134,7 +12158,7 @@ class CfgVehicles {
 			"BDA_Winter", 1
 		};
 
-		class ACE_SelfActions {
+		class ACE_SelfActions: ACE_SelfActions {
             class vehCamo {
                 displayName = "Change Camo";
 				condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
@@ -21920,7 +21944,6 @@ class CfgVehicles {
 			};
 		};
 
-		class Components;
 		class Components: Components {
 			class TransportPylonsComponent {
 				UIPicture="\OPTRE_Vehicles_Air\Hornet\HornetPylonPic.paa";
@@ -22175,8 +22198,7 @@ class CfgVehicles {
 		};
 
 		class HitPoints {
-			class HitHull
-			{
+			class HitHull {
 				armor=0.1;
 				explosionShielding=1;
 				name="HitHull";
@@ -22187,8 +22209,7 @@ class CfgVehicles {
 				depends="Total";
 				material=-1;
 			};
-			class HitFuel
-			{
+			class HitFuel {
 				armor=0.69999999;
 				radius=0.25;
 				minimalHit=0.050000001;
@@ -22198,8 +22219,7 @@ class CfgVehicles {
 				visual="Hit_Fuel";
 				depends="0";
 			};
-			class HitAvionics
-			{
+			class HitAvionics {
 				armor=1.3;
 				radius=0.40000001;
 				minimalHit=0.050000001;
@@ -22722,8 +22742,7 @@ class CfgVehicles {
 				blinking=0;
 				dayLight=0;
 				useFlare=0;
-				class Attenuation
-				{
+				class Attenuation {
 					start=0;
 					constant=0;
 					linear=25;

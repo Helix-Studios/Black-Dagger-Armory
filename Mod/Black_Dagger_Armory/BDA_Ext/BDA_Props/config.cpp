@@ -396,31 +396,25 @@ class CfgVehicles {
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib/Apollo";
         destrType = "DestructNo";
+        displayName = "[BDA] Vehicle Rearm";
+        ace_rearm_defaultSupply = 500000;
         maximumLoad = 9999999;
         ace_cargo_size = 2;
         ace_cargo_canLoad = 1;
-        displayName = "Vehicle Rearm";
-        ace_rearm_defaultSupply = 500000;
-        class UserActions {
+        class EventHandlers {
+            init = "this addaction['Rearm Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Rearming...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Rearming Complete';veh setVehicleAmmodef 1;veh setVehicleAmmo 1;}, {hint 'Rearming Aborted';}] call CBA_fnc_progressBar;}];";
+        };
+        /*class UserActions {
             class A3_BD_Rearm {
-                displayName = "Rearm Vehicles";
-                position = "BDA_Rearm";
+                displayName = "Rearm Vehicle";
                 radius = 40;
-                condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Rearm";
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                statement = "call BDA_fnc_VehRearm";
                 onlyforplayer = 0;
+                priority = -900;
+                position = "Camera";
             };
-        };
-        class ACE_Actions {
-            class ACE_BD_Rearm {
-                displayName = "Rearm Vehicles";
-                position = "BDA_Rearm";
-                selection = "";
-                distance = 40;
-                condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Rearm";    
-            };
-        };
+        };*/
     };
     
     class BDA_Refuel: B_Slingload_01_Fuel_F {
@@ -430,34 +424,28 @@ class CfgVehicles {
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib/Apollo";
         destrType = "DestructNo";
+        displayName = "[BDA] Vehicle Refuel";
         maximumLoad = 9999999;
         ace_cargo_size = 2;
         ace_cargo_canLoad = 1;
-        displayName = "Vehicle Refuel";
         ace_refuel_fuelCargo = 500000;
         ace_refuel_hooks[] = {{0.3,-1,-0.6},{0.7,-1,-0.6}};
         ace_refuel_flowRate = 2;
         ace_refuel_canReceive = 1;
-        class UserActions {
+        class EventHandlers {
+            init = "this addaction['Refuel Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Refueling...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Refueling Complete';veh setFuel 1;}, {hint 'Refueling Aborted';}] call CBA_fnc_progressBar;}];";
+        };
+        /*class UserActions {
             class A3_BD_Refuel {
-                displayName = "Refuel Vehicles";
-                position = "BDA_Refuel";
+                displayName = "Refuel Vehicle";
                 radius = 40;
-                condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Refuel";
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                statement = "call BDA_fnc_VehRefuel";
                 onlyforplayer = 0;
+                priority = -900;
+                position = "Camera";
             };
-        };
-        class ACE_Actions {
-            class ACE_BD_Refuel {
-                displayName = "Refuel Vehicles";
-                position = "BDA_Refuel";
-                selection = "";
-                distance = 40;
-                condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Refuel";
-            };
-        };
+        };*/
     };
 
     class BDA_Repair: B_Slingload_01_Repair_F {
@@ -467,68 +455,45 @@ class CfgVehicles {
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib/Apollo";
         destrType = "DestructNo";
+        displayName = "[BDA] Vehicle Repair";
         maximumLoad = 9999999;
         ace_cargo_size = 2;
         ace_cargo_canLoad = 1;
-        displayName = "Vehicle Repair";
         ace_repair_canRepair = 1;
         ace_repair_spareWheels = 16;
         ace_repair_spareTracks = 8;
-        class UserActions {
+        class EventHandlers {
+            init = "this addaction['Repair Vehicle', {veh = nearestObjects [player, ['Air','Car','Tank','Plane'], 50] select 0; ['Repairing...', 5, {!isEngineOn veh; !(isNull objectParent player) && (driver (vehicle player)==player);}, {hint 'Repairing Complete';veh setDamage 0;}, {hint 'Repairing Aborted';}] call CBA_fnc_progressBar;}];";
+        };
+        /*class UserActions {
             class A3_BD_Repair {
                 displayName = "Repair Vehicles";
-                position = "BDA_Repair";
                 radius = 40;
-                condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Repair";
+                condition = "!(isNull objectParent player) && (driver (vehicle player)==player)";
+                statement = "call BDA_fnc_VehRepair";
                 onlyforplayer = 0;
+                priority = -900;
+                position = "Camera";
             };
-        };
-        class ACE_Actions {
-            class ACE_BD_Repair {
-                displayName = "Repair Vehicles";
-                position = "BDA_Repair";
-                selection = "";
-                distance = 40;
-                condition = "!isNull objectParent player";
-                statement = "call BDA_fnc_Repair";
-            };
-        };
+        };*/
     };
 
-    class BDA_Spawn_Console: OPTRE_RS_ConsoleCorvette_SysGreen {
+    class BDA_Spawn_Console_air: OPTRE_RS_ConsoleCorvette_SysGreen {
         scope = 2;
         scopeCurator = 2;
         editorCategory = "BDA_EC_BlackDagger";
         editorSubcategory = "BDA_ESC_Props";
         author = "Rib";
         displayName = "Air Spawn Console";
-        class UserActions {
-            class A3_BD_Spawn_AV14 {
-                displayName = "Spawn Vehicle AV14";
-                position = "";
-                radius = 40;
-                condition = "!isNull objectParent player";
-                statement = "[pad1, BDA_UNSC_Hornet] call BDA_fnc_vehSpawner;";
-                onlyforplayer = 0;
-            };
-        };
-        class ACE_Actions {
-            class ACE_BD_Spawn_AV14 {
-                displayName = "Spawn Vehicle AV14";
-                position = "";
-                selection = "";
-                distance = 40;
-                condition = "!isNull objectParent player";
-                statement = "[pad1, BDA_UNSC_Hornet] call BDA_fnc_vehSpawner;";
-            };
-        };
     };
-
+    
+    class BDA_Spawn_Console_ground: BDA_Spawn_Console_air {
+        displayName = "Ground Spawn Console";
+    };
 //end
 };
 
 class cfgMods {
 	author="Rib";
-	timepacked="271020241430";
+	timepacked="070320252210"; //fkn tired
 };

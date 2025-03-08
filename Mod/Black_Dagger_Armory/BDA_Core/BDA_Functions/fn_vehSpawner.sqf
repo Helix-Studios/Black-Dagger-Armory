@@ -1,10 +1,11 @@
 //
 //		Name: BDA_fn_vehSpawner.sqf
 //		Author: Wallace 
+//      Sub-Auth: Rib
 //		Description: To create a more refined way to spawn vehicles so the init field can be cleaned up
 //		and would allow anyone to easily add or remove certain vehicles or spawn pads.
 //
-//                       Spawnobject    className
+//            Spawnobject    className
 //		Example: [pad1, "Vehicle_class"] call BDA_fnc_vehSpawner;
 
 _marker = _this select 0;
@@ -19,4 +20,4 @@ systemChat format ["Spawned a %1 at %2", _vehName, _marker];
 _veh = { _x addCuratorEditableObjects [[_vehicle], true] } forEach allCurators;
 
 // Init code
-// [MAV_SPP, "BDA_UNSC_D77_TC_Pelican"] call BDA_fnc_vehSpawner;
+// this addAction[pad1, "BDA_UNSC_D77_TC_Pelican"] call BDA_fnc_vehSpawner;

@@ -30,6 +30,12 @@ class CfgFunctions {
 			class isBino {};
 			class advMark {};
         };
+		class BDA_vehsupply {
+			file = "\BDA_Core\BDA_Functions\vehsupply";
+			class vehRearm {};
+			class vehRepair {};
+			class vehRefuel {};
+		};
 		class BDA_Vehcamo {
 			file = "\BDA_Core\BDA_Functions\vehcamo";
 			class chgTex {};
@@ -138,5 +144,5 @@ enableDebugConsole[] = { "76561198805462515", "76561198249403686", "765611980667
 
 class cfgMods {
 	author="Rib";
-	timepacked="1210241618";
+	timepacked="080320251020";
 };
