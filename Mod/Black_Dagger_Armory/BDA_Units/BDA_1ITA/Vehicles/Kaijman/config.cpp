@@ -65,7 +65,22 @@ class CfgVehicles {
 		class ViewPilot;
 		class Components;
 	};
-    class O_Heli_Attack_02_black_F;
+	class Heli_Attack_02_base_F: Helicopter_Base_F {
+		class SpeechVariants;
+		class RotorLibHelicopterProperties;
+		class HitPoints;
+		class AnimationSources;
+		class Components;
+		class pilotCamera;
+		class Turrets;
+		class Sounds;
+		class SoundsExt;
+		class Exhausts;
+		class Damage;
+		class MFD;
+		class UserActions;
+	};
+    class O_Heli_Attack_02_black_F: Heli_Attack_02_base_F {};
 
     class BDA_1ITA_Kaijman_Dynamic: O_Heli_Attack_02_black_F {
         scope = 2; 
