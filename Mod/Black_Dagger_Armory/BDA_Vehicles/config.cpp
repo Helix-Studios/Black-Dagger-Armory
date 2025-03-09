@@ -59,14 +59,16 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 class WeaponCloudsMGun;
 
 class CfgVehicles {
-	class Plane {
+	class Air {
 		class ACE_Actions;
 		class ACE_SelfActions;
+	};
+	class Plane: Air {
+		class HitPoints;
 	};
 	class Plane_Base_F: Plane {
 		class MarkerLights;
 		class Turrets;
-		class HitPoints;
 	};
 	class VTOL_Base_F: Plane_Base_F {
 		class AnimationSources;
