@@ -265,6 +265,24 @@ class RscDisplayConfigure {
 	enableDisplay = 1;
 };
 
+//Additional Years
+class ctrlCombo;
+class Cfg3den {
+	class Attributes {
+		class Default;
+		class Title : Default {
+			class Controls;
+		};
+		class Date : Title {
+			class Controls : Controls {
+				class ValueYear : ctrlCombo {
+					onLoad = "_ctrlYear = _this select 0; for '_y' from 2400 to 2600 do {_lbadd = _ctrlYear lbadd str _y; _ctrlYear lbsetvalue [_lbadd,_y];}; _ctrlYear lbsetcursel 53;";
+				};
+			};
+		};
+	};
+};
+
 class cfgMods {
 	author="Rib";
 	timepacked="1210241847";

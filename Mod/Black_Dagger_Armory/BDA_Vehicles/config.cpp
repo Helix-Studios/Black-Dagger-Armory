@@ -59,23 +59,25 @@ class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
 class WeaponCloudsMGun;
 
 class CfgVehicles {
-	class Air {
-		class ACE_Actions;
-		class ACE_SelfActions;
-	};
+	class Air;
 	class Plane: Air {
-		class HitPoints;
+		/*extern*/ class HitPoints;
+		/*extern*/ class ACE_Actions;
+		/*extern*/ class ACE_SelfActions;
 	};
 	class Plane_Base_F: Plane {
-		class MarkerLights;
-		class Turrets;
+		/*extern*/ class MarkerLights;
+		/*extern*/ class Turrets;
+		/*extern*/ class AnimationSources;
+		class HitPoints: HitPoints {
+			/*extern*/ class HitHull;
+		};
+		/*extern*/ class Components;
+		/*extern*/ class ViewPilot;
 	};
 	class VTOL_Base_F: Plane_Base_F {
-		class AnimationSources;
-		class HitPoints: HitPoints {
-			class HitHull;
-		};
-		class CargoTurret;
+		class AnimationSources: AnimationSources {};
+		class HitPoints: HitPoints {};
 		class MarkerLights: MarkerLights {
 			class PositionWhite;
 		};
@@ -83,9 +85,13 @@ class CfgVehicles {
 		class Turrets: Turrets {
 			class CopilotTurret;
 		};
-		class ViewPilot;
-		class Components;
+		class CargoTurret;
+		class ViewPilot: ViewPilot {};
+		class Components: Components {};
 	};
+	/*extern*/ class Ejection_Seat_Base_F;
+	/*extern*/ class Plane_Canopy_Base_F;
+	/*extern*/ class PlaneWreck;
 	class Helicopter {
 		class ACE_Actions;
 		class ACE_SelfActions;
@@ -95,18 +101,15 @@ class CfgVehicles {
 		class HitPoints;
 		class ViewPilot;
 		class CargoTurret;
-		class Reflectors
-		{
+		class Reflectors {
 			class Right;
 		};
 	};
 	class Helicopter_Base_H: Helicopter_Base_F {
-		class Turrets: Turrets
-		{
+		class Turrets: Turrets {
 			class MainTurret;
 		};
-		class HitPoints: HitPoints
-		{
+		class HitPoints: HitPoints {
 			class HitHull;
 			class HitFuel;
 			class HitEngine;
@@ -127,8 +130,7 @@ class CfgVehicles {
 		class RotorLibHelicopterProperties;
 		class CargoTurret;
 		class Components;
-		class Reflectors
-		{
+		class Reflectors {
 			class Right;
 		};
 	};
