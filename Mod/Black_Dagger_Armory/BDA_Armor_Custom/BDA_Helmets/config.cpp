@@ -918,7 +918,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Knight_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -935,7 +935,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Knight_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -1142,7 +1142,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Five_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -1254,7 +1254,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Griffin_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -1271,7 +1271,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Griffin_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
@@ -2538,7 +2538,7 @@ class cfgWeapons {
 		hiddenSelectionsTextures[]=
 		{
 			"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Hill_CO.paa",
-			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+			"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 			"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 		};
@@ -2555,7 +2555,7 @@ class cfgWeapons {
 			hiddenSelectionsTextures[]=
 			{
 				"BDA_Armor_Custom\BDA_Helmets\data\BDA_Helmet_Hill_CO.paa",
-				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_CO.paa",
+				"BDA_Armor\BDA_Helmets\data\visors\BDA_Visor_Command_CO.paa",
 				"optre_unsc_units\army\data\ghillie_woodland_co.paa",
 				"BDA_Armor\BDA_Helmets\data\BDA_Soft_Packs_co.paa"
 			};
