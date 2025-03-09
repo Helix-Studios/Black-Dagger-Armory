@@ -31,7 +31,8 @@ class RscActiveText;
 class RscActivePicture: RscActiveText {};
 class RscButton;
 
-class CfgWorlds {
+//attempt of custom world - not in use
+/*class CfgWorlds {
 	class CAWorld;
 	class OPTRE_Installation04: CAWorld {
 		cutscenes[] = {"BDAWorld"};
@@ -46,22 +47,18 @@ class CfgMissions {
 			directory = "BDA_Core\BDA_MM\BDAWorld\BDCMainMenu.OPTRE_Installation04";
 		};
 	};
-};
+};*/
 
-class RscTitles //part of the background
-{
-	class SplashNoise //part of the background
-		{
-			class BackgroundNoise: RscPicture //part of the background
-			{
+//part of the background
+class RscTitles {
+	class SplashNoise {
+			class BackgroundNoise: RscPicture {
 				text = "";
 			};
 		};
-	class brokenhud: SplashNoise	//part of the background
-		{
-			duration=1000; //originally 10000
-			class BackgroundNoise: RscPicture //part of the background
-			{
+	class brokenhud: SplashNoise {
+			duration=100; //originally 10000
+			class BackgroundNoise: RscPicture {
 				text = "";
 			};
 		};
@@ -285,5 +282,5 @@ class Cfg3den {
 
 class cfgMods {
 	author="Rib";
-	timepacked="1210241847";
+	timepacked="090320251545";
 };

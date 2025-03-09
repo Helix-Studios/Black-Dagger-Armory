@@ -35,7 +35,7 @@ class cfgVehicles
 		author="Schlopp";
 		scope=2;
 		editorCategory="BDA_EC_BlackDagger";
-		editorSubcategory="BDA_ESC_Props";
+		editorSubcategory="BDA_ESC_AerospaceShip";
 		armor=500000;
 		displayname="Egret Spaceliner";
 		model="BDA_Ext\BDA_Egret\BDA_Egret_Spaceliner";

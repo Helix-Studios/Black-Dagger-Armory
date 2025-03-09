@@ -1,13 +1,10 @@
-class CfgEditorCategories
-{
-	class BDA_EC_BlackDagger
-	{
+class CfgEditorCategories {
+	class BDA_EC_BlackDagger {
 		displayName="Black Dagger Company";
 	};
 };
 
-class CfgEditorSubcategories
-{
+class CfgEditorSubcategories {
 	class BDA_ESC_Flags {
 		displayName="Flags";
 	};

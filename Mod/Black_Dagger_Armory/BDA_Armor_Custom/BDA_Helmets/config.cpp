@@ -2933,5 +2933,5 @@ class cfgWeapons {
 
 class cfgMods {
 	author="Rib";
-	timepacked="221020241827";
+	timepacked="090320251540";
 };

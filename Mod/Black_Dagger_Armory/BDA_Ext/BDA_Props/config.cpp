@@ -11,14 +11,17 @@ class CfgPatches {
             "Extended_Eventhandlers",
             "A3_Supplies_F_Heli",
             "OPTRE_Misc_Crates",
-            "ace_interaction"};
+            "ace_interaction"
+        };
 		units[]={
             "BDA_Ammo_SupplyPod",
             "BDA_Medical_SupplyPod",
             "BDA_Rearm",
             "BDA_Repair",
             "BDA_Refuel",
-            "PA_Can_B"
+            "PA_Can_B",
+            "BDA_Spawn_Console_air",
+            "BDA_Spawn_Console_ground"
         };
 		weapons[]={};
     };
